@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from string import Template
 
-from summarize import SEVERITIES, analyze_all
+from summarize import CATEGORIES, SEVERITIES, analyze_all
 
 OUTPUT_DIR = Path("docs")
 COLORS = {"Critical": "#dc2626", "High": "#ea580c", "Medium": "#ca8a04",
@@ -28,6 +28,16 @@ def sort_by_severity(stories):
     return sorted(stories, key=lambda s: rank.get(s["severity"], len(SEVERITIES)))
 
 
+def chip(group, value, label, count, active=False, color=None):
+    """One filter button. data-group/data-value tell the script what to filter."""
+    active_class = " active" if active else ""
+    pressed = "true" if active else "false"
+    dot = f'<span class="dot" style="background:{color}"></span>' if color else ""
+    return (f'<button type="button" class="chip{active_class}" data-group="{group}" '
+            f'data-value="{e(value)}" aria-pressed="{pressed}">'
+            f'{dot}{e(label)} <span class="n">{count}</span></button>')
+
+
 PAGE = Template("""<!doctype html>
 <html lang="en">
 <head>
@@ -40,15 +50,33 @@ PAGE = Template("""<!doctype html>
     :root { --bg:#0b1120; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --line:#1f2937; }
   }
   * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
   body { margin:0; background:var(--bg); color:var(--text);
          font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.5; }
   main { max-width:860px; margin:0 auto; padding:32px 16px 64px; }
   header h1 { margin:0; font-size:28px; }
   header p { margin:4px 0 0; color:var(--muted); }
-  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:24px 0; }
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:24px 0 16px; }
   .stat { background:var(--card); border:1px solid var(--line); border-radius:10px;
           padding:12px; text-align:center; font-size:13px; color:var(--muted); }
   .stat .num { display:block; font-size:24px; font-weight:700; }
+  .filters { background:var(--card); border:1px solid var(--line); border-radius:10px;
+             padding:12px 14px; margin-bottom:12px; }
+  .filter-row { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .filter-row + .filter-row { margin-top:8px; }
+  .filter-label { font-size:12px; font-weight:600; color:var(--muted); width:72px;
+                  text-transform:uppercase; letter-spacing:.04em; }
+  .chip { font:inherit; font-size:13px; cursor:pointer; display:inline-flex; align-items:center;
+          gap:6px; border:1px solid var(--line); background:transparent; color:var(--text);
+          border-radius:999px; padding:3px 11px; }
+  .chip:hover { border-color:var(--muted); }
+  .chip.active { background:var(--text); color:var(--bg); border-color:var(--text); }
+  .chip .n { font-size:11px; opacity:.7; }
+  .chip .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .chip:disabled { opacity:.35; cursor:not-allowed; border-color:var(--line); }
+  .showing { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .empty { text-align:center; color:var(--muted); padding:32px; border:1px dashed var(--line);
+           border-radius:10px; }
   .card { background:var(--card); border:1px solid var(--line); border-left:5px solid;
           border-radius:10px; padding:16px 18px; margin-bottom:14px; }
   .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:12px; color:var(--muted); }
@@ -61,7 +89,10 @@ PAGE = Template("""<!doctype html>
   .tag { font-size:12px; border:1px solid var(--line); border-radius:6px; padding:1px 7px; color:var(--muted); }
   a.cve { color:#dc2626; text-decoration:none; font-weight:600; }
   footer { margin-top:32px; font-size:13px; color:var(--muted); }
-  @media (max-width:600px) { .stats { grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:600px) {
+    .stats { grid-template-columns:repeat(3,1fr); }
+    .filter-label { width:100%; }
+  }
 </style>
 </head>
 <body>
@@ -71,22 +102,100 @@ PAGE = Template("""<!doctype html>
     <p>$date &middot; $count stories, summarized and triaged by AI</p>
   </header>
   <section class="stats">$stats</section>
+
+  <section class="filters" aria-label="Filter stories">
+    <div class="filter-row"><span class="filter-label">Severity</span>$severity_chips</div>
+    <div class="filter-row"><span class="filter-label">Category</span>$category_chips</div>
+  </section>
+  <p class="showing" id="showing" aria-live="polite"></p>
+  <p class="empty" id="empty" hidden>No stories match these filters.</p>
+
   $cards
   <footer>Generated automatically from public RSS feeds. AI summaries can contain
   errors; follow the links for the original reporting.</footer>
 </main>
+<script>
+(function () {
+  var state = { severity: "all", category: "all" };
+  var cards = document.querySelectorAll(".card");
+  var chips = document.querySelectorAll(".chip");
+  var showing = document.getElementById("showing");
+  var empty = document.getElementById("empty");
+
+  function matches(card, group, value) {
+    return value === "all" || card.dataset[group] === value;
+  }
+
+  // Each button's count = stories you would see if you clicked it,
+  // given whatever is selected in the other row
+  function updateCounts() {
+    chips.forEach(function (chip) {
+      var group = chip.dataset.group;
+      var other = group === "severity" ? "category" : "severity";
+      var n = 0;
+      cards.forEach(function (card) {
+        if (matches(card, group, chip.dataset.value) && matches(card, other, state[other])) n++;
+      });
+      chip.querySelector(".n").textContent = n;
+      chip.disabled = n === 0 && !chip.classList.contains("active");
+    });
+  }
+
+  function apply() {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var match = matches(card, "severity", state.severity) &&
+                  matches(card, "category", state.category);
+      card.hidden = !match;
+      if (match) shown++;
+    });
+    showing.textContent = "Showing " + shown + " of " + cards.length + " stories";
+    empty.hidden = shown !== 0;
+    updateCounts();
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var group = chip.dataset.group;
+      state[group] = chip.dataset.value;
+      chips.forEach(function (other) {
+        if (other.dataset.group !== group) return;
+        var on = other === chip;
+        other.classList.toggle("active", on);
+        other.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
 </body>
 </html>
 """)
 
 
 def render_html(stories, date_str):
-    counts = Counter(s["severity"] for s in stories)
+    sev_counts = Counter(s["severity"] for s in stories)
+    cat_counts = Counter(s["category"] for s in stories)
+
     stats = "".join(
         f'<div class="stat"><span class="num" style="color:{COLORS[sev]}">'
-        f'{counts.get(sev, 0)}</span>{sev}</div>'
+        f'{sev_counts.get(sev, 0)}</span>{sev}</div>'
         for sev in SEVERITIES
     )
+
+    # Filter buttons: "All" plus one per value that actually appears today
+    severity_chips = chip("severity", "all", "All", len(stories), active=True) + "".join(
+        chip("severity", sev, sev, sev_counts[sev], color=COLORS[sev])
+        for sev in SEVERITIES if sev_counts[sev]
+    )
+    category_chips = chip("category", "all", "All", len(stories), active=True) + "".join(
+        chip("category", cat, cat, cat_counts[cat])
+        for cat in CATEGORIES if cat_counts[cat]
+    )
+
     cards = []
     for s in stories:
         color = COLORS.get(s["severity"], COLORS["Info"])
@@ -98,7 +207,8 @@ def render_html(stories, date_str):
         )
         affected = "".join(f'<span class="tag">{e(a)}</span>' for a in s["affected"])
         cards.append(f"""
-  <article class="card" style="border-left-color:{color}">
+  <article class="card" style="border-left-color:{color}"
+           data-severity="{e(s['severity'])}" data-category="{e(s['category'])}">
     <div class="meta">
       <span class="sev" style="background:{color}">{e(s['severity'])}</span>
       <span>{e(s['category'])}</span><span>&middot;</span><span>{e(s['source'])}</span>
@@ -107,8 +217,10 @@ def render_html(stories, date_str):
     <p>{e(s['summary'])}</p>
     <div class="tags">{cves}{affected}</div>
   </article>""")
-    return PAGE.substitute(date=e(date_str), count=len(stories),
-                           stats=stats, cards="".join(cards))
+
+    return PAGE.substitute(date=e(date_str), count=len(stories), stats=stats,
+                           severity_chips=severity_chips, category_chips=category_chips,
+                           cards="".join(cards))
 
 
 def render_markdown(stories, date_str):
