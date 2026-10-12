@@ -40,7 +40,7 @@
     <h1>Daily Security Briefing</h1>
     <p>2026-10-12 &middot; 15 stories, summarized and triaged by AI</p>
   </header>
-  <section class="stats"><div class="stat"><span class="num" style="color:#dc2626">6</span>Critical</div><div class="stat"><span class="num" style="color:#ea580c">8</span>High</div><div class="stat"><span class="num" style="color:#ca8a04">1</span>Medium</div><div class="stat"><span class="num" style="color:#2563eb">0</span>Low</div><div class="stat"><span class="num" style="color:#6b7280">0</span>Info</div></section>
+  <section class="stats"><div class="stat"><span class="num" style="color:#dc2626">3</span>Critical</div><div class="stat"><span class="num" style="color:#ea580c">2</span>High</div><div class="stat"><span class="num" style="color:#ca8a04">4</span>Medium</div><div class="stat"><span class="num" style="color:#2563eb">1</span>Low</div><div class="stat"><span class="num" style="color:#6b7280">5</span>Info</div></section>
   
   <article class="card" style="border-left-color:#dc2626">
     <div class="meta">
@@ -48,7 +48,7 @@
       <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
     </div>
     <h2><a href="https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html" target="_blank" rel="noopener noreferrer">Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch</a></h2>
-    <p>Threat actors launched 135 exploitation attempts targeting a critical pre-authenticated SSRF vulnerability in SonicWall SMA 1000 appliances shortly after disclosure. This matters because the flaw carries a maximum CVSS score of 10.0 and allows remote attackers to compromise vulnerable systems before patches are applied.</p>
+    <p>Threat actors launched 135 exploitation attempts against a critical pre-authenticated SSRF vulnerability in SonicWall Secure Mobile Access 1000 appliances shortly after disclosure. This flaw allows remote attackers to force the appliance into making unauthorized requests, posing a severe risk to defenders.</p>
     <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-102255" target="_blank" rel="noopener noreferrer">CVE-2026-102255</a><span class="tag">SonicWall</span></div>
   </article>
   <article class="card" style="border-left-color:#dc2626">
@@ -57,17 +57,8 @@
       <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
     </div>
     <h2><a href="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html" target="_blank" rel="noopener noreferrer">Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE</a></h2>
-    <p>Attackers are actively exploiting a maximum-severity vulnerability in the Bricksforge WordPress plugin. The flaw allows unauthenticated attackers to achieve remote code execution by uploading and executing arbitrary PHP code.</p>
-    <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-85097" target="_blank" rel="noopener noreferrer">CVE-2026-85097</a><span class="tag">Bricksforge</span><span class="tag">WordPress</span></div>
-  </article>
-  <article class="card" style="border-left-color:#dc2626">
-    <div class="meta">
-      <span class="sev" style="background:#dc2626">Critical</span>
-      <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
-    </div>
-    <h2><a href="https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/" target="_blank" rel="noopener noreferrer">Ledger confirms spy chip implant behind wallet crypto thefts</a></h2>
-    <p>Hardware wallet manufacturer Ledger confirmed that devices distributed by a Southeast Asian reseller were compromised with a physical spy chip implant. This malicious hardware modification successfully drained cryptocurrency funds from unsuspecting users&#x27; wallets.</p>
-    <div class="tags"><span class="tag">Ledger</span><span class="tag">CryptoBilis</span></div>
+    <p>Attackers are actively exploiting a maximum-severity remote code execution flaw in the Bricksforge plugin for WordPress. The vulnerability allows unauthenticated attackers to upload and execute arbitrary PHP code, posing a critical risk to vulnerable websites.</p>
+    <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-85097" target="_blank" rel="noopener noreferrer">CVE-2026-85097</a><span class="tag">Bricksforge</span></div>
   </article>
   <article class="card" style="border-left-color:#dc2626">
     <div class="meta">
@@ -75,35 +66,8 @@
       <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
     </div>
     <h2><a href="https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/" target="_blank" rel="noopener noreferrer">GitLab warns of max severity code execution vulnerability</a></h2>
-    <p>GitLab has warned users to immediately patch a maximum-severity code execution vulnerability in the CI/CD Regular Expression Compiler. This flaw allows remote attackers to run arbitrary code on targeted instances, posing a severe risk to system integrity.</p>
+    <p>GitLab has issued a warning for users to immediately patch a maximum-severity remote code execution vulnerability located in the CI/CD Regular Expression Compiler. This flaw allows remote attackers to execute arbitrary code on vulnerable instances, posing a severe risk to defenders.</p>
     <div class="tags"><span class="tag">GitLab</span></div>
-  </article>
-  <article class="card" style="border-left-color:#dc2626">
-    <div class="meta">
-      <span class="sev" style="background:#dc2626">Critical</span>
-      <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
-    </div>
-    <h2><a href="https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/" target="_blank" rel="noopener noreferrer">Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation</a></h2>
-    <p>Dutch police arrested a 23-year-old convicted cybercriminal suspected of assisting the ShinyHunters hacking group with data thefts and extortions. Following the arrest, remaining members escalated their attacks by stealing sensitive data from the FBI and extorting the Cl0p ransomware group.</p>
-    <div class="tags"><span class="tag">ShinyHunters</span><span class="tag">FBI</span><span class="tag">Cl0p</span></div>
-  </article>
-  <article class="card" style="border-left-color:#dc2626">
-    <div class="meta">
-      <span class="sev" style="background:#dc2626">Critical</span>
-      <span>Breach</span><span>&middot;</span><span>Krebs on Security</span>
-    </div>
-    <h2><a href="https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/" target="_blank" rel="noopener noreferrer">U.S. Soldier Gets 70 Months in Prison for AT&amp;T, Verizon Extortions</a></h2>
-    <p>A U.S. Army soldier was sentenced to 70 months in federal prison and ordered to pay restitution for hacking major telecommunications companies. The breach compromised the mobile call and text metadata of over 100 million AT&amp;T customers.</p>
-    <div class="tags"><span class="tag">AT&amp;T</span><span class="tag">Verizon</span></div>
-  </article>
-  <article class="card" style="border-left-color:#ea580c">
-    <div class="meta">
-      <span class="sev" style="background:#ea580c">High</span>
-      <span>Threat Actor</span><span>&middot;</span><span>The Hacker News</span>
-    </div>
-    <h2><a href="https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html" target="_blank" rel="noopener noreferrer">⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More</a></h2>
-    <p>Attackers quickly weaponized a newly disclosed security flaw within hours of its release, outpacing defenders&#x27; response times. Meanwhile, other incidents involved compromised secure connections and suspicious activities surrounding ransomware remediation services.</p>
-    <div class="tags"></div>
   </article>
   <article class="card" style="border-left-color:#ea580c">
     <div class="meta">
@@ -111,7 +75,7 @@
       <span>Breach</span><span>&middot;</span><span>The Hacker News</span>
     </div>
     <h2><a href="https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html" target="_blank" rel="noopener noreferrer">Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports</a></h2>
-    <p>Ledger has paused sales through reseller CryptoBilis after users in Southeast Asia reported stolen cryptocurrency funds linked to modified hardware. The incident highlights supply chain risks where unauthorized hardware implants can lead to significant financial losses for consumers.</p>
+    <p>Ledger has paused sales through reseller CryptoBilis after investigating reports of stolen funds in Southeast Asia linked to hardware wallets containing unauthorized hardware implants. This incident highlights the supply chain risks associated with third-party resellers, resulting in significant financial losses for users.</p>
     <div class="tags"><span class="tag">Ledger</span><span class="tag">CryptoBilis</span></div>
   </article>
   <article class="card" style="border-left-color:#ea580c">
@@ -119,63 +83,99 @@
       <span class="sev" style="background:#ea580c">High</span>
       <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
     </div>
-    <h2><a href="https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/" target="_blank" rel="noopener noreferrer">Cyberattack shuts down refrigerators at French supermarkets</a></h2>
-    <p>Attackers remotely defrosted refrigerators at multiple French supermarket chains by targeting Danfoss refrigeration controllers overnight. This incident matters because it highlights the vulnerability of physical infrastructure and IoT devices in supply chains to remote cyberattacks.</p>
-    <div class="tags"><span class="tag">Danfoss</span></div>
-  </article>
-  <article class="card" style="border-left-color:#ea580c">
-    <div class="meta">
-      <span class="sev" style="background:#ea580c">High</span>
-      <span>Malware</span><span>&middot;</span><span>BleepingComputer</span>
-    </div>
-    <h2><a href="https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/" target="_blank" rel="noopener noreferrer">Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption</a></h2>
-    <p>Researchers have discovered AvisLoader, a new Windows malware loader that utilizes encrypted peer-to-peer communications and ClickFix delivery to resist infrastructure disruption. The malware employs shortcut-based persistence and remote command execution to compromise systems.</p>
-    <div class="tags"><span class="tag">Windows</span></div>
-  </article>
-  <article class="card" style="border-left-color:#ea580c">
-    <div class="meta">
-      <span class="sev" style="background:#ea580c">High</span>
-      <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
-    </div>
-    <h2><a href="https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/" target="_blank" rel="noopener noreferrer">Retail giant Ahold Delhaize takes systems offline after cyberattack</a></h2>
-    <p>Retail giant Ahold Delhaize took some of its network systems offline after detecting a cybersecurity incident. This incident matters because it disrupts operations at one of the world&#x27;s largest food retail chains, highlighting ongoing threats to critical supply chain infrastructure.</p>
-    <div class="tags"><span class="tag">Ahold Delhaize</span></div>
-  </article>
-  <article class="card" style="border-left-color:#ea580c">
-    <div class="meta">
-      <span class="sev" style="background:#ea580c">High</span>
-      <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
-    </div>
-    <h2><a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/" target="_blank" rel="noopener noreferrer">FBI Arrests Executive at Ransomware Negotiation Firm</a></h2>
-    <p>The FBI arrested the co-founder of a Canadian cybersecurity and ransomware negotiation firm in connection with the ShinyHunters hacking group. This development is significant as the group allegedly stole sensitive data regarding thousands of FBI agents.</p>
-    <div class="tags"><span class="tag">FBI</span><span class="tag">ShinyHunters</span></div>
-  </article>
-  <article class="card" style="border-left-color:#ea580c">
-    <div class="meta">
-      <span class="sev" style="background:#ea580c">High</span>
-      <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
-    </div>
-    <h2><a href="https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/" target="_blank" rel="noopener noreferrer">ShinyHunters Extorted Boeing Spin-off Prior to Arrests</a></h2>
-    <p>A suspected leader of the ShinyHunters extortion group, known as &quot;Rey,&quot; has been detained by authorities and is reportedly cooperating with the FBI. The arrest coincided with the group&#x27;s extortion attempt against a business unit recently divested by Boeing.</p>
-    <div class="tags"><span class="tag">Boeing</span><span class="tag">ShinyHunters</span></div>
-  </article>
-  <article class="card" style="border-left-color:#ea580c">
-    <div class="meta">
-      <span class="sev" style="background:#ea580c">High</span>
-      <span>Policy</span><span>&middot;</span><span>Krebs on Security</span>
-    </div>
-    <h2><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/" target="_blank" rel="noopener noreferrer">Data Broker Radaris Loses Domains in Privacy Fight</a></h2>
-    <p>A New Jersey judge ordered data broker Radaris to transfer ownership of its primary domain and over a dozen others to plaintiffs after the company repeatedly ignored privacy law violations involving law enforcement officials. This unprecedented legal enforcement demonstrates severe consequences for data brokers that fail to comply with state privacy mandates regarding the publication of protected personal information.</p>
-    <div class="tags"><span class="tag">Radaris</span></div>
+    <h2><a href="https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/" target="_blank" rel="noopener noreferrer">Ledger confirms spy chip implant behind wallet crypto thefts</a></h2>
+    <p>Ledger confirmed that hardware wallets distributed by a Southeast Asian reseller were intercepted and fitted with a malicious spy chip. This physical modification allowed attackers to compromise devices and drain users&#x27; cryptocurrency wallets.</p>
+    <div class="tags"><span class="tag">Ledger</span><span class="tag">CryptoBilis</span></div>
   </article>
   <article class="card" style="border-left-color:#ca8a04">
     <div class="meta">
       <span class="sev" style="background:#ca8a04">Medium</span>
-      <span>Threat Actor</span><span>&middot;</span><span>The Hacker News</span>
+      <span>Other</span><span>&middot;</span><span>The Hacker News</span>
+    </div>
+    <h2><a href="https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html" target="_blank" rel="noopener noreferrer">⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More</a></h2>
+    <p>This weekly recap highlights rapid exploitation of newly disclosed security flaws within hours of release, alongside issues with rogue certificates and dubious ransomware recovery offers. These events underscore the urgent need for defenders to accelerate patching and maintain rigorous trust verification.</p>
+    <div class="tags"></div>
+  </article>
+  <article class="card" style="border-left-color:#ca8a04">
+    <div class="meta">
+      <span class="sev" style="background:#ca8a04">Medium</span>
+      <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+    </div>
+    <h2><a href="https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/" target="_blank" rel="noopener noreferrer">Cyberattack shuts down refrigerators at French supermarkets</a></h2>
+    <p>Attackers remotely defrosted refrigerators at multiple French supermarket chains by targeting Danfoss refrigeration controllers. This incident highlights the physical security risks posed by vulnerabilities in interconnected industrial IoT devices.</p>
+    <div class="tags"><span class="tag">Danfoss</span></div>
+  </article>
+  <article class="card" style="border-left-color:#ca8a04">
+    <div class="meta">
+      <span class="sev" style="background:#ca8a04">Medium</span>
+      <span>Malware</span><span>&middot;</span><span>BleepingComputer</span>
+    </div>
+    <h2><a href="https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/" target="_blank" rel="noopener noreferrer">Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption</a></h2>
+    <p>Researchers have detailed AvisLoader, a new Windows malware loader that utilizes encrypted peer-to-peer communications and ClickFix delivery to resist disruption. This mechanism enhances threat actor resilience by making command-and-control infrastructure harder to take down.</p>
+    <div class="tags"><span class="tag">Windows</span></div>
+  </article>
+  <article class="card" style="border-left-color:#ca8a04">
+    <div class="meta">
+      <span class="sev" style="background:#ca8a04">Medium</span>
+      <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+    </div>
+    <h2><a href="https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/" target="_blank" rel="noopener noreferrer">Retail giant Ahold Delhaize takes systems offline after cyberattack</a></h2>
+    <p>Retail giant Ahold Delhaize took several internal systems offline following a cybersecurity incident that impacted its network infrastructure. The disruption affects operations at one of the world&#x27;s largest food retail chains, highlighting ongoing supply chain and retail sector vulnerabilities.</p>
+    <div class="tags"><span class="tag">Ahold Delhaize</span></div>
+  </article>
+  <article class="card" style="border-left-color:#2563eb">
+    <div class="meta">
+      <span class="sev" style="background:#2563eb">Low</span>
+      <span>Research</span><span>&middot;</span><span>The Hacker News</span>
     </div>
     <h2><a href="https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html" target="_blank" rel="noopener noreferrer">Bring Your Own Agent: Your Employees&#x27; Assistants Are Already Logged In</a></h2>
-    <p>Personal AI agents are raising significant security and privacy concerns as companies rush to adopt them. Issues such as bots failing to identify themselves and rising privacy violations highlight the risks these tools introduce to corporate environments.</p>
-    <div class="tags"><span class="tag">Amazon</span><span class="tag">Meta</span><span class="tag">Muse</span><span class="tag">Instinct</span></div>
+    <p>Personal AI agents are raising significant privacy and security concerns as they proliferate in the workplace. Companies are struggling to manage these tools, with Amazon blocking Meta&#x27;s Muse for failing to identify as a bot while browsing.</p>
+    <div class="tags"><span class="tag">Amazon</span><span class="tag">Meta</span></div>
+  </article>
+  <article class="card" style="border-left-color:#6b7280">
+    <div class="meta">
+      <span class="sev" style="background:#6b7280">Info</span>
+      <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
+    </div>
+    <h2><a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/" target="_blank" rel="noopener noreferrer">FBI Arrests Executive at Ransomware Negotiation Firm</a></h2>
+    <p>FBI agents arrested the co-founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group investigation. This matters because the group allegedly stole sensitive data regarding thousands of FBI agents.</p>
+    <div class="tags"><span class="tag">FBI</span><span class="tag">ShinyHunters</span></div>
+  </article>
+  <article class="card" style="border-left-color:#6b7280">
+    <div class="meta">
+      <span class="sev" style="background:#6b7280">Info</span>
+      <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
+    </div>
+    <h2><a href="https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/" target="_blank" rel="noopener noreferrer">ShinyHunters Extorted Boeing Spin-off Prior to Arrests</a></h2>
+    <p>Authorities detained a teenager in Jordan suspected of leading the ShinyHunters extortion group, who is now reportedly cooperating with the FBI. The arrest coincided with the group&#x27;s ongoing extortion attempt against a business unit recently divested by Boeing.</p>
+    <div class="tags"><span class="tag">Boeing</span></div>
+  </article>
+  <article class="card" style="border-left-color:#6b7280">
+    <div class="meta">
+      <span class="sev" style="background:#6b7280">Info</span>
+      <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
+    </div>
+    <h2><a href="https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/" target="_blank" rel="noopener noreferrer">Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation</a></h2>
+    <p>Dutch police arrested a 23-year-old former cybercriminal suspected of assisting the ShinyHunters hacking group in data thefts and extortions. In response, remaining ShinyHunters members escalated their attacks by stealing sensitive data from the FBI and extorting the Cl0p ransomware group.</p>
+    <div class="tags"><span class="tag">ShinyHunters</span><span class="tag">FBI</span><span class="tag">Cl0p</span></div>
+  </article>
+  <article class="card" style="border-left-color:#6b7280">
+    <div class="meta">
+      <span class="sev" style="background:#6b7280">Info</span>
+      <span>Policy</span><span>&middot;</span><span>Krebs on Security</span>
+    </div>
+    <h2><a href="https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/" target="_blank" rel="noopener noreferrer">U.S. Soldier Gets 70 Months in Prison for AT&amp;T, Verizon Extortions</a></h2>
+    <p>A U.S. Army soldier was sentenced to 70 months in prison and ordered to pay restitution for hacking major telecommunications companies in 2024. The breach compromised mobile call and text metadata for over 100 million customers.</p>
+    <div class="tags"><span class="tag">AT&amp;T</span><span class="tag">Verizon</span></div>
+  </article>
+  <article class="card" style="border-left-color:#6b7280">
+    <div class="meta">
+      <span class="sev" style="background:#6b7280">Info</span>
+      <span>Policy</span><span>&middot;</span><span>Krebs on Security</span>
+    </div>
+    <h2><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/" target="_blank" rel="noopener noreferrer">Data Broker Radaris Loses Domains in Privacy Fight</a></h2>
+    <p>Consumer data broker Radaris had its primary domains, including radaris.com, ordered transferred to plaintiffs in a lawsuit. The ruling stems from allegations that the company violated a New Jersey privacy law protecting state law enforcement officials&#x27; personal information.</p>
+    <div class="tags"><span class="tag">Radaris</span></div>
   </article>
   <footer>Generated automatically from public RSS feeds. AI summaries can contain
   errors; follow the links for the original reporting.</footer>
