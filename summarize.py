@@ -9,15 +9,17 @@ from openai import OpenAI
 
 from fetch_news import fetch_stories
 
-load_dotenv(encoding="utf-8-sig")   # loads GEMINI_API_KEY from .env
+load_dotenv(encoding="utf-8-sig")   # loads GEMINI_API_KEY from .env (locally only)
 
 api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
-    raise SystemExit("GEMINI_API_KEY not found. Check that .env exists in this folder.")
+    raise SystemExit("GEMINI_API_KEY not found. Check .env locally, or the repo secret on GitHub.")
 
 client = OpenAI(
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
     api_key=api_key,
+    timeout=60,       # give up on any single request after 60 seconds
+    max_retries=2,    # retry briefly on temporary errors, then move on
 )
 
 MODEL = "gemini-3.5-flash-lite"
@@ -70,16 +72,17 @@ def analyze_story(story):
             raise ValueError("no JSON object in the model's reply")
         data = json.loads(match.group())
     except Exception as error:
-        print(f"[!] Analysis failed for: {story['title']} ({error})")
+        print(f"[!] Analysis failed for: {story['title']} ({error})", flush=True)
         data = {}
 
-           # Keep only CVE IDs that are well-formed AND appear in the original text,
+    # Keep only CVE IDs that are well-formed AND appear in the original text,
     # so a model hallucination can never show up as a real-looking CVE
     source_text = f"{story['title']} {story['summary']}".upper()
     cves = [c for c in data.get("cves", [])
             if isinstance(c, str)
             and re.fullmatch(r"CVE-\d{4}-\d{4,}", c)
             and c.upper() in source_text]
+
     return {
         "summary": str(data.get("summary", "Summary unavailable."))[:600],
         "category": data.get("category") if data.get("category") in CATEGORIES else "Other",
@@ -92,7 +95,8 @@ def analyze_story(story):
 def analyze_all():
     """Fetch stories and attach the AI analysis to each one."""
     stories = fetch_stories()
-    for story in stories:
+    for i, story in enumerate(stories, 1):
+        print(f"Analyzing story {i}/{len(stories)}: {story['title'][:70]}", flush=True)
         story.update(analyze_story(story))
         time.sleep(5)   # stay under the free tier's per-minute limit
     return stories

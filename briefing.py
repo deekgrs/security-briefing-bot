@@ -9,8 +9,8 @@ from string import Template
 from summarize import CATEGORIES, SEVERITIES, analyze_all
 
 OUTPUT_DIR = Path("docs")
-COLORS = {"Critical": "#dc2626", "High": "#ea580c", "Medium": "#ca8a04",
-          "Low": "#2563eb", "Info": "#6b7280"}
+COLORS = {"Critical": "#b91c1c", "High": "#c2410c", "Medium": "#a16207",
+          "Low": "#1d4ed8", "Info": "#57534e"}
 
 
 def e(text):
@@ -21,6 +21,11 @@ def e(text):
 def safe_link(url):
     """Allow only web links; blocks javascript: and other dangerous schemes."""
     return url if url.startswith(("https://", "http://")) else "#"
+
+
+def safe_image(url):
+    """Allow only https image URLs; anything else means no picture."""
+    return url if isinstance(url, str) and url.startswith("https://") else ""
 
 
 def sort_by_severity(stories):
@@ -45,61 +50,78 @@ PAGE = Template("""<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Security Briefing - $date</title>
 <style>
-  :root { --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#64748b; --line:#e2e8f0; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#0b1120; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --line:#1f2937; }
-  }
+  :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
+          --serif: Georgia, "Times New Roman", serif; }
   * { box-sizing: border-box; }
   [hidden] { display:none !important; }
   body { margin:0; background:var(--bg); color:var(--text);
-         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.5; }
-  main { max-width:860px; margin:0 auto; padding:32px 16px 64px; }
-  header h1 { margin:0; font-size:28px; }
-  header p { margin:4px 0 0; color:var(--muted); }
-  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:24px 0 16px; }
-  .stat { background:var(--card); border:1px solid var(--line); border-radius:10px;
-          padding:12px; text-align:center; font-size:13px; color:var(--muted); }
-  .stat .num { display:block; font-size:24px; font-weight:700; }
-  .filters { background:var(--card); border:1px solid var(--line); border-radius:10px;
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.55; }
+  main { max-width:920px; margin:0 auto; padding:28px 16px 64px; }
+
+  .masthead { text-align:center; border-bottom:3px double var(--text); padding-bottom:14px; }
+  .kicker { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  .masthead h1 { font-family:var(--serif); font-size:44px; line-height:1.1; margin:6px 0 8px;
+                 letter-spacing:-.01em; }
+  .dateline { margin:0; font-size:14px; color:var(--muted); border-top:1px solid var(--line);
+              padding-top:8px; display:inline-block; }
+
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:20px 0 14px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:8px;
+          padding:10px; text-align:center; font-size:13px; color:var(--muted); }
+  .stat .num { display:block; font-family:var(--serif); font-size:26px; font-weight:700; }
+
+  .filters { background:var(--card); border:1px solid var(--line); border-radius:8px;
              padding:12px 14px; margin-bottom:12px; }
   .filter-row { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
   .filter-row + .filter-row { margin-top:8px; }
   .filter-label { font-size:12px; font-weight:600; color:var(--muted); width:72px;
-                  text-transform:uppercase; letter-spacing:.04em; }
+                  text-transform:uppercase; letter-spacing:.06em; }
   .chip { font:inherit; font-size:13px; cursor:pointer; display:inline-flex; align-items:center;
-          gap:6px; border:1px solid var(--line); background:transparent; color:var(--text);
+          gap:6px; border:1px solid var(--line); background:var(--card); color:var(--text);
           border-radius:999px; padding:3px 11px; }
   .chip:hover { border-color:var(--muted); }
-  .chip.active { background:var(--text); color:var(--bg); border-color:var(--text); }
+  .chip.active { background:var(--text); color:#fff; border-color:var(--text); }
   .chip .n { font-size:11px; opacity:.7; }
   .chip .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
   .chip:disabled { opacity:.35; cursor:not-allowed; border-color:var(--line); }
   .showing { font-size:13px; color:var(--muted); margin:0 0 12px; }
   .empty { text-align:center; color:var(--muted); padding:32px; border:1px dashed var(--line);
-           border-radius:10px; }
-  .card { background:var(--card); border:1px solid var(--line); border-left:5px solid;
-          border-radius:10px; padding:16px 18px; margin-bottom:14px; }
-  .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:12px; color:var(--muted); }
-  .sev { color:#fff; font-weight:700; padding:2px 8px; border-radius:999px; }
-  .card h2 { font-size:18px; margin:8px 0 6px; }
+           border-radius:8px; }
+
+  .card { display:grid; grid-template-columns:1fr; gap:18px; background:var(--card);
+          border:1px solid var(--line); border-top:4px solid; border-radius:8px;
+          padding:16px 18px; margin-bottom:14px; }
+  .card:has(.thumb) { grid-template-columns:1fr 200px; }
+  .thumb { width:200px; height:134px; object-fit:cover; border-radius:6px;
+           background:var(--line); display:block; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:12px;
+          color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .sev { color:#fff; font-weight:700; padding:2px 8px; border-radius:4px; }
+  .card h2 { font-family:var(--serif); font-size:21px; line-height:1.25; margin:8px 0 6px; }
   .card h2 a { color:inherit; text-decoration:none; }
   .card h2 a:hover { text-decoration:underline; }
-  .card p { margin:0 0 10px; }
+  .card p { margin:0 0 10px; color:#3f3a36; }
   .tags { display:flex; flex-wrap:wrap; gap:6px; }
-  .tag { font-size:12px; border:1px solid var(--line); border-radius:6px; padding:1px 7px; color:var(--muted); }
-  a.cve { color:#dc2626; text-decoration:none; font-weight:600; }
-  footer { margin-top:32px; font-size:13px; color:var(--muted); }
-  @media (max-width:600px) {
+  .tag { font-size:12px; border:1px solid var(--line); border-radius:4px; padding:1px 7px; color:var(--muted); }
+  a.cve { color:#b91c1c; text-decoration:none; font-weight:600; }
+  footer { margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
+           font-size:13px; color:var(--muted); }
+
+  @media (max-width:640px) {
+    .masthead h1 { font-size:32px; }
     .stats { grid-template-columns:repeat(3,1fr); }
     .filter-label { width:100%; }
+    .card:has(.thumb) { grid-template-columns:1fr; }
+    .thumb { width:100%; height:180px; order:-1; }
   }
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <h1>Daily Security Briefing</h1>
-    <p>$date &middot; $count stories, summarized and triaged by AI</p>
+  <header class="masthead">
+    <div class="kicker">AI-curated &middot; Updated every morning</div>
+    <h1>The Daily Security Briefing</h1>
+    <p class="dateline">$date &middot; $count stories, summarized and triaged by AI</p>
   </header>
   <section class="stats">$stats</section>
 
@@ -111,8 +133,8 @@ PAGE = Template("""<!doctype html>
   <p class="empty" id="empty" hidden>No stories match these filters.</p>
 
   $cards
-  <footer>Generated automatically from public RSS feeds. AI summaries can contain
-  errors; follow the links for the original reporting.</footer>
+  <footer>Generated automatically from public RSS feeds. Images and stories belong to their
+  publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>
 </main>
 <script>
 (function () {
@@ -206,16 +228,28 @@ def render_html(stories, date_str):
             for c in s["cves"]
         )
         affected = "".join(f'<span class="tag">{e(a)}</span>' for a in s["affected"])
+
+        # Picture from the feed. If it fails to load, it removes itself and the
+        # card falls back to a text-only layout. no-referrer stops the image host
+        # from seeing which page the visitor came from.
+        image_url = safe_image(s.get("image", ""))
+        image = (f'<img class="thumb" src="{e(image_url)}" alt="" loading="lazy" '
+                 f'referrerpolicy="no-referrer" onerror="this.remove()">'
+                 if image_url else "")
+
         cards.append(f"""
-  <article class="card" style="border-left-color:{color}"
+  <article class="card" style="border-top-color:{color}"
            data-severity="{e(s['severity'])}" data-category="{e(s['category'])}">
-    <div class="meta">
-      <span class="sev" style="background:{color}">{e(s['severity'])}</span>
-      <span>{e(s['category'])}</span><span>&middot;</span><span>{e(s['source'])}</span>
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:{color}">{e(s['severity'])}</span>
+        <span>{e(s['category'])}</span><span>&middot;</span><span>{e(s['source'])}</span>
+      </div>
+      <h2><a href="{e(safe_link(s['link']))}" target="_blank" rel="noopener noreferrer">{e(s['title'])}</a></h2>
+      <p>{e(s['summary'])}</p>
+      <div class="tags">{cves}{affected}</div>
     </div>
-    <h2><a href="{e(safe_link(s['link']))}" target="_blank" rel="noopener noreferrer">{e(s['title'])}</a></h2>
-    <p>{e(s['summary'])}</p>
-    <div class="tags">{cves}{affected}</div>
+    {image}
   </article>""")
 
     return PAGE.substitute(date=e(date_str), count=len(stories), stats=stats,
