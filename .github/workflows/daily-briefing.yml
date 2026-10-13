@@ -2,8 +2,9 @@ name: Daily Security Briefing
 
 on:
   schedule:
-    - cron: "17 11 * * *"   # 11:17 UTC = 7:17 AM Eastern
-  workflow_dispatch:          # adds a "Run workflow" button for manual runs
+    - cron: "37 8 * * *"    # main run:   4:37 AM EDT / 3:37 AM EST
+    - cron: "37 10 * * *"   # backup run: 6:37 AM EDT / 5:37 AM EST (skips if already done)
+  workflow_dispatch:          # "Run workflow" button for manual runs
 
 permissions:
   contents: write             # least privilege: only enough to commit the briefing
@@ -19,20 +20,32 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Check whether today's briefing already exists
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "docs/data/$(date -u +%F).json" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Today's briefing is already published. Skipping this run."
+          fi
+
       - uses: actions/setup-python@v6
+        if: steps.check.outputs.skip != 'true'
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Install dependencies
+        if: steps.check.outputs.skip != 'true'
         run: pip install -r requirements.txt
 
       - name: Generate briefing
+        if: steps.check.outputs.skip != 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python briefing.py
 
       - name: Commit briefing
+        if: steps.check.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
