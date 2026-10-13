@@ -4,7 +4,7 @@
     "title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
     "link": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
     "published": "Tue, 13 Oct 2026 23:03:11 +0530",
-    "summary": "An attacker chained three zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to achieve unauthenticated root access. Ivanti has patched two of the flaws, while a fix for the third remains pending.",
+    "summary": "An attacker chained three zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to achieve unauthenticated root access. While patches have been released for two of the flaws, a fix for the third remains pending.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZSH26NsXmSsQGaAbhNyJLMaBQKFCmabIbFZ_yi2sUGXjHQOVztQEQfXLarEAx1Fl9lRwGAryBE4zZEooJ4cochODcB4x8wQnPl3MRWiyBcpyEV6i8VPxvwcLHmShQVZVhuOcTjMXRhHAlx4Y0Uo85c74EVU4cea84YgXju02I9jlNzcGOFtLfa_am82Q/s1600/ivanti-hack.jpg",
     "category": "Vulnerability",
     "severity": "Critical",
@@ -18,12 +18,13 @@
     "title": "SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft",
     "link": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
     "published": "Tue, 13 Oct 2026 22:58:50 +0530",
-    "summary": "SAP has disclosed a critical vulnerability in its Cloud SDK for Python that allows attackers to steal OAuth2 client credentials from multi-tenant applications on the SAP Business Technology Platform. This flaw enables unauthorized access to sensitive service data if an attacker successfully controls the tenant subdomain.",
+    "summary": "SAP disclosed a critical vulnerability in its Cloud SDK for Python that allows attackers to steal OAuth2 client credentials from multi-tenant applications. The flaw impacts SAP Business Technology Platform (BTP) services when an attacker can control the tenant subdomain.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKBZR5elkBVKRcFO6lyde7XYDVO73IBxDvnx9-UkLst3GhVFuK8Yz3QBVIIEJABDjZuJMn8tyf7RLLPIRV8J8qe-OUULjnQRaQNyWricSsOjlKJoyYu8WOvs5PxBWQpzuiq8hlDlOY7zY-qIYDgQ6NFuifS5GbHbnLBET0OTfmsMC8797Mo5un9_ECyg8/s1600/sap-hacker.jpg",
     "category": "Vulnerability",
     "severity": "Critical",
     "cves": [],
     "affected": [
+      "SAP",
       "SAP Cloud SDK for Python",
       "SAP Business Technology Platform"
     ]
@@ -33,12 +34,13 @@
     "title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
     "link": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
     "published": "Tue, 13 Oct 2026 11:45:50 -0400",
-    "summary": "Ivanti is urging customers to immediately patch an actively exploited zero-day vulnerability affecting its Connect Secure remote access gateway. This flaw poses a critical risk to organizations relying on the affected remote access infrastructure for secure connectivity.",
+    "summary": "Ivanti is urging customers to immediately patch an actively exploited zero-day vulnerability affecting its Connect Secure remote access gateway. This critical flaw poses an immediate risk to defenders as it is currently being leveraged in live attacks.",
     "image": "",
     "category": "Vulnerability",
     "severity": "Critical",
     "cves": [],
     "affected": [
+      "Ivanti",
       "Ivanti Connect Secure"
     ]
   },
@@ -47,7 +49,7 @@
     "title": "Docker Fixes Critical Two-Year-Old Hub Flaw That Let One User Push Images as Another",
     "link": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
     "published": "Tue, 13 Oct 2026 23:33:18 +0530",
-    "summary": "Docker fixed a two-year-old vulnerability in Docker Hub that allowed unauthorized users to push, pull, or delete container images belonging to other accounts. While the flaw posed significant risks to software supply chain integrity, Docker reports no evidence of active exploitation.",
+    "summary": "Docker fixed a two-year-old vulnerability in Docker Hub that allowed unauthorized users to push, pull, or delete container images belonging to other accounts. While the flaw posed a significant risk to supply chain integrity, Docker reports no evidence of active exploitation.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEile879Rmv8zAdU5PMclUp5RnNGDb3h1u3aVZ-VigGjnO0RFcyCQ03s7_lIqMGDiow5ilPumq3B2_bsvewqRlepch4lFwLvOUEDQZPYd9Vv8untJVZFmrv5Zhgvj54cs4J_vCYW4GVY-XsQl7SXD-yrXbED6KpiWbTq-kL_0aNwef3xjV3cBGQ3dsodqAM/s1600/dock.jpg",
     "category": "Vulnerability",
     "severity": "High",
@@ -62,7 +64,7 @@
     "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
     "link": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
     "published": "Tue, 13 Oct 2026 21:48:18 +0530",
-    "summary": "GitHub has implemented a 48-hour expiration policy for unvalidated npm trusted publishing configurations to prevent attackers from hijacking packages without credentials. This security hardening protects the supply chain by ensuring configurations are validated upon their first successful publish.",
+    "summary": "GitHub has implemented a 48-hour expiration policy for unvalidated npm trusted publishing configurations to prevent attackers from hijacking packages without credentials. This security tightening comes after researchers discovered a vulnerability that left over 1,500 packages at risk.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3aDWaWT6PmRDL9d6tHPDisxclb_Ak7YZIxuS02EUFvNaWrc4_UKwUqW0RI1KT3r8zsneOguD6b85yg8mf3gAzZZOGuLi-mXckG_yzwmXXb3IchTBSVeRvPlUo7QU4Kp4yiM6QqPshmo4p0GQ55XZPTEDc0DZn9N84S_ZibZ4rkXuhZ3OvoHNCYH-wk0k-/s1600/git-npm.jpg",
     "category": "Vulnerability",
     "severity": "High",
@@ -77,10 +79,10 @@
     "title": "Microsoft: Windows 11 24H2 Home and Pro reached end of support",
     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
     "published": "Tue, 13 Oct 2026 15:04:38 -0400",
-    "summary": "Microsoft announced that Windows 11 24H2 Home and Pro editions have reached their end of support. This means these operating system versions will no longer receive monthly security or non-security updates, leaving systems vulnerable if they are not upgraded.",
+    "summary": "Microsoft announced that Windows 11 24H2 Home and Pro editions have reached their end of support, meaning they will no longer receive monthly security updates. This matters because systems running these versions will become increasingly vulnerable to newly discovered security threats over time.",
     "image": "",
     "category": "Policy",
-    "severity": "High",
+    "severity": "Medium",
     "cves": [],
     "affected": [
       "Microsoft",
@@ -89,16 +91,16 @@
   },
   {
     "source": "BleepingComputer",
-    "title": "Windows 11 KB5127648 & KB5126653 cumulative updates released",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127648-and-kb5126653-cumulative-updates-released/",
-    "published": "Tue, 13 Oct 2026 13:49:38 -0400",
-    "summary": "Microsoft has released the Patch Tuesday cumulative updates KB5127648 and KB5126653 for Windows 11 to address security vulnerabilities, bug fixes, and new features. Applying these updates is essential for maintaining system security and stability.",
+    "title": "UK Housing Ombudsman Service investigates 'security incident'",
+    "link": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
+    "published": "Tue, 13 Oct 2026 14:19:44 -0400",
+    "summary": "The U.K. Housing Ombudsman Service is investigating a third-party IT security incident that impacted its case management system. This disruption affects the organization's ability to process cases and highlights ongoing risks associated with third-party vendor security.",
     "image": "",
-    "category": "Vulnerability",
-    "severity": "High",
+    "category": "Breach",
+    "severity": "Medium",
     "cves": [],
     "affected": [
-      "Windows 11"
+      "UK Housing Ombudsman Service"
     ]
   },
   {
@@ -106,10 +108,10 @@
     "title": "TFG London cyberattack disrupts systems at Hobbs and Whistles retailers",
     "link": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/",
     "published": "Tue, 13 Oct 2026 12:44:18 -0400",
-    "summary": "TFG London suffered a cybersecurity incident that disrupted IT systems for premium fashion brands Phase Eight, Hobbs, and Whistles. The attack highlights ongoing threats to retail sector supply chains and internal operations.",
+    "summary": "TFG London detected a cybersecurity incident that disrupted IT systems across several of its premium fashion brands, including Phase Eight, Hobbs, and Whistles. The attack highlights ongoing threats to retail sector infrastructure and customer operations.",
     "image": "",
     "category": "Breach",
-    "severity": "High",
+    "severity": "Medium",
     "cves": [],
     "affected": [
       "TFG London",
@@ -120,16 +122,16 @@
   },
   {
     "source": "BleepingComputer",
-    "title": "UK Housing Ombudsman Service investigates 'security incident'",
-    "link": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
-    "published": "Tue, 13 Oct 2026 14:19:44 -0400",
-    "summary": "The U.K. Housing Ombudsman Service is investigating a third-party IT security incident that impacted its case management system. This disruption affects critical case handling operations, highlighting ongoing risks associated with third-party vendor security.",
+    "title": "Windows 11 KB5127648 & KB5126653 cumulative updates released",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127648-and-kb5126653-cumulative-updates-released/",
+    "published": "Tue, 13 Oct 2026 13:49:38 -0400",
+    "summary": "Microsoft has released the Patch Tuesday cumulative updates KB5127648 and KB5126653 for Windows 11 to address security vulnerabilities, bug fixes, and new features. Applying these updates is essential for maintaining system security and stability.",
     "image": "",
-    "category": "Breach",
-    "severity": "Medium",
+    "category": "Policy",
+    "severity": "Low",
     "cves": [],
     "affected": [
-      "U.K. Housing Ombudsman Service"
+      "Microsoft Windows 11"
     ]
   },
   {
@@ -137,14 +139,14 @@
     "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
     "link": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
     "published": "Tue, 13 Oct 2026 23:50:57 +0530",
-    "summary": "Anthropic warns that small AI models could soon develop the capability to self-replicate and form autonomous IoT botnets. This presents a significant defense challenge due to the lack of a centralized shutdown point.",
+    "summary": "Anthropic warns that small artificial intelligence models could soon develop the capability to form self-replicating worm botnets on IoT devices. This poses a significant defense challenge as these botnets would lack a centralized kill switch.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigX1U6rARsREVvdJOVd0vGWuybd8470_G2xcVMyp0u_rHrimpzBkv2-Qyo_qcx_9BpQOlndrW-P1tpya8dQwnEscYsg1NYPq3kGXKayoosc20QHDXRyadNlRMTuSa2KKSaI0qoq4gO415S3LTux5cPcUieRF6PW4xzeILW-D80v3jkwWRni7y51t4Y6Hnu/s1600/ai-botnet.jpg",
     "category": "Research",
     "severity": "Info",
     "cves": [],
     "affected": [
       "IoT devices",
-      "Smart ovens",
+      "smart ovens",
       "Android TV boxes"
     ]
   },
@@ -153,9 +155,9 @@
     "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
     "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
     "published": "Sat, 10 Oct 2026 00:17:42 +0000",
-    "summary": "The FBI arrested the co-founder of a Canadian ransomware negotiation firm in connection with the ShinyHunters hacking group investigation. This matters because the group allegedly stole sensitive data regarding thousands of FBI agents.",
+    "summary": "The FBI arrested the co-founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group investigation. The group recently stole sensitive data regarding thousands of agents from the FBI.",
     "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/dubrovsky-li.png",
-    "category": "Other",
+    "category": "Threat Actor",
     "severity": "Info",
     "cves": [],
     "affected": [
@@ -168,13 +170,14 @@
     "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
     "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
     "published": "Wed, 07 Oct 2026 13:48:45 +0000",
-    "summary": "Law enforcement detained a teenager suspected of leading the ShinyHunters extortion group, who is now reportedly cooperating with the FBI. The arrest coincided with the group's extortion attempt against a recently divested business unit of Boeing.",
+    "summary": "Law enforcement detained a teenager suspected of leading the ShinyHunters extortion group, who is reportedly cooperating with the FBI. The arrest coincided with the group's attempt to extort a business unit recently divested by Boeing.",
     "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/Jeppesen.png",
     "category": "Threat Actor",
     "severity": "Info",
     "cves": [],
     "affected": [
-      "Boeing"
+      "Boeing",
+      "ShinyHunters"
     ]
   },
   {
@@ -182,7 +185,7 @@
     "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
     "link": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
     "published": "Mon, 28 Sep 2026 15:08:57 +0000",
-    "summary": "Dutch police arrested a 23-year-old former cybercriminal suspected of assisting the ShinyHunters hacking group with data thefts and extortions. In response, remaining ShinyHunters members escalated their attacks by stealing sensitive FBI data and extorting the Cl0p ransomware group.",
+    "summary": "Dutch police arrested a 23-year-old former cybercriminal suspected of aiding the ShinyHunters hacking group in data thefts and extortions. In response to the arrest, remaining members of the group escalated their attacks by targeting the FBI and extorting the Cl0p ransomware group.",
     "image": "https://krebsonsecurity.com/wp-content/uploads/2026/09/umbreon-nl-rf.png",
     "category": "Other",
     "severity": "Info",
@@ -198,9 +201,9 @@
     "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
     "link": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
     "published": "Fri, 25 Sep 2026 21:44:40 +0000",
-    "summary": "A U.S. Army soldier was sentenced to 70 months in federal prison and ordered to pay restitution for hacking major telecommunications companies. The breach compromised metadata for over 100 million customers, highlighting insider threat risks.",
+    "summary": "A U.S. Army soldier was sentenced to 70 months in federal prison for hacking major telecommunications companies and stealing metadata for over 100 million customers. The case highlights insider threats and the severe consequences for compromising critical telecommunications infrastructure.",
     "image": "https://krebsonsecurity.com/wp-content/uploads/2024/12/camwagenius-selfie.png",
-    "category": "Other",
+    "category": "Policy",
     "severity": "Info",
     "cves": [],
     "affected": [
@@ -213,7 +216,7 @@
     "title": "Data Broker Radaris Loses Domains in Privacy Fight",
     "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
     "published": "Wed, 16 Sep 2026 18:14:22 +0000",
-    "summary": "Consumer data broker Radaris had its primary domains, including radaris.com, seized by a judge and transferred to plaintiffs in a lawsuit. This action resulted from the company's refusal to comply with a New Jersey privacy law protecting the personal information of law enforcement officials.",
+    "summary": "Consumer data broker Radaris had its primary domain and more than a dozen others seized by a judge after repeatedly ignoring removal requests and violating a New Jersey privacy law protecting law enforcement officials. This unprecedented legal enforcement highlights growing accountability and legal risks for data brokers operating without regard to state privacy statutes.",
     "image": "https://krebsonsecurity.com/wp-content/uploads/2024/06/radaris-home.png",
     "category": "Policy",
     "severity": "Info",
