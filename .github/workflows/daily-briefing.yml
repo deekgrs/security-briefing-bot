@@ -50,5 +50,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs
-          git diff --staged --quiet || git commit -m "Briefing for $(date -u +%F)"
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Briefing for $(date -u +%F)"
+          # Pick up anything pushed while this job ran. If the same docs file
+          # changed on both sides, keep the bot's freshly generated version.
+          git pull --rebase -X theirs origin main
           git push
