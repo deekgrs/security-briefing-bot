@@ -1,60 +1,99 @@
 [
   {
+    "source": "BleepingComputer",
+    "title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+    "published": "Tue, 13 Oct 2026 15:56:09 -0400",
+    "published_ts": 1791921369,
+    "summary": "Microsoft's October 2026 Patch Tuesday addresses a record-breaking 1,411 vulnerabilities, including three zero-day flaws with one actively exploited. Administrators should apply the latest updates to secure Windows and other affected Microsoft products.",
+    "image": "",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Microsoft releases Windows 10 KB5126657 extended security update",
+        "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/"
+      },
+      {
+        "source": "BleepingComputer",
+        "title": "Windows 11 KB5127648 & KB5126653 cumulative updates released",
+        "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127648-and-kb5126653-cumulative-updates-released/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 10",
+      "Windows 11"
+    ],
+    "action": "Apply the October 2026 Patch Tuesday security updates, including KB5126657, KB5127648, and KB5126653, to address the vulnerabilities."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Docker Hub flaw let attackers impersonate users, tamper with images",
+    "link": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
+    "published": "Tue, 13 Oct 2026 11:20:20 -0400",
+    "published_ts": 1791904820,
+    "summary": "Docker disclosed a critical vulnerability in Docker Hub that allowed attackers to use personal access tokens to access, push, pull, or delete container repositories belonging to other users. Docker has already fixed the flaw and reported no evidence of active exploitation.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEile879Rmv8zAdU5PMclUp5RnNGDb3h1u3aVZ-VigGjnO0RFcyCQ03s7_lIqMGDiow5ilPumq3B2_bsvewqRlepch4lFwLvOUEDQZPYd9Vv8untJVZFmrv5Zhgvj54cs4J_vCYW4GVY-XsQl7SXD-yrXbED6KpiWbTq-kL_0aNwef3xjV3cBGQ3dsodqAM/s1600/dock.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Docker Fixes Critical Two-Year-Old Hub Flaw That Let One User Push Images as Another",
+        "link": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-105445"
+    ],
+    "affected": [
+      "Docker Hub"
+    ],
+    "action": "Review container repositories for unauthorized changes and ensure account security practices are up to date, as Docker has already fixed the issue on their end."
+  },
+  {
     "source": "The Hacker News",
     "title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
     "link": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
     "published": "Tue, 13 Oct 2026 23:03:11 +0530",
-    "summary": "An attacker chained three zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to achieve unauthenticated root access. Ivanti has patched two of the flaws, but a fix for the third remains pending.",
+    "published_ts": 1791912791,
+    "summary": "An attacker chained three zero-day vulnerabilities in Ivanti Connect Secure to gain unauthenticated root access, and the vendor has released patches for only two of the flaws. Because these flaws are actively exploited, affected organizations face significant risk while awaiting a patch for the third bug.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZSH26NsXmSsQGaAbhNyJLMaBQKFCmabIbFZ_yi2sUGXjHQOVztQEQfXLarEAx1Fl9lRwGAryBE4zZEooJ4cochODcB4x8wQnPl3MRWiyBcpyEV6i8VPxvwcLHmShQVZVhuOcTjMXRhHAlx4Y0Uo85c74EVU4cea84YgXju02I9jlNzcGOFtLfa_am82Q/s1600/ivanti-hack.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
+        "link": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/"
+      }
+    ],
     "category": "Vulnerability",
     "severity": "Critical",
     "cves": [],
     "affected": [
       "Ivanti Connect Secure"
-    ]
+    ],
+    "action": "Update Ivanti Connect Secure to the patched release immediately and monitor systems for signs of compromise, noting that a fix for the third vulnerability is still pending."
   },
   {
     "source": "The Hacker News",
     "title": "SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft",
     "link": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
     "published": "Tue, 13 Oct 2026 22:58:50 +0530",
-    "summary": "SAP disclosed a critical vulnerability in its Cloud SDK for Python that allows attackers to steal OAuth2 client credentials from multi-tenant applications on the SAP Business Technology Platform. This flaw poses a severe risk as it impacts authentication security for cloud applications using the affected SDK.",
+    "published_ts": 1791912530,
+    "summary": "SAP disclosed a critical flaw in its Cloud SDK for Python that allows attackers to steal OAuth2 client credentials from multi-tenant applications on the SAP Business Technology Platform. This vulnerability poses a significant risk as it affects authentication security for applications utilizing the SDK.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKBZR5elkBVKRcFO6lyde7XYDVO73IBxDvnx9-UkLst3GhVFuK8Yz3QBVIIEJABDjZuJMn8tyf7RLLPIRV8J8qe-OUULjnQRaQNyWricSsOjlKJoyYu8WOvs5PxBWQpzuiq8hlDlOY7zY-qIYDgQ6NFuifS5GbHbnLBET0OTfmsMC8797Mo5un9_ECyg8/s1600/sap-hacker.jpg",
+    "also_covered": [],
     "category": "Vulnerability",
     "severity": "Critical",
     "cves": [],
     "affected": [
-      "SAP"
-    ]
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
-    "published": "Tue, 13 Oct 2026 15:56:09 -0400",
-    "summary": "Microsoft's October 2026 Patch Tuesday addresses a record 1,411 security flaws, including three zero-day vulnerabilities. Organizations must apply these updates promptly to protect against potential exploitation of the patched vulnerabilities.",
-    "image": "",
-    "category": "Vulnerability",
-    "severity": "Critical",
-    "cves": [],
-    "affected": [
-      "Microsoft"
-    ]
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Docker Fixes Critical Two-Year-Old Hub Flaw That Let One User Push Images as Another",
-    "link": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
-    "published": "Tue, 13 Oct 2026 23:33:18 +0530",
-    "summary": "Docker fixed a two-year-old vulnerability in Docker Hub that allowed unauthorized users to push, pull, or delete images belonging to other accounts. While the flaw posed a severe risk to container integrity, Docker stated there is no evidence it was exploited.",
-    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEile879Rmv8zAdU5PMclUp5RnNGDb3h1u3aVZ-VigGjnO0RFcyCQ03s7_lIqMGDiow5ilPumq3B2_bsvewqRlepch4lFwLvOUEDQZPYd9Vv8untJVZFmrv5Zhgvj54cs4J_vCYW4GVY-XsQl7SXD-yrXbED6KpiWbTq-kL_0aNwef3xjV3cBGQ3dsodqAM/s1600/dock.jpg",
-    "category": "Vulnerability",
-    "severity": "High",
-    "cves": [],
-    "affected": [
-      "Docker",
-      "Docker Hub"
-    ]
+      "SAP Cloud SDK for Python",
+      "SAP Business Technology Platform"
+    ],
+    "action": "Review the SAP security advisory from October 13 and apply the necessary patches or updates provided by SAP to secure multi-tenant applications."
   },
   {
     "source": "BleepingComputer",
@@ -75,148 +114,202 @@
     "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
     "link": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
     "published": "Tue, 13 Oct 2026 21:48:18 +0530",
-    "summary": "GitHub has implemented a 48-hour expiration policy for unvalidated npm trusted publishing configurations to prevent unauthorized package hijacking. This update helps secure the supply chain by ensuring configurations are validated upon their first successful publish.",
+    "published_ts": 1791908298,
+    "summary": "GitHub has implemented a 48-hour expiration policy for unvalidated npm trusted publishing configurations to prevent unauthorized package hijacking. This change mitigates a flaw that allowed attackers to push new versions to other users' packages without stealing credentials.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3aDWaWT6PmRDL9d6tHPDisxclb_Ak7YZIxuS02EUFvNaWrc4_UKwUqW0RI1KT3r8zsneOguD6b85yg8mf3gAzZZOGuLi-mXckG_yzwmXXb3IchTBSVeRvPlUo7QU4Kp4yiM6QqPshmo4p0GQ55XZPTEDc0DZn9N84S_ZibZ4rkXuhZ3OvoHNCYH-wk0k-/s1600/git-npm.jpg",
+    "also_covered": [],
     "category": "Vulnerability",
     "severity": "Medium",
     "cves": [],
     "affected": [
       "GitHub",
       "npm"
-    ]
+    ],
+    "action": "Ensure that your npm trusted publishing configurations are successfully used to publish within 48 hours of creation to validate them and exempt them from automatic expiration."
   },
   {
-    "source": "BleepingComputer",
-    "title": "Microsoft: Windows 11 24H2 Home and Pro reached end of support",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
-    "published": "Tue, 13 Oct 2026 15:04:38 -0400",
-    "summary": "Microsoft announced that Windows 11 24H2 Home and Pro editions have reached their end of support, meaning they will no longer receive monthly security updates. This matters because systems running these versions will become increasingly vulnerable to newly discovered security threats over time.",
-    "image": "",
-    "category": "Policy",
-    "severity": "Medium",
+    "source": "The Hacker News",
+    "title": "Attackers Heat French Supermarket Fridges Up to 50°C by Hijacking Danfoss Controllers",
+    "link": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html",
+    "published": "Tue, 13 Oct 2026 14:18:41 +0530",
+    "published_ts": 1791881321,
+    "summary": "Attackers remotely hijacked Danfoss refrigeration controllers at hundreds of French supermarkets, raising temperatures to 50 degrees Celsius and forcing food disposal. This incident highlights the physical security risks of remote management access for industrial and commercial IoT devices.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh64tQNgn3aqDhyphenhyphengoK8NxQG3DPvWWi0fP185meJUr14eUmcX18mKJdkUz6QsMU6bTxmwAtHrd8I0J5FQjvTENA1-N1F60zsR1x2iDzaJNhPbg_6iGYTELpBOwiTbBiaMWLmWQ4naaMfCLCcThNEfC302zF-YCjlev6138DvUrXfr5noGCpZaT9JnGd7hUw/s1600/supermarket.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
     "cves": [],
     "affected": [
-      "Microsoft",
-      "Windows 11"
-    ]
+      "Danfoss"
+    ],
+    "action": "Review and secure remote management access to Danfoss controllers, ensuring strong authentication and restricting external exposure."
   },
   {
     "source": "BleepingComputer",
     "title": "UK Housing Ombudsman Service investigates 'security incident'",
     "link": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
     "published": "Tue, 13 Oct 2026 14:19:44 -0400",
-    "summary": "The U.K. Housing Ombudsman Service is investigating a third-party IT security incident that impacted its case management system. This disruption affects internal operations and highlights ongoing risks associated with third-party vendor security.",
+    "published_ts": 1791915584,
+    "summary": "The U.K. Housing Ombudsman Service is investigating a third-party IT security incident that impacted its case management system. The disruption highlights the ongoing risks organizations face through third-party vendor dependencies.",
     "image": "",
+    "also_covered": [],
     "category": "Breach",
     "severity": "Medium",
     "cves": [],
     "affected": [
       "UK Housing Ombudsman Service"
-    ]
+    ],
+    "action": ""
   },
   {
     "source": "BleepingComputer",
-    "title": "Microsoft releases Windows 10 KB5126657 extended security update",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
-    "published": "Tue, 13 Oct 2026 15:47:30 -0400",
-    "summary": "Microsoft has released the Windows 10 KB5126657 extended security update, incorporating the October 2026 Patch Tuesday fixes and various bug fixes. This update is important for administrators maintaining Windows 10 systems under extended support to ensure they receive the latest security patches.",
+    "title": "TFG London cyberattack disrupts systems at Hobbs and Whistles retailers",
+    "link": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/",
+    "published": "Tue, 13 Oct 2026 12:44:18 -0400",
+    "published_ts": 1791909858,
+    "summary": "TFG London detected a cybersecurity incident that disrupted IT systems across its Phase Eight, Hobbs, and Whistles fashion retail brands. The attack highlights ongoing threats to retail sector infrastructure and customer-facing operations.",
     "image": "",
-    "category": "Policy",
-    "severity": "Low",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
     "cves": [],
     "affected": [
-      "Microsoft",
-      "Windows 10"
-    ]
+      "TFG London",
+      "Phase Eight",
+      "Hobbs",
+      "Whistles"
+    ],
+    "action": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "The MFA Gaps Attackers are Still Exploiting",
+    "link": "https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/",
+    "published": "Tue, 13 Oct 2026 10:01:11 -0400",
+    "published_ts": 1791900071,
+    "summary": "Attackers continue to exploit gaps in multi-factor authentication by using stolen credentials to target unprotected VPNs, RDP, and Windows systems. This highlights the risk of securing only cloud applications while leaving legacy or internal access points reliant on passwords alone.",
+    "image": "",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "VPNs",
+      "RDP",
+      "Windows systems"
+    ],
+    "action": ""
   },
   {
     "source": "The Hacker News",
-    "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
-    "link": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
-    "published": "Tue, 13 Oct 2026 23:50:57 +0530",
-    "summary": "Anthropic warns that small artificial intelligence models could soon develop the capability to self-replicate and form autonomous IoT botnets. This presents a future security risk because decentralized AI-driven worms would be extremely difficult to shut down.",
+    "title": "LG Smart TVs Vulnerable to Pre-Auth Root Takeover From Local Network",
+    "link": "https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html",
+    "published": "Tue, 13 Oct 2026 16:39:10 +0530",
+    "published_ts": 1791889750,
+    "summary": "Three chained vulnerabilities in LG's webOS allow local network attackers to gain root access to affected smart TVs without user interaction. LG has released a firmware update to patch the flaws.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs2Z0M9u8vYqE8SBNBzfOGoc4Crog-_PBWeZNY8IprfYaa08ZyZ_PTfMhosBFrQNS_f1JecVbl_HEq7sutExV_92yaZWVIA51YD59JOFa_fKZQyEvpZNUxai8pgDrQX_Kp_wQqJoEFFQIFEwa2c3vhyphenhyphenQtU0U9w5XDwjSAij3BPz_qRs7-t0eu8ZssOZuE/s1600/lg-tv.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "LG",
+      "webOS"
+    ],
+    "action": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Anthropic warns self-replicating AI could spread to your smart devices",
+    "link": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/",
+    "published": "Tue, 13 Oct 2026 17:16:34 -0400",
+    "published_ts": 1791926194,
+    "summary": "Anthropic warns that small AI models could soon gain the ability to self-replicate across consumer IoT devices like smart ovens and Android TV boxes. This capability could lead to distributed, self-propagating botnets that are difficult to shut down due to a lack of centralized infrastructure.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigX1U6rARsREVvdJOVd0vGWuybd8470_G2xcVMyp0u_rHrimpzBkv2-Qyo_qcx_9BpQOlndrW-P1tpya8dQwnEscYsg1NYPq3kGXKayoosc20QHDXRyadNlRMTuSa2KKSaI0qoq4gO415S3LTux5cPcUieRF6PW4xzeILW-D80v3jkwWRni7y51t4Y6Hnu/s1600/ai-botnet.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
+        "link": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html"
+      }
+    ],
     "category": "Research",
     "severity": "Info",
     "cves": [],
     "affected": [
-      "IoT devices",
-      "smart ovens",
-      "Android TV boxes"
-    ]
+      "Consumer IoT devices",
+      "Android TV boxes",
+      "Smart ovens"
+    ],
+    "action": ""
   },
   {
-    "source": "Krebs on Security",
-    "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
-    "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
-    "published": "Sat, 10 Oct 2026 00:17:42 +0000",
-    "summary": "The FBI arrested the co-founder of a Canadian cybersecurity firm in connection with the ShinyHunters hacking group investigation. This matters because the group reportedly stole sensitive data regarding thousands of FBI agents.",
-    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/dubrovsky-li.png",
+    "source": "BleepingComputer",
+    "title": "Microsoft: Windows 11 24H2 Home and Pro reached end of support",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
+    "published": "Tue, 13 Oct 2026 15:04:38 -0400",
+    "published_ts": 1791918278,
+    "summary": "Microsoft announced that Windows 11 24H2 Home and Pro editions have reached their end of support, meaning they will no longer receive monthly security updates. This matters because running unsupported operating systems exposes devices to unpatched security vulnerabilities and potential exploitation over time.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 11"
+    ],
+    "action": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation",
+    "link": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
+    "published": "Tue, 13 Oct 2026 18:42:32 +0530",
+    "published_ts": 1791897152,
+    "summary": "The Norwegian Data Protection Authority fined Microsoft's Xandr €8.6 million for illegally relaying sensitive Grindr user data to advertisers. The penalty is the largest ever issued by the watchdog due to the severe nature of the privacy breach.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGjfJJaKUMdLoNBTH2AYUmelL_XonLcf93p8hSgMXRbLGJwReAYV-BUZ2jpBPuvUQktW0PTKi1-21oFnBJF8PfECgT7t5r-S-iMUxjrdoWPf3EDxa2IVrQYjT98HG6s-LfPlJqm8mArrfEOEZS_scT7EYG8eXxMrUaII0UaQ3kAmWDJ3mRTR4JyIJhj-5S/s1600/grindr-data.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Xandr",
+      "Microsoft",
+      "Grindr"
+    ],
+    "action": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "[Webinar] How to Stop AI-Driven Privilege Escalation With Runtime Identity Controls",
+    "link": "https://thehackernews.com/2026/10/webinar-how-to-stop-ai-driven-privilege.html",
+    "published": "Tue, 13 Oct 2026 17:27:06 +0530",
+    "published_ts": 1791892626,
+    "summary": "This is a promotional webinar announcement about stopping AI-driven privilege escalation using runtime identity controls. It provides no specific threat intelligence, vulnerability disclosures, or actionable security incidents.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIhyphenhyphenHu3P6G99-W2G5NryBVw_aHrwdzZeMvGjoMkyUiKFOtwD_fqUvdytUAQuhg9gPZzpsWSFatNS2LcMylaW4jsMmRR-tmAXkZxokH4WcEqnXTlFnBFgg8-20j4LsTCQMaKRJY-ysNuH8uXg_D3Zb626eqIdGeTkkmvyh95PERJ_mnaPNnnv2maV0q4F2-/s1600/silverfort.jpg",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Product Walkthrough: Bitdefender AI Visibility and Control",
+    "link": "https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html",
+    "published": "Tue, 13 Oct 2026 16:00:00 +0530",
+    "published_ts": 1791887400,
+    "summary": "This article discusses a product walkthrough for Bitdefender AI Visibility and Control. It highlights the growing challenges organizations face in tracking browser-based chat assistants, editor extensions, and local model runtimes.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkLz0n_kNY4YMLYNTi1KElj3dkaig5LqA6Koy92X4ndKfwBO8ctC5bNVyII81TUHljc7MGrpMZBsUX5j4126sBd3Sk5fX_DGjIo-yz5qGrRsHgi2qiLNUUbfCSvOHcE-KoYqGzNLBvTVzwEKDt2hZ4dvGK8YYOTeA-f6FHX49GA0myiau9Mqgc_LT7D1k/s1600/bit.jpg",
+    "also_covered": [],
     "category": "Other",
     "severity": "Info",
     "cves": [],
     "affected": [
-      "ShinyHunters"
-    ]
-  },
-  {
-    "source": "Krebs on Security",
-    "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
-    "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
-    "published": "Wed, 07 Oct 2026 13:48:45 +0000",
-    "summary": "A teenager suspected of leading the ShinyHunters extortion group was detained and is reportedly cooperating with the FBI. The arrest coincided with the group's extortion attempt against a business unit recently divested by Boeing.",
-    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/Jeppesen.png",
-    "category": "Threat Actor",
-    "severity": "Info",
-    "cves": [],
-    "affected": [
-      "Boeing",
-      "ShinyHunters"
-    ]
-  },
-  {
-    "source": "Krebs on Security",
-    "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
-    "link": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
-    "published": "Mon, 28 Sep 2026 15:08:57 +0000",
-    "summary": "Dutch police arrested a 23-year-old suspect linked to the ShinyHunters cybercriminal group for alleged data theft and extortion. Following the arrest, the remaining group members escalated their attacks by stealing sensitive FBI data and extorting the Cl0p ransomware group.",
-    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/09/umbreon-nl-rf.png",
-    "category": "Threat Actor",
-    "severity": "Info",
-    "cves": [],
-    "affected": [
-      "ShinyHunters",
-      "FBI",
-      "Cl0p"
-    ]
-  },
-  {
-    "source": "Krebs on Security",
-    "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
-    "link": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
-    "published": "Fri, 25 Sep 2026 21:44:40 +0000",
-    "summary": "A U.S. Army soldier was sentenced to 70 months in federal prison for hacking major telecommunications companies and stealing metadata for over 100 million customers. This case highlights insider threats and the severe consequences of large-scale data theft from critical infrastructure.",
-    "image": "https://krebsonsecurity.com/wp-content/uploads/2024/12/camwagenius-selfie.png",
-    "category": "Policy",
-    "severity": "Info",
-    "cves": [],
-    "affected": [
-      "AT&T",
-      "Verizon"
-    ]
-  },
-  {
-    "source": "Krebs on Security",
-    "title": "Data Broker Radaris Loses Domains in Privacy Fight",
-    "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
-    "published": "Wed, 16 Sep 2026 18:14:22 +0000",
-    "summary": "Consumer data broker Radaris had its primary domain and more than a dozen others seized by a judge and transferred to plaintiffs. This action came after the company repeatedly stonewalled a lawsuit alleging violations of a New Jersey privacy law protecting state law enforcement officials' personal information.",
-    "image": "https://krebsonsecurity.com/wp-content/uploads/2024/06/radaris-home.png",
-    "category": "Policy",
-    "severity": "Info",
-    "cves": [],
-    "affected": [
-      "Radaris"
-    ]
+      "Bitdefender"
+    ],
+    "action": ""
   }
 ]

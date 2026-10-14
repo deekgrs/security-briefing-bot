@@ -1,5 +1,7 @@
 """Fetch the latest security news stories from RSS feeds."""
+import calendar
 import re
+import time
 
 import feedparser
 import requests
@@ -11,7 +13,8 @@ FEEDS = {
     "Krebs on Security": "https://krebsonsecurity.com/feed/",
 }
 
-MAX_PER_FEED = 5
+MAX_PER_FEED = 10      # read more per feed, since merging and freshness remove some
+MAX_AGE_DAYS = 3       # skip anything older, so old stories don't repeat day after day
 TIMEOUT_SECONDS = 20   # never wait forever for a slow or unresponsive site
 HEADERS = {
     # Identify the bot honestly, so site owners know who is reading their feed
@@ -45,10 +48,17 @@ def find_image(entry):
     return ""
 
 
+def published_timestamp(entry):
+    """Publication time as a Unix timestamp, or None if the feed gives no date."""
+    parsed = entry.get("published_parsed") or entry.get("updated_parsed")
+    return calendar.timegm(parsed) if parsed else None
+
+
 def fetch_stories():
-    """Return a list of stories, each a dict with source, title, link, summary, image."""
+    """Return recent stories, newest first, each a dict with source, title, link, summary, image."""
     stories = []
     seen_links = set()
+    cutoff = time.time() - MAX_AGE_DAYS * 86400
 
     for source, url in FEEDS.items():
         print(f"Fetching {source}...", flush=True)
@@ -65,10 +75,15 @@ def fetch_stories():
             print(f"[!] No stories found in feed: {source}", flush=True)
             continue
 
+        too_old = 0
         for entry in feed.entries[:MAX_PER_FEED]:
             link = entry.get("link", "")
             if not link or link in seen_links:
-                continue  # skip duplicates
+                continue  # skip exact duplicates
+            published = published_timestamp(entry)
+            if published and published < cutoff:
+                too_old += 1
+                continue  # stale story: it was news days ago, not today
             seen_links.add(link)
 
             stories.append({
@@ -76,18 +91,22 @@ def fetch_stories():
                 "title": entry.get("title", "").strip(),
                 "link": link,
                 "published": entry.get("published", ""),
+                "published_ts": published or 0,
                 "summary": entry.get("summary", "").strip(),
                 "image": find_image(entry),
             })
+        if too_old:
+            print(f"   skipped {too_old} stories older than {MAX_AGE_DAYS} days", flush=True)
 
+    stories.sort(key=lambda s: s["published_ts"], reverse=True)
     return stories
 
 
 if __name__ == "__main__":
     stories = fetch_stories()
     with_images = sum(1 for s in stories if s["image"])
-    print(f"\nFetched {len(stories)} stories ({with_images} with images)\n")
+    print(f"\nFetched {len(stories)} recent stories ({with_images} with images)\n")
     for i, story in enumerate(stories, 1):
         print(f"{i}. [{story['source']}] {story['title']}")
-        print(f"   {story['link']}")
-        print(f"   image: {story['image'] or '(none)'}\n")
+        print(f"   {story['published']}")
+        print(f"   {story['link']}\n")

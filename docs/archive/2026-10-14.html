@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security Briefing - 2026-10-14</title>
+<style>
+  :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
+          --serif: Georgia, "Times New Roman", serif; }
+  * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.55; }
+  main { max-width:920px; margin:0 auto; padding:28px 16px 64px; }
+  a { color:inherit; }
+
+  .masthead { text-align:center; border-bottom:3px double var(--text); padding-bottom:14px; }
+  .kicker { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  .masthead h1 { font-family:var(--serif); font-size:44px; line-height:1.1; margin:6px 0 8px;
+                 letter-spacing:-.01em; }
+  .masthead h1 a { text-decoration:none; }
+  .dateline { margin:0; font-size:14px; color:var(--muted); border-top:1px solid var(--line);
+              padding-top:8px; display:inline-block; }
+
+  .banner { display:flex; flex-wrap:wrap; gap:8px 16px; justify-content:space-between;
+            align-items:center; margin:16px 0 0; padding:10px 14px; font-size:14px;
+            background:#fef3c7; border:1px solid #fcd34d; border-radius:8px; }
+  .banner a { font-weight:600; }
+  .banner .pager { display:flex; gap:14px; }
+
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:20px 0 14px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:8px;
+          padding:10px; text-align:center; font-size:13px; color:var(--muted); }
+  .stat .num { display:block; font-family:var(--serif); font-size:26px; font-weight:700; }
+
+  .filters { background:var(--card); border:1px solid var(--line); border-radius:8px;
+             padding:12px 14px; margin-bottom:12px; }
+  .filter-row { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .filter-row + .filter-row { margin-top:8px; }
+  .filter-label { font-size:12px; font-weight:600; color:var(--muted); width:72px;
+                  text-transform:uppercase; letter-spacing:.06em; }
+  .chip { font:inherit; font-size:13px; cursor:pointer; display:inline-flex; align-items:center;
+          gap:6px; border:1px solid var(--line); background:var(--card); color:var(--text);
+          border-radius:999px; padding:3px 11px; }
+  .chip:hover { border-color:var(--muted); }
+  .chip.active { background:var(--text); color:#fff; border-color:var(--text); }
+  .chip .n { font-size:11px; opacity:.7; }
+  .chip .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .chip:disabled { opacity:.35; cursor:not-allowed; border-color:var(--line); }
+  .showing { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .empty { text-align:center; color:var(--muted); padding:32px; border:1px dashed var(--line);
+           border-radius:8px; }
+
+  .card { display:grid; grid-template-columns:1fr; gap:18px; background:var(--card);
+          border:1px solid var(--line); border-top:4px solid; border-radius:8px;
+          padding:16px 18px; margin-bottom:14px; }
+  .card:has(.thumb) { grid-template-columns:1fr 200px; }
+  .thumb { width:200px; height:134px; object-fit:cover; border-radius:6px;
+           background:var(--line); display:block; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:12px;
+          color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .sev { color:#fff; font-weight:700; padding:2px 8px; border-radius:4px; }
+  .card h2 { font-family:var(--serif); font-size:21px; line-height:1.25; margin:8px 0 6px; }
+  .card h2 a { text-decoration:none; }
+  .card h2 a:hover { text-decoration:underline; }
+  .card p { margin:0 0 10px; color:#3f3a36; }
+  .card p.also { font-size:13px; color:var(--muted); }
+  .label { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+           color:var(--muted); margin-right:4px; }
+  .action { margin:0 0 10px; padding:10px 12px; border-radius:6px; font-size:15px;
+            background:#fef2f2; border-left:4px solid; }
+  .action .label { color:inherit; }
+  .action-title { display:block; font-size:11px; font-weight:700; letter-spacing:.08em;
+                  text-transform:uppercase; margin-bottom:4px; }
+  .action p { margin:0; color:var(--text); }
+  .action p + p { margin-top:6px; }
+  .action .who { font-weight:700; }
+  abbr.term { text-decoration:underline dotted; text-underline-offset:3px; cursor:help;
+              position:relative; outline:none; }
+  abbr.term:hover::after, abbr.term:focus::after {
+    content:attr(data-def); position:absolute; left:0; top:1.7em; z-index:10;
+    width:min(260px, 80vw); padding:8px 10px; border-radius:6px;
+    background:var(--text); color:#fff; font:400 13px/1.45 system-ui, sans-serif;
+    text-transform:none; letter-spacing:0; box-shadow:0 4px 14px rgba(0,0,0,.18); }
+  .jargon-note { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .also a { color:var(--text); }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; border:1px solid var(--line); border-radius:4px; padding:1px 7px; color:var(--muted); }
+  a.cve { color:#b91c1c; text-decoration:none; font-weight:600; }
+
+  .archive { margin-top:32px; padding-top:16px; border-top:3px double var(--text); }
+  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 10px; }
+  .archive ul { list-style:none; margin:0; padding:0; display:grid;
+                grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px; }
+  .archive li { background:var(--card); border:1px solid var(--line); border-radius:8px; }
+  .archive li a, .archive li span { display:block; padding:10px 12px; text-decoration:none; }
+  .archive li a:hover { background:#f3f1ec; border-radius:8px; }
+  .archive li.current { border-color:var(--text); }
+  .archive small { display:block; color:var(--muted); font-size:12px; }
+
+  footer { margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
+           font-size:13px; color:var(--muted); }
+
+  @media (max-width:640px) {
+    .masthead h1 { font-size:32px; }
+    .stats { grid-template-columns:repeat(3,1fr); }
+    .filter-label { width:100%; }
+    .card:has(.thumb) { grid-template-columns:1fr; }
+    .thumb { width:100%; height:180px; order:-1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="kicker">AI-curated &middot; Updated every morning</div>
+    <h1><a href="../index.html">The Daily Security Briefing</a></h1>
+    <p class="dateline">Wed, Oct 14, 2026 &middot; 15 stories, summarized and triaged by AI</p>
+  </header>
+  <div class="banner"><span>You are reading the archived briefing for <strong>Wed, Oct 14, 2026</strong>. <a href="../index.html">Go to today&rsquo;s briefing</a></span><span class="pager"><a href="2026-10-13.html">&larr; Tue, Oct 13, 2026</a></span></div>
+  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">2</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">3</span>High</div><div class="stat"><span class="num" style="color:#a16207">3</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">2</span>Low</div><div class="stat"><span class="num" style="color:#57534e">5</span>Info</div></section>
+
+  <section class="filters" aria-label="Filter stories">
+    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">3</span></button><button type="button" class="chip" data-group="severity" data-value="Medium" aria-pressed="false"><span class="dot" style="background:#a16207"></span>Medium <span class="n">3</span></button><button type="button" class="chip" data-group="severity" data-value="Low" aria-pressed="false"><span class="dot" style="background:#1d4ed8"></span>Low <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">5</span></button></div>
+    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">6</span></button><button type="button" class="chip" data-group="category" data-value="Malware" aria-pressed="false">Malware <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Policy" aria-pressed="false">Policy <span class="n">3</span></button><button type="button" class="chip" data-group="category" data-value="Research" aria-pressed="false">Research <span class="n">5</span></button></div>
+  </section>
+  <p class="jargon-note">New to security? Hover over or tap any
+  <abbr class="term" tabindex="0" data-def="Like this one. Each underlined word has a short, plain-English definition.">underlined word</abbr>
+  for a plain-English explanation.</p>
+  <p class="showing" id="showing" aria-live="polite"></p>
+  <p class="empty" id="empty" hidden>No stories match these filters.</p>
+
+  
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/" target="_blank" rel="noopener noreferrer">CISA warns admins to immediately fix Ivanti flaw exploited as zero-day</a></h2>
+      <p><span class="label">What happened</span>A security flaw in Ivanti Connect Secure software is being <abbr class="term" tabindex="0" data-def="Attackers are already using this flaw in real attacks, not just in theory.">actively exploited</abbr> by attackers in the wild. Organizations must apply updates immediately to prevent unauthorized access.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses Ivanti Connect Secure, your IT team should already be on it.</p><p><span class="who">For IT teams:</span> Immediately update your Ivanti Connect Secure (ICS) appliances and deployments to the latest version provided by the vendor.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html" target="_blank" rel="noopener noreferrer">The Hacker News: CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts</a></p>
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-104935" target="_blank" rel="noopener noreferrer">CVE-2026-104935</a><span class="tag">Ivanti Connect Secure</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBUpsAaH4Pe-HlsDhdSH5KK3VgWm9NEXXLNBOpxxp4d8WMZwSNNyPALzuapR_iUlq3-dLDe2bnPJfh42cdfH5m3LQWGKXZvHF3sYacyDbtZacKIIoluyNgP01-6bjjEz-RBhAQqxw-VHGD7gpn3ToRulgeH0ydeWXOucoK4hLBwvXtlCg81tB1scdjPbKN/s1600/i-h.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html" target="_blank" rel="noopener noreferrer">Microsoft Patches Record 1,413 Flaws, Including Exploited Windows Shell Bug</a></h2>
+      <p><span class="label">What happened</span>Microsoft released a record-breaking number of software updates to fix over 1,400 security flaws, including at least one that is currently being <abbr class="term" tabindex="0" data-def="Attackers have used this flaw to break in.">exploited</abbr> by attackers. These updates protect against malicious takeovers and unauthorized access across Windows and other Microsoft products.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Install the latest Windows and Microsoft updates today to protect your devices from actively targeted security flaws. Go to Settings &gt; Windows Update &gt; Check for updates.</p><p><span class="who">For IT teams:</span> Apply Microsoft&#x27;s October updates across all affected systems immediately, prioritizing the <abbr class="term" tabindex="0" data-def="Attackers are already using this flaw in real attacks, not just in theory.">actively exploited</abbr> Windows Shell vulnerability.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/" target="_blank" rel="noopener noreferrer">Krebs on Security: Microsoft Patches More Than 1,400 Security Flaws</a> &middot; <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/" target="_blank" rel="noopener noreferrer">BleepingComputer: Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days</a></p>
+      <div class="tags"><span class="tag">Microsoft Windows</span><span class="tag">Office</span><span class="tag">Developer Tools</span><span class="tag">SharePoint Server</span><span class="tag">SQL Server</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_wUoSEpf7bMmgL7Aa7NRI6qvluN83g3TcKAONrL5REtzYQIVR4TqrNs0awkDsRCXvaSEaOn83V0t1jpwkrh5FULBjyQJnxe-m4gkgjMHRC0SZHpkBDNjOSuZUrOXU5R6JGt4dwZXXn4JHYSoc4n22nIXcFIYtC51Vv89hGimRebEKzQ9-PX1U7M4Lk4ST/s1600/windows-patch.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html" target="_blank" rel="noopener noreferrer">curl Patches HTTP/2 Upload Flaw After PoC Demonstrates Client-Side Code Execution</a></h2>
+      <p><span class="label">What happened</span>A security flaw in curl could let a malicious server corrupt memory and run harmful code when a user uploads data over HTTP/2. The curl project has released a fix in version 8.23.0.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything right away, but you should update your software and tools when updates become available.</p><p><span class="who">For IT teams:</span> Upgrade curl to version 8.23.0 to apply the <abbr class="term" tabindex="0" data-def="A software update that fixes a flaw.">patch</abbr>.</p></div>
+      
+      <div class="tags"><span class="tag">curl</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4S_5rQ2kApGYmSMOh6PFsgD3yRugV3_nzSexwBhEe3BoSTQeBfSu2-3JSO4wDCnU2LmVMWtgA6AcBEcf2wOpsL2v22woZ5fel0XaSonlbgDWSXMuV3iu5ewohp9kqgf4OwmCvtnRyyYjFEP6Z3RRLT5sX8g7-xI1robnLmWtqFp6SvrGvpBeXI_D4ICo/s1600/curl.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Malware">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Malware</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html" target="_blank" rel="noopener noreferrer">Hirudo Android Trojan Uses Patched Banking Apps to Bypass Their Built-In Security Checks</a></h2>
+      <p><span class="label">What happened</span>A new malicious Android app called Hirudo steals banking login details by swapping real banking applications with modified versions that disable built-in security checks. This targets users of at least eight Indonesian banking apps.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Only download apps from official app stores like Google Play, and be very careful about giving apps extra permissions or installing apps from unfamiliar websites. If you use any Indonesian banking apps, ensure your device&#x27;s security software is up to date and watch out for any unexpected requests to reinstall your apps.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/" target="_blank" rel="noopener noreferrer">BleepingComputer: Hirudo Android malware replaces banking apps to evade security checks</a></p>
+      <div class="tags"><span class="tag">Android</span><span class="tag">Indonesian banking apps</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj010OXrg2ZBrxwqSnpzd8SrIDY_dYOMtdnzIpG7YnCjv1QB58_HylDTkfFmXtZYci90doRcSrPdFfYLowM_S5t2RpD6UkCoWveJrKajQS-7d3sDtyI22FYN0TKy-pQpzWScUB_ROhXRNzZi9dzhgg02kH3WVtdGPNWYBLKv8qZgsa9kREW1SvZ2LTF2AWV/s1600/android-banking.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html" target="_blank" rel="noopener noreferrer">AI-Found Linux Kernel Flaw Gives Local Users Root, and Can Break a Guest Out to the Host</a></h2>
+      <p><span class="label">What happened</span>A serious security flaw in the Linux operating system kernel lets local users gain full control of a system and can allow virtual machines to escape to the host computer. This bug affects software used by businesses, cloud providers, and advanced users over the last ten years.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people do not need to do anything. If your workplace or cloud provider uses Linux virtualization, your IT team will need to apply the necessary updates.</p><p><span class="who">For IT teams:</span> Apply vendor patches for CVE-2026-74580 as soon as they become available to prevent local privilege escalation and guest-to-host escapes in the vhost subsystem.</p></div>
+      
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-74580" target="_blank" rel="noopener noreferrer">CVE-2026-74580</a><span class="tag">Linux kernel</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhavZnpNnmOBy6Wnkh7wfYD4-I32k65R7uyhYW32Doh3YVqtfJaagZZ_uo9JN-cixODo6h846eR89Aa55TGuMKfXmpjZEVZQ0ssFoP4-qVX6qrvSoyfRsu_q3MQcLKwolyKeE3Lw3MByz2Su8O0XOdRWNkJmyBdwpxsAtxi5y2goE7RhOSBPOLh4Evb60c/s1600/linux-exploit.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html" target="_blank" rel="noopener noreferrer">Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days</a></h2>
+      <p>Security researchers used a public artificial intelligence model to quickly chain three Google Chrome browser bugs into a powerful attack that runs malicious code just by visiting a web page. Google has already fixed all three security flaws.</p>
+      
+      
+      <div class="tags"><span class="tag">Google Chrome</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLXn6RSZOSq2StbSf2fHVaHwVEetIYN0wGfuaIcyaEnwSnXLaY1FBfSKPFzzQuKvtpRygCR7AvNixA-SCkIA98QjnT7gE2UWYtoiZLs5VxQC8KTSJwwlcP0helOb3F4hbSo4uqITjJYPiZHSSuKkm1O_BXFYeyEU7koe_77QSmKbU33o5hteBC5-0dxrs/s1600/chrome-exploit.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html" target="_blank" rel="noopener noreferrer">An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part.</a></h2>
+      <p>An artificial intelligence security testing agent discovered a major flaw in a live insurance website that let users redirect login codes. This discovery highlights the growing capability of automated tools to find critical website security holes.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_bop9V2vtfHPW4Obd0zupOPpNFCd9N5HtVwWVs9u-njx8RuEgOkAh75uRjWLS_h3zHQ847m7xc01PkVAdKhyphenhyphen5Pkg2Pb_qthWVQe-9lcpKclCOq3ZDpQ2iSfRSFCQQU8gxyBl6lWEjTKWZHn9LiNSq2rQ4_nUIM6Sjcqv5fwgVRnFpiuxpYDfhrkbikLE/s1600/case.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/" target="_blank" rel="noopener noreferrer">Microsoft: Recent Windows updates may trigger Remote Desktop failures</a></h2>
+      <p>Recent Windows updates can block regular users from connecting to devices via Remote Desktop if a specific security setting is turned on. This matters because it may lock non-administrator users out of their remote connections.</p>
+      
+      
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#1d4ed8"
+           data-severity="Low" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#1d4ed8">Low</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/" target="_blank" rel="noopener noreferrer">Microsoft fixes VPN issues caused by September Windows updates</a></h2>
+      <p>Microsoft has fixed an issue where September Windows 11 updates broke certain virtual private network (<abbr class="term" tabindex="0" data-def="A secure connection into a private network, often used by staff working remotely.">VPN</abbr>) connections. This matters because affected users could not connect securely to their networks until the issue was resolved.</p>
+      
+      
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows 11</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#1d4ed8"
+           data-severity="Low" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#1d4ed8">Low</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html" target="_blank" rel="noopener noreferrer">Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave</a></h2>
+      <p>Researchers successfully ran unauthorized code inside a protected, highly secure part of Windows used to guard sensitive data like passwords. This was done in a laboratory setting to demonstrate the flaw, meaning there is no active attack happening right now.</p>
+      
+      
+      <div class="tags"><span class="tag">Windows</span><span class="tag">Windows SmartScreen</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizNi7OCo6m5vsFkEP85LndyXnfiDgk2h5R0WwW_yHZ7mdK6Uh9xuLaI5ddFQJ45fW7jG8eC4VtIHJT1IQaUJCoAEMClMEiv9dA9kASwDQJj4l61ZSIlqW2bw605LQLL5kNUszoxI8Wkr54oguKY7guQGE9rwUmvzCVUjt19-0pWJpxir366NU5eqopHmk/s1600/enclave.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html" target="_blank" rel="noopener noreferrer">U.S. Shuts Down Over 40 Laptop Farms, Charges 14 in North Korean IT Worker Fraud</a></h2>
+      <p>The U.S. Department of Justice charged 14 people and seized nearly 190 computers involved in a North Korean remote IT worker fraud scheme. This matters because it disrupts a major illicit operation that placed hidden foreign workers into over 70 U.S. companies.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRRY0Y0x4bBS7xZHNvUUjosK6tuvOhbBbE9XvaoyiONRttpSxhIwBaCgDpNKo9kMR37n1_8wKUXzpzL6KhmNC0OJsGZapzAaAteSFlbasNFzCM6XZXsSU99yOk6e2oR7tzG_3p_1-V04tnDyhhtGaBUJSviR-xaJh6mg4E-KT5gwR7_x3JmO-DDfM6-7ic/s1600/laptop-farm.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>Krebs on Security</span>
+      </div>
+      <h2><a href="https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/" target="_blank" rel="noopener noreferrer">U.K. Sanctions Cryptomus for RU Money Laundering</a></h2>
+      <p>The U.K. has placed financial sanctions on Cryptomus, a cryptocurrency platform used to launder money and help Russia bypass financial restrictions. This move aims to cut off a major financial channel for cybercriminals, <abbr class="term" tabindex="0" data-def="Harmful software that locks your files and demands payment to unlock them.">ransomware</abbr> gangs, and illicit darknet markets.</p>
+      
+      
+      <div class="tags"><span class="tag">Cryptomus</span></div>
+    </div>
+    <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2026/10/heleketsupportbot.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Research</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/" target="_blank" rel="noopener noreferrer">The Blind Spots of Agentic Pentesting and How to Close Them</a></h2>
+      <p>AI-powered penetration testing helps find security flaws, but safety rules and network limits can leave some weaknesses hidden. Combining AI testing with other simulation tools can help security teams find and close these gaps.</p>
+      
+      
+      <div class="tags"><span class="tag">Picus Security</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/" target="_blank" rel="noopener noreferrer">Global takedown hits network behind 1 billion phishing messages</a></h2>
+      <p>Law enforcement agencies worldwide have disrupted a massive cybercrime network responsible for sending over a billion <abbr class="term" tabindex="0" data-def="Fake emails, texts or sites that trick people into giving away passwords or clicking harmful links.">phishing</abbr> messages. This takedown significantly reduces a major infrastructure used to target organizations globally.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html" target="_blank" rel="noopener noreferrer">How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team</a></h2>
+      <p>Security teams are running simulated drills using artificial voice cloning and video to test how well their staff can spot fraud. This matters because scammers are increasingly using these deepfake technologies to trick employees into making unauthorized payments or resetting accounts.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEYzcrs6sSW45od6MYo5jFl29yPGuwipgy7nfS3STYqknrD9b5OcU00_c0sqjG8Arvqq36ojwHSZMbjboA3bUQ1-ZcLRRjmuEQpzTDYYXnyvySzynW0UOvHOVmYNNzp_n-J5xXmwByMCofw5kxslXe4dqAVYqrWa-1LivXxPNa_ZGOQgIBxhyhvtiLxDs/s1600/icon.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <section class="archive" aria-label="Past briefings"><h2>Past briefings</h2><ul><li class="current"><span>Wed, Oct 14, 2026<small>15 stories</small><small>You are here</small></span></li><li><a href="2026-10-13.html">Tue, Oct 13, 2026<small>15 stories</small></a></li><li><a href="2026-10-12.html">Mon, Oct 12, 2026<small>15 stories</small></a></li></ul></section>
+  <footer>Generated automatically from public RSS feeds. Images and stories belong to their
+  publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>
+</main>
+<script>
+(function () {
+  var state = { severity: "all", category: "all" };
+  var cards = document.querySelectorAll(".card");
+  var chips = document.querySelectorAll(".chip");
+  var showing = document.getElementById("showing");
+  var empty = document.getElementById("empty");
+
+  function matches(card, group, value) {
+    return value === "all" || card.dataset[group] === value;
+  }
+
+  // Each button's count = stories you would see if you clicked it,
+  // given whatever is selected in the other row
+  function updateCounts() {
+    chips.forEach(function (chip) {
+      var group = chip.dataset.group;
+      var other = group === "severity" ? "category" : "severity";
+      var n = 0;
+      cards.forEach(function (card) {
+        if (matches(card, group, chip.dataset.value) && matches(card, other, state[other])) n++;
+      });
+      chip.querySelector(".n").textContent = n;
+      chip.disabled = n === 0 && !chip.classList.contains("active");
+    });
+  }
+
+  function apply() {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var match = matches(card, "severity", state.severity) &&
+                  matches(card, "category", state.category);
+      card.hidden = !match;
+      if (match) shown++;
+    });
+    showing.textContent = "Showing " + shown + " of " + cards.length + " stories";
+    empty.hidden = shown !== 0;
+    updateCounts();
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var group = chip.dataset.group;
+      state[group] = chip.dataset.value;
+      chips.forEach(function (other) {
+        if (other.dataset.group !== group) return;
+        var on = other === chip;
+        other.classList.toggle("active", on);
+        other.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>

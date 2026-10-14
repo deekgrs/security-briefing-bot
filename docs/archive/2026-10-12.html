@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security Briefing - 2026-10-12</title>
+<style>
+  :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
+          --serif: Georgia, "Times New Roman", serif; }
+  * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.55; }
+  main { max-width:920px; margin:0 auto; padding:28px 16px 64px; }
+  a { color:inherit; }
+
+  .masthead { text-align:center; border-bottom:3px double var(--text); padding-bottom:14px; }
+  .kicker { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  .masthead h1 { font-family:var(--serif); font-size:44px; line-height:1.1; margin:6px 0 8px;
+                 letter-spacing:-.01em; }
+  .masthead h1 a { text-decoration:none; }
+  .dateline { margin:0; font-size:14px; color:var(--muted); border-top:1px solid var(--line);
+              padding-top:8px; display:inline-block; }
+
+  .banner { display:flex; flex-wrap:wrap; gap:8px 16px; justify-content:space-between;
+            align-items:center; margin:16px 0 0; padding:10px 14px; font-size:14px;
+            background:#fef3c7; border:1px solid #fcd34d; border-radius:8px; }
+  .banner a { font-weight:600; }
+  .banner .pager { display:flex; gap:14px; }
+
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:20px 0 14px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:8px;
+          padding:10px; text-align:center; font-size:13px; color:var(--muted); }
+  .stat .num { display:block; font-family:var(--serif); font-size:26px; font-weight:700; }
+
+  .filters { background:var(--card); border:1px solid var(--line); border-radius:8px;
+             padding:12px 14px; margin-bottom:12px; }
+  .filter-row { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .filter-row + .filter-row { margin-top:8px; }
+  .filter-label { font-size:12px; font-weight:600; color:var(--muted); width:72px;
+                  text-transform:uppercase; letter-spacing:.06em; }
+  .chip { font:inherit; font-size:13px; cursor:pointer; display:inline-flex; align-items:center;
+          gap:6px; border:1px solid var(--line); background:var(--card); color:var(--text);
+          border-radius:999px; padding:3px 11px; }
+  .chip:hover { border-color:var(--muted); }
+  .chip.active { background:var(--text); color:#fff; border-color:var(--text); }
+  .chip .n { font-size:11px; opacity:.7; }
+  .chip .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .chip:disabled { opacity:.35; cursor:not-allowed; border-color:var(--line); }
+  .showing { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .empty { text-align:center; color:var(--muted); padding:32px; border:1px dashed var(--line);
+           border-radius:8px; }
+
+  .card { display:grid; grid-template-columns:1fr; gap:18px; background:var(--card);
+          border:1px solid var(--line); border-top:4px solid; border-radius:8px;
+          padding:16px 18px; margin-bottom:14px; }
+  .card:has(.thumb) { grid-template-columns:1fr 200px; }
+  .thumb { width:200px; height:134px; object-fit:cover; border-radius:6px;
+           background:var(--line); display:block; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:12px;
+          color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .sev { color:#fff; font-weight:700; padding:2px 8px; border-radius:4px; }
+  .card h2 { font-family:var(--serif); font-size:21px; line-height:1.25; margin:8px 0 6px; }
+  .card h2 a { text-decoration:none; }
+  .card h2 a:hover { text-decoration:underline; }
+  .card p { margin:0 0 10px; color:#3f3a36; }
+  .card p.also { font-size:13px; color:var(--muted); }
+  .label { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+           color:var(--muted); margin-right:4px; }
+  .action { margin:0 0 10px; padding:10px 12px; border-radius:6px; font-size:15px;
+            background:#fef2f2; border-left:4px solid; }
+  .action .label { color:inherit; }
+  .action-title { display:block; font-size:11px; font-weight:700; letter-spacing:.08em;
+                  text-transform:uppercase; margin-bottom:4px; }
+  .action p { margin:0; color:var(--text); }
+  .action p + p { margin-top:6px; }
+  .action .who { font-weight:700; }
+  abbr.term { text-decoration:underline dotted; text-underline-offset:3px; cursor:help;
+              position:relative; outline:none; }
+  abbr.term:hover::after, abbr.term:focus::after {
+    content:attr(data-def); position:absolute; left:0; top:1.7em; z-index:10;
+    width:min(260px, 80vw); padding:8px 10px; border-radius:6px;
+    background:var(--text); color:#fff; font:400 13px/1.45 system-ui, sans-serif;
+    text-transform:none; letter-spacing:0; box-shadow:0 4px 14px rgba(0,0,0,.18); }
+  .jargon-note { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .also a { color:var(--text); }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; border:1px solid var(--line); border-radius:4px; padding:1px 7px; color:var(--muted); }
+  a.cve { color:#b91c1c; text-decoration:none; font-weight:600; }
+
+  .archive { margin-top:32px; padding-top:16px; border-top:3px double var(--text); }
+  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 10px; }
+  .archive ul { list-style:none; margin:0; padding:0; display:grid;
+                grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px; }
+  .archive li { background:var(--card); border:1px solid var(--line); border-radius:8px; }
+  .archive li a, .archive li span { display:block; padding:10px 12px; text-decoration:none; }
+  .archive li a:hover { background:#f3f1ec; border-radius:8px; }
+  .archive li.current { border-color:var(--text); }
+  .archive small { display:block; color:var(--muted); font-size:12px; }
+
+  footer { margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
+           font-size:13px; color:var(--muted); }
+
+  @media (max-width:640px) {
+    .masthead h1 { font-size:32px; }
+    .stats { grid-template-columns:repeat(3,1fr); }
+    .filter-label { width:100%; }
+    .card:has(.thumb) { grid-template-columns:1fr; }
+    .thumb { width:100%; height:180px; order:-1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="kicker">AI-curated &middot; Updated every morning</div>
+    <h1><a href="../index.html">The Daily Security Briefing</a></h1>
+    <p class="dateline">Mon, Oct 12, 2026 &middot; 15 stories, summarized and triaged by AI</p>
+  </header>
+  <div class="banner"><span>You are reading the archived briefing for <strong>Mon, Oct 12, 2026</strong>. <a href="../index.html">Go to today&rsquo;s briefing</a></span><span class="pager"><a href="2026-10-13.html">Tue, Oct 13, 2026 &rarr;</a></span></div>
+  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">3</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">4</span>High</div><div class="stat"><span class="num" style="color:#a16207">1</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">1</span>Low</div><div class="stat"><span class="num" style="color:#57534e">6</span>Info</div></section>
+
+  <section class="filters" aria-label="Filter stories">
+    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">3</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">4</span></button><button type="button" class="chip" data-group="severity" data-value="Medium" aria-pressed="false"><span class="dot" style="background:#a16207"></span>Medium <span class="n">1</span></button><button type="button" class="chip" data-group="severity" data-value="Low" aria-pressed="false"><span class="dot" style="background:#1d4ed8"></span>Low <span class="n">1</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">6</span></button></div>
+    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">3</span></button><button type="button" class="chip" data-group="category" data-value="Breach" aria-pressed="false">Breach <span class="n">5</span></button><button type="button" class="chip" data-group="category" data-value="Malware" aria-pressed="false">Malware <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Threat Actor" aria-pressed="false">Threat Actor <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Policy" aria-pressed="false">Policy <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Other" aria-pressed="false">Other <span class="n">2</span></button></div>
+  </section>
+  <p class="jargon-note">New to security? Hover over or tap any
+  <abbr class="term" tabindex="0" data-def="Like this one. Each underlined word has a short, plain-English definition.">underlined word</abbr>
+  for a plain-English explanation.</p>
+  <p class="showing" id="showing" aria-live="polite"></p>
+  <p class="empty" id="empty" hidden>No stories match these filters.</p>
+
+  
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html" target="_blank" rel="noopener noreferrer">Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch</a></h2>
+      <p>Threat actors launched 135 exploitation attempts against a critical pre-authenticated <abbr class="term" tabindex="0" data-def="A trick that makes a server send requests on the attacker&#x27;s behalf, reaching places the attacker can&#x27;t.">SSRF</abbr> flaw in SonicWall Secure Mobile Access 1000 appliances shortly after disclosure. This vulnerability allows remote attackers to force the appliance into making unauthorized requests, posing a severe risk to defenders.</p>
+      
+      
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-102255" target="_blank" rel="noopener noreferrer">CVE-2026-102255</a><span class="tag">SonicWall</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html" target="_blank" rel="noopener noreferrer">Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE</a></h2>
+      <p>Attackers are actively exploiting a maximum-severity vulnerability in the Bricksforge WordPress plugin. The flaw allows <abbr class="term" tabindex="0" data-def="Without needing to log in first.">unauthenticated</abbr> <abbr class="term" tabindex="0" data-def="The attacker can run their own commands on a device from anywhere over the internet.">remote code execution</abbr>, posing an immediate risk to vulnerable sites.</p>
+      
+      
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-85097" target="_blank" rel="noopener noreferrer">CVE-2026-85097</a><span class="tag">Bricksforge plugin</span><span class="tag">WordPress</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/" target="_blank" rel="noopener noreferrer">GitLab warns of max severity code execution vulnerability</a></h2>
+      <p>GitLab has issued a warning for users to immediately <abbr class="term" tabindex="0" data-def="A software update that fixes a flaw.">patch</abbr> a maximum-severity <abbr class="term" tabindex="0" data-def="The attacker can run their own commands on a device from anywhere over the internet.">remote code execution</abbr> vulnerability in its CI/CD Regular Expression Compiler. This flaw allows remote attackers to execute arbitrary code on targeted instances, presenting a significant risk if left unpatched.</p>
+      
+      
+      <div class="tags"><span class="tag">GitLab</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html" target="_blank" rel="noopener noreferrer">Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports</a></h2>
+      <p>Ledger has temporarily paused sales through reseller CryptoBilis after discovering an unauthorized hardware implant in devices tied to stolen funds in Southeast Asia. This incident highlights the critical <abbr class="term" tabindex="0" data-def="Attacking a target through a supplier, product or update it already trusts.">supply chain</abbr> risk of purchasing hardware wallets from unauthorized third-party resellers.</p>
+      
+      
+      <div class="tags"><span class="tag">Ledger</span><span class="tag">CryptoBilis</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/" target="_blank" rel="noopener noreferrer">Ledger confirms spy chip implant behind wallet crypto thefts</a></h2>
+      <p>Ledger confirmed that hardware devices distributed through a Southeast Asian reseller were tampered with a physical spy chip implant, leading to stolen cryptocurrency. This incident highlights the critical <abbr class="term" tabindex="0" data-def="Attacking a target through a supplier, product or update it already trusts.">supply chain</abbr> risk of compromised third-party resellers for hardware wallets.</p>
+      
+      
+      <div class="tags"><span class="tag">Ledger</span><span class="tag">CryptoBilis</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/" target="_blank" rel="noopener noreferrer">Cyberattack shuts down refrigerators at French supermarkets</a></h2>
+      <p>Attackers remotely defrosted refrigerators at multiple French supermarket chains overnight in a cyberattack targeting Danfoss refrigeration controllers. This incident highlights the physical security risks and operational vulnerabilities associated with Internet of Things (IoT) devices in supply chains and retail.</p>
+      
+      
+      <div class="tags"><span class="tag">Danfoss</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/" target="_blank" rel="noopener noreferrer">Retail giant Ahold Delhaize takes systems offline after cyberattack</a></h2>
+      <p>Retail giant Ahold Delhaize took several systems offline following a cybersecurity incident that impacted its network operations. This disruption highlights the ongoing vulnerability of major <abbr class="term" tabindex="0" data-def="Attacking a target through a supplier, product or update it already trusts.">supply chain</abbr> and retail infrastructure to cyber threats.</p>
+      
+      
+      <div class="tags"><span class="tag">Ahold Delhaize</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Malware">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Malware</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/" target="_blank" rel="noopener noreferrer">Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption</a></h2>
+      <p>Researchers have detailed AvisLoader, a new Windows <abbr class="term" tabindex="0" data-def="Harmful software designed to damage a device or steal from it.">malware</abbr> loader that utilizes encrypted peer-to-peer communications and ClickFix delivery to resist infrastructure disruption. The malware employs shortcut-based persistence and remote command execution to maintain a foothold on compromised systems.</p>
+      
+      
+      <div class="tags"><span class="tag">Windows</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#1d4ed8"
+           data-severity="Low" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#1d4ed8">Low</span>
+        <span>Policy</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html" target="_blank" rel="noopener noreferrer">Bring Your Own Agent: Your Employees&#x27; Assistants Are Already Logged In</a></h2>
+      <p>Personal AI agents are raising significant privacy and security concerns as they proliferate in the workplace. Companies like Amazon are already blocking unauthorized agents that fail to identify themselves as bots while browsing.</p>
+      
+      
+      <div class="tags"><span class="tag">Amazon</span><span class="tag">Meta</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Other">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Other</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html" target="_blank" rel="noopener noreferrer">⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More</a></h2>
+      <p>This weekly recap highlights rapid exploitation of newly disclosed security flaws within hours of publication. It also discusses issues surrounding secure connections and suspicious actors offering <abbr class="term" tabindex="0" data-def="Harmful software that locks your files and demands payment to unlock them.">ransomware</abbr> remediation.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Other">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Other</span><span>&middot;</span><span>Krebs on Security</span>
+      </div>
+      <h2><a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/" target="_blank" rel="noopener noreferrer">FBI Arrests Executive at Ransomware Negotiation Firm</a></h2>
+      <p>The FBI arrested the co-founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group investigation. This is significant because the group reportedly stole sensitive data concerning thousands of FBI agents.</p>
+      
+      
+      <div class="tags"><span class="tag">FBI</span><span class="tag">ShinyHunters</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Threat Actor">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
+      </div>
+      <h2><a href="https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/" target="_blank" rel="noopener noreferrer">ShinyHunters Extorted Boeing Spin-off Prior to Arrests</a></h2>
+      <p>A teenager suspected of leading the ShinyHunters <abbr class="term" tabindex="0" data-def="Threatening to leak or damage something unless a payment is made.">extortion</abbr> group was detained and is reportedly cooperating with the FBI. The arrest occurred while the group was actively extorting a business unit recently divested by Boeing.</p>
+      
+      
+      <div class="tags"><span class="tag">Boeing</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Threat Actor">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
+      </div>
+      <h2><a href="https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/" target="_blank" rel="noopener noreferrer">Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation</a></h2>
+      <p>Dutch police arrested a 23-year-old suspect connected to the ShinyHunters cybercriminal group on suspicion of data theft and <abbr class="term" tabindex="0" data-def="Threatening to leak or damage something unless a payment is made.">extortion</abbr>. Following the arrest, remaining ShinyHunters members escalated their attacks by stealing data from the FBI and extorting the Cl0p <abbr class="term" tabindex="0" data-def="Harmful software that locks your files and demands payment to unlock them.">ransomware</abbr> group.</p>
+      
+      
+      <div class="tags"><span class="tag">FBI</span><span class="tag">Cl0p</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Breach</span><span>&middot;</span><span>Krebs on Security</span>
+      </div>
+      <h2><a href="https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/" target="_blank" rel="noopener noreferrer">U.S. Soldier Gets 70 Months in Prison for AT&amp;T, Verizon Extortions</a></h2>
+      <p>A U.S. Army soldier was sentenced to 70 months in prison and ordered to pay restitution for hacking major telecommunications companies in 2024. The breach compromised mobile call and text metadata for over 100 million customers.</p>
+      
+      
+      <div class="tags"><span class="tag">AT&amp;T</span><span class="tag">Verizon</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>Krebs on Security</span>
+      </div>
+      <h2><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/" target="_blank" rel="noopener noreferrer">Data Broker Radaris Loses Domains in Privacy Fight</a></h2>
+      <p>Consumer data broker Radaris had its primary domain and over a dozen others transferred to plaintiffs following a lawsuit over violations of a New Jersey privacy law. This ruling demonstrates a novel legal enforcement mechanism against data brokers that fail to comply with privacy regulations protecting law enforcement officials.</p>
+      
+      
+      <div class="tags"><span class="tag">Radaris</span></div>
+    </div>
+    
+  </article>
+  <section class="archive" aria-label="Past briefings"><h2>Past briefings</h2><ul><li><a href="2026-10-14.html">Wed, Oct 14, 2026<small>15 stories</small></a></li><li><a href="2026-10-13.html">Tue, Oct 13, 2026<small>15 stories</small></a></li><li class="current"><span>Mon, Oct 12, 2026<small>15 stories</small><small>You are here</small></span></li></ul></section>
+  <footer>Generated automatically from public RSS feeds. Images and stories belong to their
+  publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>
+</main>
+<script>
+(function () {
+  var state = { severity: "all", category: "all" };
+  var cards = document.querySelectorAll(".card");
+  var chips = document.querySelectorAll(".chip");
+  var showing = document.getElementById("showing");
+  var empty = document.getElementById("empty");
+
+  function matches(card, group, value) {
+    return value === "all" || card.dataset[group] === value;
+  }
+
+  // Each button's count = stories you would see if you clicked it,
+  // given whatever is selected in the other row
+  function updateCounts() {
+    chips.forEach(function (chip) {
+      var group = chip.dataset.group;
+      var other = group === "severity" ? "category" : "severity";
+      var n = 0;
+      cards.forEach(function (card) {
+        if (matches(card, group, chip.dataset.value) && matches(card, other, state[other])) n++;
+      });
+      chip.querySelector(".n").textContent = n;
+      chip.disabled = n === 0 && !chip.classList.contains("active");
+    });
+  }
+
+  function apply() {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var match = matches(card, "severity", state.severity) &&
+                  matches(card, "category", state.category);
+      card.hidden = !match;
+      if (match) shown++;
+    });
+    showing.textContent = "Showing " + shown + " of " + cards.length + " stories";
+    empty.hidden = shown !== 0;
+    updateCounts();
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var group = chip.dataset.group;
+      state[group] = chip.dataset.value;
+      chips.forEach(function (other) {
+        if (other.dataset.group !== group) return;
+        var on = other === chip;
+        other.classList.toggle("active", on);
+        other.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>

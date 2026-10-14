@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security Briefing - 2026-10-13</title>
+<style>
+  :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
+          --serif: Georgia, "Times New Roman", serif; }
+  * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.55; }
+  main { max-width:920px; margin:0 auto; padding:28px 16px 64px; }
+  a { color:inherit; }
+
+  .masthead { text-align:center; border-bottom:3px double var(--text); padding-bottom:14px; }
+  .kicker { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  .masthead h1 { font-family:var(--serif); font-size:44px; line-height:1.1; margin:6px 0 8px;
+                 letter-spacing:-.01em; }
+  .masthead h1 a { text-decoration:none; }
+  .dateline { margin:0; font-size:14px; color:var(--muted); border-top:1px solid var(--line);
+              padding-top:8px; display:inline-block; }
+
+  .banner { display:flex; flex-wrap:wrap; gap:8px 16px; justify-content:space-between;
+            align-items:center; margin:16px 0 0; padding:10px 14px; font-size:14px;
+            background:#fef3c7; border:1px solid #fcd34d; border-radius:8px; }
+  .banner a { font-weight:600; }
+  .banner .pager { display:flex; gap:14px; }
+
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:20px 0 14px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:8px;
+          padding:10px; text-align:center; font-size:13px; color:var(--muted); }
+  .stat .num { display:block; font-family:var(--serif); font-size:26px; font-weight:700; }
+
+  .filters { background:var(--card); border:1px solid var(--line); border-radius:8px;
+             padding:12px 14px; margin-bottom:12px; }
+  .filter-row { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .filter-row + .filter-row { margin-top:8px; }
+  .filter-label { font-size:12px; font-weight:600; color:var(--muted); width:72px;
+                  text-transform:uppercase; letter-spacing:.06em; }
+  .chip { font:inherit; font-size:13px; cursor:pointer; display:inline-flex; align-items:center;
+          gap:6px; border:1px solid var(--line); background:var(--card); color:var(--text);
+          border-radius:999px; padding:3px 11px; }
+  .chip:hover { border-color:var(--muted); }
+  .chip.active { background:var(--text); color:#fff; border-color:var(--text); }
+  .chip .n { font-size:11px; opacity:.7; }
+  .chip .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .chip:disabled { opacity:.35; cursor:not-allowed; border-color:var(--line); }
+  .showing { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .empty { text-align:center; color:var(--muted); padding:32px; border:1px dashed var(--line);
+           border-radius:8px; }
+
+  .card { display:grid; grid-template-columns:1fr; gap:18px; background:var(--card);
+          border:1px solid var(--line); border-top:4px solid; border-radius:8px;
+          padding:16px 18px; margin-bottom:14px; }
+  .card:has(.thumb) { grid-template-columns:1fr 200px; }
+  .thumb { width:200px; height:134px; object-fit:cover; border-radius:6px;
+           background:var(--line); display:block; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:12px;
+          color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .sev { color:#fff; font-weight:700; padding:2px 8px; border-radius:4px; }
+  .card h2 { font-family:var(--serif); font-size:21px; line-height:1.25; margin:8px 0 6px; }
+  .card h2 a { text-decoration:none; }
+  .card h2 a:hover { text-decoration:underline; }
+  .card p { margin:0 0 10px; color:#3f3a36; }
+  .card p.also { font-size:13px; color:var(--muted); }
+  .label { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+           color:var(--muted); margin-right:4px; }
+  .action { margin:0 0 10px; padding:10px 12px; border-radius:6px; font-size:15px;
+            background:#fef2f2; border-left:4px solid; }
+  .action .label { color:inherit; }
+  .action-title { display:block; font-size:11px; font-weight:700; letter-spacing:.08em;
+                  text-transform:uppercase; margin-bottom:4px; }
+  .action p { margin:0; color:var(--text); }
+  .action p + p { margin-top:6px; }
+  .action .who { font-weight:700; }
+  abbr.term { text-decoration:underline dotted; text-underline-offset:3px; cursor:help;
+              position:relative; outline:none; }
+  abbr.term:hover::after, abbr.term:focus::after {
+    content:attr(data-def); position:absolute; left:0; top:1.7em; z-index:10;
+    width:min(260px, 80vw); padding:8px 10px; border-radius:6px;
+    background:var(--text); color:#fff; font:400 13px/1.45 system-ui, sans-serif;
+    text-transform:none; letter-spacing:0; box-shadow:0 4px 14px rgba(0,0,0,.18); }
+  .jargon-note { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .also a { color:var(--text); }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; border:1px solid var(--line); border-radius:4px; padding:1px 7px; color:var(--muted); }
+  a.cve { color:#b91c1c; text-decoration:none; font-weight:600; }
+
+  .archive { margin-top:32px; padding-top:16px; border-top:3px double var(--text); }
+  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 10px; }
+  .archive ul { list-style:none; margin:0; padding:0; display:grid;
+                grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px; }
+  .archive li { background:var(--card); border:1px solid var(--line); border-radius:8px; }
+  .archive li a, .archive li span { display:block; padding:10px 12px; text-decoration:none; }
+  .archive li a:hover { background:#f3f1ec; border-radius:8px; }
+  .archive li.current { border-color:var(--text); }
+  .archive small { display:block; color:var(--muted); font-size:12px; }
+
+  footer { margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
+           font-size:13px; color:var(--muted); }
+
+  @media (max-width:640px) {
+    .masthead h1 { font-size:32px; }
+    .stats { grid-template-columns:repeat(3,1fr); }
+    .filter-label { width:100%; }
+    .card:has(.thumb) { grid-template-columns:1fr; }
+    .thumb { width:100%; height:180px; order:-1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="kicker">AI-curated &middot; Updated every morning</div>
+    <h1><a href="../index.html">The Daily Security Briefing</a></h1>
+    <p class="dateline">Tue, Oct 13, 2026 &middot; 15 stories, summarized and triaged by AI</p>
+  </header>
+  <div class="banner"><span>You are reading the archived briefing for <strong>Tue, Oct 13, 2026</strong>. <a href="../index.html">Go to today&rsquo;s briefing</a></span><span class="pager"><a href="2026-10-12.html">&larr; Mon, Oct 12, 2026</a><a href="2026-10-14.html">Wed, Oct 14, 2026 &rarr;</a></span></div>
+  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">4</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">2</span>High</div><div class="stat"><span class="num" style="color:#a16207">4</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">0</span>Low</div><div class="stat"><span class="num" style="color:#57534e">5</span>Info</div></section>
+
+  <section class="filters" aria-label="Filter stories">
+    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">4</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="Medium" aria-pressed="false"><span class="dot" style="background:#a16207"></span>Medium <span class="n">4</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">5</span></button></div>
+    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">6</span></button><button type="button" class="chip" data-group="category" data-value="Breach" aria-pressed="false">Breach <span class="n">4</span></button><button type="button" class="chip" data-group="category" data-value="Threat Actor" aria-pressed="false">Threat Actor <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Policy" aria-pressed="false">Policy <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Research" aria-pressed="false">Research <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Other" aria-pressed="false">Other <span class="n">2</span></button></div>
+  </section>
+  <p class="jargon-note">New to security? Hover over or tap any
+  <abbr class="term" tabindex="0" data-def="Like this one. Each underlined word has a short, plain-English definition.">underlined word</abbr>
+  for a plain-English explanation.</p>
+  <p class="showing" id="showing" aria-live="polite"></p>
+  <p class="empty" id="empty" hidden>No stories match these filters.</p>
+
+  
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/" target="_blank" rel="noopener noreferrer">Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days</a></h2>
+      <p><span class="label">What happened</span>Microsoft&#x27;s October 2026 <abbr class="term" tabindex="0" data-def="The second Tuesday of each month, when Microsoft releases its security updates.">Patch Tuesday</abbr> addresses a record-breaking 1,411 vulnerabilities, including three <abbr class="term" tabindex="0" data-def="A flaw that attackers found and used before the maker had a fix ready.">zero-day</abbr> flaws with one <abbr class="term" tabindex="0" data-def="Attackers are already using this flaw in real attacks, not just in theory.">actively exploited</abbr>. Administrators should apply the latest updates to secure Windows and other affected Microsoft products.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For IT teams:</span> Apply the October 2026 Patch Tuesday security updates, including KB5126657, KB5127648, and KB5126653, to address the vulnerabilities.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/" target="_blank" rel="noopener noreferrer">BleepingComputer: Microsoft releases Windows 10 KB5126657 extended security update</a> &middot; <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127648-and-kb5126653-cumulative-updates-released/" target="_blank" rel="noopener noreferrer">BleepingComputer: Windows 11 KB5127648 &amp; KB5126653 cumulative updates released</a></p>
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows 10</span><span class="tag">Windows 11</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/" target="_blank" rel="noopener noreferrer">Docker Hub flaw let attackers impersonate users, tamper with images</a></h2>
+      <p><span class="label">What happened</span>Docker disclosed a critical vulnerability in Docker Hub that allowed attackers to use personal access tokens to access, push, pull, or delete container repositories belonging to other users. Docker has already fixed the flaw and reported no evidence of active exploitation.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For IT teams:</span> Review container repositories for unauthorized changes and ensure account security practices are up to date, as Docker has already fixed the issue on their end.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html" target="_blank" rel="noopener noreferrer">The Hacker News: Docker Fixes Critical Two-Year-Old Hub Flaw That Let One User Push Images as Another</a></p>
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-105445" target="_blank" rel="noopener noreferrer">CVE-2026-105445</a><span class="tag">Docker Hub</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEile879Rmv8zAdU5PMclUp5RnNGDb3h1u3aVZ-VigGjnO0RFcyCQ03s7_lIqMGDiow5ilPumq3B2_bsvewqRlepch4lFwLvOUEDQZPYd9Vv8untJVZFmrv5Zhgvj54cs4J_vCYW4GVY-XsQl7SXD-yrXbED6KpiWbTq-kL_0aNwef3xjV3cBGQ3dsodqAM/s1600/dock.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html" target="_blank" rel="noopener noreferrer">Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far</a></h2>
+      <p><span class="label">What happened</span>An attacker chained three <abbr class="term" tabindex="0" data-def="A flaw that attackers found and used before the maker had a fix ready.">zero-day</abbr> vulnerabilities in Ivanti Connect Secure to gain <abbr class="term" tabindex="0" data-def="Without needing to log in first.">unauthenticated</abbr> root access, and the vendor has released patches for only two of the flaws. Because these flaws are <abbr class="term" tabindex="0" data-def="Attackers are already using this flaw in real attacks, not just in theory.">actively exploited</abbr>, affected organizations face significant risk while awaiting a <abbr class="term" tabindex="0" data-def="A software update that fixes a flaw.">patch</abbr> for the third bug.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For IT teams:</span> Update Ivanti Connect Secure to the <abbr class="term" tabindex="0" data-def="Fixed by a software update from the maker.">patched</abbr> release immediately and monitor systems for signs of compromise, noting that a fix for the third vulnerability is still pending.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/" target="_blank" rel="noopener noreferrer">BleepingComputer: Ivanti warns of Connect Secure zero-day exploited in attacks</a></p>
+      <div class="tags"><span class="tag">Ivanti Connect Secure</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZSH26NsXmSsQGaAbhNyJLMaBQKFCmabIbFZ_yi2sUGXjHQOVztQEQfXLarEAx1Fl9lRwGAryBE4zZEooJ4cochODcB4x8wQnPl3MRWiyBcpyEV6i8VPxvwcLHmShQVZVhuOcTjMXRhHAlx4Y0Uo85c74EVU4cea84YgXju02I9jlNzcGOFtLfa_am82Q/s1600/ivanti-hack.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html" target="_blank" rel="noopener noreferrer">SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft</a></h2>
+      <p><span class="label">What happened</span>SAP disclosed a critical flaw in its Cloud SDK for Python that allows attackers to steal <abbr class="term" tabindex="0" data-def="A common system that lets apps log in to other services without sharing passwords.">OAuth2</abbr> client <abbr class="term" tabindex="0" data-def="Login details, such as usernames, passwords or access keys.">credentials</abbr> from multi-tenant applications on the SAP Business Technology Platform. This vulnerability poses a significant risk as it affects authentication security for applications utilizing the SDK.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For IT teams:</span> Review the SAP security advisory from October 13 and apply the necessary patches or updates provided by SAP to secure multi-tenant applications.</p></div>
+      
+      <div class="tags"><span class="tag">SAP Cloud SDK for Python</span><span class="tag">SAP Business Technology Platform</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKBZR5elkBVKRcFO6lyde7XYDVO73IBxDvnx9-UkLst3GhVFuK8Yz3QBVIIEJABDjZuJMn8tyf7RLLPIRV8J8qe-OUULjnQRaQNyWricSsOjlKJoyYu8WOvs5PxBWQpzuiq8hlDlOY7zY-qIYDgQ6NFuifS5GbHbnLBET0OTfmsMC8797Mo5un9_ECyg8/s1600/sap-hacker.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html" target="_blank" rel="noopener noreferrer">GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking</a></h2>
+      <p><span class="label">What happened</span>GitHub has implemented a 48-hour expiration policy for unvalidated npm trusted publishing configurations to prevent unauthorized package hijacking. This change mitigates a flaw that allowed attackers to push new versions to other users&#x27; packages without stealing <abbr class="term" tabindex="0" data-def="Login details, such as usernames, passwords or access keys.">credentials</abbr>.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For IT teams:</span> Ensure that your npm trusted publishing configurations are successfully used to publish within 48 hours of creation to validate them and exempt them from automatic expiration.</p></div>
+      
+      <div class="tags"><span class="tag">GitHub</span><span class="tag">npm</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3aDWaWT6PmRDL9d6tHPDisxclb_Ak7YZIxuS02EUFvNaWrc4_UKwUqW0RI1KT3r8zsneOguD6b85yg8mf3gAzZZOGuLi-mXckG_yzwmXXb3IchTBSVeRvPlUo7QU4Kp4yiM6QqPshmo4p0GQ55XZPTEDc0DZn9N84S_ZibZ4rkXuhZ3OvoHNCYH-wk0k-/s1600/git-npm.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html" target="_blank" rel="noopener noreferrer">Attackers Heat French Supermarket Fridges Up to 50°C by Hijacking Danfoss Controllers</a></h2>
+      <p><span class="label">What happened</span>Attackers remotely hijacked Danfoss refrigeration controllers at hundreds of French supermarkets, raising temperatures to 50 degrees Celsius and forcing food disposal. This incident highlights the physical security risks of remote management access for industrial and commercial IoT devices.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For IT teams:</span> Review and secure remote management access to Danfoss controllers, ensuring strong authentication and restricting external exposure.</p></div>
+      
+      <div class="tags"><span class="tag">Danfoss</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh64tQNgn3aqDhyphenhyphengoK8NxQG3DPvWWi0fP185meJUr14eUmcX18mKJdkUz6QsMU6bTxmwAtHrd8I0J5FQjvTENA1-N1F60zsR1x2iDzaJNhPbg_6iGYTELpBOwiTbBiaMWLmWQ4naaMfCLCcThNEfC302zF-YCjlev6138DvUrXfr5noGCpZaT9JnGd7hUw/s1600/supermarket.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/" target="_blank" rel="noopener noreferrer">UK Housing Ombudsman Service investigates &#x27;security incident&#x27;</a></h2>
+      <p>The U.K. Housing Ombudsman Service is investigating a third-party IT security incident that impacted its case management system. The disruption highlights the ongoing risks organizations face through third-party vendor dependencies.</p>
+      
+      
+      <div class="tags"><span class="tag">UK Housing Ombudsman Service</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/" target="_blank" rel="noopener noreferrer">TFG London cyberattack disrupts systems at Hobbs and Whistles retailers</a></h2>
+      <p>TFG London detected a cybersecurity incident that disrupted IT systems across its Phase Eight, Hobbs, and Whistles fashion retail brands. The attack highlights ongoing threats to retail sector infrastructure and customer-facing operations.</p>
+      
+      
+      <div class="tags"><span class="tag">TFG London</span><span class="tag">Phase Eight</span><span class="tag">Hobbs</span><span class="tag">Whistles</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Threat Actor">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Threat Actor</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/" target="_blank" rel="noopener noreferrer">The MFA Gaps Attackers are Still Exploiting</a></h2>
+      <p>Attackers continue to <abbr class="term" tabindex="0" data-def="A method or piece of code that takes advantage of a flaw to break in.">exploit</abbr> gaps in multi-factor authentication by using stolen <abbr class="term" tabindex="0" data-def="Login details, such as usernames, passwords or access keys.">credentials</abbr> to target unprotected VPNs, RDP, and Windows systems. This highlights the risk of securing only cloud applications while leaving legacy or internal access points reliant on passwords alone.</p>
+      
+      
+      <div class="tags"><span class="tag">VPNs</span><span class="tag">RDP</span><span class="tag">Windows systems</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html" target="_blank" rel="noopener noreferrer">LG Smart TVs Vulnerable to Pre-Auth Root Takeover From Local Network</a></h2>
+      <p>Three chained vulnerabilities in LG&#x27;s webOS allow local network attackers to gain root access to affected smart TVs without user interaction. LG has released a firmware update to <abbr class="term" tabindex="0" data-def="A software update that fixes a flaw.">patch</abbr> the flaws.</p>
+      
+      
+      <div class="tags"><span class="tag">LG</span><span class="tag">webOS</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs2Z0M9u8vYqE8SBNBzfOGoc4Crog-_PBWeZNY8IprfYaa08ZyZ_PTfMhosBFrQNS_f1JecVbl_HEq7sutExV_92yaZWVIA51YD59JOFa_fKZQyEvpZNUxai8pgDrQX_Kp_wQqJoEFFQIFEwa2c3vhyphenhyphenQtU0U9w5XDwjSAij3BPz_qRs7-t0eu8ZssOZuE/s1600/lg-tv.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Research</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/" target="_blank" rel="noopener noreferrer">Anthropic warns self-replicating AI could spread to your smart devices</a></h2>
+      <p>Anthropic warns that small AI models could soon gain the ability to self-replicate across consumer IoT devices like smart ovens and Android TV boxes. This capability could lead to distributed, self-propagating botnets that are difficult to shut down due to a lack of centralized infrastructure.</p>
+      
+      <p class="also"><strong>Also covered:</strong> <a href="https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html" target="_blank" rel="noopener noreferrer">The Hacker News: Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets</a></p>
+      <div class="tags"><span class="tag">Consumer IoT devices</span><span class="tag">Android TV boxes</span><span class="tag">Smart ovens</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigX1U6rARsREVvdJOVd0vGWuybd8470_G2xcVMyp0u_rHrimpzBkv2-Qyo_qcx_9BpQOlndrW-P1tpya8dQwnEscYsg1NYPq3kGXKayoosc20QHDXRyadNlRMTuSa2KKSaI0qoq4gO415S3LTux5cPcUieRF6PW4xzeILW-D80v3jkwWRni7y51t4Y6Hnu/s1600/ai-botnet.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/" target="_blank" rel="noopener noreferrer">Microsoft: Windows 11 24H2 Home and Pro reached end of support</a></h2>
+      <p>Microsoft announced that Windows 11 24H2 Home and Pro editions have reached their end of support, meaning they will no longer receive monthly security updates. This matters because running unsupported operating systems exposes devices to unpatched security vulnerabilities and potential exploitation over time.</p>
+      
+      
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows 11</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Breach</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html" target="_blank" rel="noopener noreferrer">Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation</a></h2>
+      <p>The Norwegian Data Protection Authority fined Microsoft&#x27;s Xandr €8.6 million for illegally relaying sensitive Grindr user data to advertisers. The penalty is the largest ever issued by the watchdog due to the severe nature of the privacy breach.</p>
+      
+      
+      <div class="tags"><span class="tag">Xandr</span><span class="tag">Microsoft</span><span class="tag">Grindr</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGjfJJaKUMdLoNBTH2AYUmelL_XonLcf93p8hSgMXRbLGJwReAYV-BUZ2jpBPuvUQktW0PTKi1-21oFnBJF8PfECgT7t5r-S-iMUxjrdoWPf3EDxa2IVrQYjT98HG6s-LfPlJqm8mArrfEOEZS_scT7EYG8eXxMrUaII0UaQ3kAmWDJ3mRTR4JyIJhj-5S/s1600/grindr-data.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Other">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Other</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/webinar-how-to-stop-ai-driven-privilege.html" target="_blank" rel="noopener noreferrer">[Webinar] How to Stop AI-Driven Privilege Escalation With Runtime Identity Controls</a></h2>
+      <p>This is a promotional webinar announcement about stopping AI-driven privilege escalation using runtime identity controls. It provides no specific threat intelligence, vulnerability disclosures, or actionable security incidents.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIhyphenhyphenHu3P6G99-W2G5NryBVw_aHrwdzZeMvGjoMkyUiKFOtwD_fqUvdytUAQuhg9gPZzpsWSFatNS2LcMylaW4jsMmRR-tmAXkZxokH4WcEqnXTlFnBFgg8-20j4LsTCQMaKRJY-ysNuH8uXg_D3Zb626eqIdGeTkkmvyh95PERJ_mnaPNnnv2maV0q4F2-/s1600/silverfort.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Other">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Other</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html" target="_blank" rel="noopener noreferrer">Product Walkthrough: Bitdefender AI Visibility and Control</a></h2>
+      <p>This article discusses a product walkthrough for Bitdefender AI Visibility and Control. It highlights the growing challenges organizations face in tracking browser-based chat assistants, editor extensions, and local model runtimes.</p>
+      
+      
+      <div class="tags"><span class="tag">Bitdefender</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkLz0n_kNY4YMLYNTi1KElj3dkaig5LqA6Koy92X4ndKfwBO8ctC5bNVyII81TUHljc7MGrpMZBsUX5j4126sBd3Sk5fX_DGjIo-yz5qGrRsHgi2qiLNUUbfCSvOHcE-KoYqGzNLBvTVzwEKDt2hZ4dvGK8YYOTeA-f6FHX49GA0myiau9Mqgc_LT7D1k/s1600/bit.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <section class="archive" aria-label="Past briefings"><h2>Past briefings</h2><ul><li><a href="2026-10-14.html">Wed, Oct 14, 2026<small>15 stories</small></a></li><li class="current"><span>Tue, Oct 13, 2026<small>15 stories</small><small>You are here</small></span></li><li><a href="2026-10-12.html">Mon, Oct 12, 2026<small>15 stories</small></a></li></ul></section>
+  <footer>Generated automatically from public RSS feeds. Images and stories belong to their
+  publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>
+</main>
+<script>
+(function () {
+  var state = { severity: "all", category: "all" };
+  var cards = document.querySelectorAll(".card");
+  var chips = document.querySelectorAll(".chip");
+  var showing = document.getElementById("showing");
+  var empty = document.getElementById("empty");
+
+  function matches(card, group, value) {
+    return value === "all" || card.dataset[group] === value;
+  }
+
+  // Each button's count = stories you would see if you clicked it,
+  // given whatever is selected in the other row
+  function updateCounts() {
+    chips.forEach(function (chip) {
+      var group = chip.dataset.group;
+      var other = group === "severity" ? "category" : "severity";
+      var n = 0;
+      cards.forEach(function (card) {
+        if (matches(card, group, chip.dataset.value) && matches(card, other, state[other])) n++;
+      });
+      chip.querySelector(".n").textContent = n;
+      chip.disabled = n === 0 && !chip.classList.contains("active");
+    });
+  }
+
+  function apply() {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var match = matches(card, "severity", state.severity) &&
+                  matches(card, "category", state.category);
+      card.hidden = !match;
+      if (match) shown++;
+    });
+    showing.textContent = "Showing " + shown + " of " + cards.length + " stories";
+    empty.hidden = shown !== 0;
+    updateCounts();
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var group = chip.dataset.group;
+      state[group] = chip.dataset.value;
+      chips.forEach(function (other) {
+        if (other.dataset.group !== group) return;
+        var on = other === chip;
+        other.classList.toggle("active", on);
+        other.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>
