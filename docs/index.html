@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Security Briefing - 2026-10-13</title>
+<title>Security Briefing - 2026-10-14</title>
 <style>
   :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
           --serif: Georgia, "Times New Roman", serif; }
@@ -76,13 +76,13 @@
   <header class="masthead">
     <div class="kicker">AI-curated &middot; Updated every morning</div>
     <h1>The Daily Security Briefing</h1>
-    <p class="dateline">2026-10-13 &middot; 15 stories, summarized and triaged by AI</p>
+    <p class="dateline">2026-10-14 &middot; 15 stories, summarized and triaged by AI</p>
   </header>
-  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">3</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">2</span>High</div><div class="stat"><span class="num" style="color:#a16207">3</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">1</span>Low</div><div class="stat"><span class="num" style="color:#57534e">6</span>Info</div></section>
+  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">2</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">4</span>High</div><div class="stat"><span class="num" style="color:#a16207">2</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">1</span>Low</div><div class="stat"><span class="num" style="color:#57534e">6</span>Info</div></section>
 
   <section class="filters" aria-label="Filter stories">
-    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">3</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="Medium" aria-pressed="false"><span class="dot" style="background:#a16207"></span>Medium <span class="n">3</span></button><button type="button" class="chip" data-group="severity" data-value="Low" aria-pressed="false"><span class="dot" style="background:#1d4ed8"></span>Low <span class="n">1</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">6</span></button></div>
-    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">6</span></button><button type="button" class="chip" data-group="category" data-value="Breach" aria-pressed="false">Breach <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Threat Actor" aria-pressed="false">Threat Actor <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Policy" aria-pressed="false">Policy <span class="n">4</span></button><button type="button" class="chip" data-group="category" data-value="Research" aria-pressed="false">Research <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Other" aria-pressed="false">Other <span class="n">1</span></button></div>
+    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">4</span></button><button type="button" class="chip" data-group="severity" data-value="Medium" aria-pressed="false"><span class="dot" style="background:#a16207"></span>Medium <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="Low" aria-pressed="false"><span class="dot" style="background:#1d4ed8"></span>Low <span class="n">1</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">6</span></button></div>
+    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">5</span></button><button type="button" class="chip" data-group="category" data-value="Breach" aria-pressed="false">Breach <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Malware" aria-pressed="false">Malware <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Threat Actor" aria-pressed="false">Threat Actor <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Policy" aria-pressed="false">Policy <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Research" aria-pressed="false">Research <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Other" aria-pressed="false">Other <span class="n">2</span></button></div>
   </section>
   <p class="showing" id="showing" aria-live="polite"></p>
   <p class="empty" id="empty" hidden>No stories match these filters.</p>
@@ -95,24 +95,11 @@
         <span class="sev" style="background:#b91c1c">Critical</span>
         <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
       </div>
-      <h2><a href="https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html" target="_blank" rel="noopener noreferrer">Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far</a></h2>
-      <p>An attacker chained three zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to achieve unauthenticated root access. Ivanti has patched two of the flaws, but a fix for the third remains pending.</p>
-      <div class="tags"><span class="tag">Ivanti Connect Secure</span></div>
+      <h2><a href="https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html" target="_blank" rel="noopener noreferrer">CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts</a></h2>
+      <p>CISA is urging organizations to immediately update Ivanti Connect Secure appliances following the disclosure of an actively exploited authentication bypass vulnerability. This flaw poses a significant risk as honeypots have already logged numerous exploit attempts against deployments.</p>
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-104935" target="_blank" rel="noopener noreferrer">CVE-2026-104935</a><span class="tag">Ivanti Connect Secure</span></div>
     </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZSH26NsXmSsQGaAbhNyJLMaBQKFCmabIbFZ_yi2sUGXjHQOVztQEQfXLarEAx1Fl9lRwGAryBE4zZEooJ4cochODcB4x8wQnPl3MRWiyBcpyEV6i8VPxvwcLHmShQVZVhuOcTjMXRhHAlx4Y0Uo85c74EVU4cea84YgXju02I9jlNzcGOFtLfa_am82Q/s1600/ivanti-hack.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#b91c1c"
-           data-severity="Critical" data-category="Vulnerability">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#b91c1c">Critical</span>
-        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
-      </div>
-      <h2><a href="https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html" target="_blank" rel="noopener noreferrer">SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft</a></h2>
-      <p>SAP disclosed a critical vulnerability in its Cloud SDK for Python that allows attackers to steal OAuth2 client credentials from multi-tenant applications on the SAP Business Technology Platform. This flaw poses a severe risk as it impacts authentication security for cloud applications using the affected SDK.</p>
-      <div class="tags"><span class="tag">SAP</span></div>
-    </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKBZR5elkBVKRcFO6lyde7XYDVO73IBxDvnx9-UkLst3GhVFuK8Yz3QBVIIEJABDjZuJMn8tyf7RLLPIRV8J8qe-OUULjnQRaQNyWricSsOjlKJoyYu8WOvs5PxBWQpzuiq8hlDlOY7zY-qIYDgQ6NFuifS5GbHbnLBET0OTfmsMC8797Mo5un9_ECyg8/s1600/sap-hacker.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBUpsAaH4Pe-HlsDhdSH5KK3VgWm9NEXXLNBOpxxp4d8WMZwSNNyPALzuapR_iUlq3-dLDe2bnPJfh42cdfH5m3LQWGKXZvHF3sYacyDbtZacKIIoluyNgP01-6bjjEz-RBhAQqxw-VHGD7gpn3ToRulgeH0ydeWXOucoK4hLBwvXtlCg81tB1scdjPbKN/s1600/i-h.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
   <article class="card" style="border-top-color:#b91c1c"
            data-severity="Critical" data-category="Vulnerability">
@@ -121,9 +108,9 @@
         <span class="sev" style="background:#b91c1c">Critical</span>
         <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
       </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/" target="_blank" rel="noopener noreferrer">Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days</a></h2>
-      <p>Microsoft&#x27;s October 2026 Patch Tuesday addresses a record 1,411 security flaws, including three zero-day vulnerabilities. Organizations must apply these updates promptly to protect against potential exploitation of the patched vulnerabilities.</p>
-      <div class="tags"><span class="tag">Microsoft</span></div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/" target="_blank" rel="noopener noreferrer">CISA warns admins to immediately fix Ivanti flaw exploited as zero-day</a></h2>
+      <p>CISA has urged administrators to immediately patch an Ivanti Connect Secure flaw that has been actively exploited as a zero-day attack since October 1st. This poses an immediate threat to organizations using the affected software, requiring urgent mitigation.</p>
+      <div class="tags"><span class="tag">Ivanti</span><span class="tag">Ivanti Connect Secure</span></div>
     </div>
     
   </article>
@@ -134,22 +121,48 @@
         <span class="sev" style="background:#c2410c">High</span>
         <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
       </div>
-      <h2><a href="https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html" target="_blank" rel="noopener noreferrer">Docker Fixes Critical Two-Year-Old Hub Flaw That Let One User Push Images as Another</a></h2>
-      <p>Docker fixed a two-year-old vulnerability in Docker Hub that allowed unauthorized users to push, pull, or delete images belonging to other accounts. While the flaw posed a severe risk to container integrity, Docker stated there is no evidence it was exploited.</p>
-      <div class="tags"><span class="tag">Docker</span><span class="tag">Docker Hub</span></div>
+      <h2><a href="https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html" target="_blank" rel="noopener noreferrer">curl Patches HTTP/2 Upload Flaw After PoC Demonstrates Client-Side Code Execution</a></h2>
+      <p>The curl project patched a memory corruption vulnerability in HTTP/2 uploads that a researcher demonstrated could lead to client-side code execution. While exploitation requires precise knowledge of the client&#x27;s build and memory layout, the fix is included in version 8.23.0.</p>
+      <div class="tags"><span class="tag">curl</span></div>
     </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEile879Rmv8zAdU5PMclUp5RnNGDb3h1u3aVZ-VigGjnO0RFcyCQ03s7_lIqMGDiow5ilPumq3B2_bsvewqRlepch4lFwLvOUEDQZPYd9Vv8untJVZFmrv5Zhgvj54cs4J_vCYW4GVY-XsQl7SXD-yrXbED6KpiWbTq-kL_0aNwef3xjV3cBGQ3dsodqAM/s1600/dock.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4S_5rQ2kApGYmSMOh6PFsgD3yRugV3_nzSexwBhEe3BoSTQeBfSu2-3JSO4wDCnU2LmVMWtgA6AcBEcf2wOpsL2v22woZ5fel0XaSonlbgDWSXMuV3iu5ewohp9kqgf4OwmCvtnRyyYjFEP6Z3RRLT5sX8g7-xI1robnLmWtqFp6SvrGvpBeXI_D4ICo/s1600/curl.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
   <article class="card" style="border-top-color:#c2410c"
-           data-severity="High" data-category="Vulnerability">
+           data-severity="High" data-category="Research">
     <div class="body">
       <div class="meta">
         <span class="sev" style="background:#c2410c">High</span>
-        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
       </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127648-and-kb5126653-cumulative-updates-released/" target="_blank" rel="noopener noreferrer">Windows 11 KB5127648 &amp; KB5126653 cumulative updates released</a></h2>
-      <p>Microsoft has released Patch Tuesday cumulative updates for multiple versions of Windows 11 to fix security vulnerabilities, bugs, and introduce new features. System administrators should apply these updates to maintain system security and stability.</p>
-      <div class="tags"><span class="tag">Microsoft Windows 11</span></div>
+      <h2><a href="https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html" target="_blank" rel="noopener noreferrer">Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days</a></h2>
+      <p>Security researchers used an OpenAI model to chain three zero-day bugs in Google Chrome into a full-chain exploit in just six days. Google has since confirmed and fixed the vulnerabilities, awarding the research team a top bug bounty payout.</p>
+      <div class="tags"><span class="tag">Google Chrome</span><span class="tag">OpenAI</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLXn6RSZOSq2StbSf2fHVaHwVEetIYN0wGfuaIcyaEnwSnXLaY1FBfSKPFzzQuKvtpRygCR7AvNixA-SCkIA98QjnT7gE2UWYtoiZLs5VxQC8KTSJwwlcP0helOb3F4hbSo4uqITjJYPiZHSSuKkm1O_BXFYeyEU7koe_77QSmKbU33o5hteBC5-0dxrs/s1600/chrome-exploit.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Malware">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Malware</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html" target="_blank" rel="noopener noreferrer">Hirudo Android Trojan Uses Patched Banking Apps to Bypass Their Built-In Security Checks</a></h2>
+      <p>Researchers discovered a new Android banking trojan called Hirudo that replaces legitimate banking applications with patched versions to bypass built-in security checks. This malware currently targets at least eight Indonesian banking apps, marking a significant escalation in mobile financial fraud tactics.</p>
+      <div class="tags"><span class="tag">Android</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj010OXrg2ZBrxwqSnpzd8SrIDY_dYOMtdnzIpG7YnCjv1QB58_HylDTkfFmXtZYci90doRcSrPdFfYLowM_S5t2RpD6UkCoWveJrKajQS-7d3sDtyI22FYN0TKy-pQpzWScUB_ROhXRNzZi9dzhgg02kH3WVtdGPNWYBLKv8qZgsa9kREW1SvZ2LTF2AWV/s1600/android-banking.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Malware">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Malware</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/" target="_blank" rel="noopener noreferrer">Hirudo Android malware replaces banking apps to evade security checks</a></h2>
+      <p>A new Android malware named Hirudo steals banking credentials by swapping legitimate financial applications with modified versions that disable security checks. This threat endangers mobile users by compromising sensitive account data and bypassing standard device protections.</p>
+      <div class="tags"><span class="tag">Android</span></div>
     </div>
     
   </article>
@@ -158,65 +171,65 @@
     <div class="body">
       <div class="meta">
         <span class="sev" style="background:#a16207">Medium</span>
-        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
       </div>
-      <h2><a href="https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html" target="_blank" rel="noopener noreferrer">GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking</a></h2>
-      <p>GitHub has implemented a 48-hour expiration policy for unvalidated npm trusted publishing configurations to prevent unauthorized package hijacking. This update helps secure the supply chain by ensuring configurations are validated upon their first successful publish.</p>
-      <div class="tags"><span class="tag">GitHub</span><span class="tag">npm</span></div>
-    </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3aDWaWT6PmRDL9d6tHPDisxclb_Ak7YZIxuS02EUFvNaWrc4_UKwUqW0RI1KT3r8zsneOguD6b85yg8mf3gAzZZOGuLi-mXckG_yzwmXXb3IchTBSVeRvPlUo7QU4Kp4yiM6QqPshmo4p0GQ55XZPTEDc0DZn9N84S_ZibZ4rkXuhZ3OvoHNCYH-wk0k-/s1600/git-npm.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#a16207"
-           data-severity="Medium" data-category="Policy">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#a16207">Medium</span>
-        <span>Policy</span><span>&middot;</span><span>BleepingComputer</span>
-      </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/" target="_blank" rel="noopener noreferrer">Microsoft: Windows 11 24H2 Home and Pro reached end of support</a></h2>
-      <p>Microsoft announced that Windows 11 24H2 Home and Pro editions have reached their end of support, meaning they will no longer receive monthly security updates. This matters because systems running these versions will become increasingly vulnerable to newly discovered security threats over time.</p>
-      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows 11</span></div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/" target="_blank" rel="noopener noreferrer">Microsoft: Recent Windows updates may trigger Remote Desktop failures</a></h2>
+      <p>Microsoft confirmed that recent Windows updates can cause Remote Desktop connection failures for non-admin users when the &quot;Administrator protection&quot; feature is enabled. This issue impacts administrative workflows and remote access reliability for organizations utilizing this security setting.</p>
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows</span></div>
     </div>
     
   </article>
   <article class="card" style="border-top-color:#a16207"
-           data-severity="Medium" data-category="Breach">
+           data-severity="Medium" data-category="Vulnerability">
     <div class="body">
       <div class="meta">
         <span class="sev" style="background:#a16207">Medium</span>
-        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+        <span>Vulnerability</span><span>&middot;</span><span>Krebs on Security</span>
       </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/" target="_blank" rel="noopener noreferrer">UK Housing Ombudsman Service investigates &#x27;security incident&#x27;</a></h2>
-      <p>The U.K. Housing Ombudsman Service is investigating a third-party IT security incident that impacted its case management system. This disruption affects internal operations and highlights ongoing risks associated with third-party vendor security.</p>
-      <div class="tags"><span class="tag">UK Housing Ombudsman Service</span></div>
+      <h2><a href="https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/" target="_blank" rel="noopener noreferrer">Microsoft Patches More Than 1,400 Security Flaws</a></h2>
+      <p>Microsoft released updates addressing over 1,400 security vulnerabilities across Windows and other software. This massive patch batch significantly exceeds recent historical averages for monthly updates.</p>
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows</span></div>
     </div>
-    
+    <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2020/08/windowsec.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
   <article class="card" style="border-top-color:#1d4ed8"
-           data-severity="Low" data-category="Policy">
+           data-severity="Low" data-category="Research">
     <div class="body">
       <div class="meta">
         <span class="sev" style="background:#1d4ed8">Low</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html" target="_blank" rel="noopener noreferrer">How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team</a></h2>
+      <p>Security teams are advised to conduct deepfake readiness drills to identify vulnerabilities in voice and video verification processes before attacks occur. This proactive approach helps prevent social engineering threats like payment fraud and unauthorized access requests.</p>
+      <div class="tags"></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEYzcrs6sSW45od6MYo5jFl29yPGuwipgy7nfS3STYqknrD9b5OcU00_c0sqjG8Arvqq36ojwHSZMbjboA3bUQ1-ZcLRRjmuEQpzTDYYXnyvySzynW0UOvHOVmYNNzp_n-J5xXmwByMCofw5kxslXe4dqAVYqrWa-1LivXxPNa_ZGOQgIBxhyhvtiLxDs/s1600/icon.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
         <span>Policy</span><span>&middot;</span><span>BleepingComputer</span>
       </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/" target="_blank" rel="noopener noreferrer">Microsoft releases Windows 10 KB5126657 extended security update</a></h2>
-      <p>Microsoft has released the Windows 10 KB5126657 extended security update, incorporating the October 2026 Patch Tuesday fixes and various bug fixes. This update is important for administrators maintaining Windows 10 systems under extended support to ensure they receive the latest security patches.</p>
-      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows 10</span></div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/" target="_blank" rel="noopener noreferrer">Global takedown hits network behind 1 billion phishing messages</a></h2>
+      <p>Law enforcement agencies worldwide have disrupted a massive cybercriminal network responsible for sending over one billion phishing messages. This takedown successfully neutralizes a major global infrastructure that targeted more than 75,000 organizations across 150 countries.</p>
+      <div class="tags"></div>
     </div>
     
   </article>
   <article class="card" style="border-top-color:#57534e"
-           data-severity="Info" data-category="Research">
+           data-severity="Info" data-category="Other">
     <div class="body">
       <div class="meta">
         <span class="sev" style="background:#57534e">Info</span>
-        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+        <span>Other</span><span>&middot;</span><span>BleepingComputer</span>
       </div>
-      <h2><a href="https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html" target="_blank" rel="noopener noreferrer">Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets</a></h2>
-      <p>Anthropic warns that small artificial intelligence models could soon develop the capability to self-replicate and form autonomous IoT botnets. This presents a future security risk because decentralized AI-driven worms would be extremely difficult to shut down.</p>
-      <div class="tags"><span class="tag">IoT devices</span><span class="tag">smart ovens</span><span class="tag">Android TV boxes</span></div>
+      <h2><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/" target="_blank" rel="noopener noreferrer">OpenAI engineer arrested for allegedly planting spy device in office</a></h2>
+      <p>A Saudi OpenAI engineer was arrested for allegedly planting a hidden recording device in an executive conference room at the company&#x27;s San Francisco offices. This incident highlights physical security risks and insider threats targeting sensitive corporate communications.</p>
+      <div class="tags"><span class="tag">OpenAI</span></div>
     </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigX1U6rARsREVvdJOVd0vGWuybd8470_G2xcVMyp0u_rHrimpzBkv2-Qyo_qcx_9BpQOlndrW-P1tpya8dQwnEscYsg1NYPq3kGXKayoosc20QHDXRyadNlRMTuSa2KKSaI0qoq4gO415S3LTux5cPcUieRF6PW4xzeILW-D80v3jkwWRni7y51t4Y6Hnu/s1600/ai-botnet.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    
   </article>
   <article class="card" style="border-top-color:#57534e"
            data-severity="Info" data-category="Other">
@@ -226,8 +239,8 @@
         <span>Other</span><span>&middot;</span><span>Krebs on Security</span>
       </div>
       <h2><a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/" target="_blank" rel="noopener noreferrer">FBI Arrests Executive at Ransomware Negotiation Firm</a></h2>
-      <p>The FBI arrested the co-founder of a Canadian cybersecurity firm in connection with the ShinyHunters hacking group investigation. This matters because the group reportedly stole sensitive data regarding thousands of FBI agents.</p>
-      <div class="tags"><span class="tag">ShinyHunters</span></div>
+      <p>The FBI arrested the co-founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group investigation. This matters because the group allegedly stole sensitive data regarding thousands of FBI agents.</p>
+      <div class="tags"><span class="tag">FBI</span><span class="tag">ShinyHunters</span></div>
     </div>
     <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2026/10/dubrovsky-li.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
@@ -239,7 +252,7 @@
         <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
       </div>
       <h2><a href="https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/" target="_blank" rel="noopener noreferrer">ShinyHunters Extorted Boeing Spin-off Prior to Arrests</a></h2>
-      <p>A teenager suspected of leading the ShinyHunters extortion group was detained and is reportedly cooperating with the FBI. The arrest coincided with the group&#x27;s extortion attempt against a business unit recently divested by Boeing.</p>
+      <p>Authorities detained a teenager in Jordan suspected of leading the ShinyHunters extortion group, who is now reportedly cooperating with the FBI. The arrest coincided with the group&#x27;s ongoing extortion attempt against a business unit recently divested by Boeing.</p>
       <div class="tags"><span class="tag">Boeing</span><span class="tag">ShinyHunters</span></div>
     </div>
     <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2026/10/Jeppesen.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
@@ -252,36 +265,23 @@
         <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
       </div>
       <h2><a href="https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/" target="_blank" rel="noopener noreferrer">Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation</a></h2>
-      <p>Dutch police arrested a 23-year-old suspect linked to the ShinyHunters cybercriminal group for alleged data theft and extortion. Following the arrest, the remaining group members escalated their attacks by stealing sensitive FBI data and extorting the Cl0p ransomware group.</p>
+      <p>Dutch police arrested a 23-year-old former cybercriminal suspected of assisting the ShinyHunters hacking group in data thefts and extortions. In response, remaining ShinyHunters members escalated their attacks by stealing sensitive FBI data and extorting the Cl0p ransomware group.</p>
       <div class="tags"><span class="tag">ShinyHunters</span><span class="tag">FBI</span><span class="tag">Cl0p</span></div>
     </div>
     <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2026/09/umbreon-nl-rf.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
   <article class="card" style="border-top-color:#57534e"
-           data-severity="Info" data-category="Policy">
+           data-severity="Info" data-category="Breach">
     <div class="body">
       <div class="meta">
         <span class="sev" style="background:#57534e">Info</span>
-        <span>Policy</span><span>&middot;</span><span>Krebs on Security</span>
+        <span>Breach</span><span>&middot;</span><span>Krebs on Security</span>
       </div>
       <h2><a href="https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/" target="_blank" rel="noopener noreferrer">U.S. Soldier Gets 70 Months in Prison for AT&amp;T, Verizon Extortions</a></h2>
-      <p>A U.S. Army soldier was sentenced to 70 months in federal prison for hacking major telecommunications companies and stealing metadata for over 100 million customers. This case highlights insider threats and the severe consequences of large-scale data theft from critical infrastructure.</p>
+      <p>A U.S. Army soldier was sentenced to 70 months in federal prison and ordered to pay restitution for hacking major telecommunications companies. The breach compromised metadata for over 100 million customers in 2024.</p>
       <div class="tags"><span class="tag">AT&amp;T</span><span class="tag">Verizon</span></div>
     </div>
     <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2024/12/camwagenius-selfie.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#57534e"
-           data-severity="Info" data-category="Policy">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#57534e">Info</span>
-        <span>Policy</span><span>&middot;</span><span>Krebs on Security</span>
-      </div>
-      <h2><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/" target="_blank" rel="noopener noreferrer">Data Broker Radaris Loses Domains in Privacy Fight</a></h2>
-      <p>Consumer data broker Radaris had its primary domain and more than a dozen others seized by a judge and transferred to plaintiffs. This action came after the company repeatedly stonewalled a lawsuit alleging violations of a New Jersey privacy law protecting state law enforcement officials&#x27; personal information.</p>
-      <div class="tags"><span class="tag">Radaris</span></div>
-    </div>
-    <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2024/06/radaris-home.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
   <footer>Generated automatically from public RSS feeds. Images and stories belong to their
   publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>

@@ -1,0 +1,219 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
+    "link": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+    "published": "Wed, 14 Oct 2026 18:00:42 +0530",
+    "summary": "CISA is urging organizations to immediately update Ivanti Connect Secure appliances following the disclosure of an actively exploited authentication bypass vulnerability. This flaw poses a significant risk as honeypots have already logged numerous exploit attempts against deployments.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBUpsAaH4Pe-HlsDhdSH5KK3VgWm9NEXXLNBOpxxp4d8WMZwSNNyPALzuapR_iUlq3-dLDe2bnPJfh42cdfH5m3LQWGKXZvHF3sYacyDbtZacKIIoluyNgP01-6bjjEz-RBhAQqxw-VHGD7gpn3ToRulgeH0ydeWXOucoK4hLBwvXtlCg81tB1scdjPbKN/s1600/i-h.jpg",
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-104935"
+    ],
+    "affected": [
+      "Ivanti Connect Secure"
+    ]
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "CISA warns admins to immediately fix Ivanti flaw exploited as zero-day",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/",
+    "published": "Wed, 14 Oct 2026 08:58:07 -0400",
+    "summary": "CISA has urged administrators to immediately patch an Ivanti Connect Secure flaw that has been actively exploited as a zero-day attack since October 1st. This poses an immediate threat to organizations using the affected software, requiring urgent mitigation.",
+    "image": "",
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Ivanti",
+      "Ivanti Connect Secure"
+    ]
+  },
+  {
+    "source": "The Hacker News",
+    "title": "curl Patches HTTP/2 Upload Flaw After PoC Demonstrates Client-Side Code Execution",
+    "link": "https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html",
+    "published": "Wed, 14 Oct 2026 17:43:36 +0530",
+    "summary": "The curl project patched a memory corruption vulnerability in HTTP/2 uploads that a researcher demonstrated could lead to client-side code execution. While exploitation requires precise knowledge of the client's build and memory layout, the fix is included in version 8.23.0.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4S_5rQ2kApGYmSMOh6PFsgD3yRugV3_nzSexwBhEe3BoSTQeBfSu2-3JSO4wDCnU2LmVMWtgA6AcBEcf2wOpsL2v22woZ5fel0XaSonlbgDWSXMuV3iu5ewohp9kqgf4OwmCvtnRyyYjFEP6Z3RRLT5sX8g7-xI1robnLmWtqFp6SvrGvpBeXI_D4ICo/s1600/curl.jpg",
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "curl"
+    ]
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days",
+    "link": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+    "published": "Wed, 14 Oct 2026 16:49:02 +0530",
+    "summary": "Security researchers used an OpenAI model to chain three zero-day bugs in Google Chrome into a full-chain exploit in just six days. Google has since confirmed and fixed the vulnerabilities, awarding the research team a top bug bounty payout.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLXn6RSZOSq2StbSf2fHVaHwVEetIYN0wGfuaIcyaEnwSnXLaY1FBfSKPFzzQuKvtpRygCR7AvNixA-SCkIA98QjnT7gE2UWYtoiZLs5VxQC8KTSJwwlcP0helOb3F4hbSo4uqITjJYPiZHSSuKkm1O_BXFYeyEU7koe_77QSmKbU33o5hteBC5-0dxrs/s1600/chrome-exploit.jpg",
+    "category": "Research",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Google Chrome",
+      "OpenAI"
+    ]
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hirudo Android Trojan Uses Patched Banking Apps to Bypass Their Built-In Security Checks",
+    "link": "https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html",
+    "published": "Wed, 14 Oct 2026 16:38:22 +0530",
+    "summary": "Researchers discovered a new Android banking trojan called Hirudo that replaces legitimate banking applications with patched versions to bypass built-in security checks. This malware currently targets at least eight Indonesian banking apps, marking a significant escalation in mobile financial fraud tactics.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj010OXrg2ZBrxwqSnpzd8SrIDY_dYOMtdnzIpG7YnCjv1QB58_HylDTkfFmXtZYci90doRcSrPdFfYLowM_S5t2RpD6UkCoWveJrKajQS-7d3sDtyI22FYN0TKy-pQpzWScUB_ROhXRNzZi9dzhgg02kH3WVtdGPNWYBLKv8qZgsa9kREW1SvZ2LTF2AWV/s1600/android-banking.jpg",
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Android"
+    ]
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hirudo Android malware replaces banking apps to evade security checks",
+    "link": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
+    "published": "Wed, 14 Oct 2026 07:41:20 -0400",
+    "summary": "A new Android malware named Hirudo steals banking credentials by swapping legitimate financial applications with modified versions that disable security checks. This threat endangers mobile users by compromising sensitive account data and bypassing standard device protections.",
+    "image": "",
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Android"
+    ]
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft: Recent Windows updates may trigger Remote Desktop failures",
+    "link": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
+    "published": "Wed, 14 Oct 2026 06:48:09 -0400",
+    "summary": "Microsoft confirmed that recent Windows updates can cause Remote Desktop connection failures for non-admin users when the \"Administrator protection\" feature is enabled. This issue impacts administrative workflows and remote access reliability for organizations utilizing this security setting.",
+    "image": "",
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows"
+    ]
+  },
+  {
+    "source": "Krebs on Security",
+    "title": "Microsoft Patches More Than 1,400 Security Flaws",
+    "link": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+    "published": "Tue, 13 Oct 2026 23:24:53 +0000",
+    "summary": "Microsoft released updates addressing over 1,400 security vulnerabilities across Windows and other software. This massive patch batch significantly exceeds recent historical averages for monthly updates.",
+    "image": "https://krebsonsecurity.com/wp-content/uploads/2020/08/windowsec.png",
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows"
+    ]
+  },
+  {
+    "source": "The Hacker News",
+    "title": "How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team",
+    "link": "https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html",
+    "published": "Wed, 14 Oct 2026 17:20:00 +0530",
+    "summary": "Security teams are advised to conduct deepfake readiness drills to identify vulnerabilities in voice and video verification processes before attacks occur. This proactive approach helps prevent social engineering threats like payment fraud and unauthorized access requests.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEYzcrs6sSW45od6MYo5jFl29yPGuwipgy7nfS3STYqknrD9b5OcU00_c0sqjG8Arvqq36ojwHSZMbjboA3bUQ1-ZcLRRjmuEQpzTDYYXnyvySzynW0UOvHOVmYNNzp_n-J5xXmwByMCofw5kxslXe4dqAVYqrWa-1LivXxPNa_ZGOQgIBxhyhvtiLxDs/s1600/icon.jpg",
+    "category": "Research",
+    "severity": "Low",
+    "cves": [],
+    "affected": []
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Global takedown hits network behind 1 billion phishing messages",
+    "link": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
+    "published": "Wed, 14 Oct 2026 09:12:52 -0400",
+    "summary": "Law enforcement agencies worldwide have disrupted a massive cybercriminal network responsible for sending over one billion phishing messages. This takedown successfully neutralizes a major global infrastructure that targeted more than 75,000 organizations across 150 countries.",
+    "image": "",
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": []
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "OpenAI engineer arrested for allegedly planting spy device in office",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/",
+    "published": "Tue, 13 Oct 2026 18:33:02 -0400",
+    "summary": "A Saudi OpenAI engineer was arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices. This incident highlights physical security risks and insider threats targeting sensitive corporate communications.",
+    "image": "",
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI"
+    ]
+  },
+  {
+    "source": "Krebs on Security",
+    "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+    "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+    "published": "Sat, 10 Oct 2026 00:17:42 +0000",
+    "summary": "The FBI arrested the co-founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group investigation. This matters because the group allegedly stole sensitive data regarding thousands of FBI agents.",
+    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/dubrovsky-li.png",
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "FBI",
+      "ShinyHunters"
+    ]
+  },
+  {
+    "source": "Krebs on Security",
+    "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
+    "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+    "published": "Wed, 07 Oct 2026 13:48:45 +0000",
+    "summary": "Authorities detained a teenager in Jordan suspected of leading the ShinyHunters extortion group, who is now reportedly cooperating with the FBI. The arrest coincided with the group's ongoing extortion attempt against a business unit recently divested by Boeing.",
+    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/Jeppesen.png",
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Boeing",
+      "ShinyHunters"
+    ]
+  },
+  {
+    "source": "Krebs on Security",
+    "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
+    "link": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+    "published": "Mon, 28 Sep 2026 15:08:57 +0000",
+    "summary": "Dutch police arrested a 23-year-old former cybercriminal suspected of assisting the ShinyHunters hacking group in data thefts and extortions. In response, remaining ShinyHunters members escalated their attacks by stealing sensitive FBI data and extorting the Cl0p ransomware group.",
+    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/09/umbreon-nl-rf.png",
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "ShinyHunters",
+      "FBI",
+      "Cl0p"
+    ]
+  },
+  {
+    "source": "Krebs on Security",
+    "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
+    "link": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+    "published": "Fri, 25 Sep 2026 21:44:40 +0000",
+    "summary": "A U.S. Army soldier was sentenced to 70 months in federal prison and ordered to pay restitution for hacking major telecommunications companies. The breach compromised metadata for over 100 million customers in 2024.",
+    "image": "https://krebsonsecurity.com/wp-content/uploads/2024/12/camwagenius-selfie.png",
+    "category": "Breach",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "AT&T",
+      "Verizon"
+    ]
+  }
+]
