@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Security Briefing - 2026-10-14</title>
+<title>Security Briefing - 2026-10-15</title>
 <style>
   :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
           --serif: Georgia, "Times New Roman", serif; }
@@ -115,14 +115,14 @@
   <header class="masthead">
     <div class="kicker">AI-curated &middot; Updated every morning</div>
     <h1><a href="index.html">The Daily Security Briefing</a></h1>
-    <p class="dateline">Wed, Oct 14, 2026 &middot; 15 stories, summarized and triaged by AI</p>
+    <p class="dateline">Thu, Oct 15, 2026 &middot; 15 stories, summarized and triaged by AI</p>
   </header>
   
-  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">2</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">3</span>High</div><div class="stat"><span class="num" style="color:#a16207">3</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">2</span>Low</div><div class="stat"><span class="num" style="color:#57534e">5</span>Info</div></section>
+  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">5</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">4</span>High</div><div class="stat"><span class="num" style="color:#a16207">0</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">1</span>Low</div><div class="stat"><span class="num" style="color:#57534e">5</span>Info</div></section>
 
   <section class="filters" aria-label="Filter stories">
-    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">3</span></button><button type="button" class="chip" data-group="severity" data-value="Medium" aria-pressed="false"><span class="dot" style="background:#a16207"></span>Medium <span class="n">3</span></button><button type="button" class="chip" data-group="severity" data-value="Low" aria-pressed="false"><span class="dot" style="background:#1d4ed8"></span>Low <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">5</span></button></div>
-    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">6</span></button><button type="button" class="chip" data-group="category" data-value="Malware" aria-pressed="false">Malware <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Policy" aria-pressed="false">Policy <span class="n">3</span></button><button type="button" class="chip" data-group="category" data-value="Research" aria-pressed="false">Research <span class="n">5</span></button></div>
+    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">5</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">4</span></button><button type="button" class="chip" data-group="severity" data-value="Low" aria-pressed="false"><span class="dot" style="background:#1d4ed8"></span>Low <span class="n">1</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">5</span></button></div>
+    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">6</span></button><button type="button" class="chip" data-group="category" data-value="Breach" aria-pressed="false">Breach <span class="n">3</span></button><button type="button" class="chip" data-group="category" data-value="Malware" aria-pressed="false">Malware <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Threat Actor" aria-pressed="false">Threat Actor <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Policy" aria-pressed="false">Policy <span class="n">3</span></button><button type="button" class="chip" data-group="category" data-value="Research" aria-pressed="false">Research <span class="n">1</span></button></div>
   </section>
   <p class="jargon-note">New to security? Hover over or tap any
   <abbr class="term" tabindex="0" data-def="Like this one. Each underlined word has a short, plain-English definition.">underlined word</abbr>
@@ -136,15 +136,30 @@
     <div class="body">
       <div class="meta">
         <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html" target="_blank" rel="noopener noreferrer">Drupal Patches Critical Core RCE Flaw with No-Login Path via Contributed Modules</a></h2>
+      <p><span class="label">What happened</span>Drupal <abbr class="term" tabindex="0" data-def="Fixed by a software update from the maker.">patched</abbr> a critical security flaw in its software that could allow an attacker to run malicious code on a website&#x27;s server. While the flaw cannot be reached by default, certain add-on modules create paths for attackers, including at least one that requires no login.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you run a website powered by Drupal, your web administrator or IT team needs to update the software immediately.</p><p><span class="who">For IT teams:</span> Apply the official updates released on October 14 (versions 11.4.10, 11.3.19, or 10.6.19) and review your Drupal installations for unauthorized access or suspicious activity related to contributed modules.</p></div>
+      
+      <div class="tags"><span class="tag">Drupal</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWENfwA4xQHfwINduJpVTTiNeAmBkevujxbloFijpq7PQV8xOV-iApTx_f5g9ImW_oKJolO1RuhlNeDc2NwoWKOdPfjfdDzMhCuOsWtdyCZOOs2fTW4vmXYixSIdOCw2CwsvSgvEOPxqHUwSoRpxxoMRKKRqsqezOqVNpF5uQaU3cdI7z9L_Y_2WeTImA/s1600/drupal.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
         <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
       </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/" target="_blank" rel="noopener noreferrer">CISA warns admins to immediately fix Ivanti flaw exploited as zero-day</a></h2>
-      <p><span class="label">What happened</span>A security flaw in Ivanti Connect Secure software is being <abbr class="term" tabindex="0" data-def="Attackers are already using this flaw in real attacks, not just in theory.">actively exploited</abbr> by attackers in the wild. Organizations must apply updates immediately to prevent unauthorized access.</p>
-      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses Ivanti Connect Secure, your IT team should already be on it.</p><p><span class="who">For IT teams:</span> Immediately update your Ivanti Connect Secure (ICS) appliances and deployments to the latest version provided by the vendor.</p></div>
-      <p class="also"><strong>Also covered:</strong> <a href="https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html" target="_blank" rel="noopener noreferrer">The Hacker News: CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts</a></p>
-      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-104935" target="_blank" rel="noopener noreferrer">CVE-2026-104935</a><span class="tag">Ivanti Connect Secure</span></div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/" target="_blank" rel="noopener noreferrer">Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks</a></h2>
+      <p><span class="label">What happened</span>Palo Alto Networks has released security updates for a security flaw in its firewall software that is currently being <abbr class="term" tabindex="0" data-def="Attackers have used this flaw to break in.">exploited</abbr> in attacks. This vulnerability allows an attacker to run malicious code remotely.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. This equipment is typically managed by company IT departments, not ordinary home users.</p><p><span class="who">For IT teams:</span> Apply Palo Alto Networks&#x27; security updates for PAN-OS immediately and check systems for signs of compromise.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html" target="_blank" rel="noopener noreferrer">The Hacker News: Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation</a></p>
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-0322" target="_blank" rel="noopener noreferrer">CVE-2026-0322</a><span class="tag">Palo Alto Networks PAN-OS</span></div>
     </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBUpsAaH4Pe-HlsDhdSH5KK3VgWm9NEXXLNBOpxxp4d8WMZwSNNyPALzuapR_iUlq3-dLDe2bnPJfh42cdfH5m3LQWGKXZvHF3sYacyDbtZacKIIoluyNgP01-6bjjEz-RBhAQqxw-VHGD7gpn3ToRulgeH0ydeWXOucoK4hLBwvXtlCg81tB1scdjPbKN/s1600/i-h.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4G5JAIF-hCnKf9QyWLzWIWxTrUIjqshujDHf0-_9m84O9f4S0Z-IQ4Jg-T11Ph_rwZvzsFU8Z-pI3uRsnvPSE-FK_VtrUx0pNZgHKf3PuMJCQmwopiE5hyMRSObeV7_VSrF7WC_iiG9T8wMNivOOBC12F7bLK8WI-MNjCffolAJnnhk-X-v1ecxwYtrQz/s1600/palo.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
   <article class="card" style="border-top-color:#b91c1c"
            data-severity="Critical" data-category="Vulnerability">
@@ -153,28 +168,43 @@
         <span class="sev" style="background:#b91c1c">Critical</span>
         <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
       </div>
-      <h2><a href="https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html" target="_blank" rel="noopener noreferrer">Microsoft Patches Record 1,413 Flaws, Including Exploited Windows Shell Bug</a></h2>
-      <p><span class="label">What happened</span>Microsoft released a record-breaking number of software updates to fix over 1,400 security flaws, including at least one that is currently being <abbr class="term" tabindex="0" data-def="Attackers have used this flaw to break in.">exploited</abbr> by attackers. These updates protect against malicious takeovers and unauthorized access across Windows and other Microsoft products.</p>
-      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Install the latest Windows and Microsoft updates today to protect your devices from actively targeted security flaws. Go to Settings &gt; Windows Update &gt; Check for updates.</p><p><span class="who">For IT teams:</span> Apply Microsoft&#x27;s October updates across all affected systems immediately, prioritizing the <abbr class="term" tabindex="0" data-def="Attackers are already using this flaw in real attacks, not just in theory.">actively exploited</abbr> Windows Shell vulnerability.</p></div>
-      <p class="also"><strong>Also covered:</strong> <a href="https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/" target="_blank" rel="noopener noreferrer">Krebs on Security: Microsoft Patches More Than 1,400 Security Flaws</a> &middot; <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/" target="_blank" rel="noopener noreferrer">BleepingComputer: Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days</a></p>
-      <div class="tags"><span class="tag">Microsoft Windows</span><span class="tag">Office</span><span class="tag">Developer Tools</span><span class="tag">SharePoint Server</span><span class="tag">SQL Server</span></div>
+      <h2><a href="https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html" target="_blank" rel="noopener noreferrer">Langflow&#x27;s Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts</a></h2>
+      <p><span class="label">What happened</span>Hackers are actively attacking a critical security flaw in Langflow, a platform used to build artificial intelligence applications. This allows attackers to take control of vulnerable systems.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses Langflow, your IT team should investigate and secure the system immediately.</p><p><span class="who">For IT teams:</span> Review systems running Langflow for signs of compromise and apply updates or mitigations provided by the vendor.</p></div>
+      
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-105740" target="_blank" rel="noopener noreferrer">CVE-2026-105740</a><span class="tag">Langflow</span></div>
     </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_wUoSEpf7bMmgL7Aa7NRI6qvluN83g3TcKAONrL5REtzYQIVR4TqrNs0awkDsRCXvaSEaOn83V0t1jpwkrh5FULBjyQJnxe-m4gkgjMHRC0SZHpkBDNjOSuZUrOXU5R6JGt4dwZXXn4JHYSoc4n22nIXcFIYtC51Vv89hGimRebEKzQ9-PX1U7M4Lk4ST/s1600/windows-patch.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1tlAL_zc7Hg-gD5PRFa08hoOp2KRDu9kNSJk8nhZ91us8q-K7qGfnoasa6gONBjZoEtGJqPEZY3rKMy4Uqozk89X-L7IQBV8IrDqnJYdtAsCC4d08mmQUI4r_zACmvDVdey82w7FC4lTIoYfqdwYYu2Bp_Ql0AwOB54KRYrHk9ixjo27rKLWEK0dwsfw3/s1600/langflow.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
-  <article class="card" style="border-top-color:#c2410c"
-           data-severity="High" data-category="Vulnerability">
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
     <div class="body">
       <div class="meta">
-        <span class="sev" style="background:#c2410c">High</span>
+        <span class="sev" style="background:#b91c1c">Critical</span>
         <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
       </div>
-      <h2><a href="https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html" target="_blank" rel="noopener noreferrer">curl Patches HTTP/2 Upload Flaw After PoC Demonstrates Client-Side Code Execution</a></h2>
-      <p><span class="label">What happened</span>A security flaw in curl could let a malicious server corrupt memory and run harmful code when a user uploads data over HTTP/2. The curl project has released a fix in version 8.23.0.</p>
-      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything right away, but you should update your software and tools when updates become available.</p><p><span class="who">For IT teams:</span> Upgrade curl to version 8.23.0 to apply the <abbr class="term" tabindex="0" data-def="A software update that fixes a flaw.">patch</abbr>.</p></div>
+      <h2><a href="https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html" target="_blank" rel="noopener noreferrer">AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches</a></h2>
+      <p><span class="label">What happened</span>Bad actors are exploiting flaws in AhsayCBS backup software to install malicious control tools and hidden cryptocurrency miners. Ahsay Backup has released new updates to fix these security holes after previous attempts fell short.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses AhsayCBS, your IT team should apply the security updates immediately.</p><p><span class="who">For IT teams:</span> Apply the latest security updates from Ahsay Backup for CVE-2026-105133 and CVE-2026-105134 to prevent unauthorized command execution, and check systems for signs of web shells or cryptocurrency miners.</p></div>
       
-      <div class="tags"><span class="tag">curl</span></div>
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-105133" target="_blank" rel="noopener noreferrer">CVE-2026-105133</a><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-105134" target="_blank" rel="noopener noreferrer">CVE-2026-105134</a><span class="tag">AhsayCBS</span></div>
     </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4S_5rQ2kApGYmSMOh6PFsgD3yRugV3_nzSexwBhEe3BoSTQeBfSu2-3JSO4wDCnU2LmVMWtgA6AcBEcf2wOpsL2v22woZ5fel0XaSonlbgDWSXMuV3iu5ewohp9kqgf4OwmCvtnRyyYjFEP6Z3RRLT5sX8g7-xI1robnLmWtqFp6SvrGvpBeXI_D4ICo/s1600/curl.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH_5A4EPZ4VVdF4dve5fMe4BwreUmtWCJQrgMiBdiZyoFInoZK_nO6ouOwLMCyyQPrXWE4_n3NE39b4C2UQi-G4uE3ufyv7A9IEYEp9O3ggTu7AyDRzOqwVqhLjISLvOTasPiAcdFafFtL7B5uoKtm8GPeFFxrKDupGCoqZJ2o88sUmaGbjKk6E3sJgIKD/s1600/backup.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html" target="_blank" rel="noopener noreferrer">Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability</a></h2>
+      <p><span class="label">What happened</span>Hackers are actively exploiting a critical security flaw in Cisco Secure Email Gateway devices using specially crafted emails. This flaw allows <abbr class="term" tabindex="0" data-def="Without needing to log in first.">unauthenticated</abbr> attackers to write files and run malicious commands with the highest level of system privileges.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses Cisco Secure Email Gateway, your IT team needs to apply the updates provided by Cisco.</p><p><span class="who">For IT teams:</span> Apply the software patches provided by Cisco in their advisory to address the <abbr class="term" tabindex="0" data-def="Attackers are already using this flaw in real attacks, not just in theory.">actively exploited</abbr> <abbr class="term" tabindex="0" data-def="A flaw that attackers found and used before the maker had a fix ready.">zero-day</abbr> flaw in Secure Email Gateway.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/" target="_blank" rel="noopener noreferrer">BleepingComputer: Cisco patches new Secure Email Gateway zero-day exploited in attacks</a></p>
+      <div class="tags"><span class="tag">Cisco Secure Email Gateway</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh__fSqm3p4u0HNpmeikU6Mo4abprP417Zb3pPW3-6IGrTHwqkbz1CqiuqxL2D0O1PH8J4Ho3_ZpNdJ5VFluIj_KHX6qT0WqZYfHQzyu0cVzGee9EmAZ9pNzsZJZx40UxuKjuz9eNHvuzlMANKOkDr6aRdKWxs8SpJqSi6vDBQTP5ZFgpgqn3Yj2TYNJU/s1600/cisco-0day.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
   <article class="card" style="border-top-color:#c2410c"
            data-severity="High" data-category="Malware">
@@ -183,73 +213,58 @@
         <span class="sev" style="background:#c2410c">High</span>
         <span>Malware</span><span>&middot;</span><span>The Hacker News</span>
       </div>
-      <h2><a href="https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html" target="_blank" rel="noopener noreferrer">Hirudo Android Trojan Uses Patched Banking Apps to Bypass Their Built-In Security Checks</a></h2>
-      <p><span class="label">What happened</span>A new malicious Android app called Hirudo steals banking login details by swapping real banking applications with modified versions that disable built-in security checks. This targets users of at least eight Indonesian banking apps.</p>
-      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Only download apps from official app stores like Google Play, and be very careful about giving apps extra permissions or installing apps from unfamiliar websites. If you use any Indonesian banking apps, ensure your device&#x27;s security software is up to date and watch out for any unexpected requests to reinstall your apps.</p></div>
-      <p class="also"><strong>Also covered:</strong> <a href="https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/" target="_blank" rel="noopener noreferrer">BleepingComputer: Hirudo Android malware replaces banking apps to evade security checks</a></p>
-      <div class="tags"><span class="tag">Android</span><span class="tag">Indonesian banking apps</span></div>
-    </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj010OXrg2ZBrxwqSnpzd8SrIDY_dYOMtdnzIpG7YnCjv1QB58_HylDTkfFmXtZYci90doRcSrPdFfYLowM_S5t2RpD6UkCoWveJrKajQS-7d3sDtyI22FYN0TKy-pQpzWScUB_ROhXRNzZi9dzhgg02kH3WVtdGPNWYBLKv8qZgsa9kREW1SvZ2LTF2AWV/s1600/android-banking.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#c2410c"
-           data-severity="High" data-category="Research">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#c2410c">High</span>
-        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
-      </div>
-      <h2><a href="https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html" target="_blank" rel="noopener noreferrer">AI-Found Linux Kernel Flaw Gives Local Users Root, and Can Break a Guest Out to the Host</a></h2>
-      <p><span class="label">What happened</span>A serious security flaw in the Linux operating system kernel lets local users gain full control of a system and can allow virtual machines to escape to the host computer. This bug affects software used by businesses, cloud providers, and advanced users over the last ten years.</p>
-      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people do not need to do anything. If your workplace or cloud provider uses Linux virtualization, your IT team will need to apply the necessary updates.</p><p><span class="who">For IT teams:</span> Apply vendor patches for CVE-2026-74580 as soon as they become available to prevent local privilege escalation and guest-to-host escapes in the vhost subsystem.</p></div>
-      
-      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-74580" target="_blank" rel="noopener noreferrer">CVE-2026-74580</a><span class="tag">Linux kernel</span></div>
-    </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhavZnpNnmOBy6Wnkh7wfYD4-I32k65R7uyhYW32Doh3YVqtfJaagZZ_uo9JN-cixODo6h846eR89Aa55TGuMKfXmpjZEVZQ0ssFoP4-qVX6qrvSoyfRsu_q3MQcLKwolyKeE3Lw3MByz2Su8O0XOdRWNkJmyBdwpxsAtxi5y2goE7RhOSBPOLh4Evb60c/s1600/linux-exploit.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#a16207"
-           data-severity="Medium" data-category="Research">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#a16207">Medium</span>
-        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
-      </div>
-      <h2><a href="https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html" target="_blank" rel="noopener noreferrer">Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days</a></h2>
-      <p>Security researchers used a public artificial intelligence model to quickly chain three Google Chrome browser bugs into a powerful attack that runs malicious code just by visiting a web page. Google has already fixed all three security flaws.</p>
-      
-      
-      <div class="tags"><span class="tag">Google Chrome</span></div>
-    </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLXn6RSZOSq2StbSf2fHVaHwVEetIYN0wGfuaIcyaEnwSnXLaY1FBfSKPFzzQuKvtpRygCR7AvNixA-SCkIA98QjnT7gE2UWYtoiZLs5VxQC8KTSJwwlcP0helOb3F4hbSo4uqITjJYPiZHSSuKkm1O_BXFYeyEU7koe_77QSmKbU33o5hteBC5-0dxrs/s1600/chrome-exploit.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#a16207"
-           data-severity="Medium" data-category="Research">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#a16207">Medium</span>
-        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
-      </div>
-      <h2><a href="https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html" target="_blank" rel="noopener noreferrer">An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part.</a></h2>
-      <p>An artificial intelligence security testing agent discovered a major flaw in a live insurance website that let users redirect login codes. This discovery highlights the growing capability of automated tools to find critical website security holes.</p>
-      
+      <h2><a href="https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html" target="_blank" rel="noopener noreferrer">Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early</a></h2>
+      <p><span class="label">What happened</span>Attackers are tricking people with fake artificial intelligence products to spread malicious software and steal account data. This campaign is putting heavy pressure on companies that monitor cybersecurity for businesses.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything special beyond normal caution. Always double-check that you are downloading software from official, trusted websites rather than clicking random links or ads.</p><p><span class="who">For IT teams:</span> Security teams should monitor for unauthorized or suspicious AI tools being downloaded or used across the network. Educate employees on verifying the authenticity of software before installation.</p></div>
       
       <div class="tags"></div>
     </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_bop9V2vtfHPW4Obd0zupOPpNFCd9N5HtVwWVs9u-njx8RuEgOkAh75uRjWLS_h3zHQ847m7xc01PkVAdKhyphenhyphen5Pkg2Pb_qthWVQe-9lcpKclCOq3ZDpQ2iSfRSFCQQU8gxyBl6lWEjTKWZHn9LiNSq2rQ4_nUIM6Sjcqv5fwgVRnFpiuxpYDfhrkbikLE/s1600/case.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvF5TcwT7nwh6xcCiXS3I0m6qmvF6EorwitA-7ETGlXzpc89JG-rPZye0FkJfFwunfKHXMTkGyg_pBRkBdJv_qaGX32cUdiqoTAA-sjGmsSlKJsL5LUFpyZLiho955h3EtKUCWvtnHyIJgzG1INTIwkqKsCmv3-vsxGXQq8QH-ue0Vl358XyE33wUhxWs/s1600/fake.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
-  <article class="card" style="border-top-color:#a16207"
-           data-severity="Medium" data-category="Vulnerability">
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
     <div class="body">
       <div class="meta">
-        <span class="sev" style="background:#a16207">Medium</span>
-        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>The Hacker News</span>
       </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/" target="_blank" rel="noopener noreferrer">Microsoft: Recent Windows updates may trigger Remote Desktop failures</a></h2>
-      <p>Recent Windows updates can block regular users from connecting to devices via Remote Desktop if a specific security setting is turned on. This matters because it may lock non-administrator users out of their remote connections.</p>
+      <h2><a href="https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html" target="_blank" rel="noopener noreferrer">GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories</a></h2>
+      <p><span class="label">What happened</span>A password-stealing campaign called GhostAction recently compromised nearly 1,900 GitHub accounts. It matters because the attackers targeted over 30,000 code repositories to steal sensitive secret keys.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you use GitHub, make sure you have turned on two-factor authentication (a security check requiring your phone or an app in addition to your password).</p></div>
       
-      
-      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows</span></div>
+      <div class="tags"><span class="tag">GitHub</span></div>
     </div>
-    <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2020/08/windowsec.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiddFchlm_nV3vywI0BM2-8IaZb-wHXwE8DplGqZYkRmcYkeXiSLfVmnVAU-jM4yikWW7SWokanh_S4hq88cVHjAnaWDGkl3VVAtPdv9SHWp0MNb0CIOAA-I73EuwwUSE-wNMnXEzbIdDYorJn2hIuBZQ5Jh_5I2IntiXuUYZz3sKax-wfRoaxy_pD9kGx0/s1600/ghost-git.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/" target="_blank" rel="noopener noreferrer">UK Legal Aid Agency: Hackers stole records dating back to 1978</a></h2>
+      <p><span class="label">What happened</span>Hackers breached the IT systems of the UK Legal Aid Agency and stole records dating back to 1978. The attack exposes decades of sensitive legal aid information.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you are a client of the UK Legal Aid Agency, watch out for any suspicious communications using your personal details.</p><p><span class="who">For IT teams:</span> Investigate internal systems for signs of the April 2025 breach, review access logs, and follow standard incident response procedures for compromised government data.</p></div>
+      
+      <div class="tags"><span class="tag">UK Legal Aid Agency</span><span class="tag">Ministry of Justice</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/" target="_blank" rel="noopener noreferrer">Ledger asks sellers across Asia to halt sales after supply-chain attack</a></h2>
+      <p><span class="label">What happened</span>Ledger has asked stores across several Asian countries to stop selling its crypto wallets while it investigates a supply-chain attack. This matters because physical tampering could allow attackers to steal cryptocurrency from the devices.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you bought a Ledger wallet from a reseller in Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, or Hong Kong recently, contact Ledger support before using it.</p><p><span class="who">For IT teams:</span> Suspend sales and distribution of Ledger wallets across the affected Asian markets and await further guidance from Ledger regarding device verification and the investigation.</p></div>
+      
+      <div class="tags"><span class="tag">Ledger</span></div>
+    </div>
+    
   </article>
   <article class="card" style="border-top-color:#1d4ed8"
            data-severity="Low" data-category="Vulnerability">
@@ -258,71 +273,11 @@
         <span class="sev" style="background:#1d4ed8">Low</span>
         <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
       </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/" target="_blank" rel="noopener noreferrer">Microsoft fixes VPN issues caused by September Windows updates</a></h2>
-      <p>Microsoft has fixed an issue where September Windows 11 updates broke certain virtual private network (<abbr class="term" tabindex="0" data-def="A secure connection into a private network, often used by staff working remotely.">VPN</abbr>) connections. This matters because affected users could not connect securely to their networks until the issue was resolved.</p>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/" target="_blank" rel="noopener noreferrer">Microsoft fixes bug causing Windows black screens, Explorer crashes</a></h2>
+      <p>Microsoft fixed a bug that caused black screens and crashes on Windows 11. The issue is resolved, so no special action is needed.</p>
       
       
       <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows 11</span></div>
-    </div>
-    
-  </article>
-  <article class="card" style="border-top-color:#1d4ed8"
-           data-severity="Low" data-category="Research">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#1d4ed8">Low</span>
-        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
-      </div>
-      <h2><a href="https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html" target="_blank" rel="noopener noreferrer">Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave</a></h2>
-      <p>Researchers successfully ran unauthorized code inside a protected, highly secure part of Windows used to guard sensitive data like passwords. This was done in a laboratory setting to demonstrate the flaw, meaning there is no active attack happening right now.</p>
-      
-      
-      <div class="tags"><span class="tag">Windows</span><span class="tag">Windows SmartScreen</span></div>
-    </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizNi7OCo6m5vsFkEP85LndyXnfiDgk2h5R0WwW_yHZ7mdK6Uh9xuLaI5ddFQJ45fW7jG8eC4VtIHJT1IQaUJCoAEMClMEiv9dA9kASwDQJj4l61ZSIlqW2bw605LQLL5kNUszoxI8Wkr54oguKY7guQGE9rwUmvzCVUjt19-0pWJpxir366NU5eqopHmk/s1600/enclave.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#57534e"
-           data-severity="Info" data-category="Policy">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#57534e">Info</span>
-        <span>Policy</span><span>&middot;</span><span>The Hacker News</span>
-      </div>
-      <h2><a href="https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html" target="_blank" rel="noopener noreferrer">U.S. Shuts Down Over 40 Laptop Farms, Charges 14 in North Korean IT Worker Fraud</a></h2>
-      <p>The U.S. Department of Justice charged 14 people and seized nearly 190 computers involved in a North Korean remote IT worker fraud scheme. This matters because it disrupts a major illicit operation that placed hidden foreign workers into over 70 U.S. companies.</p>
-      
-      
-      <div class="tags"></div>
-    </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRRY0Y0x4bBS7xZHNvUUjosK6tuvOhbBbE9XvaoyiONRttpSxhIwBaCgDpNKo9kMR37n1_8wKUXzpzL6KhmNC0OJsGZapzAaAteSFlbasNFzCM6XZXsSU99yOk6e2oR7tzG_3p_1-V04tnDyhhtGaBUJSviR-xaJh6mg4E-KT5gwR7_x3JmO-DDfM6-7ic/s1600/laptop-farm.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#57534e"
-           data-severity="Info" data-category="Policy">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#57534e">Info</span>
-        <span>Policy</span><span>&middot;</span><span>Krebs on Security</span>
-      </div>
-      <h2><a href="https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/" target="_blank" rel="noopener noreferrer">U.K. Sanctions Cryptomus for RU Money Laundering</a></h2>
-      <p>The U.K. has placed financial sanctions on Cryptomus, a cryptocurrency platform used to launder money and help Russia bypass financial restrictions. This move aims to cut off a major financial channel for cybercriminals, <abbr class="term" tabindex="0" data-def="Harmful software that locks your files and demands payment to unlock them.">ransomware</abbr> gangs, and illicit darknet markets.</p>
-      
-      
-      <div class="tags"><span class="tag">Cryptomus</span></div>
-    </div>
-    <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2026/10/heleketsupportbot.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-  </article>
-  <article class="card" style="border-top-color:#57534e"
-           data-severity="Info" data-category="Research">
-    <div class="body">
-      <div class="meta">
-        <span class="sev" style="background:#57534e">Info</span>
-        <span>Research</span><span>&middot;</span><span>BleepingComputer</span>
-      </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/" target="_blank" rel="noopener noreferrer">The Blind Spots of Agentic Pentesting and How to Close Them</a></h2>
-      <p>AI-powered penetration testing helps find security flaws, but safety rules and network limits can leave some weaknesses hidden. Combining AI testing with other simulation tools can help security teams find and close these gaps.</p>
-      
-      
-      <div class="tags"><span class="tag">Picus Security</span></div>
     </div>
     
   </article>
@@ -333,8 +288,23 @@
         <span class="sev" style="background:#57534e">Info</span>
         <span>Policy</span><span>&middot;</span><span>BleepingComputer</span>
       </div>
-      <h2><a href="https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/" target="_blank" rel="noopener noreferrer">Global takedown hits network behind 1 billion phishing messages</a></h2>
-      <p>Law enforcement agencies worldwide have disrupted a massive cybercrime network responsible for sending over a billion <abbr class="term" tabindex="0" data-def="Fake emails, texts or sites that trick people into giving away passwords or clicking harmful links.">phishing</abbr> messages. This takedown significantly reduces a major infrastructure used to target organizations globally.</p>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/" target="_blank" rel="noopener noreferrer">Microsoft: Windows Server 2022 reached end of mainstream support</a></h2>
+      <p>Windows Server 2022 has reached the end of its mainstream support phase from Microsoft. It will continue to receive security updates under extended support until October 2031.</p>
+      
+      
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows Server 2022</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/" target="_blank" rel="noopener noreferrer">Police arrests 95 suspects in international CSAM crackdown action</a></h2>
+      <p>Police across 17 countries arrested 95 suspects in an international operation targeting online messaging groups that shared child abuse material. This action helps dismantle networks distributing illegal content.</p>
       
       
       <div class="tags"></div>
@@ -342,21 +312,51 @@
     
   </article>
   <article class="card" style="border-top-color:#57534e"
-           data-severity="Info" data-category="Other">
+           data-severity="Info" data-category="Research">
     <div class="body">
       <div class="meta">
         <span class="sev" style="background:#57534e">Info</span>
-        <span>Other</span><span>&middot;</span><span>BleepingComputer</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
       </div>
-      <h2><a href="https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html" target="_blank" rel="noopener noreferrer">How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team</a></h2>
-      <p>Security teams are running simulated drills using artificial voice cloning and video to test how well their staff can spot fraud. This matters because scammers are increasingly using these deepfake technologies to trick employees into making unauthorized payments or resetting accounts.</p>
+      <h2><a href="https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html" target="_blank" rel="noopener noreferrer">Why AI Confidence Is Not Validation</a></h2>
+      <p>Artificial intelligence tools used in cybersecurity work are becoming more confident in their own outputs faster than humans can verify them. This creates a growing risk of unverified or incorrect information spreading outside of individual workstations.</p>
       
       
       <div class="tags"></div>
     </div>
-    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEYzcrs6sSW45od6MYo5jFl29yPGuwipgy7nfS3STYqknrD9b5OcU00_c0sqjG8Arvqq36ojwHSZMbjboA3bUQ1-ZcLRRjmuEQpzTDYYXnyvySzynW0UOvHOVmYNNzp_n-J5xXmwByMCofw5kxslXe4dqAVYqrWa-1LivXxPNa_ZGOQgIBxhyhvtiLxDs/s1600/icon.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoMcD8RJr4YbArE7ir74w0wFobrcZI94oJ41w_VwSIFPeQMqG4Ofa6xgtcUqD9op38axL3iAMYu-Y0zv0CEc7LrZAmj7lWLdzZ29ZbL5TD6Up2nGRqJkHGoUF6Hs_QA-A8TVz8f1dfuCcnB4kvzzYrZOu1JqVUE2s2JEkP4E0WjvKptVmvsbyfl4uBwas/s1600/sans-ai.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
-  <section class="archive" aria-label="Past briefings"><h2>Past briefings</h2><ul><li class="current"><span>Wed, Oct 14, 2026<small>15 stories</small><small>You are here</small></span></li><li><a href="archive/2026-10-13.html">Tue, Oct 13, 2026<small>15 stories</small></a></li><li><a href="archive/2026-10-12.html">Mon, Oct 12, 2026<small>15 stories</small></a></li></ul></section>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html" target="_blank" rel="noopener noreferrer">India Mandates Registered Caller Name Display on 4G and Newer Networks From November 1</a></h2>
+      <p>The Indian government has ordered phone companies to display the registered names of callers on incoming calls starting November 1, 2026. This rule aims to help people spot spam and fraudulent calls from unknown numbers.</p>
+      
+      
+      <div class="tags"><span class="tag">Indian telecom service providers</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyJOEj0MfpVvrP-qAXhuoM2BBSjZ6TwPYR-nMG_g-tBvu7Er2cMlvMoVkJOUP1qE2sleu3a21YjvdCQ9u80FSBTx7NNP3cZNfradprnGu-EnIURCxZK4sA0cXbROZpdW8CJxZcxRfhJyhbIXa_Au_sha3mh5pFe-7k5EIimZQlUGIs_mGGKHGKArej6il7/s1600/4g.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Threat Actor">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Threat Actor</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/" target="_blank" rel="noopener noreferrer">FBI raids DPRK IT worker laptop farms in Texas, US nationals arrested</a></h2>
+      <p>U.S. law enforcement seized nearly 187 laptops and arrested suspects involved in a North Korean remote IT worker scheme. This operation disrupted a foreign threat group&#x27;s efforts to infiltrate U.S. companies using hidden identities.</p>
+      
+      
+      <div class="tags"><span class="tag">Famous Chollima</span></div>
+    </div>
+    
+  </article>
+  <section class="archive" aria-label="Past briefings"><h2>Past briefings</h2><ul><li class="current"><span>Thu, Oct 15, 2026<small>15 stories</small><small>You are here</small></span></li><li><a href="archive/2026-10-14.html">Wed, Oct 14, 2026<small>15 stories</small></a></li><li><a href="archive/2026-10-13.html">Tue, Oct 13, 2026<small>16 stories</small></a></li><li><a href="archive/2026-10-12.html">Mon, Oct 12, 2026<small>15 stories</small></a></li></ul></section>
   <footer>Generated automatically from public RSS feeds. Images and stories belong to their
   publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>
 </main>
