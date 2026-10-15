@@ -6,9 +6,13 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from string import Template
+from zoneinfo import ZoneInfo
 
 from summarize import CATEGORIES, SEVERITIES, analyze_all, clean_action
 
+SITE_URL = "https://deekgrs.github.io/security-briefing-bot/"
+DESCRIPTION = ("Which security news matters today, and what to do about it. "
+               "An AI-curated daily briefing in plain English, for everyone.")
 OUTPUT_DIR = Path("docs")
 DATA_DIR = OUTPUT_DIR / "data"
 ARCHIVE_DIR = OUTPUT_DIR / "archive"
@@ -90,6 +94,17 @@ def sort_by_severity(stories):
     return sorted(stories, key=lambda s: rank.get(s["severity"], len(SEVERITIES)))
 
 
+def updated_label():
+    """'Last updated 4:24 AM ET', in New York time (falls back to UTC if time zones are missing)."""
+    try:
+        now = datetime.now(ZoneInfo("America/New_York"))
+        zone = "ET"
+    except Exception:
+        now = datetime.now(timezone.utc)
+        zone = "UTC"
+    return f"Last updated {now.strftime('%I:%M %p').lstrip('0')} {zone}"
+
+
 def nice_date(date_str):
     """2026-10-13 -> Tue, Oct 13, 2026"""
     return datetime.strptime(date_str, "%Y-%m-%d").strftime("%a, %b %d, %Y").replace(" 0", " ")
@@ -110,7 +125,21 @@ PAGE = Template("""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Security Briefing - $date</title>
+<title>The Daily Security Briefing - $nice_date</title>
+<meta name="description" content="$description">
+<link rel="icon" href="${asset_prefix}favicon.svg" type="image/svg+xml">
+<!-- Link previews on LinkedIn, Slack, X and others: always show our own card,
+     not whichever news photo happens to be first on the page -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Daily Security Briefing">
+<meta property="og:title" content="The Daily Security Briefing - $nice_date">
+<meta property="og:description" content="$description">
+<meta property="og:url" content="$page_url">
+<meta property="og:image" content="${site_url}preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="The Daily Security Briefing: which security news matters today, and what to do about it.">
+<meta name="twitter:card" content="summary_large_image">
 <style>
   :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
           --serif: Georgia, "Times New Roman", serif; }
@@ -220,9 +249,9 @@ PAGE = Template("""<!doctype html>
 <body>
 <main>
   <header class="masthead">
-    <div class="kicker">AI-curated &middot; Updated every morning</div>
+    <div class="kicker">AI-curated &middot; Updated every morning at 4:30 AM ET</div>
     <h1><a href="$home">The Daily Security Briefing</a></h1>
-    <p class="dateline">$nice_date &middot; $count stories, summarized and triaged by AI</p>
+    <p class="dateline">$nice_date &middot; $count stories, summarized and triaged by AI$updated</p>
   </header>
   $banner
   <section class="stats">$stats</section>
@@ -338,7 +367,7 @@ def render_archive_list(date_str, dates, counts, in_archive):
             f'<h2>Past briefings</h2><ul>{"".join(items)}</ul></section>')
 
 
-def render_html(stories, date_str, dates=(), counts=None, in_archive=False):
+def render_html(stories, date_str, dates=(), counts=None, in_archive=False, updated=""):
     sev_counts = Counter(s["severity"] for s in stories)
     cat_counts = Counter(s["category"] for s in stories)
 
@@ -429,6 +458,10 @@ def render_html(stories, date_str, dates=(), counts=None, in_archive=False):
 
     return PAGE.substitute(
         date=e(date_str), nice_date=e(nice_date(date_str)), count=len(stories),
+        description=e(DESCRIPTION), site_url=SITE_URL,
+        asset_prefix="../" if in_archive else "",   # relative, so the icon works offline too
+        updated=f" &middot; {e(updated)}" if updated else "",
+        page_url=f"{SITE_URL}archive/{date_str}.html" if in_archive else SITE_URL,
         home="../index.html" if in_archive else "index.html",
         banner=render_banner(date_str, dates, in_archive),
         stats=stats, severity_chips=severity_chips, category_chips=category_chips,
@@ -523,7 +556,11 @@ def build_archive():
 
 
 def main():
-    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    # The briefing's date is the New York date, matching the schedule and "Last updated" time
+    try:
+        date_str = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+    except Exception:
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     stories = sort_by_severity(analyze_all())
     if not stories:
         # Every feed failed: keep yesterday's page rather than publishing an empty one,
@@ -540,7 +577,8 @@ def main():
 
     dates, counts, days = build_archive()
     (OUTPUT_DIR / "index.html").write_text(
-        render_html(days[date_str], date_str, dates, counts), encoding="utf-8")
+        render_html(days[date_str], date_str, dates, counts, updated=updated_label()),
+        encoding="utf-8")
 
     print(f"Briefing written: {len(stories)} stories -> docs/index.html")
     print(f"Archive: {len(dates)} days -> docs/archive/")

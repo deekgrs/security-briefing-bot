@@ -1,11 +1,29 @@
 [
   {
     "source": "The Hacker News",
-    "title": "Drupal Patches Critical Core RCE Flaw with No-Login Path via Contributed Modules",
+    "title": "Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing",
+    "link": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
+    "published": "Thu, 15 Oct 2026 17:58:13 +0530",
+    "published_ts": 1792067293,
+    "summary": "Next.js released a security update fixing two critical flaws that could allow attackers to run harmful code remotely. This matters because it threatens applications built with the framework.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9mXutJ2QPpC1NUCUZWdHjUDUGPSD3DaDY4b-T1EXbg07sNWADsV43EvUacKzn4Ohp2bRbD93t8kXBpv513XdMZEnMh8eNkY1bBaSuGICWbituq_jgWNCjQa_Cq6Ur0jInsfEwsHfdInKq4Tcp2kmfuYoCIMrgWcWwtzFlRPePDpW9gwemIkQpJXEVaHU/s1600/nextjs-rce.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Next.js"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you develop websites or manage a service using Next.js, your engineering team needs to update the software immediately.",
+    "action_it": "Apply the out-of-band security updates released by Next.js to address the critical remote code execution and denial-of-service flaws."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Drupal Patches Critical Field UI Flaw With Unauthenticated RCE Path via Contributed Modules",
     "link": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
     "published": "Thu, 15 Oct 2026 17:37:20 +0530",
     "published_ts": 1792066040,
-    "summary": "Drupal patched a critical security flaw in its software that could allow an attacker to run malicious code on a website's server. While the flaw cannot be reached by default, certain add-on modules create paths for attackers, including at least one that requires no login.",
+    "summary": "Drupal fixed a critical security flaw in its software that could allow hackers to take over website servers when combined with certain add-on modules. Website administrators need to update their Drupal installations immediately.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWENfwA4xQHfwINduJpVTTiNeAmBkevujxbloFijpq7PQV8xOV-iApTx_f5g9ImW_oKJolO1RuhlNeDc2NwoWKOdPfjfdDzMhCuOsWtdyCZOOs2fTW4vmXYixSIdOCw2CwsvSgvEOPxqHUwSoRpxxoMRKKRqsqezOqVNpF5uQaU3cdI7z9L_Y_2WeTImA/s1600/drupal.jpg",
     "also_covered": [],
     "category": "Vulnerability",
@@ -14,8 +32,8 @@
     "affected": [
       "Drupal"
     ],
-    "action_everyone": "Most people don't need to do anything. If you run a website powered by Drupal, your web administrator or IT team needs to update the software immediately.",
-    "action_it": "Apply the official updates released on October 14 (versions 11.4.10, 11.3.19, or 10.6.19) and review your Drupal installations for unauthorized access or suspicious activity related to contributed modules."
+    "action_everyone": "Most people don't need to do anything. If you run a website powered by Drupal, you will need to ask your web administrator or IT team to update the software.",
+    "action_it": "Apply the security patches released on October 14 by updating to Drupal versions 11.4.10, 11.3.19, or 10.6.19 depending on your branch, and review your site for any suspicious activity involving contributed modules and the Field UI component."
   },
   {
     "source": "BleepingComputer",
@@ -23,7 +41,7 @@
     "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
     "published": "Wed, 14 Oct 2026 18:56:47 -0400",
     "published_ts": 1792018607,
-    "summary": "Palo Alto Networks has released security updates for a security flaw in its firewall software that is currently being exploited in attacks. This vulnerability allows an attacker to run malicious code remotely.",
+    "summary": "Palo Alto Networks has released security updates for a security flaw in its PAN-OS software that is actively being used in attacks. This vulnerability allows attackers to run malicious code remotely on vulnerable firewalls.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4G5JAIF-hCnKf9QyWLzWIWxTrUIjqshujDHf0-_9m84O9f4S0Z-IQ4Jg-T11Ph_rwZvzsFU8Z-pI3uRsnvPSE-FK_VtrUx0pNZgHKf3PuMJCQmwopiE5hyMRSObeV7_VSrF7WC_iiG9T8wMNivOOBC12F7bLK8WI-MNjCffolAJnnhk-X-v1ecxwYtrQz/s1600/palo.jpg",
     "also_covered": [
       {
@@ -40,73 +58,64 @@
     "affected": [
       "Palo Alto Networks PAN-OS"
     ],
-    "action_everyone": "Most people don't need to do anything. This equipment is typically managed by company IT departments, not ordinary home users.",
-    "action_it": "Apply Palo Alto Networks' security updates for PAN-OS immediately and check systems for signs of compromise."
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Palo Alto Networks equipment, your IT and security teams will need to handle this update.",
+    "action_it": "Apply the security updates released by Palo Alto Networks for PAN-OS to address CVE-2026-0322."
   },
   {
-    "source": "The Hacker News",
-    "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
-    "link": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
-    "published": "Thu, 15 Oct 2026 12:37:05 +0530",
-    "published_ts": 1792048025,
-    "summary": "Hackers are actively attacking a critical security flaw in Langflow, a platform used to build artificial intelligence applications. This allows attackers to take control of vulnerable systems.",
-    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1tlAL_zc7Hg-gD5PRFa08hoOp2KRDu9kNSJk8nhZ91us8q-K7qGfnoasa6gONBjZoEtGJqPEZY3rKMy4Uqozk89X-L7IQBV8IrDqnJYdtAsCC4d08mmQUI4r_zACmvDVdey82w7FC4lTIoYfqdwYYu2Bp_Ql0AwOB54KRYrHk9ixjo27rKLWEK0dwsfw3/s1600/langflow.jpg",
+    "source": "BleepingComputer",
+    "title": "Fake Arch Linux packages push malware with root privileges",
+    "link": "https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/",
+    "published": "Thu, 15 Oct 2026 13:12:31 -0400",
+    "published_ts": 1792084351,
+    "summary": "Malicious software disguised as popular tools was uploaded to the Arch User Repository, a community platform for Arch Linux. This matters because installing these fake packages could give hackers full control over your computer.",
+    "image": "",
     "also_covered": [],
-    "category": "Vulnerability",
-    "severity": "Critical",
-    "cves": [
-      "CVE-2026-105740"
-    ],
-    "affected": [
-      "Langflow"
-    ],
-    "action_everyone": "Most people don't need to do anything. If your workplace uses Langflow, your IT team should investigate and secure the system immediately.",
-    "action_it": "Review systems running Langflow for signs of compromise and apply updates or mitigations provided by the vendor."
-  },
-  {
-    "source": "The Hacker News",
-    "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-    "link": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-    "published": "Thu, 15 Oct 2026 12:13:08 +0530",
-    "published_ts": 1792046588,
-    "summary": "Bad actors are exploiting flaws in AhsayCBS backup software to install malicious control tools and hidden cryptocurrency miners. Ahsay Backup has released new updates to fix these security holes after previous attempts fell short.",
-    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH_5A4EPZ4VVdF4dve5fMe4BwreUmtWCJQrgMiBdiZyoFInoZK_nO6ouOwLMCyyQPrXWE4_n3NE39b4C2UQi-G4uE3ufyv7A9IEYEp9O3ggTu7AyDRzOqwVqhLjISLvOTasPiAcdFafFtL7B5uoKtm8GPeFFxrKDupGCoqZJ2o88sUmaGbjKk6E3sJgIKD/s1600/backup.jpg",
-    "also_covered": [],
-    "category": "Vulnerability",
-    "severity": "Critical",
-    "cves": [
-      "CVE-2026-105133",
-      "CVE-2026-105134"
-    ],
-    "affected": [
-      "AhsayCBS"
-    ],
-    "action_everyone": "Most people don't need to do anything. If your workplace uses AhsayCBS, your IT team should apply the security updates immediately.",
-    "action_it": "Apply the latest security updates from Ahsay Backup for CVE-2026-105133 and CVE-2026-105134 to prevent unauthorized command execution, and check systems for signs of web shells or cryptocurrency miners."
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
-    "link": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-    "published": "Thu, 15 Oct 2026 00:08:56 +0530",
-    "published_ts": 1792003136,
-    "summary": "Hackers are actively exploiting a critical security flaw in Cisco Secure Email Gateway devices using specially crafted emails. This flaw allows unauthenticated attackers to write files and run malicious commands with the highest level of system privileges.",
-    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh__fSqm3p4u0HNpmeikU6Mo4abprP417Zb3pPW3-6IGrTHwqkbz1CqiuqxL2D0O1PH8J4Ho3_ZpNdJ5VFluIj_KHX6qT0WqZYfHQzyu0cVzGee9EmAZ9pNzsZJZx40UxuKjuz9eNHvuzlMANKOkDr6aRdKWxs8SpJqSi6vDBQTP5ZFgpgqn3Yj2TYNJU/s1600/cisco-0day.jpg",
-    "also_covered": [
-      {
-        "source": "BleepingComputer",
-        "title": "Cisco patches new Secure Email Gateway zero-day exploited in attacks",
-        "link": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/"
-      }
-    ],
-    "category": "Vulnerability",
-    "severity": "Critical",
+    "category": "Malware",
+    "severity": "High",
     "cves": [],
     "affected": [
-      "Cisco Secure Email Gateway"
+      "Arch Linux",
+      "AUR"
     ],
-    "action_everyone": "Most people don't need to do anything. If your workplace uses Cisco Secure Email Gateway, your IT team needs to apply the updates provided by Cisco.",
-    "action_it": "Apply the software patches provided by Cisco in their advisory to address the actively exploited zero-day flaw in Secure Email Gateway."
+    "action_everyone": "Most people don't need to do anything. If you use Arch Linux and recently installed the 'yay' or 'paru' helper tools from the AUR, check your system for unauthorized changes and remove the malicious packages immediately.",
+    "action_it": "Review Arch User Repository (AUR) packages for unauthorized or suspicious installations of 'yay' and 'paru', check affected systems for signs of compromise, and ensure administrative privileges have not been granted to unknown third parties."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
+    "link": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+    "published": "Thu, 15 Oct 2026 21:31:57 +0530",
+    "published_ts": 1792080117,
+    "summary": "Researchers discovered that spyware made by the Israeli company Candiru infected devices at Al Jazeera using hidden online ads that required no user interaction. This matters because it shows how advanced spyware can silently compromise targets simply by loading a webpage.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE0PuxlZklu67SsXNfh_vZefiytkMx159npHL_6Ln3dNT0yxzyYE55zZU5SMOFGk39ZqhfWzXpYQfXdoZB0gGYdkoPu3cNactAPL9ZuCWdb_v4Hp4ZkoBLtEnzBovntpudGiQZvIwTucBgDRwNzfVR5SNybyZvTANvdqsDPjHVoUQcV3hrBNm0-YMvZK0/s1600/spyware-ads.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Al Jazeera",
+      "Candiru"
+    ],
+    "action_everyone": "Most people do not need to do anything, as these targeted attacks are typically aimed at specific journalists and high-risk individuals. Using an up-to-date web browser and an ad blocker can help reduce overall exposure to malicious online advertisements.",
+    "action_it": "Monitor network traffic and endpoint telemetry for anomalous connections related to known spyware infrastructure. Ensure all browsers and operating systems across the organization are kept strictly up to date, and consider deploying robust ad-blocking or content-filtering solutions on high-risk employee devices."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "NGINX Fixes 5 Flaws, Including Possible RCE and a TLS Bug That May Skip Client-Cert Checks",
+    "link": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
+    "published": "Thu, 15 Oct 2026 18:28:05 +0530",
+    "published_ts": 1792069085,
+    "summary": "NGINX released updates to fix five security flaws, including memory bugs that could potentially allow attackers to run unauthorized code. These issues require specific configurations to be exploited.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEionuV8CAd7SP0bgEbHyb-0hp7JWNkWpPjYtkNH9p86nRQrxDN1T97D1cragnVVzAwCEFCuqrwuysgwzxJLfvTXrYhMSGj5rbBzrpjW-VPvAmrc2-9EAR_hBmPigJUOjynvkm0ArpyasyzCOAWUWFYdCqzsbCJVOsxC09LnYwH2dcV4j4Vm9S9VDelXUlc/s1600/tls.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "NGINX"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses NGINX to run websites or services, your IT team should handle the update.",
+    "action_it": "Upgrade NGINX to version 1.30.6 or 1.31.7 to apply the fixes for the five identified vulnerabilities."
   },
   {
     "source": "The Hacker News",
@@ -114,86 +123,106 @@
     "link": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
     "published": "Thu, 15 Oct 2026 17:16:59 +0530",
     "published_ts": 1792064819,
-    "summary": "Attackers are tricking people with fake artificial intelligence products to spread malicious software and steal account data. This campaign is putting heavy pressure on companies that monitor cybersecurity for businesses.",
+    "summary": "Attackers are tricking people with fake artificial intelligence products to spread malicious software and steal account access. This trend is putting extra pressure on the companies that monitor security for American businesses.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvF5TcwT7nwh6xcCiXS3I0m6qmvF6EorwitA-7ETGlXzpc89JG-rPZye0FkJfFwunfKHXMTkGyg_pBRkBdJv_qaGX32cUdiqoTAA-sjGmsSlKJsL5LUFpyZLiho955h3EtKUCWvtnHyIJgzG1INTIwkqKsCmv3-vsxGXQq8QH-ue0Vl358XyE33wUhxWs/s1600/fake.jpg",
     "also_covered": [],
     "category": "Malware",
     "severity": "High",
     "cves": [],
-    "affected": [],
-    "action_everyone": "Most people don't need to do anything special beyond normal caution. Always double-check that you are downloading software from official, trusted websites rather than clicking random links or ads.",
-    "action_it": "Security teams should monitor for unauthorized or suspicious AI tools being downloaded or used across the network. Educate employees on verifying the authenticity of software before installation."
+    "affected": [
+      "AI products"
+    ],
+    "action_everyone": "Most people don't need to do anything. Be very careful when downloading new AI software or tools, making sure you are getting them from official and trusted sources.",
+    "action_it": "Monitor endpoints and network traffic for suspicious software disguised as popular AI tools. Review browser session security and access controls."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers hijack D-Link, Ubiquiti devices to resell your stolen bandwidth",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
+    "published": "Thu, 15 Oct 2026 14:20:59 -0400",
+    "published_ts": 1792088459,
+    "summary": "Hackers are taking control of internet routers and network devices in 34 countries to secretly sell access to victims' internet connections. This slows down your internet and can make your connection appear to be involved in illegal online activity.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "D-Link",
+      "Ubiquiti"
+    ],
+    "action_everyone": "",
+    "action_it": ""
   },
   {
     "source": "The Hacker News",
-    "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
-    "link": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
-    "published": "Thu, 15 Oct 2026 14:15:10 +0530",
-    "published_ts": 1792053910,
-    "summary": "A password-stealing campaign called GhostAction recently compromised nearly 1,900 GitHub accounts. It matters because the attackers targeted over 30,000 code repositories to steal sensitive secret keys.",
-    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiddFchlm_nV3vywI0BM2-8IaZb-wHXwE8DplGqZYkRmcYkeXiSLfVmnVAU-jM4yikWW7SWokanh_S4hq88cVHjAnaWDGkl3VVAtPdv9SHWp0MNb0CIOAA-I73EuwwUSE-wNMnXEzbIdDYorJn2hIuBZQ5Jh_5I2IntiXuUYZz3sKax-wfRoaxy_pD9kGx0/s1600/ghost-git.jpg",
+    "title": "Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks",
+    "link": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
+    "published": "Thu, 15 Oct 2026 21:30:26 +0530",
+    "published_ts": 1792080026,
+    "summary": "A hacking group called Silent Lynx has been attacking government organizations in the CIS region using malicious files and software tools. This matters because it shows ongoing targeted attacks against government networks using common utilities to hide malicious activity.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX-Vi04Qyk2-RKyXrnolcZ8TTBRKY43kIB_B7l-1Na3Xta_ed00DJtXclvIdp65s6Sdf3ksabzWKXmYTmKwx9xAlROi6eas704naXFtyx93xru04krAQ9kViM9rjKSgKhdMR0weIs4xOd7htm_gI_7CLg-N16wjCKt59vAoC-3UpMFJf8QawlMkfpRh745/s1600/winrar-hacker.jpg",
     "also_covered": [],
-    "category": "Breach",
-    "severity": "High",
+    "category": "Threat Actor",
+    "severity": "Medium",
     "cves": [],
     "affected": [
-      "GitHub"
+      "WinRAR"
     ],
-    "action_everyone": "Most people don't need to do anything. If you use GitHub, make sure you have turned on two-factor authentication (a security check requiring your phone or an app in addition to your password).",
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams",
+    "link": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
+    "published": "Thu, 15 Oct 2026 19:41:36 +0530",
+    "published_ts": 1792073496,
+    "summary": "Over 20,000 Cloudflare Pages domains are hosting technical support scams using a long-running routing system called Help TDS. This operation directs unsuspecting users to fraudulent websites via compromised sites and cloud infrastructure.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp2enQeK-5xZuEo_rLQje9W_odynVLALJCEvTyaMSolIfwVonZGMceQWA8yq9xPMD-C_RkIp-V03EqEBVTM5yMq9IHWRRfSHxWWDS6kCJVcVAsmlFXt5wD2pK7Bk-A6iBIDFS2o811n8e48B1Psni_qvrkJ0HMXtJlhaLwx7jkxEG-e0XDgtcAMUMLiNFV/s1600/hot.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Cloudflare Pages"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
+    "link": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+    "published": "Fri, 16 Oct 2026 00:19:33 +0530",
+    "published_ts": 1792090173,
+    "summary": "A weekly security roundup highlights various new threats, including a data theft tool with a built-in scaring feature and other recent vulnerabilities. These stories show how everyday permissions and trusted logins can be abused by attackers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jHVMYXIjddaTrqHbBuPm3mQ6G_g8qlALwitmiIRM9OplZpPxLPDFet7ySOV0OVxPj6cW1oz0K6rydDvGYQGalR1jSt10bz8kti4dWnM0d3NnUBjuymD77_cReujy6AXmFgJgQQvl2qeICur3VHf5vYyOrxz8OFM-bEunzmK9PGDzCzzTVFVEdQyswYho/s1600/threatsday-oct.jpg",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Adobe",
+      "NVIDIA"
+    ],
+    "action_everyone": "",
     "action_it": ""
   },
   {
     "source": "BleepingComputer",
-    "title": "UK Legal Aid Agency: Hackers stole records dating back to 1978",
-    "link": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
-    "published": "Thu, 15 Oct 2026 04:06:47 -0400",
-    "published_ts": 1792051607,
-    "summary": "Hackers breached the IT systems of the UK Legal Aid Agency and stole records dating back to 1978. The attack exposes decades of sensitive legal aid information.",
+    "title": "Is AI pentesting as good as a human pentester?",
+    "link": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
+    "published": "Thu, 15 Oct 2026 10:01:11 -0400",
+    "published_ts": 1792072871,
+    "summary": "An analysis compares artificial intelligence penetration testing with human testers, highlighting strengths and weaknesses of both approaches. The report helps organizations understand where AI security tools can be effective and where they fall short.",
     "image": "",
     "also_covered": [],
-    "category": "Breach",
-    "severity": "High",
+    "category": "Research",
+    "severity": "Info",
     "cves": [],
     "affected": [
-      "UK Legal Aid Agency",
-      "Ministry of Justice"
-    ],
-    "action_everyone": "Most people don't need to do anything. If you are a client of the UK Legal Aid Agency, watch out for any suspicious communications using your personal details.",
-    "action_it": "Investigate internal systems for signs of the April 2025 breach, review access logs, and follow standard incident response procedures for compromised government data."
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Ledger asks sellers across Asia to halt sales after supply-chain attack",
-    "link": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
-    "published": "Wed, 14 Oct 2026 13:46:50 -0400",
-    "published_ts": 1792000010,
-    "summary": "Ledger has asked stores across several Asian countries to stop selling its crypto wallets while it investigates a supply-chain attack. This matters because physical tampering could allow attackers to steal cryptocurrency from the devices.",
-    "image": "",
-    "also_covered": [],
-    "category": "Breach",
-    "severity": "High",
-    "cves": [],
-    "affected": [
-      "Ledger"
-    ],
-    "action_everyone": "Most people don't need to do anything. If you bought a Ledger wallet from a reseller in Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, or Hong Kong recently, contact Ledger support before using it.",
-    "action_it": "Suspend sales and distribution of Ledger wallets across the affected Asian markets and await further guidance from Ledger regarding device verification and the investigation."
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Microsoft fixes bug causing Windows black screens, Explorer crashes",
-    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/",
-    "published": "Thu, 15 Oct 2026 05:10:20 -0400",
-    "published_ts": 1792055420,
-    "summary": "Microsoft fixed a bug that caused black screens and crashes on Windows 11. The issue is resolved, so no special action is needed.",
-    "image": "",
-    "also_covered": [],
-    "category": "Vulnerability",
-    "severity": "Low",
-    "cves": [],
-    "affected": [
-      "Microsoft",
-      "Windows 11"
+      "Intruder"
     ],
     "action_everyone": "",
     "action_it": ""
@@ -204,7 +233,7 @@
     "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/",
     "published": "Thu, 15 Oct 2026 09:18:36 -0400",
     "published_ts": 1792070316,
-    "summary": "Windows Server 2022 has reached the end of its mainstream support phase from Microsoft. It will continue to receive security updates under extended support until October 2031.",
+    "summary": "Microsoft's Windows Server 2022 has reached the end of mainstream support. The system will continue to receive security updates under extended support until October 2031.",
     "image": "",
     "also_covered": [],
     "category": "Policy",
@@ -223,7 +252,7 @@
     "link": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
     "published": "Thu, 15 Oct 2026 07:55:38 -0400",
     "published_ts": 1792065338,
-    "summary": "Police across 17 countries arrested 95 suspects in an international operation targeting online messaging groups that shared child abuse material. This action helps dismantle networks distributing illegal content.",
+    "summary": "Police across 17 countries arrested 95 suspects in an international operation targeting online groups that share child sexual abuse material. This law enforcement crackdown disrupts networks distributing illegal content.",
     "image": "",
     "also_covered": [],
     "category": "Policy",
@@ -239,49 +268,13 @@
     "link": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
     "published": "Thu, 15 Oct 2026 16:34:35 +0530",
     "published_ts": 1792062275,
-    "summary": "Artificial intelligence tools used in cybersecurity work are becoming more confident in their own outputs faster than humans can verify them. This creates a growing risk of unverified or incorrect information spreading outside of individual workstations.",
+    "summary": "Artificial intelligence tools used in digital investigations are becoming overly confident in their own results faster than humans can verify them. This creates a risk of unverified errors spreading beyond a single workstation.",
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoMcD8RJr4YbArE7ir74w0wFobrcZI94oJ41w_VwSIFPeQMqG4Ofa6xgtcUqD9op38axL3iAMYu-Y0zv0CEc7LrZAmj7lWLdzZ29ZbL5TD6Up2nGRqJkHGoUF6Hs_QA-A8TVz8f1dfuCcnB4kvzzYrZOu1JqVUE2s2JEkP4E0WjvKptVmvsbyfl4uBwas/s1600/sans-ai.jpg",
     "also_covered": [],
     "category": "Research",
     "severity": "Info",
     "cves": [],
     "affected": [],
-    "action_everyone": "",
-    "action_it": ""
-  },
-  {
-    "source": "The Hacker News",
-    "title": "India Mandates Registered Caller Name Display on 4G and Newer Networks From November 1",
-    "link": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
-    "published": "Thu, 15 Oct 2026 16:12:16 +0530",
-    "published_ts": 1792060936,
-    "summary": "The Indian government has ordered phone companies to display the registered names of callers on incoming calls starting November 1, 2026. This rule aims to help people spot spam and fraudulent calls from unknown numbers.",
-    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyJOEj0MfpVvrP-qAXhuoM2BBSjZ6TwPYR-nMG_g-tBvu7Er2cMlvMoVkJOUP1qE2sleu3a21YjvdCQ9u80FSBTx7NNP3cZNfradprnGu-EnIURCxZK4sA0cXbROZpdW8CJxZcxRfhJyhbIXa_Au_sha3mh5pFe-7k5EIimZQlUGIs_mGGKHGKArej6il7/s1600/4g.jpg",
-    "also_covered": [],
-    "category": "Policy",
-    "severity": "Info",
-    "cves": [],
-    "affected": [
-      "Indian telecom service providers"
-    ],
-    "action_everyone": "",
-    "action_it": ""
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "FBI raids DPRK IT worker laptop farms in Texas, US nationals arrested",
-    "link": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
-    "published": "Wed, 14 Oct 2026 15:41:43 -0400",
-    "published_ts": 1792006903,
-    "summary": "U.S. law enforcement seized nearly 187 laptops and arrested suspects involved in a North Korean remote IT worker scheme. This operation disrupted a foreign threat group's efforts to infiltrate U.S. companies using hidden identities.",
-    "image": "",
-    "also_covered": [],
-    "category": "Threat Actor",
-    "severity": "Info",
-    "cves": [],
-    "affected": [
-      "Famous Chollima"
-    ],
     "action_everyone": "",
     "action_it": ""
   }
