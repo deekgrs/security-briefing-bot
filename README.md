@@ -84,7 +84,3 @@ docs/              Published briefing and archive (GitHub Pages)
 - Enrich CVEs with CVSS scores from the NIST NVD API
 - Filter out sponsored and vendor-marketing articles
 - Pin GitHub Actions to commit SHAs for supply-chain hardening
-
-## Acknowledgements
-
-The "What to do" section came from feedback by a friend, Madhu, who asked: as a user, what should I actually do?
