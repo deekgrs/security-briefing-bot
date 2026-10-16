@@ -1,0 +1,300 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
+    "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+    "published": "Fri, 16 Oct 2026 12:25:55 +0530",
+    "published_ts": 1792133755,
+    "summary": "State-sponsored hackers from China used a critical security flaw in BeyondTrust Remote Support software to take over servers starting in late August 2026. This allowed them to secretly access and control vulnerable systems used for remote IT assistance.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic5zD5GBvYxe93igsDOMdwS6eyfDORIWio42Z9UY0enK0XKWYcQlLB9RLx3iO_V1xm8vqBxMVZ_R8Lt-xxOumO5_RIFN3hgB-yZyGGlVMypRx5lm2GJq-1c9cbzfRcjrMAIfBI67L4QUI-MwjjQjKL1RcgPnzFdYuAF3k1y2Ev-ppSmiG8sdQ5dbJkbjKR/s1600/beyond.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "BeyondTrust patches zero-day exploited in attacks since August",
+        "link": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-102764"
+    ],
+    "affected": [
+      "BeyondTrust Remote Support"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses BeyondTrust Remote Support, your IT team should apply the security updates provided by BeyondTrust.",
+    "action_it": "Apply the official patches provided by BeyondTrust immediately to secure your Remote Support servers against exploitation."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
+    "published": "Thu, 15 Oct 2026 16:25:04 -0400",
+    "published_ts": 1792095904,
+    "summary": "Hackers are actively exploiting a critical security flaw in a document-editing app for Nextcloud servers. This allows attackers to gain unauthorized access and install backdoors on affected systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-110447"
+    ],
+    "affected": [
+      "Collabora Online - Built-in CODE Server app for Nextcloud",
+      "Nextcloud"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace or organization uses Nextcloud with this specific app, your IT team needs to take action.",
+    "action_it": "Apply the available security updates immediately for the Collabora Online - Built-in CODE Server app (richdocumentscode) and inspect Nextcloud servers for any signs of compromise or backdoors."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+    "link": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+    "published": "Fri, 16 Oct 2026 01:54:36 +0530",
+    "published_ts": 1792095876,
+    "summary": "A critical vulnerability called PwnEscape in the Linux kernel allows code inside a virtual machine to read memory on the host computer. This flaw affects shared cloud environments and was demonstrated successfully against Vercel's live cloud sandboxes.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0Y0ZP5acV4vjjJV9at7yMnz0frJTAeLd3nGmqMIcifTwGoe2NsB7pDInUjGa6aocyqoM3o-NyXKpsfyy1LRdkH5UG67UVYC_lNZDYArvg-hkmtifcalWo67Mkl3A4_2qwXomi7iJURUjoiSlBdEWtJL5N63jfuMDjI7ewZHLlTZBXlkc4zqwyxKox7eE/s1600/pwnescape-main.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-99999"
+    ],
+    "affected": [
+      "Linux kernel",
+      "Vercel"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use cloud hosting services like Vercel, their engineering teams are responsible for applying the necessary updates.",
+    "action_it": "Apply updates to the Linux kernel to patch the networking code vulnerability and monitor cloud infrastructure for unauthorized memory access."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Burger King Japan data breach exposes 11 million customer records",
+    "link": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
+    "published": "Fri, 16 Oct 2026 08:01:29 -0400",
+    "published_ts": 1792152089,
+    "summary": "Burger King Japan revealed that hackers broke into a server and stole records for over 11 million customers. This matters because it exposes millions of people to potential privacy risks and scams using their personal information.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Burger King Japan"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this affected customers of Burger King Japan. If you are a customer, watch out for suspicious emails or messages asking for your personal details.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "BAE Systems cyberattack disrupts US federal court operations",
+    "link": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/",
+    "published": "Fri, 16 Oct 2026 03:37:35 -0400",
+    "published_ts": 1792136255,
+    "summary": "A cyberattack on government contractor BAE Systems has knocked out the online notice system used by US federal bankruptcy courts. This disruption affects court operations and the ability to send and receive legal notices.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "BAE Systems",
+      "US federal bankruptcy courts"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are involved in a federal bankruptcy case, you should check with your attorney or local court for alternative ways to submit documents or receive updates.",
+    "action_it": "IT and security teams should monitor their networks for any unusual activity and stay tuned for updates from BAE Systems and court administrators regarding system recovery."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
+    "link": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
+    "published": "Fri, 16 Oct 2026 10:29:36 +0530",
+    "published_ts": 1792126776,
+    "summary": "Attackers are exploiting a security flaw in Fortinet software to install a new type of hidden malware. This matters because it allows unauthorized access to company networks using compromised devices.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMvdc6m999SfUEEWC89wHnBiUX9WAMCSdWtbFP_lrH4DuREHfOJL7G29LkM4uAvittg3XsHxnq6dq_VEX1zB_jCGi5RJDbQZlrq37gHSCXpRrn11FEN-hezQn0Dt4Xcw4DcanklKW_8iLEnQN6JpzkQ7JHBOS1_dMzDAs2h_jJcWDqOGjbkMoeabOCkSFK/s1600/f.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [
+      "CVE-2025-61624"
+    ],
+    "affected": [
+      "Fortinet",
+      "FortiOS",
+      "FortiPAM",
+      "FortiProxy",
+      "FortiSwitchManager"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these Fortinet systems, your IT team will handle the necessary updates.",
+    "action_it": "Review the article details regarding CVE-2025-61624 and apply the necessary vendor patches or mitigations for FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager as soon as available."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers hijack D-Link, Ubiquiti devices to resell your stolen bandwidth",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
+    "published": "Thu, 15 Oct 2026 14:20:59 -0400",
+    "published_ts": 1792088459,
+    "summary": "Hackers are hijacking home networking devices to steal and resell internet bandwidth to third parties. This allows criminals to route malicious traffic through innocent people's home networks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "D-Link",
+      "Ubiquiti"
+    ],
+    "action_everyone": "Most people don't need to do anything immediately, but you should secure your home router by changing the default administrator password and installing any available software updates from the manufacturer.",
+    "action_it": "Monitor network traffic for unauthorized proxy connections, ensure router administrative interfaces are not exposed to the internet, and apply the latest vendor firmware updates."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Fake Arch Linux packages push malware with root privileges",
+    "link": "https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/",
+    "published": "Thu, 15 Oct 2026 13:12:31 -0400",
+    "published_ts": 1792084351,
+    "summary": "Malicious software packages disguised as popular system tools were uploaded to the Arch User Repository. They could give attackers full control over a computer if installed.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Arch User Repository (AUR)",
+      "yay",
+      "paru"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use Arch Linux and recently installed helper tools named yay or paru, check your system for unauthorized changes or malicious files.",
+    "action_it": "Review the Arch User Repository for any recently installed unofficial packages matching the compromised tools, check system logs for unauthorized root access, and remove any malicious software found."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
+    "link": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+    "published": "Thu, 15 Oct 2026 21:31:57 +0530",
+    "published_ts": 1792080117,
+    "summary": "Researchers discovered that spyware made by the Israeli company Candiru infected devices at Al Jazeera by hiding in ordinary online ads. The attacks required no interaction from the user, running automatically the moment an ad loaded.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE0PuxlZklu67SsXNfh_vZefiytkMx159npHL_6Ln3dNT0yxzyYE55zZU5SMOFGk39ZqhfWzXpYQfXdoZB0gGYdkoPu3cNactAPL9ZuCWdb_v4Hp4ZkoBLtEnzBovntpudGiQZvIwTucBgDRwNzfVR5SNybyZvTANvdqsDPjHVoUQcV3hrBNm0-YMvZK0/s1600/spyware-ads.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Candiru",
+      "Al Jazeera"
+    ],
+    "action_everyone": "Most people do not need to do anything, as these targeted attacks are typically used against specific high-profile individuals like journalists. If you are a high-risk target, using an ad blocker and keeping your device's browser and operating system fully updated can help reduce risks from malicious online ads.",
+    "action_it": "Security teams should monitor network traffic for suspicious ad-loading behaviors, ensure all organizational devices are running the latest security updates, and consider deploying robust ad-blocking solutions on endpoints used by high-risk personnel."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
+    "link": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
+    "published": "Fri, 16 Oct 2026 12:23:09 +0530",
+    "published_ts": 1792133589,
+    "summary": "AI agents tested online accidentally accessed live business records and personal data at Indian organizations. None of the organizations noticed the unauthorized access while it was happening.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMnLMgZNuoh6c41MPT17IsrvbfocknmRb8sxaolFmTpU9h0b-jyJAe9Ods3iCWligbpcd1a1IThvmpUts5llDkKkScffnItGGrGcneDJ8oUJjuc76syHF8g31ZeTWMunD7LDJjviCRFMf8Zugkg8Z4kgXyhDW4bfrCHtV8Xkt-wJlnUd78z-ab28LrfV5/s1600/certin.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks",
+    "link": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
+    "published": "Thu, 15 Oct 2026 21:30:26 +0530",
+    "published_ts": 1792080026,
+    "summary": "A hacking group called Silent Lynx has been attacking government organizations in the CIS region using malicious files and software tools. This matters because foreign governments are being targeted with hidden malicious software to gain unauthorized access.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX-Vi04Qyk2-RKyXrnolcZ8TTBRKY43kIB_B7l-1Na3Xta_ed00DJtXclvIdp65s6Sdf3ksabzWKXmYTmKwx9xAlROi6eas704naXFtyx93xru04krAQ9kViM9rjKSgKhdMR0weIs4xOd7htm_gI_7CLg-N16wjCKt59vAoC-3UpMFJf8QawlMkfpRh745/s1600/winrar-hacker.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "WinRAR"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft: October Windows update may break Smart App Control",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/",
+    "published": "Fri, 16 Oct 2026 04:44:22 -0400",
+    "published_ts": 1792140262,
+    "summary": "Microsoft warns that a recent Windows 11 security update may prevent some users from turning on Smart App Control. This matters because it affects a built-in security feature designed to block untrusted or potentially dangerous apps.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 11"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
+    "link": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+    "published": "Fri, 16 Oct 2026 00:19:33 +0530",
+    "published_ts": 1792090173,
+    "summary": "A weekly security roundup highlights various new threats, including data theft tools with malicious psychological features and new vulnerabilities. These findings remind organizations to stay vigilant against diverse and unusual cyber threats.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jHVMYXIjddaTrqHbBuPm3mQ6G_g8qlALwitmiIRM9OplZpPxLPDFet7ySOV0OVxPj6cW1oz0K6rydDvGYQGalR1jSt10bz8kti4dWnM0d3NnUBjuymD77_cReujy6AXmFgJgQQvl2qeICur3VHf5vYyOrxz8OFM-bEunzmK9PGDzCzzTVFVEdQyswYho/s1600/threatsday-oct.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Adobe",
+      "NVIDIA"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "AI Decision Models and Their Impact on AI SOC Platforms",
+    "link": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+    "published": "Fri, 16 Oct 2026 17:00:00 +0530",
+    "published_ts": 1792150200,
+    "summary": "Tech companies have recently released new types of fast AI decision models, such as TypeSafe AI's Jev and OpenAI's Decisions API. These tools aim to improve how artificial intelligence handles automated choices.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVccQyMWKH3TTGpMGwsFUkVETAsZFTWBlOZyCPr3ZlMJfVPTN09xHFKk94-6OWpwhpE68JRImlVGgma5xaM66ohDwD5XvlOu1FjQPllSMNRvuDUMPB0PNUJEK3u2MaELBNvDP0GNThHj3IGreaWQe6UpzfZ55Ei6HeOpmbcWzo6Mach5g3-9OJPBuA1wY/s1600/modal.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "TypeSafe AI",
+      "OpenAI",
+      "Cribl"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Android gets AI defenses against messaging scams, fake calls",
+    "link": "https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/",
+    "published": "Thu, 15 Oct 2026 15:48:43 -0400",
+    "published_ts": 1792093723,
+    "summary": "Google is rolling out new artificial intelligence features on Android devices to block scam messages and fraudulent calls. These tools help protect users from financial loss and identity theft via phone scams.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Android",
+      "Google"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
