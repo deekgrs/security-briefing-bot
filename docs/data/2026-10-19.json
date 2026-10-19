@@ -1,0 +1,290 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "F5 releases out-of-band patches for critical NGINX vulnerabilities",
+    "link": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
+    "published": "Mon, 19 Oct 2026 09:49:24 -0400",
+    "published_ts": 1792417764,
+    "summary": "F5 released emergency security updates to fix three critical flaws in the NGINX web server. These vulnerabilities could allow malicious actors to run unauthorized code on affected systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "F5",
+      "NGINX"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses NGINX web servers, your IT team should already be working on the updates.",
+    "action_it": "Apply F5's out-of-band security patches immediately to address the critical NGINX vulnerabilities."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+    "published": "Sun, 18 Oct 2026 10:23:16 -0400",
+    "published_ts": 1792333396,
+    "summary": "Hackers are actively exploiting a security flaw in SiteGuard Server Edition to run unauthorized commands with top-level administrator privileges. This matters because attackers can take complete control of affected servers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "SiteGuard Server Edition"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses SiteGuard Server Edition, your IT team should already be investigating.",
+    "action_it": "Apply the latest security updates or patches provided by the vendor to address the OS command injection vulnerability, and review server logs for signs of unauthorized access."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
+    "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+    "published": "Sat, 17 Oct 2026 10:32:48 -0400",
+    "published_ts": 1792247568,
+    "summary": "Drupal has fixed two dangerous security flaws that could let hackers take control of websites. Website owners need to update their systems immediately before automated attacks start.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Drupal"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a website using Drupal, your website administrator needs to install the latest updates right away.",
+    "action_it": "Apply Drupal's latest security patches immediately to protect against remote code execution."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
+    "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+    "published": "Mon, 19 Oct 2026 15:36:40 +0530",
+    "published_ts": 1792404400,
+    "summary": "Attackers created a fake Web3 accelerator offering free AI credits to trick people into downloading malicious software. This malware steals information and installs backdoors on both Windows and Mac computers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAw5A6yrE0NkMreq5lBZaS4ndrFrorAZaVrjJ218aS1RcJoQVYOJOVejIn8rBH5RHIIZ_cpvtzHnQMwMMWVOFbpfcs01tolLCmlYAY3qy-onWaOUQhzB6H2VjlWaUgBCL_0vAjRB7VmumClnaiIxDds6j9wD3lt9vD-kptWl6bUft29O6Z0cTNgBQV6t76/s1600/npm-apex.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "npm",
+      "Windows",
+      "macOS"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you or your team downloaded developer packages or tools from an unverified Web3 accelerator promising free AI credits, run a full security scan on your computer immediately.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers",
+    "link": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
+    "published": "Mon, 19 Oct 2026 11:59:44 +0530",
+    "published_ts": 1792391384,
+    "summary": "A security researcher disclosed an unpatched flaw in Broadcom Wi-Fi setup software that allows attackers within radio range to run malicious code on routers. This matters because an attacker can exploit the vulnerability without a password, potentially exposing sensitive home network data.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKR22_EY_V4kc68OQN7vGigoOrsBiy_aMnJVifzUg15itznrR-KdvcSdcaVSGnA6A2kAgMCSUNbIoqzh10gy8wQzkpK55LJPTjPPoV73VzoJlNCtZOn0LltkE7gq8PwH29hLNlUn41qQV8A7fTGkCwHu2LQ0OtvvTFtNRHll7xY0_PUfQ5K08JtCWriXg/s1600/wifi.gif",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Broadcom",
+      "Belgian internet providers (home gateways)"
+    ],
+    "action_everyone": "Most people do not need to do anything right now, as an official software fix is not yet available. If you are concerned, keep an eye out for updates from your internet provider or router manufacturer.",
+    "action_it": "No patch has been released yet by the vendor. Security teams should monitor for vendor updates and consider restricting physical or wireless proximity access where feasible."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+    "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+    "published": "Mon, 19 Oct 2026 11:37:08 +0530",
+    "published_ts": 1792390028,
+    "summary": "An intruder broke into an older OpenCode system on October 16, potentially exposing third-party AI provider keys that users had saved. This matters because the compromised keys could allow unauthorized access to services from companies like OpenAI, Anthropic, and Google.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzRSuvywT7bfHRl45krYywOIqL__Cw1hXchChbx5ylDNZaHxVDEf8O1pmzajCnItG1rwxKq0k2GHdMeDW_DvQP8Wk5MEiwlE2dZXn9grvDpAOpViWonNWsFMkTXoKpcFj8lk0UuMrGx-xVHRU_KufidsDcY7e0RUSG62aapDC9y9opt8V_rmgxkCG9v6A/s1600/opencode.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "OpenCode",
+      "OpenAI",
+      "Anthropic",
+      "Google"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use OpenCode Console and saved your OpenAI, Anthropic, or Google keys there, you should revoke those keys with your AI provider and generate new ones.",
+    "action_it": "Notify affected users, investigate the legacy system breach to determine the extent of the exposure, and advise teams to immediately rotate and reissue any API keys stored in the OpenCode Console."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+    "published": "Sat, 17 Oct 2026 11:18:51 -0400",
+    "published_ts": 1792250331,
+    "summary": "Hackers used a compromised ConnectWise Cloud Backup credential to break into 173 Microsoft 365 customer environments. This matters because it is a supply-chain attack that allowed unauthorized access to multiple business networks through a trusted third-party service.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxTJ5xsWsmrBmF1q18Gi5uaokNeC6-M0VbSf0T5X3KMQH7QGMhC7mz4XB6TUJuE7P9tjknMAqaGQ-Iz_7UuQ-NdKKXJTgqLhHMipRcd57VUOpwfJ2xxO8Hq_PX8hotdp_KZddNDzfQFw3bLHbYYLasThNbqGlidzhZ485ApBIKh2KUgn4g6PeBbhMwhc0T/s1600/ms-connect.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
+        "link": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html"
+      },
+      {
+        "source": "The Hacker News",
+        "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+        "link": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "ConnectWise",
+      "ConnectWise Cloud Backup",
+      "SkyKick Cloud Backup",
+      "Microsoft 365"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses ConnectWise Cloud Backup, your IT team should check your system for unauthorized access.",
+    "action_it": "Review Microsoft 365 tenant logs for suspicious sign-ins or unauthorized activity related to the disabled ConnectWise application identities, and contact ConnectWise for further guidance while their investigation continues."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+    "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+    "published": "Mon, 19 Oct 2026 18:35:45 +0530",
+    "published_ts": 1792415145,
+    "summary": "Attackers behind the GhostAction campaign have hidden credential-stealing malware inside fake font files across 94 GitHub code repositories. This matters because it targets software developers to steal their sensitive login credentials.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtAKfaW5dHhlv9lpzzAju1Cm_EjO4wOkhGQEMspSKCVFUCA_eaanAXGHkb-Dv3c9zSXWHW45I50Fp_bqX6ydaNlPWixkd39bl4IOeYv8xQ0oviE4d6SZcQmQ27ztf-tVV7BozEDeFYi2Fde0LpJAJ9gTHUGSOvc46MtgawesAd5-wljApeBpLyUYnczZnR/s1600/git-font.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "GitHub"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft: October Windows Server updates break Exchange sign-in, mail flow",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
+    "published": "Mon, 19 Oct 2026 04:58:41 -0400",
+    "published_ts": 1792400321,
+    "summary": "Microsoft's October security updates for Windows Server are causing login and email delivery problems on some Exchange Server systems. This matters because it disrupts business communications and email services for organizations using these servers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows Server",
+      "Exchange Server"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft fixes game, app crashes caused by recent Windows update",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
+    "published": "Mon, 19 Oct 2026 10:55:23 -0400",
+    "published_ts": 1792421723,
+    "summary": "Microsoft fixed a software bug that caused games and apps using Dolby Digital audio to crash after a recent Windows update. Users should install the latest update to resolve the crashing issue.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 11"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft fixes classic Outlook bug that hid Copilot buttons",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
+    "published": "Mon, 19 Oct 2026 08:44:44 -0400",
+    "published_ts": 1792413884,
+    "summary": "Microsoft fixed a bug in the classic Outlook email app that caused the Copilot artificial intelligence buttons to disappear for some Windows users. This was a minor display issue that did not affect security or system safety.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft Outlook"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+    "link": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+    "published": "Mon, 19 Oct 2026 19:44:07 +0530",
+    "published_ts": 1792419247,
+    "summary": "A weekly security recap highlighted numerous threats, including zero-day vulnerabilities, rogue artificial intelligence agents, and large-scale cryptocurrency and retail attacks. These incidents demonstrate how trusted services, hardware, and systems can be exploited.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTvDNJzlrpPvCifQ9zNcdkc0vjmmRwGCap_kODFlX5W_IimpUgTyObjSefO7gHjXKUMhEkIlmgnH1GbbbWna6eZWa8xcRDLXeRmYX0oSrhAgS8YXth6_T2CPXMMnZvgsf1Psq_DUB9JkjeELLHjnB2xFl9-8bM5BW19fJ1aHcOruzwKErZJkjwRBSRedBq/s1600/recap-1.jpg",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Inside the Underground Market for Know Your Client Services",
+    "link": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
+    "published": "Mon, 19 Oct 2026 10:00:10 -0400",
+    "published_ts": 1792418410,
+    "summary": "Cybercriminals are selling fake identity documents, deepfake videos, and live verification services on the underground market. These tools help criminals bypass identity checks, allowing them to create fraudulent verified accounts.",
+    "image": "",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "Krebs on Security",
+    "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+    "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+    "published": "Mon, 19 Oct 2026 13:48:56 +0000",
+    "published_ts": 1792417736,
+    "summary": "U.S. investigators suspect that executives at two ransomware negotiation firms had suspiciously close ties to the ShinyHunters hacking group, with one executive allegedly helping run the extortion website. This matters because it exposes potential inside help within the negotiation industry for cybercriminals who recently stole sensitive data from the FBI.",
+    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/shinywire-home.png",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
+    "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
+    "published": "Mon, 19 Oct 2026 17:20:00 +0530",
+    "published_ts": 1792410600,
+    "summary": "Research details how standard features in Salesforce like Email-to-Case and Agentforce can be chained together. This highlights potential challenges in governing automated AI agents that process customer messages.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1uAZRypeHl_8TjAU-3mwmvjdbCH0SZJwZBZOoEXcehaQfod9rpBvAl72JCjV8xF2KF4VbSVzWezAmkXjmbaxdIkK854Pa-yV4nkkRNe-l82mPM_VW1fLSE5Ib-RhyphenhypheneGga3KZ_9wQu76clTABJwGp_3N_M-6QBZMXFSISC56JWHVHpylO-uTenNO3kRlg/s1600/reco.gif",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Salesforce"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]

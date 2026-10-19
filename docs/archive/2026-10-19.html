@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Daily Security Briefing - Mon, Oct 19, 2026</title>
+<meta name="description" content="Which security news matters today, and what to do about it. An AI-curated daily briefing in plain English, for everyone.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<!-- Link previews on LinkedIn, Slack, X and others: always show our own card,
+     not whichever news photo happens to be first on the page -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Daily Security Briefing">
+<meta property="og:title" content="The Daily Security Briefing - Mon, Oct 19, 2026">
+<meta property="og:description" content="Which security news matters today, and what to do about it. An AI-curated daily briefing in plain English, for everyone.">
+<meta property="og:url" content="https://deekgrs.github.io/security-briefing-bot/archive/2026-10-19.html">
+<meta property="og:image" content="https://deekgrs.github.io/security-briefing-bot/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="The Daily Security Briefing: which security news matters today, and what to do about it.">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
+          --serif: Georgia, "Times New Roman", serif; }
+  * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.55; }
+  main { max-width:920px; margin:0 auto; padding:28px 16px 64px; }
+  a { color:inherit; }
+
+  .masthead { text-align:center; border-bottom:3px double var(--text); padding-bottom:14px; }
+  .kicker { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  .masthead h1 { font-family:var(--serif); font-size:44px; line-height:1.1; margin:6px 0 8px;
+                 letter-spacing:-.01em; }
+  .masthead h1 a { text-decoration:none; }
+  .dateline { margin:0; font-size:14px; color:var(--muted); border-top:1px solid var(--line);
+              padding-top:8px; display:inline-block; }
+
+  .banner { display:flex; flex-wrap:wrap; gap:8px 16px; justify-content:space-between;
+            align-items:center; margin:16px 0 0; padding:10px 14px; font-size:14px;
+            background:#fef3c7; border:1px solid #fcd34d; border-radius:8px; }
+  .banner a { font-weight:600; }
+  .banner .pager { display:flex; gap:14px; }
+
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:20px 0 14px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:8px;
+          padding:10px; text-align:center; font-size:13px; color:var(--muted); }
+  .stat .num { display:block; font-family:var(--serif); font-size:26px; font-weight:700; }
+
+  .filters { background:var(--card); border:1px solid var(--line); border-radius:8px;
+             padding:12px 14px; margin-bottom:12px; }
+  .filter-row { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .filter-row + .filter-row { margin-top:8px; }
+  .filter-label { font-size:12px; font-weight:600; color:var(--muted); width:72px;
+                  text-transform:uppercase; letter-spacing:.06em; }
+  .chip { font:inherit; font-size:13px; cursor:pointer; display:inline-flex; align-items:center;
+          gap:6px; border:1px solid var(--line); background:var(--card); color:var(--text);
+          border-radius:999px; padding:3px 11px; }
+  .chip:hover { border-color:var(--muted); }
+  .chip.active { background:var(--text); color:#fff; border-color:var(--text); }
+  .chip .n { font-size:11px; opacity:.7; }
+  .chip .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .chip:disabled { opacity:.35; cursor:not-allowed; border-color:var(--line); }
+  .showing { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .empty { text-align:center; color:var(--muted); padding:32px; border:1px dashed var(--line);
+           border-radius:8px; }
+
+  .card { display:grid; grid-template-columns:1fr; gap:18px; background:var(--card);
+          border:1px solid var(--line); border-top:4px solid; border-radius:8px;
+          padding:16px 18px; margin-bottom:14px; }
+  .card:has(.thumb) { grid-template-columns:1fr 200px; }
+  .thumb { width:200px; height:134px; object-fit:cover; border-radius:6px;
+           background:var(--line); display:block; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:12px;
+          color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .sev { color:#fff; font-weight:700; padding:2px 8px; border-radius:4px; }
+  .card h2 { font-family:var(--serif); font-size:21px; line-height:1.25; margin:8px 0 6px; }
+  .card h2 a { text-decoration:none; }
+  .card h2 a:hover { text-decoration:underline; }
+  .card p { margin:0 0 10px; color:#3f3a36; }
+  .card p.also { font-size:13px; color:var(--muted); }
+  .label { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+           color:var(--muted); margin-right:4px; }
+  .action { margin:0 0 10px; padding:10px 12px; border-radius:6px; font-size:15px;
+            background:#fef2f2; border-left:4px solid; }
+  .action .label { color:inherit; }
+  .action-title { display:block; font-size:11px; font-weight:700; letter-spacing:.08em;
+                  text-transform:uppercase; margin-bottom:4px; }
+  .action p { margin:0; color:var(--text); }
+  .action p + p { margin-top:6px; }
+  .action .who { font-weight:700; }
+  abbr.term { text-decoration:underline dotted; text-underline-offset:3px; cursor:help;
+              position:relative; outline:none; }
+  abbr.term:hover::after, abbr.term:focus::after {
+    content:attr(data-def); position:absolute; left:0; top:1.7em; z-index:10;
+    width:min(260px, 80vw); padding:8px 10px; border-radius:6px;
+    background:var(--text); color:#fff; font:400 13px/1.45 system-ui, sans-serif;
+    text-transform:none; letter-spacing:0; box-shadow:0 4px 14px rgba(0,0,0,.18); }
+  .jargon-note { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .also a { color:var(--text); }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; border:1px solid var(--line); border-radius:4px; padding:1px 7px; color:var(--muted); }
+  a.cve { color:#b91c1c; text-decoration:none; font-weight:600; }
+
+  .archive { margin-top:32px; padding-top:16px; border-top:3px double var(--text); }
+  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 10px; }
+  .archive ul { list-style:none; margin:0; padding:0; display:grid;
+                grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px; }
+  .archive li { background:var(--card); border:1px solid var(--line); border-radius:8px; }
+  .archive li a, .archive li span { display:block; padding:10px 12px; text-decoration:none; }
+  .archive li a:hover { background:#f3f1ec; border-radius:8px; }
+  .archive li.current { border-color:var(--text); }
+  .archive small { display:block; color:var(--muted); font-size:12px; }
+
+  footer { margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
+           font-size:13px; color:var(--muted); }
+
+  @media (max-width:640px) {
+    .masthead h1 { font-size:32px; }
+    .stats { grid-template-columns:repeat(3,1fr); }
+    .filter-label { width:100%; }
+    .card:has(.thumb) { grid-template-columns:1fr; }
+    .thumb { width:100%; height:180px; order:-1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="kicker">AI-curated &middot; Updated every morning at 4:30 AM ET</div>
+    <h1><a href="../index.html">The Daily Security Briefing</a></h1>
+    <p class="dateline">Mon, Oct 19, 2026 &middot; 15 stories, summarized and triaged by AI</p>
+  </header>
+  <div class="banner"><span>You are reading the archived briefing for <strong>Mon, Oct 19, 2026</strong>. <a href="../index.html">Go to today&rsquo;s briefing</a></span><span class="pager"><a href="2026-10-18.html">&larr; Sun, Oct 18, 2026</a></span></div>
+  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">3</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">4</span>High</div><div class="stat"><span class="num" style="color:#a16207">2</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">2</span>Low</div><div class="stat"><span class="num" style="color:#57534e">4</span>Info</div></section>
+
+  <section class="filters" aria-label="Filter stories">
+    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">3</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">4</span></button><button type="button" class="chip" data-group="severity" data-value="Medium" aria-pressed="false"><span class="dot" style="background:#a16207"></span>Medium <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="Low" aria-pressed="false"><span class="dot" style="background:#1d4ed8"></span>Low <span class="n">2</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">4</span></button></div>
+    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">7</span></button><button type="button" class="chip" data-group="category" data-value="Breach" aria-pressed="false">Breach <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Malware" aria-pressed="false">Malware <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Threat Actor" aria-pressed="false">Threat Actor <span class="n">2</span></button><button type="button" class="chip" data-group="category" data-value="Research" aria-pressed="false">Research <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Other" aria-pressed="false">Other <span class="n">1</span></button></div>
+  </section>
+  <p class="jargon-note">New to security? Hover over or tap any
+  <abbr class="term" tabindex="0" data-def="Like this one. Each underlined word has a short, plain-English definition.">underlined word</abbr>
+  for a plain-English explanation.</p>
+  <p class="showing" id="showing" aria-live="polite"></p>
+  <p class="empty" id="empty" hidden>No stories match these filters.</p>
+
+  
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/" target="_blank" rel="noopener noreferrer">F5 releases out-of-band patches for critical NGINX vulnerabilities</a></h2>
+      <p><span class="label">What happened</span>F5 released emergency security updates to fix three critical flaws in the NGINX web server. These vulnerabilities could allow malicious actors to run unauthorized code on affected systems.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses NGINX web servers, your IT team should already be working on the updates.</p><p><span class="who">For IT teams:</span> Apply F5&#x27;s out-of-band security patches immediately to address the critical NGINX vulnerabilities.</p></div>
+      
+      <div class="tags"><span class="tag">F5</span><span class="tag">NGINX</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/" target="_blank" rel="noopener noreferrer">Hackers exploit SiteGuard WAF flaw to run commands as admins</a></h2>
+      <p><span class="label">What happened</span>Hackers are actively exploiting a security flaw in SiteGuard Server Edition to run unauthorized commands with top-level administrator privileges. This matters because attackers can take complete control of affected servers.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses SiteGuard Server Edition, your IT team should already be investigating.</p><p><span class="who">For IT teams:</span> Apply the latest security updates or patches provided by the vendor to address the OS command injection vulnerability, and review server logs for signs of unauthorized access.</p></div>
+      
+      <div class="tags"><span class="tag">SiteGuard Server Edition</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/" target="_blank" rel="noopener noreferrer">Drupal patches critical RCE flaws, warns exploits may emerge soon</a></h2>
+      <p><span class="label">What happened</span>Drupal has fixed two dangerous security flaws that could let hackers take control of websites. Website owners need to update their systems immediately before automated attacks start.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you run a website using Drupal, your website administrator needs to install the latest updates right away.</p><p><span class="who">For IT teams:</span> Apply Drupal&#x27;s latest security patches immediately to protect against <abbr class="term" tabindex="0" data-def="The attacker can run their own commands on a device from anywhere over the internet.">remote code execution</abbr>.</p></div>
+      
+      <div class="tags"><span class="tag">Drupal</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Malware">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Malware</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html" target="_blank" rel="noopener noreferrer">Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic</a></h2>
+      <p><span class="label">What happened</span>Attackers created a fake Web3 accelerator offering free AI credits to trick people into downloading malicious software. This <abbr class="term" tabindex="0" data-def="Harmful software designed to damage a device or steal from it.">malware</abbr> steals information and installs backdoors on both Windows and Mac computers.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you or your team downloaded developer packages or tools from an unverified Web3 accelerator promising free AI credits, run a full security scan on your computer immediately.</p></div>
+      
+      <div class="tags"><span class="tag">npm</span><span class="tag">Windows</span><span class="tag">macOS</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAw5A6yrE0NkMreq5lBZaS4ndrFrorAZaVrjJ218aS1RcJoQVYOJOVejIn8rBH5RHIIZ_cpvtzHnQMwMMWVOFbpfcs01tolLCmlYAY3qy-onWaOUQhzB6H2VjlWaUgBCL_0vAjRB7VmumClnaiIxDds6j9wD3lt9vD-kptWl6bUft29O6Z0cTNgBQV6t76/s1600/npm-apex.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html" target="_blank" rel="noopener noreferrer">Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers</a></h2>
+      <p><span class="label">What happened</span>A security researcher disclosed an unpatched flaw in Broadcom Wi-Fi setup software that allows attackers within radio range to run malicious code on routers. This matters because an attacker can <abbr class="term" tabindex="0" data-def="A method or piece of code that takes advantage of a flaw to break in.">exploit</abbr> the vulnerability without a password, potentially exposing sensitive home network data.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people do not need to do anything right now, as an official software fix is not yet available. If you are concerned, keep an eye out for updates from your internet provider or router manufacturer.</p><p><span class="who">For IT teams:</span> No <abbr class="term" tabindex="0" data-def="A software update that fixes a flaw.">patch</abbr> has been released yet by the vendor. Security teams should monitor for vendor updates and consider restricting physical or wireless proximity access where feasible.</p></div>
+      
+      <div class="tags"><span class="tag">Broadcom</span><span class="tag">Belgian internet providers (home gateways)</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKR22_EY_V4kc68OQN7vGigoOrsBiy_aMnJVifzUg15itznrR-KdvcSdcaVSGnA6A2kAgMCSUNbIoqzh10gy8wQzkpK55LJPTjPPoV73VzoJlNCtZOn0LltkE7gq8PwH29hLNlUn41qQV8A7fTGkCwHu2LQ0OtvvTFtNRHll7xY0_PUfQ5K08JtCWriXg/s1600/wifi.gif" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/opencode-console-breach-may-have.html" target="_blank" rel="noopener noreferrer">OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys</a></h2>
+      <p><span class="label">What happened</span>An intruder broke into an older OpenCode system on October 16, potentially exposing third-party AI provider keys that users had saved. This matters because the compromised keys could allow unauthorized access to services from companies like OpenAI, Anthropic, and Google.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you use OpenCode Console and saved your OpenAI, Anthropic, or Google keys there, you should revoke those keys with your AI provider and generate new ones.</p><p><span class="who">For IT teams:</span> Notify affected users, investigate the legacy system breach to determine the extent of the exposure, and advise teams to immediately rotate and reissue any API keys stored in the OpenCode Console.</p></div>
+      
+      <div class="tags"><span class="tag">OpenCode</span><span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">Google</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzRSuvywT7bfHRl45krYywOIqL__Cw1hXchChbx5ylDNZaHxVDEf8O1pmzajCnItG1rwxKq0k2GHdMeDW_DvQP8Wk5MEiwlE2dZXn9grvDpAOpViWonNWsFMkTXoKpcFj8lk0UuMrGx-xVHRU_KufidsDcY7e0RUSG62aapDC9y9opt8V_rmgxkCG9v6A/s1600/opencode.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/" target="_blank" rel="noopener noreferrer">Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack</a></h2>
+      <p><span class="label">What happened</span>Hackers used a compromised ConnectWise Cloud Backup credential to break into 173 Microsoft 365 customer environments. This matters because it is a supply-chain attack that allowed unauthorized access to multiple business networks through a trusted third-party service.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses ConnectWise Cloud Backup, your IT team should check your system for unauthorized access.</p><p><span class="who">For IT teams:</span> Review Microsoft 365 tenant logs for suspicious sign-ins or unauthorized activity related to the disabled ConnectWise application identities, and contact ConnectWise for further guidance while their investigation continues.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html" target="_blank" rel="noopener noreferrer">The Hacker News: ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants</a> &middot; <a href="https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html" target="_blank" rel="noopener noreferrer">The Hacker News: Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants</a></p>
+      <div class="tags"><span class="tag">ConnectWise</span><span class="tag">ConnectWise Cloud Backup</span><span class="tag">SkyKick Cloud Backup</span><span class="tag">Microsoft 365</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxTJ5xsWsmrBmF1q18Gi5uaokNeC6-M0VbSf0T5X3KMQH7QGMhC7mz4XB6TUJuE7P9tjknMAqaGQ-Iz_7UuQ-NdKKXJTgqLhHMipRcd57VUOpwfJ2xxO8Hq_PX8hotdp_KZddNDzfQFw3bLHbYYLasThNbqGlidzhZ485ApBIKh2KUgn4g6PeBbhMwhc0T/s1600/ms-connect.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Malware">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Malware</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html" target="_blank" rel="noopener noreferrer">GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories</a></h2>
+      <p>Attackers behind the GhostAction campaign have hidden credential-stealing <abbr class="term" tabindex="0" data-def="Harmful software designed to damage a device or steal from it.">malware</abbr> inside fake font files across 94 GitHub code repositories. This matters because it targets software developers to steal their sensitive login <abbr class="term" tabindex="0" data-def="Login details, such as usernames, passwords or access keys.">credentials</abbr>.</p>
+      
+      
+      <div class="tags"><span class="tag">GitHub</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtAKfaW5dHhlv9lpzzAju1Cm_EjO4wOkhGQEMspSKCVFUCA_eaanAXGHkb-Dv3c9zSXWHW45I50Fp_bqX6ydaNlPWixkd39bl4IOeYv8xQ0oviE4d6SZcQmQ27ztf-tVV7BozEDeFYi2Fde0LpJAJ9gTHUGSOvc46MtgawesAd5-wljApeBpLyUYnczZnR/s1600/git-font.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#a16207"
+           data-severity="Medium" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#a16207">Medium</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/" target="_blank" rel="noopener noreferrer">Microsoft: October Windows Server updates break Exchange sign-in, mail flow</a></h2>
+      <p>Microsoft&#x27;s October security updates for Windows Server are causing login and email delivery problems on some Exchange Server systems. This matters because it disrupts business communications and email services for organizations using these servers.</p>
+      
+      
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows Server</span><span class="tag">Exchange Server</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#1d4ed8"
+           data-severity="Low" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#1d4ed8">Low</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/" target="_blank" rel="noopener noreferrer">Microsoft fixes game, app crashes caused by recent Windows update</a></h2>
+      <p>Microsoft fixed a software bug that caused games and apps using Dolby Digital audio to crash after a recent Windows update. Users should install the latest update to resolve the crashing issue.</p>
+      
+      
+      <div class="tags"><span class="tag">Microsoft</span><span class="tag">Windows 11</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#1d4ed8"
+           data-severity="Low" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#1d4ed8">Low</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/" target="_blank" rel="noopener noreferrer">Microsoft fixes classic Outlook bug that hid Copilot buttons</a></h2>
+      <p>Microsoft fixed a bug in the classic Outlook email app that caused the Copilot artificial intelligence buttons to disappear for some Windows users. This was a minor display issue that did not affect security or system safety.</p>
+      
+      
+      <div class="tags"><span class="tag">Microsoft Outlook</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Other">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Other</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html" target="_blank" rel="noopener noreferrer">⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More</a></h2>
+      <p>A weekly security recap highlighted numerous threats, including <abbr class="term" tabindex="0" data-def="A flaw that attackers found and used before the maker had a fix ready.">zero-day</abbr> vulnerabilities, rogue artificial intelligence agents, and large-scale cryptocurrency and retail attacks. These incidents demonstrate how trusted services, hardware, and systems can be <abbr class="term" tabindex="0" data-def="Attackers have used this flaw to break in.">exploited</abbr>.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTvDNJzlrpPvCifQ9zNcdkc0vjmmRwGCap_kODFlX5W_IimpUgTyObjSefO7gHjXKUMhEkIlmgnH1GbbbWna6eZWa8xcRDLXeRmYX0oSrhAgS8YXth6_T2CPXMMnZvgsf1Psq_DUB9JkjeELLHjnB2xFl9-8bM5BW19fJ1aHcOruzwKErZJkjwRBSRedBq/s1600/recap-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Threat Actor">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Threat Actor</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/" target="_blank" rel="noopener noreferrer">Inside the Underground Market for Know Your Client Services</a></h2>
+      <p>Cybercriminals are selling fake identity documents, deepfake videos, and live verification services on the underground market. These tools help criminals bypass identity checks, allowing them to create fraudulent verified accounts.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Threat Actor">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Threat Actor</span><span>&middot;</span><span>Krebs on Security</span>
+      </div>
+      <h2><a href="https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/" target="_blank" rel="noopener noreferrer">Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site</a></h2>
+      <p>U.S. investigators suspect that executives at two <abbr class="term" tabindex="0" data-def="Harmful software that locks your files and demands payment to unlock them.">ransomware</abbr> negotiation firms had suspiciously close ties to the ShinyHunters hacking group, with one executive allegedly helping run the <abbr class="term" tabindex="0" data-def="Threatening to leak or damage something unless a payment is made.">extortion</abbr> website. This matters because it exposes potential inside help within the negotiation industry for cybercriminals who recently stole sensitive data from the FBI.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    <img class="thumb" src="https://krebsonsecurity.com/wp-content/uploads/2026/10/shinywire-home.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html" target="_blank" rel="noopener noreferrer">From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software</a></h2>
+      <p>Research details how standard features in Salesforce like Email-to-Case and Agentforce can be chained together. This highlights potential challenges in governing automated AI agents that process customer messages.</p>
+      
+      
+      <div class="tags"><span class="tag">Salesforce</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1uAZRypeHl_8TjAU-3mwmvjdbCH0SZJwZBZOoEXcehaQfod9rpBvAl72JCjV8xF2KF4VbSVzWezAmkXjmbaxdIkK854Pa-yV4nkkRNe-l82mPM_VW1fLSE5Ib-RhyphenhypheneGga3KZ_9wQu76clTABJwGp_3N_M-6QBZMXFSISC56JWHVHpylO-uTenNO3kRlg/s1600/reco.gif" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <section class="archive" aria-label="Past briefings"><h2>Past briefings</h2><ul><li class="current"><span>Mon, Oct 19, 2026<small>15 stories</small><small>You are here</small></span></li><li><a href="2026-10-18.html">Sun, Oct 18, 2026<small>15 stories</small></a></li><li><a href="2026-10-17.html">Sat, Oct 17, 2026<small>15 stories</small></a></li><li><a href="2026-10-16.html">Fri, Oct 16, 2026<small>15 stories</small></a></li><li><a href="2026-10-15.html">Thu, Oct 15, 2026<small>15 stories</small></a></li><li><a href="2026-10-14.html">Wed, Oct 14, 2026<small>15 stories</small></a></li><li><a href="2026-10-13.html">Tue, Oct 13, 2026<small>16 stories</small></a></li><li><a href="2026-10-12.html">Mon, Oct 12, 2026<small>15 stories</small></a></li></ul></section>
+  <footer>Generated automatically from public RSS feeds. Images and stories belong to their
+  publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>
+</main>
+<script>
+(function () {
+  var state = { severity: "all", category: "all" };
+  var cards = document.querySelectorAll(".card");
+  var chips = document.querySelectorAll(".chip");
+  var showing = document.getElementById("showing");
+  var empty = document.getElementById("empty");
+
+  function matches(card, group, value) {
+    return value === "all" || card.dataset[group] === value;
+  }
+
+  // Each button's count = stories you would see if you clicked it,
+  // given whatever is selected in the other row
+  function updateCounts() {
+    chips.forEach(function (chip) {
+      var group = chip.dataset.group;
+      var other = group === "severity" ? "category" : "severity";
+      var n = 0;
+      cards.forEach(function (card) {
+        if (matches(card, group, chip.dataset.value) && matches(card, other, state[other])) n++;
+      });
+      chip.querySelector(".n").textContent = n;
+      chip.disabled = n === 0 && !chip.classList.contains("active");
+    });
+  }
+
+  function apply() {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var match = matches(card, "severity", state.severity) &&
+                  matches(card, "category", state.category);
+      card.hidden = !match;
+      if (match) shown++;
+    });
+    showing.textContent = "Showing " + shown + " of " + cards.length + " stories";
+    empty.hidden = shown !== 0;
+    updateCounts();
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var group = chip.dataset.group;
+      state[group] = chip.dataset.value;
+      chips.forEach(function (other) {
+        if (other.dataset.group !== group) return;
+        var on = other === chip;
+        other.classList.toggle("active", on);
+        other.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>
