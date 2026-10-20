@@ -1,0 +1,280 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
+    "link": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
+    "published": "Tue, 20 Oct 2026 18:29:44 +0530",
+    "published_ts": 1792501184,
+    "summary": "The iPhone of a prominent Serbian university rector and protest supporter was infected with Pegasus spyware using a zero-click attack. The incident highlights the continued targeting of political figures and activists with advanced surveillance tools.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_cQrX8zsqCvWd9Pl1mfmh8oQBwRAG_IcrKQB-EpiVEn2GXf5UJBh0UrLXCKzAmJo2Z-Di9G7-16n5hV-gmtfMi-JtB9sOd9neC-b1-6CpErVOYE7CUjBmZhunV45nzsFcDr03rK5RA8q7gFZXIuJZ4c6ND0VSQHYuppDkdTqq04MI7nVCz-10-K-xmc0/s1600/iphone-spyware.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Apple iPhone",
+      "NSO Group"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this spyware is typically used in targeted attacks against specific high-profile individuals. If you are a high-risk user such as a journalist, activist, or political figure, enable Apple's Lockdown Mode in your device settings for extra protection.",
+    "action_it": "Security teams supporting high-risk individuals should advise turning on Lockdown Mode on supported Apple devices and remain vigilant for signs of targeted mobile surveillance."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+    "link": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+    "published": "Tue, 20 Oct 2026 17:02:59 +0530",
+    "published_ts": 1792495979,
+    "summary": "The Go programming team has released emergency updates to block eight digital certificate keys due to undisclosed security concerns. Programs built with these updates will automatically reject website connections tied to those specific keys.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh12Jum-ReZMOyqaMubiLlMwx4-uDVxEJkD6-CJabWhHfCKV-Csw7P4MoeRX85Ag-3rxZMftHE6KGcdh059DoOPvF1Mirv05BQsflmg8RroWBt_t00BGTHsdhqkmVWVuRHKAs56AhNfdsq_YH0QWrMJ1z4dFT3I3xOK7Dwqu7aPp_P7tFSxQ-bzqyz8e4/s1600/go-certs.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Go"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a software developer who uses Go, update your tools to the latest versions.",
+    "action_it": "Update Go to versions 1.27.3 or 1.26.10 to ensure your software rejects certificate chains using the blocked intermediate keys."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
+    "link": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
+    "published": "Tue, 20 Oct 2026 13:51:29 +0530",
+    "published_ts": 1792484489,
+    "summary": "Hackers briefly took over a contributor's GitHub account to replace five official downloads of OVHcloud's command-line tool with malicious versions designed to steal data. This matters because anyone who downloaded the tool during that brief window may have had their stored secrets and sensitive data compromised.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSRX5Jjz6vqh8EcVVYoXU8S9qh0rFzQ3DDnjNIlkRrBq97brmk6hUw0u2pbLqyTAG1_mYfG9bGHCnMkgSMEPFu6fIR67F1jZMmS7G7-DFe6i7PtG_LzdTgHLCTXSwE5hCa2EApQeAIYGIMYATwbLEp-2FcPmV9aAHVqrRRBYk_wY7ZTuES0frFAPGjhnU/s1600/ovhcloud.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
+        "link": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/"
+      }
+    ],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "OVHcloud"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a developer who downloaded the OVHcloud command-line tool during the affected time window on October 19, you should assume your stored secrets and credentials have been compromised and change them immediately.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+    "link": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+    "published": "Tue, 20 Oct 2026 16:36:25 +0530",
+    "published_ts": 1792494385,
+    "summary": "A Russian state-sponsored hacking group breached a NATO naval shipbuilder in a NATO country. This matters because it shows critical defense infrastructure is being targeted by sophisticated foreign spies.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNLZ-1vEmoCyztDVMziqJlhZPTZfW4mOe-qDn6OxDQ-K2LVZTvqhoOe3MIip5bDJfiJd7e3HLcq4S-0xb2SlfWbEqp4vlvbOnQDSP5edsQIxHFtYSCt1qM7XZksq0NPZ9AGesx0YzqHsTeWUuPUTysC5dbuDOvKIjQW0DJvkg1UG9KLH2Doglq7WtgyiRM/s1600/russia-nato.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "NATO naval shipbuilder"
+    ],
+    "action_everyone": "Most people don't need to do anything. This attack targeted a specific defense organization rather than ordinary citizens.",
+    "action_it": "Review networks for unauthorized access, specifically monitoring for the HOOKEDGE backdoor and the new reflective loader associated with APT28 (Swallowtail)."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+    "link": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+    "published": "Tue, 20 Oct 2026 16:26:08 +0530",
+    "published_ts": 1792493768,
+    "summary": "ConnectWise experienced a security incident where unauthorized people gained access to accounts linked to its Cloud Backup service. The company has responded by resetting accounts, replacing login credentials, and tightening security controls.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgN8mboHojdAmthr-jUWvIgg5BgmRsrAFJRQFz-nEuPEAIGTqwVKwnf9c7E8jGzdpHfWZuDENURbDFFADIJ76Tf7h5lamLTOUoY5ui438ugfOJYw-2vkAuITMBMxt-0CWFxj43bdgDY19exYceRvJEScmPpWoYXBjkIHLOilUSF1wWmSta5o9ocPpLywQn/s1600/connect.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "ConnectWise"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses ConnectWise Cloud Backup, your IT team should check the status and handle any required credential updates.",
+    "action_it": "Review administrative access protections, ensure all application credentials and accounts associated with Cloud Backup have been reset, and monitor systems for unauthorized activity."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+    "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+    "published": "Tue, 20 Oct 2026 12:41:45 +0530",
+    "published_ts": 1792480305,
+    "summary": "Hackers are using fake error messages to exploit a security flaw in Siemens Software Center and install malicious remote control tools. This matters because attackers can trick users into running harmful code with normal computer privileges.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUJqb8f_ibR_O_dPoJqAVHZOVmgi23TsxhFzv19_3uzAbEqH6L6QMJUWdelmEKmDe6U9wj6KKyDpPKi_1a93IK1KJa-Ql0kFRtfqVe9sKQpVFj0dA65dCfRKCN7H0LQYgMdzqdJoLgSb6rRFBA4bfmf4oUqItqe6pVCsyxmEzCnHx02h_m1WsK6sJu7jy2/s1600/siemens.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-110936"
+    ],
+    "affected": [
+      "Siemens",
+      "Siemens Software Center"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Siemens Software Center, your IT team should handle the update.",
+    "action_it": "Apply the updates provided by Siemens to address CVE-2026-110936 and review systems for signs of unauthorized remote access tools."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Ahold Delhaize: Cyberattack affects services across US and Europe",
+    "link": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
+    "published": "Tue, 20 Oct 2026 07:18:35 -0400",
+    "published_ts": 1792495115,
+    "summary": "A cyberattack disrupted retail and pharmacy services at Ahold Delhaize stores across the US and Europe. This matters because it caused widespread operational disruptions for one of the world's largest grocery chains.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Ahold Delhaize"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Use New ROMULUS ClickFix Platform to Deliver LegionLoader and Other Malware",
+    "link": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
+    "published": "Tue, 20 Oct 2026 09:35:58 +0530",
+    "published_ts": 1792469158,
+    "summary": "Cybersecurity researchers discovered a new service called ROMULUS that tricks people into running harmful software by using fake error messages on websites. This matters because it makes it very easy for criminals to spread dangerous programs like LegionLoader.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8zydF3pRz3L86iRbEdX23esEuSWg0nt4Zq-6jV1oJy7HCuQ0oxZThFma1tspyuxRo0VG0kkCA_GZNobZkykxlZIKUb22Iq7DSwRepN3yIEk5Lfn7EeYUX52_Gkbz0GmerEPMuRP2EZTGegoGZd-p_8zvZKen5n8IZ9bm3_533b1aMXzdRKCNICkYzYJ7z/s1600/romulus.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "ROMULUS",
+      "LegionLoader"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+    "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+    "published": "Mon, 19 Oct 2026 17:49:48 -0400",
+    "published_ts": 1792446588,
+    "summary": "Japanese media company Nikkei suffered its third data breach in a month, exposing 1.83 million personal information records. This repeated failure highlights serious weaknesses in how the company protects sensitive data.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Nikkei Inc."
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Revolut outage disrupts online banking operations worldwide",
+    "link": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
+    "published": "Tue, 20 Oct 2026 05:46:44 -0400",
+    "published_ts": 1792489604,
+    "summary": "Revolut experienced a massive worldwide outage that temporarily disrupted most of its online banking services. This matters because unexpected service downtime can leave customers unable to access their money or complete urgent financial transactions.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Revolut"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hacker gets 8 years for stealing $3.3 million from taxpayers",
+    "link": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
+    "published": "Tue, 20 Oct 2026 09:18:36 -0400",
+    "published_ts": 1792502316,
+    "summary": "A Nigerian national was sentenced to eight years in prison for stealing $3.3 million using spearphishing attacks against US tax preparation businesses. The case is now closed with the sentencing.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Windows Server 2025 gets support for quick machine recovery",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
+    "published": "Tue, 20 Oct 2026 08:16:32 -0400",
+    "published_ts": 1792498592,
+    "summary": "Microsoft added a quick machine recovery feature to Windows Server 2025 in the October 2026 security update. This helps system administrators fix and restore servers more quickly when problems occur.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows Server 2025"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
+    "link": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+    "published": "Tue, 20 Oct 2026 17:11:06 +0530",
+    "published_ts": 1792496466,
+    "summary": "WhatsApp hid instructions in its help page code telling its support chatbot not to direct users to privacy regulators. The hidden text was removed by October 18.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTtrA7WSHbxSgTUKrOz8Swz6vdK1sarnVj8fCSEjFPdIMyLbOCOIytF60D82szAQpXLHR0mXI3j4zcIobCRS2g8ZI6GkbuLTHkoM4OmkUAWD0P1D1KyYuYrSxWvbq7Yy6zJ-B03VGWxy49q1BUF4owk5gUAVBBd6g2v7xl28TT_ax7Il5ixELfwcBawpA/s1600/whatsapp-chatbot.jpg",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "WhatsApp"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "What Security Teams Can Do To Tame Wild Code",
+    "link": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
+    "published": "Tue, 20 Oct 2026 17:03:04 +0530",
+    "published_ts": 1792495984,
+    "summary": "Employees across organizations are rapidly building their own custom apps and automated workflows using AI tools. This creates security challenges because these unofficial tools often handle sensitive company data without IT oversight.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7Q3156iY5WJRnphGSZ5PuIiMopF0sG7ku3FR-WROda9fE4jCSIOQpClG1HOBRCvbuqDyLHgsC0N3UFjowgnXzZN4T1mDpkQbTz2gX7z4NRZsfoEpimVlZ7hevcXmeTfpOt1iFrHqvLXubegNIRz15gjlQNHIBBYzQVAmy8MNAGiZs6OXIEuWNntLwTlI/s1600/tines-main.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
+    "link": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
+    "published": "Tue, 20 Oct 2026 11:23:16 +0530",
+    "published_ts": 1792475596,
+    "summary": "A former OpenAI engineer was ordered detained by a U.S. court after being accused of planting a recording device to steal company secrets. The case highlights an insider threat and involves communications with Saudi royal contacts.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeb26d3ZrVwM6eNTwdQo1zafwKL88-vR8Zgkx-9U2Tsx-uEF74-aA0C_rNsPd4xScYPiB9IBUG5-lw1cwRh9jIXqsZhxQCNdyp0AghllelHR5A92ovnUvvjw9uh2NUtfLPyhoyKv6EqQXK3jjp8nfDgnIBT6ZpeBOpNG0PTsuqleqg4Ht8VVgEjmy5_y4/s1600/openai-spy.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
