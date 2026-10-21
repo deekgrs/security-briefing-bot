@@ -1,0 +1,299 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
+    "link": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html",
+    "published": "Wed, 21 Oct 2026 16:06:53 +0530",
+    "published_ts": 1792579013,
+    "summary": "Two critical security flaws in the PHP programming language were leaked ahead of an emergency patch release. Attackers could potentially use these flaws to take over affected servers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipzsA5sBIvBsTGT1YIrSeK_4YH5ISqTd40ZG1tV8YN1VkjjZuiY6CfQojYR-TIoYKM0EgZM4fYrmdtD25XjeTtgBkTFCQGny4DLL0fTKT5SEFpOFBcxNjLgif_FrX-1d-IX9DE58tQX6ELzGk4cWNpUpU5Eaig8pqdLL2h6qqVCC95ZmHFN6m7tD6m7BY/s1600/php-rce-patch.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
+        "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+      },
+      {
+        "source": "BleepingComputer",
+        "title": "PHP warns admins of two critical flaws, emergency patches coming tomorrow",
+        "link": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "PHP"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace runs websites or servers using PHP, your IT team should apply the official update from PHP as soon as it is available.",
+    "action_it": "Apply the official PHP security release immediately now that it is available. Review server logs for any unusual activity, as temporary workarounds are insufficient to fully block the flaws."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
+    "link": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
+    "published": "Wed, 21 Oct 2026 16:00:27 +0530",
+    "published_ts": 1792578627,
+    "summary": "Attackers hijacked over 300 Tor exit relays to redirect SSH connections and steal login passwords. The campaign affected password-based SSH logins made through the Tor network between October 1 and 5.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-PokIxnQKc5RkxwrgRCR7Aaw8sjbkT1F4TQWCIG2V_rhQVKp8CJgtivgF5Zns45rObi0Tf-e9FDBXdX0L7OUshol00GvpiQhAi3SUAa72DV-bjeDu2oNzET9uV_cIQV2U9jSXGC2qiWWOr00M1ZYPAtcaWJNSn2_IH_BwPWVaUEqqjpmUSgfhIvRUdbY/s1600/tor-ssh.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Tor exit relays"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you used the Tor network to log into a server using a password between October 1 and 5, you should change that password immediately.",
+    "action_it": "Review SSH connection logs for the affected dates, investigate any unauthorized access, and ensure that servers enforce secure authentication methods rather than relying solely on passwords over untrusted networks."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
+    "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
+    "published": "Wed, 21 Oct 2026 14:31:12 +0530",
+    "published_ts": 1792573272,
+    "summary": "Attackers breached the company behind the popular UpdraftPlus WordPress plugin and stole connection keys. They used these keys to secretly plant malicious backdoors on customer websites.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdsSYB_dpfRL3wD0MeCT_VyPyFJS8HjQAW0VuBHSTviFY4WBOQfa8MCP79qyJR3zYyMBesIXiCtL8XwwtjjLGm9Stxdv_qoIkf3_Rpc7YGFwZuzVS974TbuDfF5GkLRJX2DxFaDudlMlXSDyiZ8fvoVGaKaA-tpCr_eAvvEsfQr1uyfdBk-8KyK4aisYgC/s1600/wp-backdoor.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
+        "link": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "TeamUpdraft",
+      "UpdraftPlus",
+      "UpdraftCentral",
+      "UpdraftVault",
+      "UpdraftClone"
+    ],
+    "action_everyone": "Most people don't need to do anything, but if you use Updraft tools to manage your WordPress site, check your website files and user accounts for any unauthorized changes.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "CISA: SafePay ransomware hit over 600 critical infrastructure orgs",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
+    "published": "Wed, 21 Oct 2026 04:36:24 -0400",
+    "published_ts": 1792571784,
+    "summary": "A ransomware group called SafePay has hacked over 600 critical infrastructure organizations around the world since 2024. This matters because attacks on critical infrastructure can disrupt essential public services like utilities, healthcare, and transportation.",
+    "image": "",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "SafePay"
+    ],
+    "action_everyone": "Most people don't need to do anything. This threat targets critical infrastructure organizations rather than individual home users.",
+    "action_it": "Review networks and security logs for signs of SafePay ransomware activity, and ensure standard defenses against extortion and ransomware threats are in place."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Mozilla, Google, Apple block compromised eMudhra CA certificates",
+    "link": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
+    "published": "Tue, 20 Oct 2026 20:46:42 -0400",
+    "published_ts": 1792543602,
+    "summary": "Digital certificate authority eMudhra revoked eight certificates because their security keys were too weak and easily cracked. This matters because attackers could have used those weak keys to impersonate legitimate websites.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "eMudhra"
+    ],
+    "action_everyone": "Most people don't need to do anything. Major tech companies like Mozilla, Google, and Apple are automatically blocking these compromised certificates in their browsers and software updates.",
+    "action_it": "Ensure all systems, browsers, and devices are updated to receive the latest trust store updates that block the revoked eMudhra intermediate certificates."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Zeabur shutting down after second security breach in two months",
+    "link": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
+    "published": "Tue, 20 Oct 2026 15:33:02 -0400",
+    "published_ts": 1792524782,
+    "summary": "Cloud development platform Zeabur is shutting down after suffering its second security breach in two months. Attackers stole millions of configuration records and account information using leaked internal passwords.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Zeabur"
+    ],
+    "action_everyone": "If you had an account on Zeabur, assume your information and any secret configuration keys (environment variables) you stored there were exposed. You should immediately change any passwords and API keys that you used on the platform.",
+    "action_it": "Review any systems that integrated with Zeabur, rotate all API keys and credentials that were stored on the platform, and prepare to migrate services away as the company shuts down."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
+    "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
+    "published": "Wed, 21 Oct 2026 17:35:00 +0530",
+    "published_ts": 1792584300,
+    "summary": "A newly discovered cyberattack group linked to China, named Bronze Sandcastle, is targeting organizations in Asia and Africa with custom backdoors. This matters because it shows attackers are adopting clever new tricks to sneak malicious software past corporate security systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq2iUs3zJHHrrskI-icX8x-nBeJxjr_O9uRE2lvcLQkaOhVUHFjTQYLItaZPVskt39VgI2ZYoMDuIhqkAAqEl1bYHLv5ctEfQvPe9UmLyzVEo46YS4xOEz7HcoYKSiNtT_g2bqfKLPFis98BVTTjSR9gafpKRceKKcj0rUf3pb89zBXVt_PequHoA-ta3t/s1600/sandboxie.png",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web",
+    "link": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
+    "published": "Wed, 21 Oct 2026 13:14:22 +0530",
+    "published_ts": 1792568662,
+    "summary": "State Bank of India confirmed that thousands of customer records were found leaked on the dark web. The bank does not yet know how or where the information was stolen from.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlQofjstTN3Rpma_akZslqH5L5GLXJ6yhYDWwr5R-rK78jnhUq0L0jk3Ds7sYrlCMjyV8SPGb9PqOr1n46ssgdRRdSdFxPVHc-uxVaVm_l-atc0RXV2MTG6Y5AmIivnljGOMRIKNxeOlIfzIuDdZGl7CHP_Xplctaz8YkiWvriWkCgQ8GyKkR804LI0KQ/s1600/sbi-data-breach.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "State Bank of India"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
+    "link": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
+    "published": "Wed, 21 Oct 2026 18:45:09 +0530",
+    "published_ts": 1792588509,
+    "summary": "Google Chrome is adding new warnings to stop users from falling for \"ClickFix\" scams. These tricks fool people into copying and pasting dangerous commands into their computers, bypassing standard security checks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkkBWQk1mVx_ybLuq6r6miCGLiZJUyA_-tPpzi5cyWpcmN_WX43NqfOoH-Tc5VaAh1rVA78waqQ9hx4j-jNwq1GX9bbZjezpx1Q28YcxlBPqnxMbbHd15spg63hSVS0sidhyR9wTg6Aq7ijZJdNIfdY_jev1_K4KJR-6yIoCLlD6cbkGwVY3SUke5IuXS5/s1600/chrome-clickfix-warning.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Google Chrome"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft says October updates didn’t actually fix VPN issues",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
+    "published": "Wed, 21 Oct 2026 06:14:53 -0400",
+    "published_ts": 1792577693,
+    "summary": "Microsoft admitted that an October 2026 update failed to fix a bug causing VPN connection issues on Windows 11. This matters because users relying on Always On VPN may continue to experience network disruptions.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 11"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
+    "published": "Wed, 21 Oct 2026 08:20:34 -0400",
+    "published_ts": 1792585234,
+    "summary": "Microsoft has released PowerToys version 0.102 with two new mouse tools and command-line improvements. This update adds helpful features for Windows users to manage their mouse cursor and buttons.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft PowerToys"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
+    "link": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
+    "published": "Wed, 21 Oct 2026 17:23:34 +0530",
+    "published_ts": 1792583614,
+    "summary": "Generative AI is making malicious emails much harder to spot by removing traditional warning signs like poor grammar and generic templates. This means older security tools that rely on catching those behavioral clues are becoming less effective.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH7zuBEyUN7xB2yVXHoNSB6jWMLhxTtu9LqItz3TNMkY5P59w2MW5dRYcLBp1hakchf5442zpMwNG3nzombXfaoo7O5IzgNw61nsbKWAjaKGP8D9ITLy11wkHBUUAwksYEqTiH27t7FTgpa5fpJQ42t6lVqO8qcbI57oWnxc7o8SWLupLpIiiZW6eBqj4/s1600/proofpoint.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Proofpoint"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "The Harness Is the Hard Part of Agentic Pentesting",
+    "link": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
+    "published": "Wed, 21 Oct 2026 16:02:40 +0530",
+    "published_ts": 1792578760,
+    "summary": "Security experts discuss how the surrounding software framework, or \"harness,\" is the most important part of making AI-powered penetration testing safe and effective. It ensures that automated hacking tools do not damage production systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTdLja8gnPl92G1mhffmAZ3Dy5Q8gX9wpjY22n1J2xerzpx0Eab4VMj2fzt3XAe_TjT8hlDkjdzW8DdBwWCvAPa9o5SKnFN4MSo5H0MnXylWX36NwFiwcI19f3MR0QDPT2uKXtXH4RAj5_rU3aBnmAVxsczeL2sfBj7G1r878XbJ6rAyEFgIg0XeuBNKk/s1600/pentera-main.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI",
+      "Hugging Face"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
+    "link": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
+    "published": "Wed, 21 Oct 2026 13:34:17 +0530",
+    "published_ts": 1792569857,
+    "summary": "The U.S. Department of Homeland Security has ordered federal civilian agencies to remove DeepSeek products from their systems and banned new purchases. The move restricts the use of the Chinese artificial intelligence developer's technology across government IT networks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjAZGBcWVyeZELPmEq7fujTJPeDgQoEZQpt7sD2rB1EO9fXByN2kmezefmvfihwR7fDE-77o-JVKB8bASzvKamkZB9kx9SstR2PA529wjrAWiSr1IBHEfrShRbiOd3PG2OP3iqygUb_ZeXYBSzrTN86MY5pjngL6WsqwoqJYYzUXSSVCJNKihe8F7FKsA/s1600/deepseek-dhs.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "DHS bans DeepSeek products across US federal civilian agencies",
+        "link": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/"
+      }
+    ],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "DeepSeek"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/",
+    "published": "Tue, 20 Oct 2026 14:11:03 -0400",
+    "published_ts": 1792519863,
+    "summary": "OpenAI announced that its newer artificial intelligence models are significantly better at updating and rewriting older computer code. This matters because it could help organizations modernize their outdated software systems much faster.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
