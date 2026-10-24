@@ -103,14 +103,35 @@
   a.cve { color:#b91c1c; text-decoration:none; font-weight:600; }
 
   .archive { margin-top:32px; padding-top:16px; border-top:3px double var(--text); }
-  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 10px; }
-  .archive ul { list-style:none; margin:0; padding:0; display:grid;
-                grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px; }
-  .archive li { background:var(--card); border:1px solid var(--line); border-radius:8px; }
-  .archive li a, .archive li span { display:block; padding:10px 12px; text-decoration:none; }
-  .archive li a:hover { background:#f3f1ec; border-radius:8px; }
-  .archive li.current { border-color:var(--text); }
-  .archive small { display:block; color:var(--muted); font-size:12px; }
+  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 4px; }
+  .archive .sub { margin:0 0 12px; font-size:13px; color:var(--muted); }
+  .datebar { display:flex; flex-wrap:wrap; align-items:center; gap:8px; background:var(--card);
+             border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+  .datebar form { display:flex; gap:8px; align-items:center; flex:1 1 auto; justify-content:center; }
+  .datebar input[type=date] { font:inherit; font-size:14px; padding:5px 8px; color:var(--text);
+                              border:1px solid var(--line); border-radius:6px; background:var(--bg); }
+  .datebar button, .datebar .step { font:inherit; font-size:13px; padding:5px 12px; border-radius:999px;
+                                    border:1px solid var(--line); background:var(--card); color:var(--text);
+                                    text-decoration:none; cursor:pointer; white-space:nowrap; }
+  .datebar button { background:var(--text); color:#fff; border-color:var(--text); }
+  .datebar .step:hover { border-color:var(--muted); }
+  .datebar .step.off { visibility:hidden; }
+  .date-msg { margin:8px 0 0; font-size:13px; color:#b91c1c; min-height:1em; }
+  @media (max-width:640px) {
+    .datebar { justify-content:space-between; }
+    .datebar form { order:-1; flex-basis:100%; }
+  }
+  .all-dates { margin-top:10px; font-size:14px; }
+  .all-dates summary { cursor:pointer; color:var(--muted); }
+  .month { margin:10px 0 0; }
+  .month h3 { margin:0 0 6px; font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+              color:var(--muted); }
+  .days { display:flex; flex-wrap:wrap; gap:6px; }
+  .days a, .days span { min-width:52px; text-align:center; padding:4px 8px; font-size:13px;
+                        border:1px solid var(--line); border-radius:6px; background:var(--card);
+                        text-decoration:none; }
+  .days a:hover { border-color:var(--muted); }
+  .days span { background:var(--text); color:#fff; border-color:var(--text); }
 
   footer { margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
            font-size:13px; color:var(--muted); }
@@ -370,7 +391,50 @@
     </div>
     <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEYzcrs6sSW45od6MYo5jFl29yPGuwipgy7nfS3STYqknrD9b5OcU00_c0sqjG8Arvqq36ojwHSZMbjboA3bUQ1-ZcLRRjmuEQpzTDYYXnyvySzynW0UOvHOVmYNNzp_n-J5xXmwByMCofw5kxslXe4dqAVYqrWa-1LivXxPNa_ZGOQgIBxhyhvtiLxDs/s1600/icon.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
   </article>
-  <section class="archive" aria-label="Past briefings"><h2>Past briefings</h2><ul><li><a href="2026-10-24.html">Sat, Oct 24, 2026<small>15 stories</small></a></li><li><a href="2026-10-23.html">Fri, Oct 23, 2026<small>15 stories</small></a></li><li><a href="2026-10-22.html">Thu, Oct 22, 2026<small>15 stories</small></a></li><li><a href="2026-10-21.html">Wed, Oct 21, 2026<small>15 stories</small></a></li><li><a href="2026-10-20.html">Tue, Oct 20, 2026<small>15 stories</small></a></li><li><a href="2026-10-19.html">Mon, Oct 19, 2026<small>15 stories</small></a></li><li><a href="2026-10-18.html">Sun, Oct 18, 2026<small>15 stories</small></a></li><li><a href="2026-10-17.html">Sat, Oct 17, 2026<small>15 stories</small></a></li><li><a href="2026-10-16.html">Fri, Oct 16, 2026<small>15 stories</small></a></li><li><a href="2026-10-15.html">Thu, Oct 15, 2026<small>15 stories</small></a></li><li class="current"><span>Wed, Oct 14, 2026<small>15 stories</small><small>You are here</small></span></li><li><a href="2026-10-13.html">Tue, Oct 13, 2026<small>16 stories</small></a></li><li><a href="2026-10-12.html">Mon, Oct 12, 2026<small>15 stories</small></a></li></ul></section>
+  
+  <section class="archive" aria-label="Past briefings">
+    <h2>Past briefings</h2>
+    <p class="sub">13 daily briefings since Mon, Oct 12, 2026. Pick a date to read that day's briefing.</p>
+    <div class="datebar">
+      <a class="step" href="2026-10-13.html">&larr; Tue, Oct 13, 2026</a>
+      <form id="date-form" data-dates="[&quot;2026-10-24&quot;, &quot;2026-10-23&quot;, &quot;2026-10-22&quot;, &quot;2026-10-21&quot;, &quot;2026-10-20&quot;, &quot;2026-10-19&quot;, &quot;2026-10-18&quot;, &quot;2026-10-17&quot;, &quot;2026-10-16&quot;, &quot;2026-10-15&quot;, &quot;2026-10-14&quot;, &quot;2026-10-13&quot;, &quot;2026-10-12&quot;]" data-prefix="">
+        <label for="date-pick" class="label">Date</label>
+        <input type="date" id="date-pick" value="2026-10-14" min="2026-10-12" max="2026-10-24" required>
+        <button type="submit">View</button>
+      </form>
+      <a class="step" href="2026-10-15.html">Thu, Oct 15, 2026 &rarr;</a>
+    </div>
+    <p class="date-msg" id="date-msg" aria-live="polite"></p>
+    <details class="all-dates">
+      <summary>Browse all dates</summary>
+      <div class="month"><h3>October 2026</h3><div class="days"><a href="2026-10-24.html" title="Sat, Oct 24, 2026: 15 stories">Sat 24</a><a href="2026-10-23.html" title="Fri, Oct 23, 2026: 15 stories">Fri 23</a><a href="2026-10-22.html" title="Thu, Oct 22, 2026: 15 stories">Thu 22</a><a href="2026-10-21.html" title="Wed, Oct 21, 2026: 15 stories">Wed 21</a><a href="2026-10-20.html" title="Tue, Oct 20, 2026: 15 stories">Tue 20</a><a href="2026-10-19.html" title="Mon, Oct 19, 2026: 15 stories">Mon 19</a><a href="2026-10-18.html" title="Sun, Oct 18, 2026: 15 stories">Sun 18</a><a href="2026-10-17.html" title="Sat, Oct 17, 2026: 15 stories">Sat 17</a><a href="2026-10-16.html" title="Fri, Oct 16, 2026: 15 stories">Fri 16</a><a href="2026-10-15.html" title="Thu, Oct 15, 2026: 15 stories">Thu 15</a><span title="Wed, Oct 14, 2026: 15 stories" aria-current="page">Wed 14</span><a href="2026-10-13.html" title="Tue, Oct 13, 2026: 16 stories">Tue 13</a><a href="2026-10-12.html" title="Mon, Oct 12, 2026: 15 stories">Mon 12</a></div></div>
+    </details>
+  </section>
+  <script>
+  (function () {
+    var form = document.getElementById("date-form");
+    var pick = document.getElementById("date-pick");
+    var msg = document.getElementById("date-msg");
+    var dates = JSON.parse(form.dataset.dates);
+    function nice(d) {
+      return new Date(d + "T12:00:00").toLocaleDateString("en-US",
+        { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+    }
+    function go() {
+      var d = pick.value;
+      if (dates.indexOf(d) === -1) {
+        msg.textContent = d ? "There's no briefing for " + nice(d) + ". Briefings are available from " +
+          nice(dates[dates.length - 1]) + " to " + nice(dates[0]) + "." : "";
+        return;
+      }
+      msg.textContent = "";
+      window.location.href = form.dataset.prefix + d + ".html";
+    }
+    // Only the View button (or Enter) opens a date; picking a date just selects it
+    form.addEventListener("submit", function (ev) { ev.preventDefault(); go(); });
+    pick.addEventListener("input", function () { msg.textContent = ""; });
+  })();
+  </script>
   <footer>Generated automatically from public RSS feeds. Images and stories belong to their
   publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>
 </main>

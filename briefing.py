@@ -225,14 +225,35 @@ PAGE = Template("""<!doctype html>
   a.cve { color:#b91c1c; text-decoration:none; font-weight:600; }
 
   .archive { margin-top:32px; padding-top:16px; border-top:3px double var(--text); }
-  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 10px; }
-  .archive ul { list-style:none; margin:0; padding:0; display:grid;
-                grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px; }
-  .archive li { background:var(--card); border:1px solid var(--line); border-radius:8px; }
-  .archive li a, .archive li span { display:block; padding:10px 12px; text-decoration:none; }
-  .archive li a:hover { background:#f3f1ec; border-radius:8px; }
-  .archive li.current { border-color:var(--text); }
-  .archive small { display:block; color:var(--muted); font-size:12px; }
+  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 4px; }
+  .archive .sub { margin:0 0 12px; font-size:13px; color:var(--muted); }
+  .datebar { display:flex; flex-wrap:wrap; align-items:center; gap:8px; background:var(--card);
+             border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+  .datebar form { display:flex; gap:8px; align-items:center; flex:1 1 auto; justify-content:center; }
+  .datebar input[type=date] { font:inherit; font-size:14px; padding:5px 8px; color:var(--text);
+                              border:1px solid var(--line); border-radius:6px; background:var(--bg); }
+  .datebar button, .datebar .step { font:inherit; font-size:13px; padding:5px 12px; border-radius:999px;
+                                    border:1px solid var(--line); background:var(--card); color:var(--text);
+                                    text-decoration:none; cursor:pointer; white-space:nowrap; }
+  .datebar button { background:var(--text); color:#fff; border-color:var(--text); }
+  .datebar .step:hover { border-color:var(--muted); }
+  .datebar .step.off { visibility:hidden; }
+  .date-msg { margin:8px 0 0; font-size:13px; color:#b91c1c; min-height:1em; }
+  @media (max-width:640px) {
+    .datebar { justify-content:space-between; }
+    .datebar form { order:-1; flex-basis:100%; }
+  }
+  .all-dates { margin-top:10px; font-size:14px; }
+  .all-dates summary { cursor:pointer; color:var(--muted); }
+  .month { margin:10px 0 0; }
+  .month h3 { margin:0 0 6px; font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+              color:var(--muted); }
+  .days { display:flex; flex-wrap:wrap; gap:6px; }
+  .days a, .days span { min-width:52px; text-align:center; padding:4px 8px; font-size:13px;
+                        border:1px solid var(--line); border-radius:6px; background:var(--card);
+                        text-decoration:none; }
+  .days a:hover { border-color:var(--muted); }
+  .days span { background:var(--text); color:#fff; border-color:var(--text); }
 
   footer { margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
            font-size:13px; color:var(--muted); }
@@ -351,20 +372,82 @@ def render_banner(date_str, dates, in_archive):
 
 
 def render_archive_list(date_str, dates, counts, in_archive):
-    """The 'Past briefings' grid at the bottom of every page, newest first."""
+    """A compact 'Past briefings' bar: previous/next day, a date picker, and a
+    collapsed list of every date grouped by month. Stays the same size however
+    many days the archive holds."""
     if len(dates) < 2:
         return ""
     prefix = "" if in_archive else "archive/"
-    items = []
+    # dates are newest first and every one matched DATE_NAME, so they are safe in URLs
+    older = [d for d in dates if d < date_str]
+    newer = [d for d in dates if d > date_str]
+    prev_link = (f'<a class="step" href="{prefix}{max(older)}.html">&larr; {e(nice_date(max(older)))}</a>'
+                 if older else '<span class="step off">&larr;</span>')
+    next_link = (f'<a class="step" href="{prefix}{min(newer)}.html">{e(nice_date(min(newer)))} &rarr;</a>'
+                 if newer else '<span class="step off">&rarr;</span>')
+
+    # Collapsed list of every date, grouped by month, for browsing (and for no-JavaScript visitors)
+    months = {}
     for d in dates:
-        n = counts.get(d, 0)
-        label = f'{e(nice_date(d))}<small>{n} stories</small>'
-        if d == date_str:
-            items.append(f'<li class="current"><span>{label}<small>You are here</small></span></li>')
-        else:
-            items.append(f'<li><a href="{prefix}{d}.html">{label}</a></li>')
-    return (f'<section class="archive" aria-label="Past briefings">'
-            f'<h2>Past briefings</h2><ul>{"".join(items)}</ul></section>')
+        months.setdefault(d[:7], []).append(d)
+    month_html = []
+    for month, days in months.items():
+        label = datetime.strptime(month, "%Y-%m").strftime("%B %Y")
+        chips = []
+        for d in days:
+            day = datetime.strptime(d, "%Y-%m-%d").strftime("%a %d").replace(" 0", " ")
+            title = f'{nice_date(d)}: {counts.get(d, 0)} stories'
+            if d == date_str:
+                chips.append(f'<span title="{e(title)}" aria-current="page">{e(day)}</span>')
+            else:
+                chips.append(f'<a href="{prefix}{d}.html" title="{e(title)}">{e(day)}</a>')
+        month_html.append(f'<div class="month"><h3>{e(label)}</h3><div class="days">{"".join(chips)}</div></div>')
+
+    first, last = dates[-1], dates[0]
+    return f"""
+  <section class="archive" aria-label="Past briefings">
+    <h2>Past briefings</h2>
+    <p class="sub">{len(dates)} daily briefings since {e(nice_date(first))}. Pick a date to read that day's briefing.</p>
+    <div class="datebar">
+      {prev_link}
+      <form id="date-form" data-dates="{e(json.dumps(dates))}" data-prefix="{prefix}">
+        <label for="date-pick" class="label">Date</label>
+        <input type="date" id="date-pick" value="{date_str}" min="{first}" max="{last}" required>
+        <button type="submit">View</button>
+      </form>
+      {next_link}
+    </div>
+    <p class="date-msg" id="date-msg" aria-live="polite"></p>
+    <details class="all-dates">
+      <summary>Browse all dates</summary>
+      {"".join(month_html)}
+    </details>
+  </section>
+  <script>
+  (function () {{
+    var form = document.getElementById("date-form");
+    var pick = document.getElementById("date-pick");
+    var msg = document.getElementById("date-msg");
+    var dates = JSON.parse(form.dataset.dates);
+    function nice(d) {{
+      return new Date(d + "T12:00:00").toLocaleDateString("en-US",
+        {{ weekday: "short", month: "short", day: "numeric", year: "numeric" }});
+    }}
+    function go() {{
+      var d = pick.value;
+      if (dates.indexOf(d) === -1) {{
+        msg.textContent = d ? "There's no briefing for " + nice(d) + ". Briefings are available from " +
+          nice(dates[dates.length - 1]) + " to " + nice(dates[0]) + "." : "";
+        return;
+      }}
+      msg.textContent = "";
+      window.location.href = form.dataset.prefix + d + ".html";
+    }}
+    // Only the View button (or Enter) opens a date; picking a date just selects it
+    form.addEventListener("submit", function (ev) {{ ev.preventDefault(); go(); }});
+    pick.addEventListener("input", function () {{ msg.textContent = ""; }});
+  }})();
+  </script>"""
 
 
 def render_html(stories, date_str, dates=(), counts=None, in_archive=False, updated=""):
