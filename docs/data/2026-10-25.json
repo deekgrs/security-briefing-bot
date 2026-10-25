@@ -1,0 +1,306 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+    "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+    "published": "Sat, 24 Oct 2026 11:55:57 +0530",
+    "published_ts": 1792823157,
+    "summary": "U.S. cybersecurity authorities added two critical software flaws to a catalog of actively exploited bugs. These vulnerabilities affect Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmm0pKX3kbfMC2GKemUiMT8PH1uDJIHn4AcmoiQ5nUK4TWZl0Ni_-k6kjpAFUrFzEWSSq_G307YJXTXmn9FZ7q6oOr5OEMASP9mrXOXrk9lSOGzqPCAbkQqpHsMxFe1q5CnyDZnqeDq_FiiC7jEzp0ie1r_nnQOSKcbPcKBdoXI-ycAjCZA9AuxemUhE5k/s1600/arista-cisa.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-110447"
+    ],
+    "affected": [
+      "Collabora Online Built-in CODE Server",
+      "Arista VeloCloud Orchestrator",
+      "Arista VeloCloud"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these specific software tools, your IT team should handle the updates.",
+    "action_it": "Apply the latest security updates provided by the vendors for Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator immediately, and monitor systems for signs of compromise."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
+    "link": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+    "published": "Fri, 23 Oct 2026 23:24:08 +0530",
+    "published_ts": 1792778048,
+    "summary": "Ruby released updates to fix three bugs in its built-in text-matching engine that caused critical security flaws in GitLab. Attackers could exploit these flaws to run unauthorized code on affected servers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjA5n8ST_yuElQgTwbfq1oFnVAoiTvZCW_Ct1b8lT_OQ9dnyeXfocrqzTUJJ1t920YaEa-7Sonxl9KlthV4x7lXI3dmJxc9_S11NjWRJ6dcgfsX4UGhv0KFWZsZrzXKpjh92JPyDdHPlCPQh1AHd0YKM44sVcc9d-57r8_BdrIb3V06MWfk8bRAy4kDU6I/s1600/ruby-rce.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Ruby",
+      "GitLab",
+      "Onigmo"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use GitLab at work, your IT team will handle the necessary updates.",
+    "action_it": "Apply the latest Ruby versions (4.0.9, 3.4.12, and 3.3.13) to fix the underlying Onigmo regex engine flaws, and ensure GitLab instances are fully patched as per GitLab's recent advisories."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
+    "link": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
+    "published": "Sat, 24 Oct 2026 10:17:32 -0400",
+    "published_ts": 1792851452,
+    "summary": "A sophisticated spyware campaign in early 2026 targeted diplomats in Central Asia using a new bootkit called BlackX to bypass computer startup security. It matters because this malicious software disables popular antivirus tools to maintain hidden access on targeted systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0cTK7D5hQFR-3qGTicTlfi6_CbnMIgCJWIojDeXmZr91hrIPqhhxZ72mAsnB6kBOcCdscZOL_VN8RhAdYIxq3d128rkaDweIApSaV5w3IzB1YGN3XNnlarG0IKN5VuDJy_RnPBxXZoKQ1Yh950YFNz-b_pbvEY_QlQa5Tr-BP4366UgkGIg968J-QEN1M/s1600/uefi.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
+        "link": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html"
+      }
+    ],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Kaspersky",
+      "Avast",
+      "Windows"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this appears to be a targeted espionage campaign against specific diplomats. Ensure your computer and security software are fully updated.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+    "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+    "published": "Sat, 24 Oct 2026 16:39:29 +0530",
+    "published_ts": 1792840169,
+    "summary": "A security flaw in Google's Brotli data-compression software allows malicious files to crash programs or run unauthorized code. This affects several popular development tools and platforms including Bun and Python packages.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxIIerJT3LOMCGn3nXAnmhaHzJlJnVJCso1COluq8t3WuF4IpNARa_Asl5nEhRUDTEcR89kwzo5vGmP5IyNbj1ncdaCpkhqcHUODHAd3khanaE-7N8Vb0NyEJkmPmNkhSpJtLCLgi9srDRhZLtM5n8UDI58F797ZJaVzC7JzjPLfca4NpxZr_7tCX8RIk/s1600/br-nodejs.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "affected": [
+      "Google Brotli decoder",
+      "Bun",
+      "Python Brotli",
+      "brotlicffi",
+      "Envoy proxies"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a software developer using these affected tools, watch for updates from your software maintainers.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+    "link": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+    "published": "Sat, 24 Oct 2026 16:33:33 +0530",
+    "published_ts": 1792839813,
+    "summary": "An accidentally leaked master key allowed attackers to push a malicious version of the Python package LiteLLM to a public repository. This could let attackers steal GitHub tokens and hijack software release pipelines.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiDo2Yur6TXZHLped9EQgORAH65rC4APGTaq_EZzlDnspAaULTQCKblBC0FeIah7nOCKTiQa2Oi8cyx-bbxHj042Km9oYAf2s78XmStFxzPBTSQ_oqv4ZcWGEkUP1wo5JfJ1UDrWQpAtz8ZHd9i3ZbGWWe8s6CMeUU_nObp5tCEywMWGovqFh9NA1H8Sv/s1600/lite.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "LiteLLM"
+    ],
+    "action_everyone": "If your workplace or development projects use LiteLLM, your IT or development team should check for unauthorized changes and rotate compromised keys immediately. Most home users do not need to do anything.",
+    "action_it": "Review systems for unauthorized changes related to the LiteLLM deployment and immediately revoke and replace any compromised master keys or leaked GitHub tokens."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+    "published": "Fri, 23 Oct 2026 16:55:05 -0400",
+    "published_ts": 1792788905,
+    "summary": "Security researchers forcefully pushed an update to over two million computers to disable a neglected app's background updater. This intervention prevented potential malicious takeovers of millions of devices.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuy-T7iQPeiRqkJd7yhxd2WVQzxURRnLyHG9yz5fUXxIhjUW-bv_yAAt13dnTE1ecuh1w6cRjenRXL3In2b55rL22lXnBhpKrVvS9c5Qb6Bv0TeQPLeAXYoafNYnqYxYQwWnZBCO3e8ZW-HS8Y2GMbQuGz58-_wG7gT6Pcok3j53J4iiZ7jw6kLoGGtWU/s1600/popcorn.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
+        "link": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Time4Popcorn",
+      "Popcorn Time"
+    ],
+    "action_everyone": "If you ever installed the Popcorn Time or Time4Popcorn app, you should completely uninstall it from your computer, as the app is abandoned and no longer safe to use.",
+    "action_it": "Identify and remove any instances of the abandoned Popcorn Time or Time4Popcorn application from network devices, and monitor for unauthorized remote code execution attempts associated with the app's updater."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Quest Diagnostics confirms data breach exposed patient records",
+    "link": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
+    "published": "Fri, 23 Oct 2026 12:40:07 -0400",
+    "published_ts": 1792773607,
+    "summary": "Quest Diagnostics disclosed a data breach after an unauthorized person accessed its Quanum LSM system, exposing patient records. This matters because sensitive personal and medical data of patients has been compromised.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Quest Diagnostics"
+    ],
+    "action_everyone": "Most people don't need to do anything. Keep an eye on your credit reports and accounts for any unusual activity.",
+    "action_it": "Investigate the unauthorized access to the Quanum LSM system, review access logs, and follow standard incident response procedures for data breaches."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "PHP shares mitigation for new RCE vulnerability with no patch",
+    "link": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "published": "Fri, 23 Oct 2026 11:38:05 -0400",
+    "published_ts": 1792769885,
+    "summary": "A security flaw was discovered in PHP that lets attackers run harmful code remotely on certain incorrectly configured servers. No official software update is available yet, but the PHP team has shared steps to block the risk manually.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "PHP"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a website or server using PHP, share this news with your technical team.",
+    "action_it": "Review server configurations to ensure systems are not using the affected non-default settings, and apply the mitigation measures shared by the PHP security team since no patch is available yet."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+    "link": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+    "published": "Fri, 23 Oct 2026 19:20:56 +0530",
+    "published_ts": 1792763456,
+    "summary": "Hackers have broken into corporate security gateways like Fortinet and Palo Alto Networks devices, stealing over 70,000 login credentials worldwide. This matters because it gives attackers unauthorized access to internal corporate networks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSk-Q06Dd5YyYmXWMt9b860DzGRKbTae_QwvoZDKNICaEznAj2AUurJmv6vPnpcH7qqDjauFZWWx7GX1RN93BLaU9Rqgiqe9j1iQRg2Vqcz3HpSqgesA6oS-GrMTyx4CTzwOD7C_z205k57ZpT70Gv4RXi-65X-nyI04wpA3raJ5nh46pN5ox42cyLnHjv/s1600/1000117358.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Fortinet",
+      "Palo Alto Networks"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these types of firewalls or virtual private networks (VPNs), your IT team should investigate.",
+    "action_it": "Review network edge devices and firewall logs for signs of compromise, and check credentials for unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+    "link": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+    "published": "Sun, 25 Oct 2026 12:24:29 +0530",
+    "published_ts": 1792911269,
+    "summary": "OpenAI announced plans to train its most advanced AI models without live internet access. This comes as the company continues safety research and monitoring to ensure these powerful systems remain secure.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSwuCxStjU_WIIOJ5dEqVxFVQeLfJevQdmLoYLBiXsduAvosK7VfzyduIRRmiOcpl2lQlSdEoInwRkfOnR4devMGT6oI_Limrjcx8yLFsTRau7CBK76cGIMXxC916OKHtwALlELG-nPljBDVIPl2aPDOZTYqkTr6AyZMyFQ6hwUFdfx5Tr2cz8KpDSlb9j/s1600/ai-agents.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
+    "link": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+    "published": "Sat, 24 Oct 2026 16:06:33 +0530",
+    "published_ts": 1792838193,
+    "summary": "Google updated its privacy policy to state that using AI features in Search or Gemini may allow the company to use data from other services like Gmail and Photos for targeted advertising. This matters because it clarifies how personal data across Google apps can be linked for marketing purposes.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhROXFilBwGnS1Jb3AQ6nIinoxB1mh-7gsbdRfToYn8VReagY7IMb3CCVyZkzPFEfOHIkwnRxmOSeM30Gxp7e9uRzvuvEqQTmIMPilPM_IfujygTv6OfExi8kWoEhF42lBKok_gzwD4Md_daCMvVOtlf2pQT7mgtYuJA0TzJnhkM4PCycgKpf0XxIBQmI57/s1600/google-ai.jpg",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Google",
+      "Gmail",
+      "Google Photos",
+      "Google Search",
+      "Gemini"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+    "published": "Fri, 23 Oct 2026 14:54:41 -0400",
+    "published_ts": 1792781681,
+    "summary": "Microsoft is adding artificial intelligence to Teams to automatically detect phishing messages starting in November 2026. This will help protect users from deceptive links and scams sent through workplace chat.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft Teams"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+    "link": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+    "published": "Fri, 23 Oct 2026 23:20:47 +0530",
+    "published_ts": 1792777847,
+    "summary": "Cybersecurity researchers discovered that ransomware groups are using an artificial intelligence system called Phantom to automate their attacks. This matters because AI tools can help attackers break into computer networks much faster and more efficiently.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6gkXKzxUypnUKbTuo7Xq-8TSUpDD8TNF5XEG-bV6zcA7V3z_cO2pJeTiX1KIFi-rFNX5SOlMY93oGQpfQUuWOl0RJ35nM1XeIqu2ZV4aAIZXEd9RXQVQk0rMmeI67ysGsTJ1OXLIQg2LvGjMLHCQQ8dgqalHaBE9yCZKwIOVjHCD_lOTlsP1HdBziZ3Sb/s1600/ai-hacker-kimi.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "INC",
+      "The Gentlemen"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft: Windows Server 2016 reaches end of support in January",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+    "published": "Fri, 23 Oct 2026 13:05:07 -0400",
+    "published_ts": 1792775107,
+    "summary": "Microsoft announced that Windows Server 2016 will stop receiving security updates in January 2027. This matters because running software without security updates leaves systems vulnerable to new cyber attacks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows Server 2016"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "You gave your AI agent access, but who is giving it orders?",
+    "link": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
+    "published": "Fri, 23 Oct 2026 10:00:10 -0400",
+    "published_ts": 1792764010,
+    "summary": "Security researchers warn that AI assistants can be tricked by malicious emails and websites into performing dangerous actions using their built-in permissions. This matters because it could allow attackers to steal personal data or delete files through your AI tools.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "AI agents"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
