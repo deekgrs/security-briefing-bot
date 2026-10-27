@@ -1,0 +1,279 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+    "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+    "published": "Tue, 27 Oct 2026 10:07:59 +0530",
+    "published_ts": 1793075879,
+    "summary": "U.S. cybersecurity authorities confirmed that two serious security flaws affecting PHP2Shell are being actively exploited in attacks. These flaws allow attackers to run unauthorized commands on vulnerable systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-vxKiggBxnuXu0fenkg0gfce0iuuA3OxeVzvWAdc0zaDPDayQgY8y_miqnvHJrpYvw61AhvGHEOW4EIKIYZ4QkRGjGEhqiU-3R0o6m0fgHJYDtszsoXyqse7WDGMh4rvEuTf1T-17KOVkyJKgEcaw5yBXFi6ElwIFyU9TjudvJrHz4fz6VNro8bjUZcnD/s1600/cisa-php.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+        "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-109618"
+    ],
+    "affected": [
+      "PHP2Shell"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses this software, your IT team should already be applying the required patches.",
+    "action_it": "Apply the available patches for the PHP2Shell flaws immediately as ordered by CISA, and check your systems for signs of compromise."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Tailscale warns of SSH flaws allowing root privilege escalation",
+    "link": "https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation/",
+    "published": "Tue, 27 Oct 2026 10:09:46 -0400",
+    "published_ts": 1793110186,
+    "summary": "Tailscale is fixing nearly a dozen security flaws that could let attackers steal information, crash servers, or take full control of systems. Users should watch for updates from the company.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Tailscale"
+    ],
+    "action_everyone": "Most people don't need to do anything right now. If your workplace uses Tailscale, your IT team should monitor for and apply the upcoming security updates from the company.",
+    "action_it": "Review the advisory from Tailscale and prepare to apply patches for the reported vulnerabilities as soon as they become available."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+    "link": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+    "published": "Tue, 27 Oct 2026 17:39:50 +0530",
+    "published_ts": 1793102990,
+    "summary": "Microsoft fixed a security flaw in its Android Authenticator app that allowed malicious apps to steal work account sign-in tokens. Users should update the app to version 6.2606.4246 or later.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqk63DF3MJCMgQqpg91UsWY7mjACbBgPl50GfKwDPi7v3md6sP5l8a2BUqHABjgMN_6BzgcMx4vVKW4hR9B9pz8_XHqp5ctKqQQLw-RJwuKmVWm2MaSzEMkHIsV-Yi0V6Mq_gUYYuzTpi-BzV2-8dRVYBjtuW4nb9TbobkPwvOGTkIFTpr334JB_LZIkw/s1600/msms.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-80097"
+    ],
+    "affected": [
+      "Microsoft Authenticator for Android"
+    ],
+    "action_everyone": "If you use the Microsoft Authenticator app on an Android phone for your work account, update the app to the latest version through the Google Play Store.",
+    "action_it": "Ensure all users running Microsoft Authenticator on Android update to version 6.2606.4246 or later to protect work account tokens from unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
+    "link": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+    "published": "Tue, 27 Oct 2026 17:16:00 +0530",
+    "published_ts": 1793101560,
+    "summary": "Hackers stole a security key used by Keystone hardware wallets to prove they are genuine. Because of this, the company is destroying thousands of devices to prevent fake wallets from tricking buyers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkvGXPUhZZjWBsYYBAx8KeJ8WilsBMLE-JhqfNAEyCOPuxs6-4VIF1e77IHR5zVdGfRsjJkSOfUVE1JaEmKe0mSAVM-ha4SeROxEGAdkLY5n5rBqx1LBSm6UVxA167sJYZEJTRra7BSipFtdlw2S-kFCUOSa9n70NbfSka3zRNVHd0D69qbVpSGIOnuAU/s1600/keystone.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Keystone"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you own a Keystone hardware wallet, check the company's official website for guidance on whether your device is affected and needs to be replaced.",
+    "action_it": "Monitor Keystone's official communications and advisories regarding the compromised device verification key to determine if any enterprise-managed hardware or inventory needs replacement."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
+    "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+    "published": "Tue, 27 Oct 2026 06:36:12 -0400",
+    "published_ts": 1793097372,
+    "summary": "Apple has released security updates for older iPhones and iPads to fix a zero-day bug, which is a flaw that attackers were already exploiting before a fix was available. This matters because it protects older devices from sophisticated targeted attacks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Apple",
+      "iPhones",
+      "iPads"
+    ],
+    "action_everyone": "Update your older iPhone or iPad today. Go to Settings > General > Software Update to install the latest security fix.",
+    "action_it": "Apply Apple's security patches to all applicable older iPhones and iPads across your organization immediately."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+    "link": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+    "published": "Tue, 27 Oct 2026 12:04:47 +0530",
+    "published_ts": 1793082887,
+    "summary": "Attackers are remotely taking over Dahua security cameras and video recorders in Ukraine. This lets unauthorized people view live video feeds and alter device settings.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjISG9SXb2aeE6Zy-bIbnuaqwUNmGof7xU8RQl0vGZIcxcgNE3YXpuvG7rJKSTn_q9J8d_2DEv6rU2zxoX615DIYePz9rMA2TiLT6Fo1q2leGoyH85hJuIUta8j8FEN2mY5AGaO6zH5o6MkCHZ9Sv7OpjrZ6LE1yZygl9R4hUgt7xWJMMeGXRI4UJziuPCW/s1600/hackers-camera.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Dahua"
+    ],
+    "action_everyone": "Most people do not need to do anything. If you use Dahua security cameras at your home or business, check your device settings to ensure that remote access features you do not need are turned off and default passwords have been changed.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
+    "link": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
+    "published": "Tue, 27 Oct 2026 17:02:31 +0530",
+    "published_ts": 1793100751,
+    "summary": "A North Korean hacking group called Lazarus is using South Korean security software to spread malicious software protected by advanced encryption. The campaign targets organizations in the construction, software, and communication equipment industries.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwoWz3Ex4w0TebsrzDSdna5WAjqoQx5EHWC1kY3db9VgMg6FrGK6VbncVA9b3tKdPnqlR6qmdwsq7CT1f-Cp57WpH6lpfoF-5zb_Xg-ahdsNxO4OUTsdDVeO_8s7SQFLp54SrsWlWrZn-37sAcqv1ZeG_7Yc62vQ5X9Tq-MlIEm6EOQOiTkQVlcy9F4VG4/s1600/korean-malware.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
+    "link": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+    "published": "Tue, 27 Oct 2026 15:03:06 +0530",
+    "published_ts": 1793093586,
+    "summary": "Australian authorities successfully took control of the backend operations for the Amadey malware, cutting off a criminal's access to 180,000 infected computers worldwide. This disruption prevents the attacker from stealing data or managing those compromised systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinCXm9nOGLf3YFKOH7D87d6Wau4yc3WG_4nSANlzh0oVcI9dUXg07hiHfBkDONqewGH90O6qN1cv9B1vPKGeXr7dhwAjpJ9pHCZKv2MOU9WYesukNBqS55LiPg0ytVl8JonI32qTVei_L25bCcUsPTl2PZsxYhvx0nDsxwqy3RgKE1_iRRuSbAoaH8OcY/s1600/aus.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Amadey malware infrastructure"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Energy giant ENGIE discloses data breach affecting customers",
+    "link": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
+    "published": "Tue, 27 Oct 2026 05:25:50 -0400",
+    "published_ts": 1793093150,
+    "summary": "French energy giant ENGIE confirmed that hackers stole customer data after breaching a marketing platform used by its business partners. This matters because customer information was exposed, which could lead to phishing or scams.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "ENGIE"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "University of Copenhagen data breach exposes data of 525,000 people",
+    "link": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+    "published": "Mon, 26 Oct 2026 18:20:36 -0400",
+    "published_ts": 1793053236,
+    "summary": "Hackers gained unauthorized access to a test environment at the University of Copenhagen, exposing the personal data of 525,000 people. This incident highlights the ongoing risks organizations face regarding the security of their non-production systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "University of Copenhagen"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
+    "link": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
+    "published": "Tue, 27 Oct 2026 13:52:43 +0530",
+    "published_ts": 1793089363,
+    "summary": "Researchers discovered that a chat-shortening feature in OpenAI models could be used to bypass security protections and reveal hidden reasoning steps in plain text. This matters because it exposes internal model processes that are meant to stay private.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNsIWTk2-hgeO3hAG2ohh1yrK20QoX_O0WDYRc83Q9qg-Igk4mEbzap014Pya2lSNiYEvbRIzilTYToybQVVtR3sQH84nJj-kd8tGWOqW3D-ylLpwcxOfvONGVSzjNuu5piwltyECtuezAw4Q8R7S3lvH_g2z3EpDT_EuOOEJg1-FRrChaADA4S6scQkU/s1600/chatgpt-compact.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "OpenAI"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
+    "link": "https://www.bleepingcomputer.com/news/security/the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest/",
+    "published": "Tue, 27 Oct 2026 10:01:11 -0400",
+    "published_ts": 1793109671,
+    "summary": "Security researchers have ranked the most damaging tactics currently used against businesses, highlighting a shift toward abusing legitimate tools and Microsoft 365 sessions. This matters because these techniques bypass traditional security defenses, allowing attackers to blend in with normal network activity.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft 365"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
+    "link": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
+    "published": "Tue, 27 Oct 2026 17:02:46 +0530",
+    "published_ts": 1793100766,
+    "summary": "Criminals are using artificial intelligence to build more convincing fake login pages that can steal passwords, security codes, and active browsing sessions. This makes it much easier for attackers to break into corporate and personal accounts.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCX1RKz1isf0HwbYOFkKneC7maFNTVr0q0LTVHBsoGhEN5w7ZOfSLYqfq_6-oKzf51Vb3FJTVla21T-RrWus7Dxadw81UmqDBbw8rIWxfbBhPdI5tyAUQZSYwYaq9JetgW4_4yl1qbWU7ScrdxYjoTCot6v9gXMIyjsk4W66Z531z5oHaHHEguj6_EISU/s1600/keeper-password.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
+    "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
+    "published": "Mon, 26 Oct 2026 17:08:28 -0400",
+    "published_ts": 1793048908,
+    "summary": "South Korean police have identified suspects who used an artificial intelligence pentesting framework to steal millions of data records. This shows how automated attack tools are being leveraged by criminals to breach dozens of organizations.",
+    "image": "",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/",
+    "published": "Mon, 26 Oct 2026 16:46:49 -0400",
+    "published_ts": 1793047609,
+    "summary": "OpenAI has launched a new AI model called GPT-6.1 Terra that is faster, cheaper, and designed for everyday work and computer tasks. This is a product release and does not involve any security incidents or vulnerabilities.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI",
+      "GPT-6.1 Terra"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
