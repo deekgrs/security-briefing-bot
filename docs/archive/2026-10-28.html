@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Daily Security Briefing - Wed, Oct 28, 2026</title>
+<meta name="description" content="Which security news matters today, and what to do about it. An AI-curated daily briefing in plain English, for everyone.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<!-- Link previews on LinkedIn, Slack, X and others: always show our own card,
+     not whichever news photo happens to be first on the page -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Daily Security Briefing">
+<meta property="og:title" content="The Daily Security Briefing - Wed, Oct 28, 2026">
+<meta property="og:description" content="Which security news matters today, and what to do about it. An AI-curated daily briefing in plain English, for everyone.">
+<meta property="og:url" content="https://deekgrs.github.io/security-briefing-bot/archive/2026-10-28.html">
+<meta property="og:image" content="https://deekgrs.github.io/security-briefing-bot/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="The Daily Security Briefing: which security news matters today, and what to do about it.">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --bg:#faf9f6; --card:#ffffff; --text:#1c1917; --muted:#6b6560; --line:#e7e5e0;
+          --serif: Georgia, "Times New Roman", serif; }
+  * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.55; }
+  main { max-width:920px; margin:0 auto; padding:28px 16px 64px; }
+  a { color:inherit; }
+
+  .masthead { text-align:center; border-bottom:3px double var(--text); padding-bottom:14px; }
+  .kicker { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  .masthead h1 { font-family:var(--serif); font-size:44px; line-height:1.1; margin:6px 0 8px;
+                 letter-spacing:-.01em; }
+  .masthead h1 a { text-decoration:none; }
+  .dateline { margin:0; font-size:14px; color:var(--muted); border-top:1px solid var(--line);
+              padding-top:8px; display:inline-block; }
+
+  .banner { display:flex; flex-wrap:wrap; gap:8px 16px; justify-content:space-between;
+            align-items:center; margin:16px 0 0; padding:10px 14px; font-size:14px;
+            background:#fef3c7; border:1px solid #fcd34d; border-radius:8px; }
+  .banner a { font-weight:600; }
+  .banner .pager { display:flex; gap:14px; }
+
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:20px 0 14px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:8px;
+          padding:10px; text-align:center; font-size:13px; color:var(--muted); }
+  .stat .num { display:block; font-family:var(--serif); font-size:26px; font-weight:700; }
+
+  .filters { background:var(--card); border:1px solid var(--line); border-radius:8px;
+             padding:12px 14px; margin-bottom:12px; }
+  .filter-row { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .filter-row + .filter-row { margin-top:8px; }
+  .filter-label { font-size:12px; font-weight:600; color:var(--muted); width:72px;
+                  text-transform:uppercase; letter-spacing:.06em; }
+  .chip { font:inherit; font-size:13px; cursor:pointer; display:inline-flex; align-items:center;
+          gap:6px; border:1px solid var(--line); background:var(--card); color:var(--text);
+          border-radius:999px; padding:3px 11px; }
+  .chip:hover { border-color:var(--muted); }
+  .chip.active { background:var(--text); color:#fff; border-color:var(--text); }
+  .chip .n { font-size:11px; opacity:.7; }
+  .chip .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .chip:disabled { opacity:.35; cursor:not-allowed; border-color:var(--line); }
+  .showing { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .empty { text-align:center; color:var(--muted); padding:32px; border:1px dashed var(--line);
+           border-radius:8px; }
+
+  .card { display:grid; grid-template-columns:1fr; gap:18px; background:var(--card);
+          border:1px solid var(--line); border-top:4px solid; border-radius:8px;
+          padding:16px 18px; margin-bottom:14px; }
+  .card:has(.thumb) { grid-template-columns:1fr 200px; }
+  .thumb { width:200px; height:134px; object-fit:cover; border-radius:6px;
+           background:var(--line); display:block; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:12px;
+          color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .sev { color:#fff; font-weight:700; padding:2px 8px; border-radius:4px; }
+  .card h2 { font-family:var(--serif); font-size:21px; line-height:1.25; margin:8px 0 6px; }
+  .card h2 a { text-decoration:none; }
+  .card h2 a:hover { text-decoration:underline; }
+  .card p { margin:0 0 10px; color:#3f3a36; }
+  .card p.also { font-size:13px; color:var(--muted); }
+  .label { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+           color:var(--muted); margin-right:4px; }
+  .action { margin:0 0 10px; padding:10px 12px; border-radius:6px; font-size:15px;
+            background:#fef2f2; border-left:4px solid; }
+  .action .label { color:inherit; }
+  .action-title { display:block; font-size:11px; font-weight:700; letter-spacing:.08em;
+                  text-transform:uppercase; margin-bottom:4px; }
+  .action p { margin:0; color:var(--text); }
+  .action p + p { margin-top:6px; }
+  .action .who { font-weight:700; }
+  abbr.term { text-decoration:underline dotted; text-underline-offset:3px; cursor:help;
+              position:relative; outline:none; }
+  abbr.term:hover::after, abbr.term:focus::after {
+    content:attr(data-def); position:absolute; left:0; top:1.7em; z-index:10;
+    width:min(260px, 80vw); padding:8px 10px; border-radius:6px;
+    background:var(--text); color:#fff; font:400 13px/1.45 system-ui, sans-serif;
+    text-transform:none; letter-spacing:0; box-shadow:0 4px 14px rgba(0,0,0,.18); }
+  .jargon-note { font-size:13px; color:var(--muted); margin:0 0 12px; }
+  .also a { color:var(--text); }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; border:1px solid var(--line); border-radius:4px; padding:1px 7px; color:var(--muted); }
+  a.cve { color:#b91c1c; text-decoration:none; font-weight:600; }
+
+  .archive { margin-top:32px; padding-top:16px; border-top:3px double var(--text); }
+  .archive h2 { font-family:var(--serif); font-size:24px; margin:0 0 4px; }
+  .archive .sub { margin:0 0 12px; font-size:13px; color:var(--muted); }
+  .datebar { display:flex; flex-wrap:wrap; align-items:center; gap:8px; background:var(--card);
+             border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+  .datebar form { display:flex; gap:8px; align-items:center; flex:1 1 auto; justify-content:center; }
+  .datebar input[type=date] { font:inherit; font-size:14px; padding:5px 8px; color:var(--text);
+                              border:1px solid var(--line); border-radius:6px; background:var(--bg); }
+  .datebar button, .datebar .step { font:inherit; font-size:13px; padding:5px 12px; border-radius:999px;
+                                    border:1px solid var(--line); background:var(--card); color:var(--text);
+                                    text-decoration:none; cursor:pointer; white-space:nowrap; }
+  .datebar button { background:var(--text); color:#fff; border-color:var(--text); }
+  .datebar .step:hover { border-color:var(--muted); }
+  .datebar .step.off { visibility:hidden; }
+  .date-msg { margin:8px 0 0; font-size:13px; color:#b91c1c; min-height:1em; }
+  @media (max-width:640px) {
+    .datebar { justify-content:space-between; }
+    .datebar form { order:-1; flex-basis:100%; }
+  }
+  .all-dates { margin-top:10px; font-size:14px; }
+  .all-dates summary { cursor:pointer; color:var(--muted); }
+  .month { margin:10px 0 0; }
+  .month h3 { margin:0 0 6px; font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+              color:var(--muted); }
+  .days { display:flex; flex-wrap:wrap; gap:6px; }
+  .days a, .days span { min-width:52px; text-align:center; padding:4px 8px; font-size:13px;
+                        border:1px solid var(--line); border-radius:6px; background:var(--card);
+                        text-decoration:none; }
+  .days a:hover { border-color:var(--muted); }
+  .days span { background:var(--text); color:#fff; border-color:var(--text); }
+
+  footer { margin-top:32px; padding-top:12px; border-top:1px solid var(--line);
+           font-size:13px; color:var(--muted); }
+
+  @media (max-width:640px) {
+    .masthead h1 { font-size:32px; }
+    .stats { grid-template-columns:repeat(3,1fr); }
+    .filter-label { width:100%; }
+    .card:has(.thumb) { grid-template-columns:1fr; }
+    .thumb { width:100%; height:180px; order:-1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="kicker">AI-curated &middot; Updated every morning at 4:30 AM ET</div>
+    <h1><a href="../index.html">The Daily Security Briefing</a></h1>
+    <p class="dateline">Wed, Oct 28, 2026 &middot; 15 stories, summarized and triaged by AI</p>
+  </header>
+  <div class="banner"><span>You are reading the archived briefing for <strong>Wed, Oct 28, 2026</strong>. <a href="../index.html">Go to today&rsquo;s briefing</a></span><span class="pager"><a href="2026-10-27.html">&larr; Tue, Oct 27, 2026</a></span></div>
+  <section class="stats"><div class="stat"><span class="num" style="color:#b91c1c">4</span>Critical</div><div class="stat"><span class="num" style="color:#c2410c">5</span>High</div><div class="stat"><span class="num" style="color:#a16207">0</span>Medium</div><div class="stat"><span class="num" style="color:#1d4ed8">0</span>Low</div><div class="stat"><span class="num" style="color:#57534e">6</span>Info</div></section>
+
+  <section class="filters" aria-label="Filter stories">
+    <div class="filter-row"><span class="filter-label">Severity</span><button type="button" class="chip active" data-group="severity" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="severity" data-value="Critical" aria-pressed="false"><span class="dot" style="background:#b91c1c"></span>Critical <span class="n">4</span></button><button type="button" class="chip" data-group="severity" data-value="High" aria-pressed="false"><span class="dot" style="background:#c2410c"></span>High <span class="n">5</span></button><button type="button" class="chip" data-group="severity" data-value="Info" aria-pressed="false"><span class="dot" style="background:#57534e"></span>Info <span class="n">6</span></button></div>
+    <div class="filter-row"><span class="filter-label">Category</span><button type="button" class="chip active" data-group="category" data-value="all" aria-pressed="true">All <span class="n">15</span></button><button type="button" class="chip" data-group="category" data-value="Vulnerability" aria-pressed="false">Vulnerability <span class="n">7</span></button><button type="button" class="chip" data-group="category" data-value="Breach" aria-pressed="false">Breach <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Threat Actor" aria-pressed="false">Threat Actor <span class="n">1</span></button><button type="button" class="chip" data-group="category" data-value="Policy" aria-pressed="false">Policy <span class="n">3</span></button><button type="button" class="chip" data-group="category" data-value="Research" aria-pressed="false">Research <span class="n">3</span></button></div>
+  </section>
+  <p class="jargon-note">New to security? Hover over or tap any
+  <abbr class="term" tabindex="0" data-def="Like this one. Each underlined word has a short, plain-English definition.">underlined word</abbr>
+  for a plain-English explanation.</p>
+  <p class="showing" id="showing" aria-live="polite"></p>
+  <p class="empty" id="empty" hidden>No stories match these filters.</p>
+
+  
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/" target="_blank" rel="noopener noreferrer">InfraTrust report warns of exploited flaws in critical network infrastructure</a></h2>
+      <p><span class="label">What happened</span>Hackers are actively exploiting security flaws in network devices like firewalls and VPNs using a technique called &quot;PHP2Shell&quot;. This puts critical business web management tools at serious risk of compromise.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses these network appliances, your IT team should check the InfraTrust report and secure the management interfaces.</p></div>
+      
+      <div class="tags"><span class="tag">firewalls</span><span class="tag">VPNs</span><span class="tag">application delivery controllers</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html" target="_blank" rel="noopener noreferrer">Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch</a></h2>
+      <p><span class="label">What happened</span>Hackers are actively scanning the internet for a critical security flaw in Oracle E-Business Suite just days after a <abbr class="term" tabindex="0" data-def="A software update that fixes a flaw.">patch</abbr> was released. This matters because unpatched systems can be remotely taken over by attackers.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses Oracle E-Business Suite, your IT team should already be applying the latest security updates.</p><p><span class="who">For IT teams:</span> Apply Oracle&#x27;s Critical Patch Update immediately to fix CVE-2026-101767 and monitor systems for unauthorized probing or access attempts.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/" target="_blank" rel="noopener noreferrer">BleepingComputer: Hackers now scanning systems for recently-patched Oracle flaw</a></p>
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-101767" target="_blank" rel="noopener noreferrer">CVE-2026-101767</a><span class="tag">Oracle E-Business Suite</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBB03AGS7veiAqQ7-xPeadzhhaRvDmhOlLgQcDN0y-r1na_us5yomWjBEXCbwbw8OW_o8SSGjjqk4VZFQ4ZxLiWKQPZxlcBkzJ5lv3OlEV0rOETUKyQzWoZ74LGpSjOjrScmk1rVf0OhRmDACHG3jwSDfBnnta75I_3s_nuoWGZmcfg7NZfHBp_PEIl8aj/s1600/oracle-hack.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html" target="_blank" rel="noopener noreferrer">Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass</a></h2>
+      <p><span class="label">What happened</span>Adobe released security patches for eight critical vulnerabilities in Campaign Classic that could allow attackers to run unauthorized code or bypass security controls. Fixing these flaws is important to protect enterprise systems from being taken over.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses Adobe Campaign Classic, your IT team should apply these updates.</p><p><span class="who">For IT teams:</span> Apply Adobe&#x27;s patches for the eight fixed flaws in Campaign Classic as soon as possible.</p></div>
+      
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-104351" target="_blank" rel="noopener noreferrer">CVE-2026-104351</a><span class="tag">Adobe Campaign Classic</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3z7SDPF49VtrfeTS8qZD9-Rv1ne3ZUL2KLJZklOlASYXMnjBQXmmIYZ-wAC9PR248ntUBTyZLq2G6TPVYLZ-aEN7fDFc4pcEhSbt_vj36JTbujGJ2UHTbxFDUOiDvYDyKl7NpCvSMlySdqWjPhyphenhyphenFUNTkC38Ej0biyWHeF1u4kFHCe4tkJjgCW6RCHttx_/s1600/adobe-main.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#b91c1c"
+           data-severity="Critical" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#b91c1c">Critical</span>
+        <span>Vulnerability</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/" target="_blank" rel="noopener noreferrer">CISA warns of hackers now exploiting critical Node2Shell flaw</a></h2>
+      <p><span class="label">What happened</span>Hackers are now actively exploiting a critical vulnerability in a software component known as Node2Shell. This flaw allows attackers to compromise systems, making it urgent to secure affected environments.</p>
+      <div class="action" style="border-color:#b91c1c"><span class="action-title" style="color:#b91c1c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your organization uses this software, your IT team needs to take action immediately.</p><p><span class="who">For IT teams:</span> Review guidance from the Cybersecurity and Infrastructure Security Agency (CISA) and apply available updates or mitigations for the Node2Shell flaw immediately.</p></div>
+      
+      <div class="tags"><span class="tag">Node2Shell</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html" target="_blank" rel="noopener noreferrer">Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers</a></h2>
+      <p><span class="label">What happened</span>A 16-year-old flaw in widely used computer boot software allows attackers to run malicious code before the operating system starts. This affects servers that boot up using a network connection.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything, as this affects servers that boot over a network rather than home computers.</p><p><span class="who">For IT teams:</span> Apply security updates for EDK II from your hardware vendor and restrict network-booting environments to trusted networks until patches are installed.</p></div>
+      
+      <div class="tags"><span class="tag">EDK II</span><span class="tag">UEFI firmware</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoVVx2e6mg8LPbhDYmtubHewVD_9BI7UcctCMSwwG-h4SuOyZJOvIyTre_g9Ggo6sLw6Bjrse_1FsqKKThyiIvc5CbuYqq4caYCtUciHGg33wReFQgOjJuTX5FrnSS3OZTd_yjXt03l_kxwIX-NshU9A8wpANSdQwOWkDKzy31QdXkCD6UP21dOpfbjhg/s1600/server-bios.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Threat Actor">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Threat Actor</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/american-organizations-under-attack.html" target="_blank" rel="noopener noreferrer">American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed</a></h2>
+      <p><span class="label">What happened</span>A <abbr class="term" tabindex="0" data-def="Fake emails, texts or sites that trick people into giving away passwords or clicking harmful links.">phishing</abbr> campaign called Skyw4lker is targeting American organizations using device codes to gain unauthorized access to corporate accounts. It matters because attackers are abusing legitimate cloud services and authentication methods to slip in undetected.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses the targeted cloud services, your IT team should already be monitoring for unauthorized device logins.</p><p><span class="who">For IT teams:</span> Review authentication logs for suspicious device code login attempts and educate users on recognizing advanced phishing campaigns that abuse legitimate cloud workflows.</p></div>
+      
+      <div class="tags"></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf2g4rsWnZ5eQP03cr-4e99MQStvJmuaTTi91WESG3ua1ddAW73T6X22gyaspj2SirqH-1bSAU9VkOg2F1Kh9TLmPc4jYsNAlD72S2XzCeTTRHSiN3B7is7roWwIMcIm__yRu8SkUBbyeWxAEBo5Fe-bbACZWRuoxZqv_pysQ9iMsZRHPCD_clJZsNIDs/s1600/anyrun-main.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Breach">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Breach</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html" target="_blank" rel="noopener noreferrer">Japan&#x27;s GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach</a></h2>
+      <p><span class="label">What happened</span>Japanese internet company GMO is offering a $1 million reward for tips leading to the arrest of hackers who breached its cloud service and demanded a ransom. Customers using the service have been urged to shut down their computers and disconnect from the internet to avoid a potential <abbr class="term" tabindex="0" data-def="Harmful software that locks your files and demands payment to unlock them.">ransomware</abbr> attack.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you use GMO&#x27;s Onamae Desktop Cloud service for FX trading, disconnect your computer from the internet and shut it down immediately as advised by the company.</p></div>
+      <p class="also"><strong>Also covered:</strong> <a href="https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/" target="_blank" rel="noopener noreferrer">BleepingComputer: Japan&#x27;s GMO urges customers to shut down PCs amid ransomware threat</a></p>
+      <div class="tags"><span class="tag">GMO Internet Group</span><span class="tag">Onamae.com Desktop Cloud</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguDDZZalFBPLgf4YxDU_9FK46XXVkU3x0GKHeZHFd2WTdJ0cK5n1KCWDEOIvSgzHP4R14xmwLygLnnmyuBEVcHRVO7b9nIUZVcp5ehxIgFGrPyXZ3hZGwNa2bg8k4e_kkSHa2tyo05yPortQqRR_9g3yr-T0k0Tga9_26Pr0rs_MNIU8RndHMeq9r5Rr0/s1600/gmo.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html" target="_blank" rel="noopener noreferrer">Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers</a></h2>
+      <p><span class="label">What happened</span>Tailscale has <abbr class="term" tabindex="0" data-def="Fixed by a software update from the maker.">patched</abbr> security flaws in its built-in SSH server that could allow compromised devices to gain top-level root access on other servers. This matters because an attacker could potentially reach sensitive files and services that should be heavily restricted.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If you use Tailscale for personal or business connections, update your software to version 1.104.4 as soon as possible.</p><p><span class="who">For IT teams:</span> Apply Tailscale version 1.104.4 immediately to fix the SSH forwarding flaws.</p></div>
+      
+      <div class="tags"><span class="tag">Tailscale</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4t7YUY-idhgGJFpEuulM5zELQR4QNB-UKmsh7cyB5cdMH4AU_zumf3K27WBWgAw6ra28TvALm5fFeLrV_1wHJXeYy3azE1TcblP-1JSCPLF3mq-WKjUOXy3K-pfjhHtiwGkCoYhxfEMZGielHz2Bit6mLoNlnElmauP0RNcbXelNkAHIWI4s92qrymUQ/s1600/tailscale-patches.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#c2410c"
+           data-severity="High" data-category="Vulnerability">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#c2410c">High</span>
+        <span>Vulnerability</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html" target="_blank" rel="noopener noreferrer">ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws</a></h2>
+      <p><span class="label">What happened</span>Attackers <abbr class="term" tabindex="0" data-def="Attackers have used this flaw to break in.">exploited</abbr> three chained security flaws in Oracle PeopleSoft software starting in May. Oracle released a <abbr class="term" tabindex="0" data-def="A software update that fixes a flaw.">patch</abbr> for the vulnerabilities in June under the identifier CVE-2026-35273.</p>
+      <div class="action" style="border-color:#c2410c"><span class="action-title" style="color:#c2410c">What to do</span><p><span class="who">For everyone:</span> Most people don&#x27;t need to do anything. If your workplace uses Oracle PeopleSoft, your IT team should already be on it.</p><p><span class="who">For IT teams:</span> Apply Oracle&#x27;s patches associated with CVE-2026-35273 and check systems for signs of compromise.</p></div>
+      
+      <div class="tags"><a class="tag cve" href="https://nvd.nist.gov/vuln/detail/CVE-2026-35273" target="_blank" rel="noopener noreferrer">CVE-2026-35273</a><span class="tag">Oracle PeopleSoft</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgiU-iVEycp9z-2dprGJhgl046M9ZvG7kGGwaXNzgFJg7XDubOoWWLvEuKAOczIcGuXU04db46Xa6pRMKO36ZS7Fu8Xkv7mNuPjHUS0zLTHkGlNWNRD2DLCznPf6jqvqamZSZGMBXSzh9gMYm-9sR-y7OgN7i7n6x0dfYxyl9QftWlfuQw0mpTteHy57k/s1600/sh.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/" target="_blank" rel="noopener noreferrer">Microsoft urges Entra ID admins to migrate users to passkeys</a></h2>
+      <p>Microsoft is urging administrators to move users away from text message and phone call sign-ins before they are retired in February 2027. Making this change helps prevent future sign-in problems and protects accounts from being stolen by trickery.</p>
+      
+      
+      <div class="tags"><span class="tag">Microsoft Entra ID</span></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Research</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/" target="_blank" rel="noopener noreferrer">Even after PHP2Shell, blast radius matters more than a CVSS score</a></h2>
+      <p>Attackers can quickly <abbr class="term" tabindex="0" data-def="A method or piece of code that takes advantage of a flaw to break in.">exploit</abbr> software vulnerabilities before organizations have time to apply patches. Experts recommend limiting the access permissions of accounts and digital tools to reduce potential damage if a breach occurs.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html" target="_blank" rel="noopener noreferrer">Wazuh and AI for Enhanced SOC Workflows</a></h2>
+      <p>An article discusses how artificial intelligence is being used to improve security operations centers and automate tasks. It highlights the growing role of AI in defending against cyber threats.</p>
+      
+      
+      <div class="tags"><span class="tag">Wazuh</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo5_lgjV0zvHt5XW8CcCjQnBc_cvxOxrGxsrliXv3s9c6RD-Aw7eXOlNrp78QHxSnVO5yBgphx7KqCjkjje3YbwCFUtXUdLN4xA-sW_zVoFsK7au37XZxUPyoDRlhCIGsxc2at70I_FexwVKgdyub-XuuvwIZCy1o6hoCU50o7lhHWDSgktrcsrXkN9p8/s1600/wazuh.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>BleepingComputer</span>
+      </div>
+      <h2><a href="https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/" target="_blank" rel="noopener noreferrer">Nefilim and Hive ransomware affiliate gets 70 months in prison</a></h2>
+      <p>A Ukrainian national was sentenced to nearly six years in prison for his role in <abbr class="term" tabindex="0" data-def="Harmful software that locks your files and demands payment to unlock them.">ransomware</abbr> attacks against hospitals and government entities. The sentencing brings a measure of justice to victims of major cyberattacks that disrupted critical services worldwide.</p>
+      
+      
+      <div class="tags"></div>
+    </div>
+    
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Research">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Research</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html" target="_blank" rel="noopener noreferrer">Anthropic&#x27;s Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits</a></h2>
+      <p>An unreleased Anthropic artificial intelligence model successfully found and chained multiple security flaws in major operating systems and browsers to create working proof-of-concept exploits in a lab. Because Anthropic reported the flaws responsibly, all of them have already been <abbr class="term" tabindex="0" data-def="Fixed by a software update from the maker.">patched</abbr> by the respective vendors.</p>
+      
+      
+      <div class="tags"><span class="tag">Chrome</span><span class="tag">Safari</span><span class="tag">Android</span><span class="tag">Windows</span><span class="tag">Linux</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSMl2C6S6mb-smamI35fLYotcPaercI_2PIgtuF78Q7PtQcFvFUKXkModTW4nRCh6FC7Xht2BltSGImRS2QNR4Lnc22S7UBU9V_0UDcZi2iDNXSlCJDqD4ApmJPqA_boFokj_9dTWKdzhjIgNt_Y47zumx_c5vrcJn5Vd-Xaowafv4HGCzCcqgDV4GGpo/s1600/hacker-chain.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  <article class="card" style="border-top-color:#57534e"
+           data-severity="Info" data-category="Policy">
+    <div class="body">
+      <div class="meta">
+        <span class="sev" style="background:#57534e">Info</span>
+        <span>Policy</span><span>&middot;</span><span>The Hacker News</span>
+      </div>
+      <h2><a href="https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html" target="_blank" rel="noopener noreferrer">FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering</a></h2>
+      <p>The U.S. government seized the domain for a hosting company that allowed criminals to hide online. The service was used for serious crimes, including sharing explicit images without consent and laundering money.</p>
+      
+      
+      <div class="tags"><span class="tag">Virtualine</span></div>
+    </div>
+    <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAdfKblTUCEDUoHzYpHPcEPzHO6qKTr01uG2-x7YyIT5t_-xeFc27zuZ3yOK76rkhz-J8y_Z4MqmydEQUtiCEvry_2H43qaSJXDrWRbM1gs8wDVTBgi_NzxIXsGBMoX8zlzISFlvcJ8NdNSyeMIZh8z-aHkXCyBDPJ2l195Ji1XgnVu_A0Yhh3H2QvEyiA/s1600/servers.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+  </article>
+  
+  <section class="archive" aria-label="Past briefings">
+    <h2>Past briefings</h2>
+    <p class="sub">17 daily briefings since Mon, Oct 12, 2026. Pick a date to read that day's briefing.</p>
+    <div class="datebar">
+      <a class="step" href="2026-10-27.html">&larr; Tue, Oct 27, 2026</a>
+      <form id="date-form" data-dates="[&quot;2026-10-28&quot;, &quot;2026-10-27&quot;, &quot;2026-10-26&quot;, &quot;2026-10-25&quot;, &quot;2026-10-24&quot;, &quot;2026-10-23&quot;, &quot;2026-10-22&quot;, &quot;2026-10-21&quot;, &quot;2026-10-20&quot;, &quot;2026-10-19&quot;, &quot;2026-10-18&quot;, &quot;2026-10-17&quot;, &quot;2026-10-16&quot;, &quot;2026-10-15&quot;, &quot;2026-10-14&quot;, &quot;2026-10-13&quot;, &quot;2026-10-12&quot;]" data-prefix="">
+        <label for="date-pick" class="label">Date</label>
+        <input type="date" id="date-pick" value="2026-10-28" min="2026-10-12" max="2026-10-28" required>
+        <button type="submit">View</button>
+      </form>
+      <span class="step off">&rarr;</span>
+    </div>
+    <p class="date-msg" id="date-msg" aria-live="polite"></p>
+    <details class="all-dates">
+      <summary>Browse all dates</summary>
+      <div class="month"><h3>October 2026</h3><div class="days"><span title="Wed, Oct 28, 2026: 15 stories" aria-current="page">Wed 28</span><a href="2026-10-27.html" title="Tue, Oct 27, 2026: 15 stories">Tue 27</a><a href="2026-10-26.html" title="Mon, Oct 26, 2026: 15 stories">Mon 26</a><a href="2026-10-25.html" title="Sun, Oct 25, 2026: 15 stories">Sun 25</a><a href="2026-10-24.html" title="Sat, Oct 24, 2026: 15 stories">Sat 24</a><a href="2026-10-23.html" title="Fri, Oct 23, 2026: 15 stories">Fri 23</a><a href="2026-10-22.html" title="Thu, Oct 22, 2026: 15 stories">Thu 22</a><a href="2026-10-21.html" title="Wed, Oct 21, 2026: 15 stories">Wed 21</a><a href="2026-10-20.html" title="Tue, Oct 20, 2026: 15 stories">Tue 20</a><a href="2026-10-19.html" title="Mon, Oct 19, 2026: 15 stories">Mon 19</a><a href="2026-10-18.html" title="Sun, Oct 18, 2026: 15 stories">Sun 18</a><a href="2026-10-17.html" title="Sat, Oct 17, 2026: 15 stories">Sat 17</a><a href="2026-10-16.html" title="Fri, Oct 16, 2026: 15 stories">Fri 16</a><a href="2026-10-15.html" title="Thu, Oct 15, 2026: 15 stories">Thu 15</a><a href="2026-10-14.html" title="Wed, Oct 14, 2026: 15 stories">Wed 14</a><a href="2026-10-13.html" title="Tue, Oct 13, 2026: 16 stories">Tue 13</a><a href="2026-10-12.html" title="Mon, Oct 12, 2026: 15 stories">Mon 12</a></div></div>
+    </details>
+  </section>
+  <script>
+  (function () {
+    var form = document.getElementById("date-form");
+    var pick = document.getElementById("date-pick");
+    var msg = document.getElementById("date-msg");
+    var dates = JSON.parse(form.dataset.dates);
+    function nice(d) {
+      return new Date(d + "T12:00:00").toLocaleDateString("en-US",
+        { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+    }
+    function go() {
+      var d = pick.value;
+      if (dates.indexOf(d) === -1) {
+        msg.textContent = d ? "There's no briefing for " + nice(d) + ". Briefings are available from " +
+          nice(dates[dates.length - 1]) + " to " + nice(dates[0]) + "." : "";
+        return;
+      }
+      msg.textContent = "";
+      window.location.href = form.dataset.prefix + d + ".html";
+    }
+    // Only the View button (or Enter) opens a date; picking a date just selects it
+    form.addEventListener("submit", function (ev) { ev.preventDefault(); go(); });
+    pick.addEventListener("input", function () { msg.textContent = ""; });
+  })();
+  </script>
+  <footer>Generated automatically from public RSS feeds. Images and stories belong to their
+  publishers; follow each link for the original reporting. AI summaries can contain errors.</footer>
+</main>
+<script>
+(function () {
+  var state = { severity: "all", category: "all" };
+  var cards = document.querySelectorAll(".card");
+  var chips = document.querySelectorAll(".chip");
+  var showing = document.getElementById("showing");
+  var empty = document.getElementById("empty");
+
+  function matches(card, group, value) {
+    return value === "all" || card.dataset[group] === value;
+  }
+
+  // Each button's count = stories you would see if you clicked it,
+  // given whatever is selected in the other row
+  function updateCounts() {
+    chips.forEach(function (chip) {
+      var group = chip.dataset.group;
+      var other = group === "severity" ? "category" : "severity";
+      var n = 0;
+      cards.forEach(function (card) {
+        if (matches(card, group, chip.dataset.value) && matches(card, other, state[other])) n++;
+      });
+      chip.querySelector(".n").textContent = n;
+      chip.disabled = n === 0 && !chip.classList.contains("active");
+    });
+  }
+
+  function apply() {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var match = matches(card, "severity", state.severity) &&
+                  matches(card, "category", state.category);
+      card.hidden = !match;
+      if (match) shown++;
+    });
+    showing.textContent = "Showing " + shown + " of " + cards.length + " stories";
+    empty.hidden = shown !== 0;
+    updateCounts();
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var group = chip.dataset.group;
+      state[group] = chip.dataset.value;
+      chips.forEach(function (other) {
+        if (other.dataset.group !== group) return;
+        var on = other === chip;
+        other.classList.toggle("active", on);
+        other.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>
