@@ -1,0 +1,285 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+    "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+    "published": "Thu, 29 Oct 2026 16:14:46 +0530",
+    "published_ts": 1793270686,
+    "summary": "Cisco has released updates to fix a security flaw in its firewall and VPN software that attackers are actively exploiting to crash devices. This vulnerability allows remote attackers to disrupt network security systems without needing a password.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKqTkl_DfXdrvaLinBOu5OU0NISVo_mPJfqRmnHL-m8efFXEijbxOVsFgrSPparCspKfoUtxDtfA7gu8myFTfvWCFJfse3BQakKGOZCA54pWh371KyXdluHyqjckIBFjZ36Ogv1EI42yDCO2dt02noigEyL2RKJ8lEivH3PCWJURryc1JtNO9djpeW88tJ/s1600/cisco-flaws.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
+        "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-76418"
+    ],
+    "affected": [
+      "Cisco Secure Firewall Adaptive Security Appliance Software",
+      "Cisco Secure Firewall Threat Defense Software"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Cisco firewall and VPN products, your IT team should already be working on applying the update.",
+    "action_it": "Apply Cisco's security patches immediately to address CVE-2026-76418 and review system logs for any signs of exploitation or unexpected firewall crashes."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+    "link": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+    "published": "Thu, 29 Oct 2026 14:35:39 +0530",
+    "published_ts": 1793264739,
+    "summary": "An attacker tried to use a severe security flaw to break into the Alpine Linux project's server, just a week after a fix became available. Fortunately, the attack was unsuccessful.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh65eroK1pQacKJwqeGmgp2sDta1mgCrPuNMXiwAgTi-FVZNc1V4D7qooFFc-V-XNOJzYpjYk28Y_kIkoHMNJfnQ5h2gI0-bOWlVOt9VJ9oZUpRsBzYLsSMe3oNRTfZe53dtpezOOq1MHmWhEhAigbyOMLx4jWAbcvvImY39jY1h4FMS4_OUqSDF-kZJvQ/s1600/linux-gitlab.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "affected": [
+      "GitLab",
+      "Alpine Linux"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use GitLab at work, your IT team should already be applying the necessary updates.",
+    "action_it": "Apply GitLab's available security fixes immediately for CVE-2026-97229 and review server logs for any signs of attempted unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+    "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+    "published": "Thu, 29 Oct 2026 11:52:33 +0530",
+    "published_ts": 1793254953,
+    "summary": "State-sponsored hackers from China used a previously unknown security flaw in VMware software to hide their tracks while attacking the U.S. legal sector. This matters because attackers used it to erase their footprints, making it harder for defenders to investigate intrusions.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcr5vMvEpNtC6AAPL85NwoZLwafJYuuIYKlofAez4dmACEH-0VI-icaKusP2b9HgxcJC2AMyZkdGNfVOyXQCWqjK-_vIvw1OjptUH_maUL82An7MRxEnZQ62JZqPqwuTp6QQ8TWq4y0SRqUb6KhdXLYRJMyUHg2cQBzez3g-0G8jh2ujIgx-6FqQdWBuFr/s1600/esx-audit.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-41709"
+    ],
+    "affected": [
+      "Broadcom VMware ESX"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses VMware software, your IT team will handle the necessary security updates.",
+    "action_it": "Review systems for signs of compromise by the Warp Panda threat actor and apply available security updates or mitigations for CVE-2026-41709."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-fragnesia-linux-flaw-chained-in-php2shell-attacks/",
+    "published": "Thu, 29 Oct 2026 09:59:48 -0400",
+    "published_ts": 1793282388,
+    "summary": "U.S. cyber defenders warn that hackers are combining a Linux operating system flaw with PHP2Shell vulnerabilities to launch attacks. Federal agencies must apply security patches to protect their systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Linux",
+      "PHP2Shell"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use business systems running Linux, your IT team will handle the updates.",
+    "action_it": "Apply the latest security patches provided by your vendor for the Linux kernel and PHP2Shell flaws immediately."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
+    "link": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
+    "published": "Thu, 29 Oct 2026 17:09:18 +0530",
+    "published_ts": 1793273958,
+    "summary": "A security flaw in the Telegram app for Android allowed attackers to run malicious code on a victim's phone simply by making a voice call. Telegram has already released an update to fix the issue.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguzUg6G-A4KdRvBuhj9LZ93cFfXfvMNkg3dJO0H9sfNJ3MTlecsgLEMIk5TnIrdl2N6UGB8D9rlqLduGEZVm7X-XrWZr6Xh5ZrVp38x5uTd1vHyHGcjRR2N3gctNen-CBSz8JihnNL57galBoeOVKwG5w3qsOZnqmGYdkxzjurrI3QWolmS1Qfz_E_Wog/s1600/telegram.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Telegram"
+    ],
+    "action_everyone": "Open the Google Play Store on your Android phone, search for Telegram, and update it to version 12.10.4 or newer to ensure you have the fix.",
+    "action_it": "Ensure all organizational Android devices running Telegram are updated to version 12.10.4 or later immediately."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+    "link": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+    "published": "Thu, 29 Oct 2026 13:54:22 +0530",
+    "published_ts": 1793262262,
+    "summary": "Hackers previously exploited a critical security flaw in Cisco systems to install custom malware that steals network encryption keys. Cisco discovered these historical attacks and revealed details about the malware on October 28.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDuVB5nQJHwAnAATDQxAqD8KtWk7IpNvBqXQq6RPkqJ72joLVDp5dUDDdYmRHlrbUhJQpaQQ59p245XjotvW2DNx_fKk7cPp0wJUsK0z5IQY2jXA1oP-YcYKLtSdBXnZJDNECWOzX9tP3-12cKXJm2A1KKoBsu9CEiOYKbgJDVqvQt7YRF8Fzd706YumA/s1600/cisco-sdwan.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Cisco Catalyst SD-WAN"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Cisco network equipment, your IT team should ensure the system updates released in February have been applied.",
+    "action_it": "Ensure that the security updates released by Cisco in February for the SD-WAN flaw have been fully applied, and review network logs for any signs of past unauthorized access or the KeyDrift malware."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
+    "link": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html",
+    "published": "Thu, 29 Oct 2026 17:03:15 +0530",
+    "published_ts": 1793273595,
+    "summary": "A security researcher found over 26,000 working cloud and AI security keys accidentally left public on Gitee. Anyone finding these exposed keys could have used them to access sensitive cloud and artificial intelligence services.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVszv5076OudfiraNA4yh_XuzZZof-jYaklwUgiY700oPMvBHQfKHx-8yLNwhF9NVXahFRvWwU7c0mPCsIG-GUo45Fi_LT6ecZMsaRUfaLIL6eK16qeku1PO5aMTQRV0VKJh-pjKG4rC-RyajCGjL4R_A5W6YPsps4B4-GhEbstuAN7AnelVJPwIFK5W-/s1600/gite.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Gitee"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates/",
+    "published": "Thu, 29 Oct 2026 10:35:40 -0400",
+    "published_ts": 1793284540,
+    "summary": "Microsoft fixed a software bug that stopped regular users from connecting to computers via Remote Desktop when a specific security setting was turned on. This matters because it disrupted remote work and access for everyday users.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "3 Ways AI Agents Already Operate in Your Browser",
+    "link": "https://www.bleepingcomputer.com/news/security/3-ways-ai-agents-already-operate-in-your-browser/",
+    "published": "Thu, 29 Oct 2026 10:00:10 -0400",
+    "published_ts": 1793282410,
+    "summary": "Security researchers are warning that artificial intelligence agents can control web browsers to act like human employees, accessing sensitive data and corporate applications. This matters because traditional security tools struggle to tell the difference between a real person and an AI agent doing the same tasks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
+    "link": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
+    "published": "Thu, 29 Oct 2026 19:12:40 +0530",
+    "published_ts": 1793281360,
+    "summary": "Google has announced Gemini 4 Carbon, a new artificial intelligence model that sets benchmark records for finding, exploiting, and patching software vulnerabilities. This matters because it highlights the growing capability of AI tools to perform advanced cybersecurity tasks on both offense and defense.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBMb78BxIXnGaXFzCXPdswdQZsuh8rz63Y22pLX3cOkgRgaPv3KJgw6fRULDT3am1YO4eA1obnh0aOdxZy4KVZMww8sxNOtxzZXYcouotzbB25LVdJrCeDk0MQsgCmsYQBAaGdwyhmiMNa2Y90ujuXFXZPLTIrOo1PB6vtWqWAXygOvM72cEmXvHTN9Ktw/s1600/google-gemini.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Google",
+      "Gemini 4 Carbon"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Windows 11 KB5127936 update released with 41 changes and fixes",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127936-update-released-with-41-changes-and-fixes/",
+    "published": "Thu, 29 Oct 2026 08:00:07 -0400",
+    "published_ts": 1793275207,
+    "summary": "Microsoft released a preview update for Windows 11 containing 41 changes and fixes. This optional update improves features like File Explorer and Cloud rebuilds.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 11"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Webinar: How to Build AI Threat Readiness Into Your Security Operations",
+    "link": "https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html",
+    "published": "Thu, 29 Oct 2026 17:09:41 +0530",
+    "published_ts": 1793273981,
+    "summary": "This article announces an upcoming webinar about how artificial intelligence is changing cybersecurity threats. It matters because security teams need to adapt to attackers using AI to move faster.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRqwLeHISYWaiVNUxkANuqw6ob8Exu7_9CIEt6uHbsNa7mcNUkSWZqNZHEL3_kqPPHXVq4RGTxqZZhMdybwcVVT28qCihLUi0I5ghW9Xk5sVDB2u2kJqULx-_FEcsEHuTCU5vIwReQZghbj8HjQD4zq8H1yiGSYNlmNC25YkViZxlqndOhIp1CD2s_sLlc/s1600/wiz-webinar.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
+    "link": "https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html",
+    "published": "Thu, 29 Oct 2026 17:03:41 +0530",
+    "published_ts": 1793273621,
+    "summary": "Artificial intelligence is beginning to automate many routine tasks traditionally performed by security analysts. This shift will fundamentally change how security operations centers are organized and how security careers evolve.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDZvKBLpFrPhWNRvVvRjmTtgwdpGykJjCmzNWNaytIUO2C9VadEDZjeY35hq6H33jHDxV7kAOMTyOV7RO_YUG2caQ75nA_NstH_GxfRJo57n970u4ACXwZXoKl8mizESwgP9wulusqUmSnZwjFNHIJZ2hk_VzrlCJ5HBD9_8zs8Fj1WZULiZoZMD9G9D8/s1600/conf.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
+    "link": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
+    "published": "Thu, 29 Oct 2026 15:56:33 +0530",
+    "published_ts": 1793269593,
+    "summary": "GitHub has introduced a new preview firewall designed to block the installation of malicious npm software packages. This helps protect developers from accidentally downloading harmful code into their projects.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ7hXo0MoiQiXCSLnOj0h2YUqDhIHl13Le4XxOU3UxV7X2mm4_YGJKOT6akyW58uRaMhslGN6NY9B_1u7V-y_fy0kYJHKoVA-yBWVt53xqBk06_syRpASgWezvnVIZs9goRlwNrp_HMVj_Pu8rzXmIsfJBV1YzhJ8IAd-1g7FFVhFWqc9HegTk4Jok5kR9/s1600/github.gif",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "GitHub",
+      "npm"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
+    "link": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+    "published": "Wed, 28 Oct 2026 16:47:22 -0400",
+    "published_ts": 1793220442,
+    "summary": "U.S. law enforcement has seized the main website of Virtualine, a company that provided hidden internet hosting for cybercriminals. This takedown disrupts infrastructure used by ransomware gangs and other online criminals to launch attacks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Virtualine"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
