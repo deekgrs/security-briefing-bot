@@ -1,0 +1,316 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "CISA says max severity GitLab flaw now exploited in the wild",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
+    "published": "Fri, 30 Oct 2026 09:00:32 -0400",
+    "published_ts": 1793365232,
+    "summary": "Hackers are now actively attacking a maximum-severity security flaw in GitLab software that was patched earlier this month. This matters because attackers can use this vulnerability to compromise vulnerable servers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw1Ms9mKdtALczFoDaNy5Bm0HVMfxu0ps0ykDUXuLn3BeOEqUCDnzUiCP2lU_7xbC2kYuIAGCuOiQCGIlkR6wYBfCfb7g0wRESfIFaMtSltOjWphyswldC4LJxFf0RnCB9FzEVc-euJGtGbUvpJr7FOE0QefC3_rn8xLSFTij_yJn1MNP6bJVu8VgrcLaV/s1600/github-cisco.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+        "link": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "affected": [
+      "GitLab Community Edition",
+      "GitLab Enterprise Edition",
+      "Cisco"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses GitLab, your IT team should already be on it.",
+    "action_it": "Apply GitLab's patches for the fixed flaw and check server logs for signs of compromise."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Drupal warns of critical Commerce Core flaw exploited in attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
+    "published": "Fri, 30 Oct 2026 06:16:07 -0400",
+    "published_ts": 1793355367,
+    "summary": "Attackers are actively exploiting a critical security flaw in the Drupal Commerce Core module that allows unauthorized access. Website administrators need to update their software immediately to protect their online stores.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitgPkf4uToEgXwcfmDEKipEveRL2l0PEz6WIegAc2uWyf5_khO7Scgu6MpWHRovED7S-4sKJb4o88JsJT8NI8zB8WCBo04Q9TrEVNJa-08EbxP_zdPkaA7wsBEPIjXbApW1StdY8JunSewAi9TNrAcMwYZjqSsVktddqQ0uIi8-rUzXq1LMMLBHBdccapz/s1600/drupal-rce.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+        "link": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-118539"
+    ],
+    "affected": [
+      "Drupal",
+      "Commerce Core"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a website using Drupal Commerce, your web administrator or IT team needs to apply the update right away.",
+    "action_it": "Update Drupal Commerce Core to a secure version (patch beyond versions 2.41 and 3.3.13) and review system logs for signs of unauthorized access."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+    "link": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+    "published": "Fri, 30 Oct 2026 05:18:13 -0400",
+    "published_ts": 1793351893,
+    "summary": "Binance linked a massive cryptocurrency theft of over $6 billion to a compromised employee laptop used for technical operations. A significant portion of the stolen funds has already been frozen by the exchange and stablecoin issuers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmTtJggkBbk2ERH6bhZMSPnb_E1aQ44w4EpzkwAt1tqp45sGvG7jeAg2QvmbWQsBy5hyphenhyphen7ur18XQ1Uax7D9XRg-CZpQpMAByXt37Fn1loBClsu49KlBEsnxRCfy7vSuI-5yrpHB4JLWc1vtw0aITnhbFXDb4CosJzm07My3Lw6p3fOLTfcaxJLBR-Pdi2A6/s1600/Binance.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+        "link": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html"
+      },
+      {
+        "source": "BleepingComputer",
+        "title": "Binance probes potential $5.8 billion crypto-theft hack",
+        "link": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/"
+      }
+    ],
+    "category": "Breach",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Binance",
+      "Tether",
+      "Circle"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this affected a specific cryptocurrency exchange. If you use Binance, follow any official instructions or updates from the company.",
+    "action_it": "Review endpoint security and access controls for developer and IT operations laptops. Monitor for unauthorized activity and coordinate with relevant stablecoin issuers and law enforcement regarding frozen assets."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+    "link": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+    "published": "Thu, 29 Oct 2026 21:27:05 +0530",
+    "published_ts": 1793289425,
+    "summary": "A severe flaw was found in the Linux kernel's networking code that could allow unauthorized remote attackers to take complete control of a server. Anthropic reported that its artificial intelligence model successfully wrote an exploit for this vulnerability.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfCJ0ttE8v4hkDjJRqbTvxlxFcoNtFJhbYCQ-o8NtaiyFLImEyA8aSO967eeZG9fRebhc8oVA-OloE9X9KVVAxM-H3wKvUlh8XmN6bGlEz2IJwMgcssmA7yIRi7YNOwVQYD6nhQCaWUg6fPy-QXVjfw6rV55LueKlLvZLazjKjTL94KJMMUZ2uZ3R019Km/s1600/linux-flaw.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-98432"
+    ],
+    "affected": [
+      "Ubuntu",
+      "Red Hat Enterprise Linux",
+      "Linux kernel"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Linux servers, your IT team should already be on it.",
+    "action_it": "Apply the latest security patches from your Linux distributor as soon as they become available to address CVE-2026-98432."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+    "link": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+    "published": "Fri, 30 Oct 2026 10:36:54 -0400",
+    "published_ts": 1793371014,
+    "summary": "A fake update for a popular developer tool extension was accidentally distributed, exposing software developers to malicious software that installs secret backdoors. The malicious update was available for about 11 hours before being taken down.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMAV00lkxu7R724ItLdgrRsnEYHR_d2eUSdcen_KymGeBY1tCo8SRVz6w_XiNzzYgwpcl0Me3JCJz8DeieRM_0jb8aL4VkHAAIeXrqNf8oQkmzKahqMHOGvhkFK32HOasHZht8BwtI1NxEZ-_nIwmQY_8fxpGbbl3csC6oZKCVnIRk3iYTRhH975dyxsWS/s1600/cursor-vscode.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
+        "link": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
+      }
+    ],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Claude Code extension",
+      "Cursor Marketplace"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this affected software used primarily by software developers. If you are a developer who used the Cursor Marketplace to update the Claude Code extension around October 29, check your system for unauthorized SSH keys or backdoors.",
+    "action_it": "Identify and isolate any developer workstations that installed version 2.1.313 of the Claude Code extension from the Cursor Marketplace on October 29. Audit systems for unauthorized SSH keys, unexpected user accounts, and signs of persistence."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
+    "link": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+    "published": "Fri, 30 Oct 2026 17:51:56 +0530",
+    "published_ts": 1793362916,
+    "summary": "A customer reported that a hardware wallet bought from a reseller contained a hidden circuit board designed to steal funds. Trezor is urging anyone who bought a device from that reseller to immediately move their funds to a new wallet.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih5QxhFnBw6d40ollOAoolmZedxywTm7DeBQpEqydVG5Pqg0v5iDVFT1hhbsW7Thqg00oI8MACNXC9FX6MCp_qMRkBRiqdxb9D4CDKfTWTZwI5eyY3V2IOa8ODSg24kX7Ni_C968r2X89tUXwPbDnHPV9xX-ydhytwerqMI1ru7tqdIK-cqA0p9oM5Ppxr/s1600/trezor-wallet.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Trezor",
+      "CryptoBilis"
+    ],
+    "action_everyone": "If you bought a Trezor wallet from the reseller CryptoBilis since March 2026, you should immediately move your digital funds to a new wallet using a brand-new recovery phrase.",
+    "action_it": "Advise users who purchased hardware wallets from the affected reseller to transition funds to newly generated wallets immediately, pending physical inspection and confirmation of the hardware tampering."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
+    "link": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
+    "published": "Thu, 29 Oct 2026 18:09:24 -0400",
+    "published_ts": 1793311764,
+    "summary": "A malicious campaign has returned to Hugging Face, using fake AI models to hijack server graphics cards for cryptocurrency mining and install hidden backdoors. Meanwhile, a fake project on GitHub is targeting artificial intelligence coding assistants to install remote-control malware.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Hugging Face",
+      "GitHub"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use Hugging Face to download AI models or GitHub for coding projects, ensure you verify the safety and source of any community-created code or models before using them.",
+    "action_it": "Review and audit all downloaded Hugging Face models and external GitHub repositories in your environments for unauthorized cryptocurrency mining scripts and backdoors. Restrict server graphics card resource usage and monitor for anomalous activity."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Japan Airlines suffers third-party data breach exposing passenger info",
+    "link": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
+    "published": "Thu, 29 Oct 2026 18:08:04 -0400",
+    "published_ts": 1793311684,
+    "summary": "Japan Airlines announced that a third-party data breach at Amadeus exposed the personal information of about 92,000 customers. This matters because customer data was accessed through an external service provider rather than the airline's own direct systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Japan Airlines",
+      "Amadeus"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+    "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+    "published": "Fri, 30 Oct 2026 00:41:58 +0530",
+    "published_ts": 1793301118,
+    "summary": "This week's security news highlights a mix of critical firewall flaws, rented banking trojans, and weaponized PDFs. Attackers continue to exploit both new vulnerabilities and careless mistakes.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoNTh5CKLvFJeeXzWn1LVT-e9435oFtUz4jT-4TmZaWkRUY_RY8EAtijUWxQztoK3K_tU_csSw54MuVeX8UzeT6ZWNLtTMex5pMS4z4Npz-aYAN9qIfWk2bUsei5nswh3UkzycVlKznVjK7n1I_knJ-p1I59RoX_TECTfr-NPej9LWoDt2UuwvLY4heSip/s1600/t-day.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+    "link": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
+    "published": "Thu, 29 Oct 2026 20:50:29 +0530",
+    "published_ts": 1793287229,
+    "summary": "Hackers are creating fake GitHub projects for popular AI desktop apps like ChatGPT and Claude to trick people into downloading crypto miners. This matters because downloading these bogus apps will compromise your computer's performance and security.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1ij0gwe-L1jDZxdoUPZ6hpSJnJgMHh2bG8bFF2y8y-dJA9nY0Fr2JOU2i4NaCetGqvTZOtvaRXbZONR6d8ajjMR6DNm_X7OwaVCiH7dPycEN9xGI0psNvPYbwDhpGmUQ4Qyhp5x9fqQ_sgzjcReslK-a-gRS3kFr5_JOns1kkuC6UheDHVb2yaV8EAhIF/s1600/claude-hack.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Anthropic Claude",
+      "OpenAI ChatGPT"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft finally fixes VPN issues caused by September updates",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/",
+    "published": "Fri, 30 Oct 2026 07:20:26 -0400",
+    "published_ts": 1793359226,
+    "summary": "Microsoft released a fix for a bug in the September 2026 Windows 11 updates that broke virtual private network connections. This matters because it restores normal remote access for affected users.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 11"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone",
+    "link": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
+    "published": "Fri, 30 Oct 2026 10:00:10 -0400",
+    "published_ts": 1793368810,
+    "summary": "Flaws in telecommunication routing protocols known as SS7 and Diameter let attackers track phone locations and intercept text messages without touching the device. This matters because it exposes standard mobile communications to espionage and fraud by exploiting inherent trust between phone networks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "SS7",
+      "Diameter"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
+    "link": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
+    "published": "Fri, 30 Oct 2026 17:28:53 +0530",
+    "published_ts": 1793361533,
+    "summary": "Security fixes often sit in queues because application teams worry the changes will break working systems. A four-step method helps security and application teams work together to prove fixes are safe.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitJWSYL167QzDoyvN2y9DAuXmFFe0en34dEHp-I2sSVLEPIfljdlRfeIthyMQUgSvf9AfwW4p-solbE5zH3cKpfeLKWg-IqPnVdHbKQ99Bw91fDAoqHx3E9mlpNmXYA5i3RnaTYxZYkZcwbeY31O4CljtFQYp2JPLTmJo1BI09Al9Kh-CDtzFubVly7hM/s1600/cp.jpg",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
+    "link": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+    "published": "Fri, 30 Oct 2026 16:10:45 +0530",
+    "published_ts": 1793356845,
+    "summary": "A Syrian hacker involved in posting a fake tweet that caused a massive stock market drop has been sentenced to prison. This case highlights international cybercriminal accountability for attacks on Western news media.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxhyw9NKYcR8Nkb28O8I-MA0sr3NhXC_Xr7gjpFqZKFd-29F8pGa5TCuIL2GTBPLAPzQ9iW5DsU_2zK-pUWIar_TdJdKiQMsptNjA-XxvVwMACBSQR9tW_qAC8d7I21YdqraYoY5LdWCRE8vKXjrxYCEW8X7ZbPulwCzdTdxODqnMuJbqQUZStRMRiKHc/s1600/tweets.jpg",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
+    "published": "Thu, 29 Oct 2026 19:35:52 -0400",
+    "published_ts": 1793316952,
+    "summary": "OpenAI reversed its plan to cut usage limits for high-tier ChatGPT Pro and Business plans following user backlash. The company also promised to keep Dots usage independent.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI",
+      "ChatGPT"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
