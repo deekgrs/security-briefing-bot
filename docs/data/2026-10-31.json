@@ -1,0 +1,286 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+    "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+    "published": "Sat, 31 Oct 2026 13:57:43 +0530",
+    "published_ts": 1793435263,
+    "summary": "Attackers are actively exploiting security flaws in Ivanti Connect Secure software to gain unauthorized root access. This matters because it allows intruders to fully compromise affected enterprise systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeqP4vPt6j2lLPFj77A_1OthmSKb8mItfBrX_q8sQCAUVgTry1FxKizDI2SCLS4CglfjgbVkaMDN8ainqoOZm2pdaF6xw7sU4STZhwIFPCLSz84YXQTVx2tquPo7YJsZhgOWcD3V_w5td9BA_vVuOu1cFcrgL3SXyLF4E24IyGotrzDcbJ-M1mA85biDuW/s1600/1000120841.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-111357"
+    ],
+    "affected": [
+      "Ivanti Connect Secure"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Ivanti VPN, your IT team should handle the necessary updates.",
+    "action_it": "Review CISA's guidance for the newly added KEV catalog entries and apply the necessary patches or mitigations provided by Ivanti immediately."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "CISA says max severity GitLab flaw now exploited in the wild",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
+    "published": "Fri, 30 Oct 2026 09:00:32 -0400",
+    "published_ts": 1793365232,
+    "summary": "Hackers are actively exploiting a maximum-severity security flaw in GitLab that was patched earlier this month. This matters because attackers can use it to gain unauthorized access to vulnerable systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "GitLab"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses GitLab, your IT team should already be applying the necessary security updates.",
+    "action_it": "Apply the security patch released by GitLab for this maximum-severity vulnerability immediately and review system logs for signs of compromise."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+    "link": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+    "published": "Sat, 31 Oct 2026 08:50:09 -0400",
+    "published_ts": 1793451009,
+    "summary": "Blockchain analytics firm Chainalysis suffered a data breach after attackers accessed internal systems. The incident exposed customer names, email addresses, user IDs, and organizational roles, though investigation content and passwords remained secure.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFRN0kXDPnLLvRBYqNZG4BTyUK0EaSxRtepYOQ-msXGAqu1IW8t2cdnav4ANAO8fXwY_-ug6Ictj29WcseInPhJmYOwpgcinvc8KO36A8HK6Wo41lgztgyH2jb9hGg7bVyWZ4A-adjBYuTi-hOJxMALa7myG172BWKwB_SyvrfMeqxH_3DdcyJxYwXFIKG/s1600/chain.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+        "link": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Chainalysis"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a Chainalysis customer, watch for communications from the company regarding your exposed contact and account information.",
+    "action_it": "Review access logs for internal systems and tools, and monitor for any suspicious activity related to customer accounts and identity data."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
+    "link": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+    "published": "Fri, 30 Oct 2026 17:09:46 -0400",
+    "published_ts": 1793394586,
+    "summary": "Security researchers created an attack that lets hackers remotely take over certain Linux servers. It matters because it affects a specific network feature called Multipath TCP, potentially giving attackers full control of vulnerable systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Linux kernel",
+      "Multipath TCP (MPTCP)"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace runs Linux servers using this specific network feature, your IT team will need to handle it.",
+    "action_it": "Monitor for updates and patches from your Linux distribution regarding the Multipath TCP vulnerability and apply them as soon as they become available."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Trezor warns of suspected crypto-theft implant in hardware wallet",
+    "link": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
+    "published": "Fri, 30 Oct 2026 11:58:20 -0400",
+    "published_ts": 1793375900,
+    "summary": "A customer found a hidden electronic board inside a Trezor Safe 5 cryptocurrency wallet bought from a reseller, which could steal their recovery phrase. Trezor is warning anyone who bought a device from this reseller to move their funds immediately.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih5QxhFnBw6d40ollOAoolmZedxywTm7DeBQpEqydVG5Pqg0v5iDVFT1hhbsW7Thqg00oI8MACNXC9FX6MCp_qMRkBRiqdxb9D4CDKfTWTZwI5eyY3V2IOa8ODSg24kX7Ni_C968r2X89tUXwPbDnHPV9xX-ydhytwerqMI1ru7tqdIK-cqA0p9oM5Ppxr/s1600/trezor-wallet.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
+        "link": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Trezor Safe 5",
+      "CryptoBilis"
+    ],
+    "action_everyone": "If you bought a Trezor wallet from the reseller CryptoBilis since March 2026, move your funds to a new wallet with a new recovery phrase right away.",
+    "action_it": "Advise users who purchased devices from the affected reseller to immediately transfer their digital assets to a newly initialized wallet using a fresh recovery phrase."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
+    "link": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+    "published": "Fri, 30 Oct 2026 20:47:28 +0530",
+    "published_ts": 1793373448,
+    "summary": "TeamViewer patched a security flaw where a computer being controlled remotely could attack the machine connecting to it. This vulnerability could allow malicious hosts to crash the controller's software or potentially execute unauthorized actions.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge-ZayNgwlu4fhpD2BSyGgkMYehkV0atRJINisISPLpiubkgyXopa4NWVnxOZs9gi-DEYTNEQ5G2pu-X5iSHyMp8pguzp-Q6g-1-mGwcy3so4AkeuYFuYoaotOcmF5A-2oVDvnxd0B_FaZ7JJt8W3zrNFot6kBlJp7WffHkb7m92C9bNQnwFLwnNgXpDk/s1600/teamviewer-flaw.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "TeamViewer"
+    ],
+    "action_everyone": "Most people don't need to do anything, but you should update your TeamViewer application to the latest version immediately.",
+    "action_it": "Apply the latest vendor updates for TeamViewer across all environments to address the remote control vulnerability."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+    "link": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+    "published": "Fri, 30 Oct 2026 10:36:54 -0400",
+    "published_ts": 1793371014,
+    "summary": "A fake version of a popular coding tool extension was secretly sold on an extension marketplace for 11 hours. It installed hidden backdoors that let attackers remotely access the infected computers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Anthropic",
+      "Claude Code",
+      "Cursor"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a developer who used the Cursor extension marketplace to install Claude Code around October 29, check your system for unauthorized changes and unexpected SSH access.",
+    "action_it": "Review development environments and systems that downloaded the compromised extension on October 29 for signs of persistent SSH backdoors or unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+    "link": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+    "published": "Fri, 30 Oct 2026 19:38:14 +0530",
+    "published_ts": 1793369294,
+    "summary": "Attackers tried to exploit a high-severity security flaw in WordPress Core nearly 63,000 times within 24 hours of patches being released. This vulnerability allows attackers to run unauthorized code on affected websites.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-pzflJO9HQoCdvBvYNtS12gwwEjAbM4dQ30ak7UYaIPzsVPN9MlFwvIDEFkbe9cWg4wQRFPbGfJ0YXjzGcBS6mUTwttwkQ8IR7OoHyTz3owZkVzYQOAObyJUqfjsC-PqMw2pv41_m68hb6ZkwJb56kGx-Ypv7GWZBtDzjyTTQ8L8i9NxA8_MDVoJSEba/s1600/wp-hack.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "WordPress Core"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a WordPress website, you should update it immediately to the latest patched version.",
+    "action_it": "Apply the official patches released by WordPress for versions 4.7 through 7.1.3 immediately and monitor server logs for suspicious activity."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+    "link": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+    "published": "Sat, 31 Oct 2026 11:03:41 +0530",
+    "published_ts": 1793424821,
+    "summary": "A security flaw in ChatGPT allowed a malicious link to run code in a user's logged-in session and read their private chats. OpenAI has already fixed the problem.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEplEzMjNIg5IBNIX4uz_WyVhtJqqbKICvvpW5LbwPEsQVd4ypSQC1ISnXoR0pMLlQEF4erNUIf-5-ELvBXIE8VH2Iv7dCPCuaZAFVeS9VIITs_5e_77DwtIvo3ExUcfJC_aT4x3FDD3AmTKeQFKnOrufXorlbiHOJNO-pUhwzBNwL98r-2JSW2CWiTBs/s1600/chatgpt.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "ChatGPT",
+      "OpenAI"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+    "link": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+    "published": "Fri, 30 Oct 2026 22:28:44 +0530",
+    "published_ts": 1793379524,
+    "summary": "Chinese state-sponsored hackers are using a new artificial intelligence-powered tool called ARTEX to target over 200 organizations worldwide simultaneously. This matters because it shows attackers are increasingly using advanced technology to scale up and automate their digital attacks against high-value targets.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP1M46Z4Xs0qNHz9xzhTea14XsqTHvNhAfnGb4Ni9goHQR2ypz3BLKRgu-WxWD8VSUNMB3YAP7UhcCAK1AweCc3lC-7VlJ-OqNniD4FvZdE_R-XJkkRadhl2tp3-PqbKPWmQTeJ3a3gvd1kHH_zaW06tCf9cH-7k5feNqHrqbChMAsc5K3hruiX9BDROAe/s1600/CS.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone",
+    "link": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
+    "published": "Fri, 30 Oct 2026 10:00:10 -0400",
+    "published_ts": 1793368810,
+    "summary": "Older telecommunications signaling protocols contain inherent design flaws that allow attackers to track phone locations and intercept text messages. These vulnerabilities exploit the trusted relationships between different mobile networks without needing to hack individual devices.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "SS7",
+      "Diameter"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Reddit to lock content behind logins to fight scrapers",
+    "link": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+    "published": "Sat, 31 Oct 2026 10:05:15 -0400",
+    "published_ts": 1793455515,
+    "summary": "Reddit is planning to restrict its content so that visitors will need to log into an account to view most of it. This change is being made to stop outside companies from scraping data without permission.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Reddit"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+    "link": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+    "published": "Sat, 31 Oct 2026 09:10:19 -0400",
+    "published_ts": 1793452219,
+    "summary": "An opinion piece discusses how people can learn cybersecurity and become bug hunters using artificial intelligence tools. It highlights the changing landscape of learning skills to find software flaws.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+    "link": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+    "published": "Sat, 31 Oct 2026 10:26:12 +0530",
+    "published_ts": 1793422572,
+    "summary": "Cloudflare reported stopping 18.2 million network-layer DDoS attacks during the third quarter of 2026, marking a 38% increase from the previous period. This highlights a massive and ongoing surge in automated attempts to overwhelm websites and online services.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9-PGmRcZy9OvjKNOWHrGVMpF2DhnvIrHU6mOwyroU7CeoEKMkrjCt8HxCKBzAOia6ZpDEvTuQcF2Xg_50vE_W8DdjmLJjxMXPUUm5Ryfym8GBhm74Z6jwZCeXSKgxuK6A57rVsM-Z1G8nfEF3Mn8QgoD77Nbqxakkj_ZxbBNDtp0ljvTKrXydLYm1BFZR/s1600/cf.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Cloudflare"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
+    "link": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
+    "published": "Fri, 30 Oct 2026 17:28:53 +0530",
+    "published_ts": 1793361533,
+    "summary": "Security fixes often sit unapplied because IT teams worry that changes will break working applications. A new operational framework called Observe, Prove, Act, Confirm aims to help teams safely push urgent fixes faster.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitJWSYL167QzDoyvN2y9DAuXmFFe0en34dEHp-I2sSVLEPIfljdlRfeIthyMQUgSvf9AfwW4p-solbE5zH3cKpfeLKWg-IqPnVdHbKQ99Bw91fDAoqHx3E9mlpNmXYA5i3RnaTYxZYkZcwbeY31O4CljtFQYp2JPLTmJo1BI09Al9Kh-CDtzFubVly7hM/s1600/cp.jpg",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
