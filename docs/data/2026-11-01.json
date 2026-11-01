@@ -1,0 +1,288 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+    "link": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+    "published": "Sun, 01 Nov 2026 14:21:31 +0530",
+    "published_ts": 1793523091,
+    "summary": "A critical security flaw in Canonical's LXD and MicroCloud allows attackers to impersonate trusted clients without a private key. This matters because it gives unauthorized users access to clusters and virtual machines.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4Vibbj3miGalyf0avn_Z2WlLhFh5cC5ImXGFlOL0cisgxikHCcLzHjOVM3qO5B47V3uw62rWH6m6fP1svsH3TCG6i9sS19BIXn1CsDjKK3gnG6VQxkFwghemdeBlV4_AM5Ah-_TJ3T_5Gv-D5Pygrm-B5yzQnDqvIXmI2FyAeuzk57_l6esdhNrTMBj0/s1600/linux-vm.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Canonical LXD",
+      "Canonical MicroCloud"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these Canonical products, your IT team will need to handle the update.",
+    "action_it": "Apply the security updates provided by Canonical for LXD and MicroCloud as soon as available to fix the authentication flaw."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+    "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+    "published": "Sat, 31 Oct 2026 13:57:43 +0530",
+    "published_ts": 1793435263,
+    "summary": "Attackers are actively exploiting security flaws in Ivanti Connect Secure software to gain unauthorized root access. This matters because it allows attackers to take complete control of the affected systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeqP4vPt6j2lLPFj77A_1OthmSKb8mItfBrX_q8sQCAUVgTry1FxKizDI2SCLS4CglfjgbVkaMDN8ainqoOZm2pdaF6xw7sU4STZhwIFPCLSz84YXQTVx2tquPo7YJsZhgOWcD3V_w5td9BA_vVuOu1cFcrgL3SXyLF4E24IyGotrzDcbJ-M1mA85biDuW/s1600/1000120841.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-111357"
+    ],
+    "affected": [
+      "Ivanti Connect Secure"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Ivanti VPN, your IT team should already be on it.",
+    "action_it": "Apply available security patches from Ivanti immediately and check system logs for signs of unauthorized access."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
+    "link": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+    "published": "Fri, 30 Oct 2026 17:09:46 -0400",
+    "published_ts": 1793394586,
+    "summary": "Security researchers created an exploit for a critical Linux kernel flaw that lets attackers remotely run commands on certain internet servers. This matters because it could allow complete takeover of affected systems without needing a password.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Linux kernel",
+      "MPTCP"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace runs Linux servers using MPTCP, your IT team should monitor for official updates from their Linux vendor.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+    "link": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+    "published": "Sun, 01 Nov 2026 12:55:40 +0530",
+    "published_ts": 1793517940,
+    "summary": "Hackers stole about $2.7 million from Polymarket traders by replacing a third-party website script with malicious code. Polymarket has announced it will refund all 726 affected users.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe0B28qLAtUMfqN29_phxZJVJORICkj_98MZFwDiXAxFTABw8G9qbsVyD98pg7T_Rvgv83NXyR5tNGYH4dRwlxs3QFTUZxDPHQs2BgFsnmGcOuVW1HkFVCfiCR3Y05kPQrfFx4S7A8DiFXXAAgdc5SiEKx0-0xrW5rNlNSyN3jZJcyXasdpCr5AG7KM3s/s1600/Polymarket.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Polymarket"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this affected specific traders on the Polymarket platform and the company is issuing refunds. If you use Polymarket, watch for official updates from the platform regarding your account.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+    "link": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+    "published": "Sun, 01 Nov 2026 12:32:58 +0530",
+    "published_ts": 1793516578,
+    "summary": "A previously unknown malware named NetamLoader is targeting custom Windows 10 systems used by government agencies in Asia. This sophisticated attack uses a hidden loading framework to infiltrate high-value government networks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy0oLNj9TVg8ifLKdJSg4HH1EhN3m_OBldd7wEIeVoQSHtFXSmsiPdmf-njsPD-CbVHY8NckeW2N9rN8-CTnp81zaeFq-ISj04O7ihoj5HgnvJT_zY_0fdC8vCcd5LXL8Mx9ym1fPI5GMrEtjxZoEiernCr_CZwLocgtrJsKZzixEnYUe2WmkehWLNR2hx/s1600/windows-hacker.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Windows 10"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this attack specifically targets a custom version of Windows 10 used exclusively by government agencies in Asia.",
+    "action_it": "Review network and endpoint logs for unauthorized .NET assembly-loading activities and watch for indicators of compromise associated with the NetamLoader campaign on government systems."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Northflank security breach leads to abuse of customers' AI API keys",
+    "link": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "published": "Sat, 31 Oct 2026 14:01:12 -0400",
+    "published_ts": 1793469672,
+    "summary": "Cloud hosting platform Northflank suffered a security breach that exposed customers' credentials, leading to unauthorized use of their AI API keys. Affected users must now change all secrets stored on the platform to secure their accounts.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Northflank"
+    ],
+    "action_everyone": "If you are a Northflank customer, you should immediately change all credentials, secrets, and API keys stored on the platform. If you do not use Northflank, you do not need to do anything.",
+    "action_it": "Rotate all API keys, credentials, and secrets stored within the Northflank platform, and review accounts for any unauthorized usage or suspicious activity."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+    "link": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+    "published": "Sat, 31 Oct 2026 11:35:11 -0400",
+    "published_ts": 1793460911,
+    "summary": "A researcher released a method to crash unpatched Android phones and disrupt their cellular service using a specially crafted text message. This matters because attackers could potentially use it to remotely disable devices before a fix is applied.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-58882"
+    ],
+    "affected": [
+      "Android"
+    ],
+    "action_everyone": "Check your phone for the latest software updates and install them right away to ensure you have the security patch.",
+    "action_it": "Apply the available security patch for CVE-2026-58882 to all managed Android devices immediately."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+    "link": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+    "published": "Sat, 31 Oct 2026 08:50:09 -0400",
+    "published_ts": 1793451009,
+    "summary": "Blockchain analytics firm Chainalysis suffered a data breach after attackers accessed internal systems using advanced automated techniques. The incident exposed customer names, email addresses, user IDs, and organizational roles, though sensitive data like investigation content and passwords remained secure.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFRN0kXDPnLLvRBYqNZG4BTyUK0EaSxRtepYOQ-msXGAqu1IW8t2cdnav4ANAO8fXwY_-ug6Ictj29WcseInPhJmYOwpgcinvc8KO36A8HK6Wo41lgztgyH2jb9hGg7bVyWZ4A-adjBYuTi-hOJxMALa7myG172BWKwB_SyvrfMeqxH_3DdcyJxYwXFIKG/s1600/chain.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+        "link": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Chainalysis"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a Chainalysis customer, keep an eye out for any official communications or phishing attempts using your exposed contact details.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+    "link": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+    "published": "Sat, 31 Oct 2026 11:03:41 +0530",
+    "published_ts": 1793424821,
+    "summary": "A security flaw in ChatGPT allowed a malicious link to run code inside a user's logged-in session and read their private chats. OpenAI has already fixed the vulnerability.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEplEzMjNIg5IBNIX4uz_WyVhtJqqbKICvvpW5LbwPEsQVd4ypSQC1ISnXoR0pMLlQEF4erNUIf-5-ELvBXIE8VH2Iv7dCPCuaZAFVeS9VIITs_5e_77DwtIvo3ExUcfJC_aT4x3FDD3AmTKeQFKnOrufXorlbiHOJNO-pUhwzBNwL98r-2JSW2CWiTBs/s1600/chatgpt.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "ChatGPT",
+      "OpenAI"
+    ],
+    "action_everyone": "Most people don't need to do anything, because OpenAI has already fixed the issue on their systems. Simply continue using ChatGPT as normal.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+    "link": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+    "published": "Sun, 01 Nov 2026 10:11:21 -0500",
+    "published_ts": 1793545881,
+    "summary": "Hackers tried to exploit a critical security flaw in Alpine Linux's development systems. The project responded by rebuilding its server and resetting all user passwords as a precaution.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Alpine Linux",
+      "GitLab"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
+    "published": "Sun, 01 Nov 2026 08:53:11 -0500",
+    "published_ts": 1793541191,
+    "summary": "OpenAI is combining usage allowances and bringing work features directly into regular ChatGPT. This change affects users of OpenAI's chat services.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI",
+      "ChatGPT"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+    "link": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+    "published": "Sun, 01 Nov 2026 12:33:00 +0530",
+    "published_ts": 1793516580,
+    "summary": "U.S. law enforcement agencies have officially blamed a North Korean hacking group for stealing over $6 billion in virtual assets from Binance. This highlights the ongoing threat of state-sponsored cybercrime targeting cryptocurrency platforms.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmb1j0HC3RkKxZ4bBQPaOa5GaLqC2EBtxXHOMnebPlgHGDJG7ryIuSBIR-9YBQuUm6HwD15-OJQgBvIkhbLIApM8XoU0DptSEF6DNhEpinxPA-06wQZhLhRiKmFGO5cVjONcaouGC3lqybhkeEsZj-xebX6u6hSR19mS7sVqOrpR02qNOlpHZJEUjf1HtB/s1600/binance-hack.png",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Binance",
+      "TraderTraitor"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Reddit to lock content behind logins to fight scrapers",
+    "link": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+    "published": "Sat, 31 Oct 2026 10:05:15 -0400",
+    "published_ts": 1793455515,
+    "summary": "Reddit is changing its website so that people will need to log into an account to view most content. The move is designed to block automated bots from scraping data, but it will make the site harder to browse anonymously.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Reddit"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+    "link": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+    "published": "Sat, 31 Oct 2026 09:10:19 -0400",
+    "published_ts": 1793452219,
+    "summary": "AI-generated vulnerability reports are overwhelming bug bounty programs, making it difficult for beginners to stand out. Educational platforms are now advising newcomers on how to build practical skills and submit reliable, verified findings.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "TryHackMe"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+    "link": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+    "published": "Sat, 31 Oct 2026 10:26:12 +0530",
+    "published_ts": 1793422572,
+    "summary": "Cloudflare reported blocking 18.2 million network-layer DDoS attacks during the third quarter of 2026, marking a 38% increase from the previous period. This highlights a persistent and growing threat of automated floods designed to overwhelm websites and online services.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9-PGmRcZy9OvjKNOWHrGVMpF2DhnvIrHU6mOwyroU7CeoEKMkrjCt8HxCKBzAOia6ZpDEvTuQcF2Xg_50vE_W8DdjmLJjxMXPUUm5Ryfym8GBhm74Z6jwZCeXSKgxuK6A57rVsM-Z1G8nfEF3Mn8QgoD77Nbqxakkj_ZxbBNDtp0ljvTKrXydLYm1BFZR/s1600/cf.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Cloudflare"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
