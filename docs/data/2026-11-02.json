@@ -1,0 +1,281 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+    "published": "Mon, 02 Nov 2026 07:47:00 -0500",
+    "published_ts": 1793623620,
+    "summary": "More than 1,000 internet-exposed GitLab servers remain unpatched and vulnerable to ongoing remote attacks. Attackers can exploit this flaw to execute code remotely, putting these servers at high risk.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "GitLab"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses GitLab, your IT team should already be on it.",
+    "action_it": "Identify and patch all internet-exposed GitLab servers immediately, and review server logs for signs of compromise."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+    "link": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+    "published": "Mon, 02 Nov 2026 17:20:00 +0530",
+    "published_ts": 1793620200,
+    "summary": "Two critical security flaws in the Langflow AI tool allow attackers to bypass login screens and run unauthorized code on servers. Organizations using versions 1.0.0 through 1.12.8 must update immediately.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_FF2_yXQrxnB1ymo-GsohY6t0INslV7mps2DVMnYa_dD_RpZu7uz9HwNrux1gxieMF4hnc_84KMpOyhroj0EDx0Vwv0QljdhTehvJINIsr-Sjyw4CaMiLO3fFWGl-8LhLWgOtC4DRU2X5e46s3Rxghu3KLUMsyHfpxFyKogIs34Q2fm2RYpAMI_Jt_9A/s1600/langflow-rce.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Langflow"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Langflow, your IT team should already be on it.",
+    "action_it": "Upgrade Langflow to version 1.13.0 to address both critical flaws."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+    "published": "Mon, 02 Nov 2026 04:33:26 -0500",
+    "published_ts": 1793612006,
+    "summary": "Ivanti has released security updates to fix two critical flaws in its Connect Secure products that hackers have been actively exploiting since October. These security holes allow attackers to break into corporate networks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Ivanti Connect Secure"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Ivanti Connect Secure, your IT team will need to apply these updates.",
+    "action_it": "Apply Ivanti's security updates to patch the two Connect Secure flaws and investigate systems for signs of compromise."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+    "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "published": "Mon, 02 Nov 2026 10:03:07 -0500",
+    "published_ts": 1793631787,
+    "summary": "Hackers are stealing cryptocurrency from outdated versions of BTCPay Server. Users need to update their software immediately to protect their funds.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "BTCPay Server"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you or your business run BTCPay Server, the system administrator needs to update it right away.",
+    "action_it": "Install the latest version of BTCPay Server immediately to patch the vulnerability and stop ongoing thefts from hot wallets."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+    "link": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+    "published": "Mon, 02 Nov 2026 20:16:05 +0530",
+    "published_ts": 1793630765,
+    "summary": "An Iran-backed hacking group carried out a cyber espionage campaign targeting an individual in Israel and a government cloud environment in Iraqi Kurdistan. The attacks highlight ongoing state-sponsored spying operations in the Middle East.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7nIwDn7LIoF8OUZdj0NRjq4ZMu-xjzcOPQJDwouwkwqwVe618e77am9iyAIez63Q8jVqZi7OtU43gJlhbZT-_4l_4pUq3tYpDUe4ErouPlkNi8YTNZiPQ6KmX2Ci028oT24DRcPtCdKv_zZ33_ZHOodARrbmcwxYWCAx4r45Qc0qVOQNmCCoWZmAWJnzt/s1600/shelby-hacker.png",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Iraqi Kurdish Government"
+    ],
+    "action_everyone": "Most people don't need to do anything. This appears to be a targeted espionage campaign rather than a widespread threat to the general public.",
+    "action_it": "Review access logs for government and high-profile cloud environments, and monitor for unauthorized access associated with state-aligned threat actors in the region."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
+    "link": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+    "published": "Mon, 02 Nov 2026 06:28:42 -0500",
+    "published_ts": 1793618922,
+    "summary": "Synology is warning customers to update their network storage devices due to a wave of C3RB3R ransomware attacks. Ransomware is malicious software that locks up your files until you pay a fee to the attackers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Synology"
+    ],
+    "action_everyone": "Most people don't need to do anything, unless you own a Synology network storage device. If you use one at home or work, check that its software is fully updated right away.",
+    "action_it": "Apply the latest updates immediately to all Synology network storage devices to protect them from ransomware attacks."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+    "link": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+    "published": "Mon, 02 Nov 2026 16:38:45 +0530",
+    "published_ts": 1793617725,
+    "summary": "Hackers pretended to be IT support workers on Microsoft Teams to trick employees into giving them remote access to computers. They then used misconfigured security settings to steal administrative login credentials and access sensitive company data.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLv88EM1ZSjaeI7bH9DVpg2mGdkwXWUuir0S_p9IfiWG49_TgRalFdK4oQ6e7UE_JYOnNH70Z6wcftnjhcYHRY-Xc0o8GYp9r1uNzxdC_1bnXZgvon74cXkWgKpHZtwJg3IKLsqGC2HS2tcMfQS8BZu7kfrW1vAaaIA316LRzgCOn8zeGZ1WvALgJmyM4/s1600/ms-ad.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Microsoft Teams",
+      "Active Directory Certificate Services"
+    ],
+    "action_everyone": "Be extremely suspicious of anyone contacting you on chat apps like Microsoft Teams claiming to be IT support and asking for remote control of your computer. Most people do not need to do anything, but your workplace IT team should be aware of this trick.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+    "link": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+    "published": "Mon, 02 Nov 2026 16:19:59 +0530",
+    "published_ts": 1793616599,
+    "summary": "Government Linux servers were targeted in a cyber espionage campaign using malicious remote access tools and suspected artificial intelligence-generated scripts. The activity was tracked by researchers between October 2025 and April 2026.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYHKbP_7yOsvpwAldBMCL3QkCJ9SbUVrJz1Tr_RB6m3O99Gj73H0fX20hIbzKujRWB-1qkBCWv1UEJEbrTe1NFYpPkTm0OoNqJe7OdJoZa1HcZDT2On3mUT0igQeCOsMnWw_ZfT-HsLx6B8R84XYHHg4mUI2hPzM15ggddQCFAAmzChzC5Of90LInW8RB8/s1600/artex.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Linux servers",
+      "Government entities"
+    ],
+    "action_everyone": "Most people don't need to do anything. This campaign specifically targets government Linux infrastructure rather than personal devices.",
+    "action_it": "Review Linux server logs for suspicious activity, monitor for unfamiliar remote access tools like SysGoRAT, and ensure systems are closely monitored for signs of unauthorized compromise."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+    "link": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "published": "Mon, 02 Nov 2026 21:20:26 +0530",
+    "published_ts": 1793634626,
+    "summary": "Google and industry partners dismantled a 1.3-million-device botnet running on Android TV boxes. Google believes the manufacturer, Videostrong, intentionally built a backdoor into the devices to sell access to criminals for ad fraud.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkbU6vLZjF0nlz7vqN6UVf3kN1IcdUfIpAmVWlh2II4gGbMMmSuiE1S8HLzP4JV-ImeCa64hU-cEaa-yGXWqUO_XHOurKtEw61DFvjGOJhM7gHpRPpegBcCFYrXkd59wGX-PoV6zm7z7uq6PpXjc4GLhDRzcinR5IIjcOVZEVl8FMQ0v0Dt3CV9sRxZNk/s1600/android-tv-botnet.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
+        "link": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/"
+      }
+    ],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Videostrong",
+      "Android TV boxes"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers disrupt refrigeration systems at European supermarkets",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+    "published": "Mon, 02 Nov 2026 09:28:39 -0500",
+    "published_ts": 1793629719,
+    "summary": "Hackers broke into refrigeration systems at multiple European supermarkets and changed freezer temperatures. This attack highlights the growing risk of cybercriminals targeting physical infrastructure.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "European supermarkets"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+    "link": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+    "published": "Mon, 02 Nov 2026 11:21:07 +0530",
+    "published_ts": 1793598667,
+    "summary": "A new malicious program called VOLTA steals personal data from Windows computers and uses artificial intelligence to rank victims by how much money they are worth. It targets web browser passwords, Outlook emails, and Slack messages.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd5V8QVweKn56_SnTCKZkhmOip6paz9noBrJn7znyZqUtFbOEaLuALQUNlmjcSAb7RIUW8GDETB6J0kFpQQe6vq7wAjk3ogxKUeQ0-2rKeO6TveLdqHNs9KnTN6zC6rwPzWE2IBWMokqQOUzAA0XPM2BWHTUTE7_U7XDfUGKTDIC1PYttxHGnAq_Kr_hMq/s1600/hacker-ai.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Windows",
+      "Chromium-based web browsers",
+      "Outlook",
+      "Slack"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft fixes Smart App Control broken by October Windows update",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
+    "published": "Mon, 02 Nov 2026 08:57:29 -0500",
+    "published_ts": 1793627849,
+    "summary": "Microsoft fixed a bug where a Windows update broke the Smart App Control security feature. This matters because the broken update prevented users from activating this important security protection on Windows 11.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 11"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+    "link": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+    "published": "Mon, 02 Nov 2026 22:27:56 +0530",
+    "published_ts": 1793638676,
+    "summary": "This weekly recap highlights various security incidents, including critical software flaws, a Linux denial-of-service botnet, phishing attacks, and Android spyware. These threats demonstrate how attackers are exploiting both simple oversights and complex vulnerabilities.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj03NmPVHpoxRjXKDh7s6v2Dav4D-MCSLBTLalEb9ScH_lLc4yQJWOW8QfTIBePp7Pcgo1qrq6MYuQvNeyb0LCvWO4E4e7BLQKEj-g3Z2LImj4CXV-UUGfVd-vVL0NGtxMMn50klhOLlyI3p6DXhIFf-LkMsST7LK4kh3gIjqlvBwOUgbKTq8-hRdvmfz46/s1600/rcap.jpg",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+    "link": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+    "published": "Mon, 02 Nov 2026 10:01:11 -0500",
+    "published_ts": 1793631671,
+    "summary": "Mobile phone companies often keep records of your calls and text messages for years. This data can reveal sensitive information about your private life if the company's computer systems are hacked.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Mobile carriers"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+    "link": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+    "published": "Mon, 02 Nov 2026 17:00:00 +0530",
+    "published_ts": 1793619000,
+    "summary": "A new survey shows that nearly all security operations teams are using or testing artificial intelligence in their daily work. Organizations must ensure their security teams are properly prepared before deploying these automated tools.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZbG_0dst_8ctvKrGx37rAninLXS6SIcKT4YjziNbu7bPmTPAsYvWo-Jkwj0UqT493VwmYVtvkthnEGLqTusFvJFo9fPth_VWjI2XNev9SKY-sePLY12rM5yWoQOzrvEXG0DWOWBb7N8GcdHNPqv6skeqGx2r2zGVlDeWkPnt5drMe_R2yh8TB8-kOCug/s1600/pro.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
