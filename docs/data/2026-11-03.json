@@ -1,0 +1,280 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
+    "link": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
+    "published": "Tue, 03 Nov 2026 20:46:32 +0530",
+    "published_ts": 1793718992,
+    "summary": "Attackers broke into the update system of cPGuard, a security tool, and sent a malicious script to Linux servers. The script installed a backdoor to steal passwords and other sensitive files.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtc3HOtWwxZPk7V8yva9o6Oe5lWAPX8KZsWHG27ohycqrb04wAKSDSSdk6ta6y284N9gT6Ab6QKIWwTPss2bBK4PtS3Fm7gSI9QG5kec2AvEgQPjQnc0YlhlUQx0uZKt2ygn576BQ3aburL-IhrMRFVm1vEpTR5ol06R0BtjySvifD05Q_dQGUPvyPLxs/s1600/cpgaurd.png",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "cPGuard"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace or website uses cPGuard, your system administrators should handle this.",
+    "action_it": "Review servers that received updates on or after November 2 for signs of backdoors, and check if sensitive files or password hashes were exfiltrated."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Barracuda warns of critical flaws allowing root access to devices",
+    "link": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
+    "published": "Tue, 03 Nov 2026 10:06:16 -0500",
+    "published_ts": 1793718376,
+    "summary": "Barracuda Networks warned customers to patch two critical security flaws that allow attackers to gain full administrative control over their devices. This matters because an attacker could use these weaknesses to completely take over affected hardware.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Barracuda Networks"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Barracuda devices, your IT team should already be on it.",
+    "action_it": "Apply the security patches provided by Barracuda Networks immediately to protect against root-level command execution."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+    "link": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+    "published": "Tue, 03 Nov 2026 11:04:41 +0530",
+    "published_ts": 1793684081,
+    "summary": "Attackers are actively exploiting a critical security flaw in Siemens SIMATIC IoT2050 Advanced devices to install malicious backdoors. This allows unauthorized remote attackers to run arbitrary commands on the affected industrial internet-of-things hardware.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLg0QvfH0SD_sz2pFnyrG6Zcs-ltrKaf42ZY7PYKTsA26Nu4alNeqarZZ9HGEjO0UJFr5Wfsb7WBSDYoRnGi6X1jXZ8_4xx1VJtYshtPXYX9DVJYu4lln_IqEhf-NQJC7MKWI1JVzzR5heu6O_OnWezfKsj3AnBs5NKVp5dOVgR-7XuKMIAiyiKflPlT9E/s1600/siemens-hack.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-58115"
+    ],
+    "affected": [
+      "Siemens"
+    ],
+    "action_everyone": "Most people do not need to do anything. If your workplace uses Siemens SIMATIC IoT2050 Advanced devices, your IT or engineering team should already be aware of this active threat.",
+    "action_it": "Review systems for signs of compromise and apply the necessary security updates or mitigations provided by Siemens for CVE-2026-58115 immediately, as the flaw is under active exploitation."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+    "link": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+    "published": "Tue, 03 Nov 2026 21:11:53 +0530",
+    "published_ts": 1793720513,
+    "summary": "Attackers are stealing company access keys for artificial intelligence tools to run expensive computations at the victims' expense. This \"LLMjacking\" can cost businesses up to $1 million in unexpected cloud computing bills.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvqwPJPXsflyvqykVK3Pd1lLXLzEJ6vpLudxQUyYbWkS4nQ0dr9dhcSlMCPwgqfAkyadPSj28XReqkeiymKG5RAZMWpx5Hqhg_XI0HNp3jRMRpaO-wVIRbyJyS8MaaqDNOxXvk8aUENx_aiNMqrqm9SWjtJVpXR2uaP-LNp5deG4U_4YvSxpPKtdJLRNoh/s1600/llmjacking.png",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Google",
+      "Large Language Models (LLMs)"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses AI services and cloud platforms, your IT and security teams will handle securing the access keys.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "UK school estate hit by 3AM ransomware in suspected AI-assisted attack",
+    "link": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
+    "published": "Tue, 03 Nov 2026 09:00:00 -0500",
+    "published_ts": 1793714400,
+    "summary": "A UK school estate was hit by a ransomware attack in the middle of the night, locking down dozens of computers. Ransomware is malicious software that scrambles computer files so criminals can demand money to unlock them.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "UK school estate"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these systems, your IT team will handle the response.",
+    "action_it": "Isolate the unmanaged host immediately and investigate network logs for signs of the 3AM ransomware affiliate activity."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
+    "link": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
+    "published": "Tue, 03 Nov 2026 16:30:45 +0530",
+    "published_ts": 1793703645,
+    "summary": "A Russia-linked hacking group named Gorbag is targeting Ukrainian organizations with malware designed to steal sensitive data. The attacks rely on exploiting a known flaw in the WinRAR archive program to deliver the harmful software.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqyPfrBB7GYTnYsvVj2TxCv0pPwFh_PkVpdQcxuspKgQfbsX1p2kDSdokIyPqLsxSfBCkFPiTATfZxZRbouqkoqfEESL7CgA-MyXD61eQFluiQtdFZDyXQc_3EUAg71JWIHxq9MPVLrwwegvUVuiViE8AxsKH6iBVypWazO0wmCoaC3-D1Ih9Yw3vwN1FJ/s1600/russia-hackers.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "WinRAR",
+      "Ukrainian organizations"
+    ],
+    "action_everyone": "Most people don't need to do anything, as these specific attacks are aimed at Ukrainian organizations. However, everyone should keep their software up to date, especially tools used to open compressed files like WinRAR.",
+    "action_it": "Review endpoints for outdated versions of WinRAR and monitor network traffic for signs of data exfiltration associated with the Gorbag threat group."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+    "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "published": "Mon, 02 Nov 2026 10:03:07 -0500",
+    "published_ts": 1793631787,
+    "summary": "Hackers are stealing cryptocurrency by attacking outdated versions of BTCPay Server. Users need to update their software immediately to protect their funds.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrr1rJlr2nztz8jEunAWtVXHyOHkJY2_KdeweNWBqwF18rmhPiFItEQ-yCex1vVsps856ArIDl7unaWJNiribZ9DgkmQ3o4pLa1BKQrjKEeFR63z4csXnBHah5wIp7H5xuUB7b1UIp06nk6BzLuxFW5aWh2g-PoLoZ74RjMOEUX7XdrDsHM1yFbjGHBzK8/s1600/btcpay.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
+        "link": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "BTCPay Server"
+    ],
+    "action_everyone": "If you use BTCPay Server to accept cryptocurrency payments, you need to update your software right away. Most people who only use regular crypto wallets do not need to do anything.",
+    "action_it": "Install the latest version of BTCPay Server immediately to patch the vulnerability being used to drain hot wallets on instances running version 2.4.1 or earlier."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
+    "link": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
+    "published": "Tue, 03 Nov 2026 13:13:07 +0530",
+    "published_ts": 1793691787,
+    "summary": "Hackers are launching ransomware attacks against Synology network storage devices that have not been updated. This matters because it leads to data being locked up and held for ransom.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg18lSM19IJpBCuAofy8CZNsJ-05CtvqxdL8BcHUS65fn_Oph-FAXqpdDE9c11G78nq7I1pVtt4XAotc_hszgea-QpNDTt-RzstD3k7yfXHP3JUnBViplsRzL_4q_LM-jujcv6NbMUUYBMWtJKSdKcBYlbSkm7Mx9LaTbVRW88uFh723nDOGYYDxiwkfYFr/s1600/synology-ransomware.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Synology DiskStation Manager",
+      "Synology NAS Devices"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use a Synology network storage device at home or work, make sure its software is updated to the latest version immediately.",
+    "action_it": "Apply the software updates provided by Synology for DiskStation Manager to protect devices against these attacks."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
+    "link": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
+    "published": "Tue, 03 Nov 2026 12:57:07 +0530",
+    "published_ts": 1793690827,
+    "summary": "Attackers remotely altered refrigeration controls at supermarkets across several European countries, causing fridges and freezers to warm up. As a result, stores had to throw away or pull spoiled food from their shelves.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjScxShEa3bsAhGLHlqkBcsyuRe6UeQwrOVXBFP3TwxzmXtd03vDeDRZHxxBLIKHDYgY5p5CsrFvBwuozg3UsRLtVMO758NhVwSju6D6WgO1J42wJd2NWR9aVzz-B_CWfiMFH2QANUrAnUXbgkKec2KtJjULvN3NTqrCPbLRNnxlnvBFIAkndClXJMIeXY/s1600/fridge-hack.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Danfoss"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you work for a grocery store or supermarket chain, check with your management or IT team to ensure your store's refrigeration systems are secure.",
+    "action_it": "Review access logs for refrigeration control systems, ensure remote management interfaces are not directly exposed to the internet, and verify that strong authentication is enforced."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Harvard University data breach exposed info of 851,000 accounts",
+    "link": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
+    "published": "Tue, 03 Nov 2026 05:53:25 -0500",
+    "published_ts": 1793703205,
+    "summary": "Hackers breached Harvard University's alumni and development systems in November 2025, stealing data linked to over 850,000 accounts. This exposes personal information associated with those email addresses to potential misuse.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Harvard University"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Gartner Predicts SOCs Will Have 50% More Engineers Than Analysts by 2028",
+    "link": "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
+    "published": "Tue, 03 Nov 2026 10:00:10 -0500",
+    "published_ts": 1793718010,
+    "summary": "Research predicts that security teams will employ significantly more engineers than analysts by 2028 as artificial intelligence handles routine alerts. This shift reflects how automation is changing day-to-day security operations.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Gartner",
+      "Prophet Security"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Police seizes over 100 servers in investment scam crackdown",
+    "link": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
+    "published": "Tue, 03 Nov 2026 08:33:49 -0500",
+    "published_ts": 1793712829,
+    "summary": "European police arrested seven suspects and seized over 100 servers used by criminal gangs to run fraudulent investment websites. This action disrupts a major infrastructure network supporting financial scams.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs",
+    "link": "https://www.bleepingcomputer.com/news/google/google-adds-new-250-000-cloud-vrp-reward-for-root-in-cloud-bugs/",
+    "published": "Tue, 03 Nov 2026 07:05:52 -0500",
+    "published_ts": 1793707552,
+    "summary": "Google has added a new top reward of $250,000 to its bug bounty program for finding deep security flaws in its cloud infrastructure. This initiative encourages security researchers to find and report critical weaknesses so Google can fix them before bad actors can use them.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Google Cloud"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
+    "link": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+    "published": "Tue, 03 Nov 2026 16:53:53 +0530",
+    "published_ts": 1793705033,
+    "summary": "Summary unavailable.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdf8UfDHsjH9VaJGtYT5WgjtJ1G5YRMkjPWNeKn-hw05sM9ny0kW9L2eIc3UCiIQ7qmc_TmfrenS1WH8KiRBjln2hQS0X7DUlykxdHrzDgg4uoiHpiOf3fVTOnUuOt4618z3PN7hw1AfUch_y0Tot3ubTga5LEfyWnATkzegfQBSWxMbzNzJaGY18QqC8/s1600/linux-rce.jpg",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
+    "link": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+    "published": "Tue, 03 Nov 2026 16:48:20 +0530",
+    "published_ts": 1793704700,
+    "summary": "A Gartner report highlights that security teams waste time fixing software flaws that attackers never actually use. Focusing on realistic risks rather than treating every software weakness as urgent can help lower actual breach risks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK5J_qkmStJVdWJYvNtd4lb2cRfPMaSvu1dEKp8tXOjw71kt_fRGGfdPr60HL5agJ8NMBYO5sH7jVvzMWXlLW1fq0xilaF0GyLQHCznSjHeos7sdP_Xwmd6OWyzKv8Yq8m-Z0Hn3x15GBU8AySu2A27OlIWiuAW9ch0iZuXxTpELRSQ6uRdW9nLK4uXQg/s1600/picus-main.png",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Gartner"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
