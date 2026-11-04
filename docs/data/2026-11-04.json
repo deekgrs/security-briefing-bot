@@ -1,0 +1,294 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
+    "published": "Wed, 04 Nov 2026 07:11:05 -0500",
+    "published_ts": 1793794265,
+    "summary": "Hackers are actively exploiting a security flaw in WordPress software during software updates. This allows attackers to run malicious code on affected websites.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9IgE0BWDAvYzjY8wFSMADIRn69AMLYxUa-oPoOISNBOpPbxwBNoWrbXWzI6P0deiU6WDqitiIZx1gFXSAlR8xX9rj56BuU48veMEPJAGSsmQTbVPirFOCuyMc_KQxtbPfc841GZGZ-3HSYYHCGbHnzrihtwQUaMlXrT3leLzI2USh00hc9OBw4k1SCJt4/s1600/wp-exploit.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+        "link": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-119977"
+    ],
+    "affected": [
+      "WordPress"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a WordPress website, you should update your software immediately.",
+    "action_it": "Apply the latest security patches for WordPress and monitor your server logs for signs of unauthorized access or exploitation."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
+    "link": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+    "published": "Wed, 04 Nov 2026 17:37:04 +0530",
+    "published_ts": 1793794024,
+    "summary": "A critical security flaw in Ruby on Rails allows attackers to write files to a server using malicious image uploads. The Rails project has released updates to fix the vulnerability.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJWnScdkMx0R5_Zt00NtYVNjNavBR7IMrLzJM_tZGMTpZtAvV7uNWt6BQbBrlUzH-aBoj_ZmMEOG__aTA8VmfTeiHUR9gfqNe2eYf9fSM-sYQkmCOg10qZ3ZaKyM_RS1QUQhm8s5NMw-xnYaWMDgDakmFyp9tbJgQ4hOZTf0cxe9E6x7uWt3JeN6bS3k/s1600/ruby-rails.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Ruby on Rails"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run or build websites using Ruby on Rails, your technical team needs to update the software immediately.",
+    "action_it": "Update Ruby on Rails to versions 8.1.4.1 or 8.0.5.2 to address the Active Storage file upload flaw."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+    "link": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+    "published": "Wed, 04 Nov 2026 17:16:27 +0530",
+    "published_ts": 1793792787,
+    "summary": "Critical flaws in the Xen hypervisor let a malicious virtual machine access the memory of other virtual machines and the main management system. This could allow attackers to bypass security boundaries in cloud and server environments.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAVPXiuTBfhBnpwaZHMfSDWymKJrXbS88kOEO1Xuh5t11qAnwSKeFTHGQy6ZG9Sr2N-wRYrJg58x3lKFbybvU9p1a85lxaCHfBa61vO1DfjEhUi5Yzf6bQS1eN7Mu-s_sUwkE-JGc-UznJ1p0qfmwMDusXFzWawXKXMt6jj-vENxyQG12uAUDUe0p0gtg/s1600/xen.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Xen hypervisor"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace or cloud provider uses Xen, their IT or cloud operations team should already be on it.",
+    "action_it": "Apply the official patches released by the Xen Project. There is no known workaround or mitigation, so updating is essential."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+    "link": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+    "published": "Wed, 04 Nov 2026 13:16:15 +0530",
+    "published_ts": 1793778375,
+    "summary": "Google released a security update for a critical flaw in Android that could let hackers run malicious code remotely without any user interaction. This vulnerability affects Android versions 14 through 17.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm9fDI_lHL64S1r-eoB5-99WagZJBIjKDF-bEJ9egJw_EiLUomXSakGnV0vdq9Fqu2j6KVWM4upLmOwweDCKQ32f21W8CTsQHnoGMhFm-ISPNQEg1Jq5WbDujqLHVkGSEsox0Xd3Yc5Dd-v4-6rdzU4akd97y7cBhRYFO2ofmxpf3HYspJ6MkJs2RtfC4/s1600/android-patch.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-58868"
+    ],
+    "affected": [
+      "Android"
+    ],
+    "action_everyone": "Most people don't need to do anything right away, but you should check for phone updates by going to your device settings and looking for the November 1, 2026, security patch or later as soon as your carrier makes it available.",
+    "action_it": "Apply the November 1, 2026 (or later) security patch level to all managed Android devices running versions 14 through 17 as soon as they are released by vendors and carriers."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+    "link": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+    "published": "Tue, 03 Nov 2026 15:05:50 -0500",
+    "published_ts": 1793736350,
+    "summary": "North Korean hackers tricked a Binance employee with a fake job interview, installing malware that allowed them to steal $6.34 billion in digital assets. This massive heist highlights the growing danger of social engineering attacks targeting cryptocurrency infrastructure.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Binance"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you work in cryptocurrency or finance, be extremely cautious about unexpected job interview requests and do not download files from unverified recruiters.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "mSecure password manager hack prompts password reset warnings",
+    "link": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+    "published": "Wed, 04 Nov 2026 11:00:18 -0500",
+    "published_ts": 1793808018,
+    "summary": "The maker of the mSecure password manager suffered a cyberattack that may have exposed encrypted customer data. Customers are being warned to change their passwords, reset their two-factor authentication, and remove passkeys.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtvbYhodewxI1TOMjVp0GKUmMdudVKH27My8auvMEvDbCkd_JBzdJjjBb99j2a2a9R1wgkOaTdLcM_9FEmpyweVquFetLeyfzSC5UgpukK8Ukw7keJb5HwmTnPP1qWT2QzVX3FKLtBKLDFnuMrzmfgW5dwYf6SJHZHqSDj_eYGdap3ECOMMI1Em6_oS_0/s1600/msecure.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+        "link": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "mSecure",
+      "mSeven Software"
+    ],
+    "action_everyone": "If you use the mSecure password manager, check your email for the warning message and follow the company's advice to change your passwords, reset two-factor authentication, and remove passkeys.",
+    "action_it": "Review security alerts from mSeven Software and ensure that affected users follow the recommended steps to secure their accounts, including updating master passwords and resetting authentication methods."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
+    "link": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
+    "published": "Wed, 04 Nov 2026 10:00:10 -0500",
+    "published_ts": 1793804410,
+    "summary": "Attackers used fake Google Calendar invites and login pages to steal corporate user sessions and bypass multi-factor authentication. This matters because it allowed unauthorized access to corporate accounts despite security protections.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Google Calendar",
+      "Google Workspace"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this mainly targets corporate accounts. Be extra cautious of unexpected Google Calendar invites from unknown senders, especially those containing links to external login pages.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "SonicWall warns of unpatched flaws in end-of-life GMS software",
+    "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
+    "published": "Wed, 04 Nov 2026 09:42:25 -0500",
+    "published_ts": 1793803345,
+    "summary": "SonicWall warned customers about two security flaws in an older management software that is no longer supported and will not receive security fixes. This matters because anyone still running this retired software is left permanently vulnerable to potential attacks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "SonicWall"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this software is typically used by business IT departments. If your organization uses SonicWall Global Management System, contact your IT team to ensure they are aware.",
+    "action_it": "Migrate away from the end-of-life Global Management System (GMS) software immediately, as no patches will be released to fix these vulnerabilities."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+    "link": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+    "published": "Wed, 04 Nov 2026 19:57:52 +0530",
+    "published_ts": 1793802472,
+    "summary": "Russian hackers have compromised a web analytics service to steal device information and launch zero-click attacks against smartphone users. This matters because visiting infected websites can expose iPhones and Android devices to malicious exploits without the user doing anything.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx1cus2o8fkYGLhQu9BfPgGtAUwnmTAMucLagfAodBuRoYnyxGIJKgpqtKFyCSV-WSG3pDqmPujhj-iwoOZB-zF8JjbQMrLzDHYtdTPA3hD3Kc3rqYQM4CQwkICwZkh8K6O8ZSt-WAA_PBoUA6lHwh_55dbDlKizsjzcTN847c9BSHsWHmrAP42JHRHIYS/s1600/ios-exploit.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Hackers use n-day exploits in zero-click attacks on iOS, Android devices",
+        "link": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/"
+      }
+    ],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "iOS",
+      "Android",
+      "Plerdy SEO Tracker"
+    ],
+    "action_everyone": "Most people don't need to panic, but you should make sure your smartphone's operating system and apps are fully updated to the latest version to protect against known security flaws.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+    "link": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+    "published": "Wed, 04 Nov 2026 16:54:31 +0530",
+    "published_ts": 1793791471,
+    "summary": "State-sponsored hackers hijacked network requests from a popular typing software to install spying malware on target computers. This campaign allowed attackers to secretly monitor organizations.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMawvNNOvRYRm-k7ii9yDdw214v4kwQ7h5fAfOaUVkvMetNwArral8qumlObtaftjOcBsibL9vkqM1UT0-9l9jYPjj3M3C9NcPfg5pdIuENUfdKlK7lyseCS30AVhgLLs6a-2fdXlSDymSVeyIziO7IC13HFCaOf1v4sjbgmkeKfewWNsbTJCJ0WR2zLBZ/s1600/key.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Sogou Input Method"
+    ],
+    "action_everyone": "Most people do not need to do anything, as this campaign appears targeted at organizations. If your workplace uses the Sogou Input Method, your IT team will handle any necessary security measures.",
+    "action_it": "Investigate networks for suspicious DNS hijacking activity related to Sogou Input Method and check systems for signs of the DarkVigil backdoor implant."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+    "published": "Tue, 03 Nov 2026 17:18:50 -0500",
+    "published_ts": 1793744330,
+    "summary": "Hackers broke into the update system for the cPGuard web security tool to push malicious software and steal data. This matters because it turns a trusted security tool into a way to infect servers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "cPGuard"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your website uses cPGuard, your hosting provider or IT team will need to handle the cleanup.",
+    "action_it": "Review affected systems for unauthorized backdoors and data-stealing scripts, and contact the vendor for guidance on securing the cPGuard installation."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+    "link": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+    "published": "Tue, 03 Nov 2026 16:28:44 -0500",
+    "published_ts": 1793741324,
+    "summary": "WorkOS suffered a data breach after a hacker used an AI tool called ARTEX AI to access internal business contact records and customer communication summaries. This matters because it exposes customer information and highlights how attackers are using artificial intelligence to target corporate systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "WorkOS"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses WorkOS, your IT team will handle the response.",
+    "action_it": "Review access logs for unauthorized activity related to the internal sales application and monitor systems for potential abuse involving AI tools."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "US charges two Canadians accused of hacking US universities",
+    "link": "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/",
+    "published": "Wed, 04 Nov 2026 08:13:20 -0500",
+    "published_ts": 1793798000,
+    "summary": "Two Canadian nationals have been indicted by a US grand jury for allegedly hacking into several universities. They reportedly used the hacked computer systems to mine for cryptocurrency.",
+    "image": "",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
+    "link": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
+    "published": "Wed, 04 Nov 2026 17:04:20 +0530",
+    "published_ts": 1793792060,
+    "summary": "AI agents often bypass company security gateways, leaving organizations blind to unauthorized actions like mass-email automation. This gap shows that security focused only on the AI layer is insufficient without underlying network controls.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQqFIm3V3DsL6rHtjhkN8qVT2sU-caHUEuPgeepdZ6lLsIJ-09GFg_HVVBgeHP36W0abqUeCuaNuAOIheSGYB9hxmHbQGcgREBBxStEFLijgx-Cd8C8Z8wLuxgFFu75O8hAAOcdjAxgCZ-iYoBvYS09AcITdqMnmLZOn2JdGaEp04SPrgYkgQ14dl1S0JS/s1600/reco.gif",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
+    "link": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
+    "published": "Wed, 04 Nov 2026 13:47:11 +0530",
+    "published_ts": 1793780231,
+    "summary": "Russian police arrested three suspected members of the VasyGrek hacking group, also known as Fluffy Wolf, and dismantled their criminal setup. The group has been accused of stealing money from companies since 2016.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvVXRk9XWLvV5V7-gF-fqxa3YEEGpquE2Q8rML0rLK7ieZAbLJLqsHS6Sk012cwUslyYApJRP4b8SvmPCyATY2SbWpuhWILK0MRglNFqH5l5rVhTjSaJunpjWvbt8O9_UUnZnuxMJ26k5S4aQNj6pMBJLhY0gfn4zIY0Ot6m-gkntqxJiU4qgoAL3641pw/s1600/russia-hackerss.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "VasyGrek"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
