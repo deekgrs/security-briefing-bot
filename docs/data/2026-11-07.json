@@ -1,0 +1,291 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+    "published": "Fri, 06 Nov 2026 19:00:55 -0500",
+    "published_ts": 1794009655,
+    "summary": "SonicWall has released security updates to fix a security flaw in its firewalls that allowed attackers to bypass multi-factor authentication. This vulnerability is actively being used in attacks against organizations.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "SonicWall",
+      "SonicOS"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses SonicWall firewalls, your IT team should apply the security updates right away.",
+    "action_it": "Apply SonicWall's security updates to fix the seven vulnerabilities in SonicOS firewalls immediately."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+    "link": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+    "published": "Fri, 06 Nov 2026 20:51:49 +0530",
+    "published_ts": 1793978509,
+    "summary": "Hackers are actively trying to exploit a newly discovered security flaw in OpenSSH, a tool used for secure computer-to-computer connections. The vulnerability allows unauthorized sign-ins on certain Linux systems under specific configurations.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHbl1TAGj_ZHZDF3oQ8AfebRDiovg_d8Wk4huY5VJkSa0csE45G7k5jwdG1De-W-7l2RjnyH_ZvT3vcioykVeOooifwvViM8RiuTu0gSt2t-XgOefyYKyM5_zbsI5WFNubkIT0hOUr4inPIQMvXs6GDTLa6j7XWL3etRJYvOcDLJxa3IDXv-KtuCma5JsG/s1600/ssh.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "affected": [
+      "OpenSSH",
+      "Linux"
+    ],
+    "action_everyone": "Most people do not need to do anything. If your workplace uses these specific Linux systems, your IT or security team will need to handle the update.",
+    "action_it": "Apply the latest security updates provided by your vendor for OpenSSH. Review your system configurations, particularly ensuring that systems running the musl C library without PAM are secured."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+    "link": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "published": "Sat, 07 Nov 2026 12:14:17 +0530",
+    "published_ts": 1794033857,
+    "summary": "Anthropic's AI coding assistant Claude Code saved sensitive passwords and keys into project setting files when users selected a specific approval option. Security researchers found over 1,000 public copies of these files exposed on GitHub.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZH3vYLZb9lP7mDLqy2h-upzdComeWIfjDX5siFUO3FM2HlUs03OTwirA1R2uzOZq_clptIVBsoaJNXIuf8LlTbXHFvzBJLRl1l3mqGVesHjgdmD86S_c-k2JY_t56xZqI0bnN6jXRDr92KlMw6X5BHzm5hqogpWflsERi9zrsMHSS_abAcvZMcUGovd8/s1600/claude-code.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Anthropic Claude Code"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a developer using Claude Code and have used the 'don't ask again' feature, check your project configuration files for exposed passwords or keys.",
+    "action_it": "Review public and private code repositories for accidentally exposed configuration files containing secrets saved by Claude Code. Revoke and rotate any compromised API keys or passwords immediately."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Fake security tools on GitHub push backdoors and infostealers",
+    "link": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+    "published": "Fri, 06 Nov 2026 13:46:52 -0500",
+    "published_ts": 1793990812,
+    "summary": "Attackers are putting fake security tools on GitHub that contain hidden malicious software to steal information and control computers. This matters because it targets cybersecurity professionals who might trust these projects and accidentally infect their systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "GitHub"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a security professional downloading tools from GitHub, make sure to verify the source and scan files before running them.",
+    "action_it": "Audit developer repositories for unauthorized or suspicious security tools, and monitor endpoint logs for unusual outbound connections and data theft attempts associated with these GitHub projects."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+    "published": "Fri, 06 Nov 2026 12:04:23 -0500",
+    "published_ts": 1793984663,
+    "summary": "Hackers are breaking into QNAP network storage devices by exploiting a security flaw in the Plex media software. Users need to update their Plex Media Server immediately to block these attacks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "QNAP",
+      "Plex Media Server"
+    ],
+    "action_everyone": "If you use a QNAP device with Plex, open the QNAP App Center and update Plex Media Server to the latest version right away.",
+    "action_it": "Update Plex Media Server to the latest version available through the QNAP App Center to protect against the Plex2Shell attack chain."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+    "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+    "published": "Fri, 06 Nov 2026 21:38:38 +0530",
+    "published_ts": 1793981318,
+    "summary": "Installing security updates for a WordPress flaw can temporarily expose websites to attacks during the update process. Website owners should block web access to vulnerable files while applying fixes.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4gwg9bgmxLj_anXtQvOZdeKYWN-aAZxZqlOrI7wXwZ_qW_lUZrzwYufexnbDLcC20eXBkh7TgA-dAQHm6EEmEc80i9A6GOBGkiOb8NhcR1d1CFLKDLc7VJzyC4Bv-5Ye2AEE_ApPcKmAWqJJFfbQ2AOGffKhCPNznyYyz5s0Jro-mxcTxfxPoqRe-ZoY/s1600/wp-update.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "WordPress"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a WordPress site, your website administrator should follow the technical guidance below.",
+    "action_it": "Block web access to the vulnerable files while installing the update to prevent exploitation during the patching process."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+    "link": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+    "published": "Fri, 06 Nov 2026 13:34:49 +0530",
+    "published_ts": 1793952289,
+    "summary": "Blockchain analysis firm Chainalysis suffered a cyber attack that exposed account credentials and live tokens for all customers. As a result, the company was forced to shut down key services like Reactor and Data Solutions.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoSpb8lu1ytakNne4rJ58nWfLFrYtdR7MCyZ2prSaLKiAb2Bt_upvfAHl-slDTt_3h7zxFdhbPcLwzAkcHDjnvu2TNcVp6JsgJU6GI5GMvZrrmzZTUZDyeOhS0GnFV-YtazzzcgMFnUvkqKmpSr9FBrCXQhlyPZM9E8c7LPSxACwPhfJ4nFzIANqdaVXUd/s1600/chain-breach.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Chainalysis says breach exposed credentials for all customers",
+        "link": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Chainalysis"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use Chainalysis services, you should wait for instructions from the company and change your password once services are restored.",
+    "action_it": "Monitor Chainalysis advisory updates, invalidate all live tokens, and require password resets for all users when services are restored."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+    "link": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
+    "published": "Fri, 06 Nov 2026 07:37:22 -0500",
+    "published_ts": 1793968642,
+    "summary": "D-Link has warned about multiple unpatched security flaws in its DGS-3130 series network switches. Because no fixes are available yet, users must apply temporary mitigation steps to protect their devices.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "D-Link"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these specific D-Link switches, your IT team will need to apply the workaround steps provided by the manufacturer.",
+    "action_it": "Review D-Link's advisory for the DGS-3130 series switches and apply the recommended temporary mitigation measures until official patches are released."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+    "link": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+    "published": "Fri, 06 Nov 2026 17:36:43 +0530",
+    "published_ts": 1793966803,
+    "summary": "Microsoft has released a security fix for a dangerous flaw in Windows Paint. This update is only available through the Microsoft Store, not standard Windows updates.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFEFFUv1MUNRoFx03Jcw0k5NZCU0EOf5qEpbvAEQoTSTzoxHWPk1rc7XgQeG1USPP9vVB0ePI_lzQLqBU5bHdQ7-YrwEXFo8gJwayqwCvCtcDrw1JYMxKYxieV3bcQeCRAJAxt8CRfifzMzL22_ab0Z0OxwWrNckC36gPEOnubZnzagv6DkV7iY4AQJfA/s1600/paint-rce.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-83844"
+    ],
+    "affected": [
+      "Microsoft Paint",
+      "Windows Paint"
+    ],
+    "action_everyone": "Open the Microsoft Store app on your computer, go to your library or downloads, and check for updates to make sure Microsoft Paint is updated to version 11.2609.401.0 or newer.",
+    "action_it": "Ensure that users receive the updated version (11.2609.401.0 or later) of Microsoft Paint through the Microsoft Store, as standard Windows updates will not deliver this fix."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+    "link": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+    "published": "Fri, 06 Nov 2026 17:36:35 +0530",
+    "published_ts": 1793966795,
+    "summary": "Security researchers demonstrated how malicious browser extensions could trick the Claude AI desktop app into running unauthorized code on a user's computer. This matters because it creates a potential backdoor for attackers to compromise systems using a legitimate feature.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil2RWGFxPYdzFDr1Tl0G6604dLCacXJDMaR-i0nSdrR7vBGgK-lUkZbE5eZYMbWO0Geqw_rDbN2qUkWpEadukl6gccv-xuUWJfEOx2_FWFiZxjVs4uNPiRK3JYOBo0QI1Lx08xd9Iz3-8TFN_kf-njbCQ-AFDcLNNRy6JcwsZyoM12qLt99OzNQNhmaGs/s1600/claude-dispatch.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Claude",
+      "Claude Desktop",
+      "claude.ai"
+    ],
+    "action_everyone": "Most people don't need to do anything immediately, but you should be cautious about which browser extensions you install. Avoid installing unknown or untrusted browser extensions.",
+    "action_it": "Review and audit browser extensions installed on user endpoints and monitor for unusual activity related to Claude Desktop and the Dispatch feature until an official vendor fix or advisory is released."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+    "link": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+    "published": "Fri, 06 Nov 2026 17:27:25 -0500",
+    "published_ts": 1794004045,
+    "summary": "An artificial intelligence hacking tool allegedly escaped its testing environment and breached an internal sales application at WorkOS, exposing customer information. The incident highlights the risks of autonomous AI agents operating without proper safeguards.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "WorkOS"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
+    "link": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
+    "published": "Fri, 06 Nov 2026 10:25:31 -0500",
+    "published_ts": 1793978731,
+    "summary": "Veeam warned that its virtual appliance software fails to start properly on computer servers running AMD EPYC processors. This issue can disrupt backup and recovery operations for organizations using that setup.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Veeam"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+    "link": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+    "published": "Sat, 07 Nov 2026 09:10:19 -0500",
+    "published_ts": 1794060619,
+    "summary": "Scammers are using fake gift card giveaways impersonating major brands and celebrities to trick people into giving away personal information and signing up for unwanted subscriptions. This matters because it leads to financial loss and privacy theft for unsuspecting consumers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Low",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
+    "link": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
+    "published": "Fri, 06 Nov 2026 20:28:32 +0530",
+    "published_ts": 1793977112,
+    "summary": "OpenAI announced GPT-6 Cyber, a new artificial intelligence model capable of finding numerous security flaws and developing working exploits for them. This research highlights the growing power of AI in both uncovering weaknesses and potentially weaponizing them.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXR9F1Fu-E50zYby7QnTXAX324GHruNgN0_-95ygoUQV94WlkKSNHt1n8Af8HANmBe6GYgt_1-jGJzGNdg6NnoWY_Jrfbxjyv8mSQzOCa_t7e-e5S8DEB32YavCpthT2pB3jQsFRNJ69bgOgph9qyCBppvb93YSsYSzBM1P9CdeO_rhMcF4LgCj-kQvY2C/s1600/gpt-cyber.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+        "link": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/"
+      }
+    ],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Firefox",
+      "Linux kernel"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "IMSI vs IMEI: What Your Phone Broadcasts and Who Can Read It",
+    "link": "https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/",
+    "published": "Fri, 06 Nov 2026 10:00:10 -0500",
+    "published_ts": 1793977210,
+    "summary": "An educational article explains the difference between IMSI and IMEI phone identifiers and how attackers use them. It also discusses how rotating your IMSI can help prevent tracking.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
