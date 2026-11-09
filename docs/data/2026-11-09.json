@@ -1,0 +1,280 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
+    "published": "Mon, 09 Nov 2026 11:04:57 -0500",
+    "published_ts": 1794240297,
+    "summary": "Hackers are actively exploiting a critical flaw in OpenSSH called SSHole to take over Linux systems. This lets attackers steal passwords and maintain long-term access to breached networks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "affected": [
+      "OpenSSH"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Linux systems, your IT team should handle the updates.",
+    "action_it": "Apply the latest patches for OpenSSH immediately and check system logs for signs of unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+    "link": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+    "published": "Mon, 09 Nov 2026 11:45:10 +0530",
+    "published_ts": 1794204910,
+    "summary": "State-backed hackers are remotely attacking industrial refrigeration systems in supermarkets, altering settings to cause fires and food spoilage. This campaign poses a severe physical danger and threatens the food supply chain.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKryTkTZPSm_Pvf-PEvYRFle3Bp0jQaXScE21oOsMfwir63sr355bqHInvPRm5zynq2sYfLswRNEeywDHo7p2snw5sQmlIrWIONBq4AoYFEGXvdgy5gNLMESgjL5zwnhbqYIwdKLRaolb18pKz1sqFynmSjWn2IT_BxlEb-0av9vDfp-oEzp23_cwOIoik/s1600/ref.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
+        "link": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/"
+      }
+    ],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "industrial refrigeration systems",
+      "cold-chain monitoring systems",
+      "supermarket refrigeration controllers"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you work in facilities management or grocery retail, ensure your management team is aware of these attacks.",
+    "action_it": "Disconnect internet-accessible refrigeration controllers from the public internet immediately, ensure all software is fully patched, and review logs for unauthorized configuration changes."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+    "link": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+    "published": "Mon, 09 Nov 2026 23:21:21 +0530",
+    "published_ts": 1794246681,
+    "summary": "Hackers used stolen credentials from cloud data platform Qubole to break into multiple customer Amazon Web Services accounts and steal data. This matters because it exposes sensitive customer information stored in the cloud.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj3p_1P-Ko_l_HuUr2Doq9kJOQa3Y5dCrkiVWqjJXzvQfYgKvgJXyvdBqLH2hp7s_ZY2kk-hhaCQhjf_v9SdjSbNpaDV2Eohk6-NEFUZp_ROjMJf_Q1xUSKcrqNj-Dd5ZrfjV6uP1blo579IaZ6hgHxOFAUhyJVgdGop-KVIWCjWQIYOKku3iN1N1EIUk/s1600/aws-hacked.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Qubole",
+      "Amazon Web Services",
+      "AWS"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Qubole, your IT team should investigate whether your connected AWS accounts were affected.",
+    "action_it": "Review AWS access logs and audit credentials associated with Qubole integrations between October 14 and October 26 for any signs of unauthorized access or data exfiltration."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
+    "link": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+    "published": "Mon, 09 Nov 2026 12:50:32 -0500",
+    "published_ts": 1794246632,
+    "summary": "A destructive cyberattack wiped data at Russian cloud provider Beget, forcing the company to rebuild its entire infrastructure from scratch. This highlights the severe risk of malicious software designed to destroy data rather than just steal it.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Beget"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use Beget's cloud services, check their official communications for updates regarding your data.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+    "link": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+    "published": "Mon, 09 Nov 2026 23:06:28 +0530",
+    "published_ts": 1794245788,
+    "summary": "Hackers hijacked the release system of the Ethersphere project to push malicious updates for its bee-js and Swarm Desktop tools. These updates contain wallet-stealing malware designed to steal cryptocurrency wallet keys and passwords.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4ZFiesBwDTk8fRRfKfNIw0lLkhqF6ZAExRxuuRtfRCWrxs6Rg7M5UdSIcJqH2zstViFreL30JMmdebYTlMOKvg4D6GvaS70XPdembzyIZoX2KBj_S3kxKWmBjJll4exWUYXrap9IDW_ugXHOux5jZXk44_v5xac1mxFouywezDcsGeMdLrGd1sJStMoo/s1600/bees.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Ethersphere",
+      "bee-js",
+      "Swarm Desktop"
+    ],
+    "action_everyone": "If you use Swarm Desktop version 0.56.2 or the bee-js library version 13.3.0, do not run them. Assume your cryptocurrency wallet keys have been compromised and take steps to secure any funds associated with them.",
+    "action_it": "Identify and isolate any systems running bee-js 13.3.0 or Swarm Desktop 0.56.2. Revoke and replace any cryptocurrency wallet keys and passwords that were managed on those affected nodes."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+    "link": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+    "published": "Mon, 09 Nov 2026 16:57:53 +0530",
+    "published_ts": 1794223673,
+    "summary": "Security researchers found that mobile apps for two car brands used a default administrator password on their login servers. This flaw allowed unauthorized access to customer accounts, letting attackers unlock doors and start engines on connected cars.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI85M0pHHPiXe5ar2VpaGsBVRzxoYfZhpQTKgWqd8YGjK9Nyaca-z6XrGT3jT0lqh41qe-cAjb33_r7JErd7rB1CfuWkgTP_z-_IJkpQPWebz1GeEvSu9QpE5XYWRMOfhYTHmzhbkFB07hzSuV1FYARdaIWjfB_mUoX1_eMjl_3dOaSUFpTQvjt-34eQo/s1600/login-car.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "ForgeRock",
+      "Ping Identity"
+    ],
+    "action_everyone": "Most people don't need to do anything right away, as this was found by researchers rather than active criminals. Keep an eye out for security updates for your car's mobile app and install them when available.",
+    "action_it": "Ensure that any default credentials on authentication servers and identity management platforms, such as ForgeRock, are changed immediately during deployment. Review server configurations and access logs for unauthorized administrative activity."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+    "link": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+    "published": "Mon, 09 Nov 2026 16:26:25 +0530",
+    "published_ts": 1794221785,
+    "summary": "An attacker exploited a security flaw in Web3Auth to steal funds from Keplr cryptocurrency wallets that used Google or Apple sign-in. To prevent further theft, the provider proactively emptied other at-risk wallets.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJtevfYXrRQrcU5FKn33bfyWpqN9O6FlI2b1eWOTjNWWslLIM1wwUfpzedZdMvdw6BXqmYqM1PwO-8GH3_IpKOGa15uoiXx5yDTkAal7JOFSKisSYOAHBdRk9XImTowXaCyJlTwX-chPd7uJFCDEq8u9sKY7jW6UYxorQKUSyuH9pF3szdwejvN_HGhno/s1600/kep.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Web3Auth",
+      "Keplr"
+    ],
+    "action_everyone": "If you used a Google or Apple account to set up a Keplr crypto wallet, check your account status. Reach out to Keplr support for guidance if you are affected.",
+    "action_it": "Review cryptocurrency wallet access logs and monitor integrations with Web3Auth and Keplr for unauthorized activity. Contact the service providers for specific remediation steps."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+    "link": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+    "published": "Mon, 09 Nov 2026 15:31:21 +0530",
+    "published_ts": 1794218481,
+    "summary": "LNbits is urging everyone who runs its Bitcoin wallet servers to shut them down immediately due to ongoing attacks that are stealing funds. The project is working on security fixes and advises operators to keep their servers offline until updates are released.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPZfiSS8v6cUfSW1R2sbPNNfjluB-GvnXCxcAW_G6pKRNzYU2Be89Qyu9Zx0mnY7voaGpLXFtsajKS9tqYp74Qo05wPzzELg9ZpbVcoWa5l9AKhf4SmmNbnIvjOUrm4LsB9V-tGBxU-V0NxHzAoV2Cnlz6tHlcPewPh2ir8ipqn6Kj-phVDm5zraXs9ss/s1600/crypto-bits.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "LNbits"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run your own LNbits Bitcoin wallet server, you should shut it down immediately until the project releases security fixes.",
+    "action_it": "Shut down all LNbits servers immediately to prevent theft, and wait for the project to release security fixes."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+    "link": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+    "published": "Mon, 09 Nov 2026 20:01:29 +0530",
+    "published_ts": 1794234689,
+    "summary": "A cyber-spying group known as Bitter is using a newly discovered malicious tool called PapRAT to target organizations in South Asia. This matters because the tool allows attackers to remotely control infected computers and steal information.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQwQpjbb2oT57o807l7YmQ31V2RbyxqqO4hENkKlfikKKH-LeqSUiYz5AaPCCFWml-l_RaN1JMiwbJa9lJe7z7Ijzdk66icRP70eETLZ7lLomkSa3JjezoxbRNeDEkTv0K-26dSzHKxAjc7xyLA9RbIiERPLqyRu5QzfyrPeyIA4dfLzMil5wDkYN9n4sG/s1600/command.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
+    "link": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+    "published": "Mon, 09 Nov 2026 18:58:25 +0530",
+    "published_ts": 1794230905,
+    "summary": "A weekly security recap highlighted simple security oversights like blank passwords and attackers hiding in normal web traffic. This matters because basic configuration mistakes continue to provide easy entry points for malicious actors.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLQ4v79OUmrbGdf2uJWMlUUmpCSu70Pr6v7oyodgSjFMfLU6JIe6Mr7xpp7AnqIX_vmKca44ImxEkczL88e_4sr2oBw0NL3Zh_JVEOb4cYmYg5pjbrITVv6KgPsv13-RrlBjq6bu7inR7w5-seDsUZvoqn6q7idkElfWysH1itsfgI5-NmFZ-BybjG0gR0/s1600/rr.jpg",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Low",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Binance denies data breach after alleged ShinyHunters claims",
+    "link": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/",
+    "published": "Mon, 09 Nov 2026 11:12:39 -0500",
+    "published_ts": 1794240759,
+    "summary": "Binance has denied claims of a new security breach made by a notorious cybercrime group known as ShinyHunters. No actual data leak has been confirmed at this time.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Binance"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "The Biggest Threat to Your GRC Job Isn’t AI. It’s Ignoring AI.",
+    "link": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+    "published": "Mon, 09 Nov 2026 10:05:15 -0500",
+    "published_ts": 1794236715,
+    "summary": "Artificial intelligence is automating routine governance, risk, and compliance tasks. Professionals in these roles need to learn new skills like data literacy and agent oversight to stay relevant.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "FBI agent stole $2.5 million in crypto from hackers under investigation",
+    "link": "https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/",
+    "published": "Mon, 09 Nov 2026 09:34:03 -0500",
+    "published_ts": 1794234843,
+    "summary": "A former FBI agent pleaded guilty to stealing nearly $2.5 million in cryptocurrency from digital wallets tied to ongoing investigations. This highlights an insider threat within law enforcement, compromising evidence integrity.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "FBI"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "US bans MEXC crypto exchange over sanctions evasion, cybercrime links",
+    "link": "https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/",
+    "published": "Mon, 09 Nov 2026 08:28:56 -0500",
+    "published_ts": 1794230936,
+    "summary": "The US government has banned the MEXC cryptocurrency exchange from the US financial system. This action was taken because the platform was linked to sanctions evasion and cybercrime groups.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "MEXC Global"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Ukraine dismantles crypto scam network that stole €4.3 million",
+    "link": "https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/",
+    "published": "Mon, 09 Nov 2026 07:16:13 -0500",
+    "published_ts": 1794226573,
+    "summary": "Ukrainian law enforcement arrested four suspects linked to a cryptocurrency investment scam network. The group stole over €4.3 million using fraudulent call centers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
