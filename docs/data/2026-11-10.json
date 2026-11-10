@@ -1,0 +1,304 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
+    "link": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+    "published": "Tue, 10 Nov 2026 11:17:16 -0500",
+    "published_ts": 1794327436,
+    "summary": "Attackers are actively exploiting a critical security flaw in Xen Orchestra to gain full control of virtual server systems. This matters because an attacker could use it to completely hijack enterprise virtualization hosts.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Xen Orchestra",
+      "XCP-ng"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Xen Orchestra, your IT team needs to take action immediately.",
+    "action_it": "Apply the available security updates for Xen Orchestra immediately and review system logs for any signs of unauthorized access or compromise."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+    "link": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+    "published": "Tue, 10 Nov 2026 21:30:55 +0530",
+    "published_ts": 1794326455,
+    "summary": "Attackers are exploiting two security flaws in AhsayCBS backup software to install hidden backdoor software that lets them control the system. Because these flaws are actively being used in attacks, organizations using this software must act quickly.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT-Z8hFA8uMe4HXLf_4QRk4Z4VLuUCDRL89LcgpXfsj9YAwLsLHIZL46pn2SLz0BBhCKPUKBhChDRRsKYPSkZPwmsDIhozGQ-4YemxOSol0AiwBEgtGX9OSZ_L3SQZVoebBX1fWGkh8TQ_hNVYHho0eCrBQzLlhnjPhhymXqcWePyuhdQDCMb6KJi6pmIe/s1600/cbs.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-105133",
+      "CVE-2026-105134"
+    ],
+    "affected": [
+      "AhsayCBS"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses AhsayCBS, your IT team should already be on it.",
+    "action_it": "Apply the available patches from Ahsay for CVE-2026-105133 and CVE-2026-105134, and review system logs for signs of unauthorized access or backdoors."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "SAP patches ICM2SHELL and PROXYGATE maximum severity flaws",
+    "link": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/",
+    "published": "Tue, 10 Nov 2026 07:07:03 -0500",
+    "published_ts": 1794312423,
+    "summary": "SAP fixed 35 security flaws in its software, including four maximum-severity vulnerabilities that attackers could exploit to take over systems without logging in. Organizations that use SAP products must apply these updates immediately to protect their networks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4snqwJ4uD_sRDyI8zs23mcfFTWfZoSrn9n1hbUrsHbyWy-1VFL8amxqQnLb7LSTPkuSwnsPofUJT6anObg-nU4Q5e01WBb3IixN_PdL-1MJ2nOip4qSTEoVDmePRlOgjSVjvtbH8vFlQgxtGuKuqmuHWLyzIavw2Sj4VtZBlTYhUqeySbQcDMEr4Wns/s1600/sap-flaws.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+        "link": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "SAP NetWeaver",
+      "SAP Web Dispatcher",
+      "SAP Gateway"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses SAP software, your IT and security teams will need to handle these updates.",
+    "action_it": "Apply SAP's November 2026 security updates immediately, specifically addressing the four maximum-severity flaws in NetWeaver, Web Dispatcher, and Gateway software."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/",
+    "published": "Tue, 10 Nov 2026 05:10:20 -0500",
+    "published_ts": 1794305420,
+    "summary": "Hackers are actively exploiting two recently patched security flaws in Barracuda Email Security Gateway devices to gain full control over them. This matters because attackers can use this access to take over vulnerable servers completely.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Barracuda Networks",
+      "Email Security Gateway"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Barracuda Email Security Gateway, your IT team should already be on it.",
+    "action_it": "Apply Barracuda's patches for the two fixed flaws immediately."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+    "link": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+    "published": "Tue, 10 Nov 2026 03:51:25 -0500",
+    "published_ts": 1794300685,
+    "summary": "Google has released an emergency update to fix a security flaw in its Chrome browser that hackers are actively exploiting. Users need to update their browsers immediately to stay safe.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Google Chrome"
+    ],
+    "action_everyone": "Update your Google Chrome browser right away. Click the three dots in the top right corner, go to Help > About Google Chrome, and let it check for and install updates.",
+    "action_it": "Apply Google's emergency security update for Chrome across all organization devices immediately."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
+    "link": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
+    "published": "Tue, 10 Nov 2026 10:59:19 -0500",
+    "published_ts": 1794326359,
+    "summary": "Binance warned that a security flaw in Apple's iOS allows malicious apps to read private files from other applications on iPhones. This could expose sensitive information like cryptocurrency recovery keys and login passwords.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikVWFDhEAWo-q-_JsRneE91hAsf7Ho4XXGI51_q0V6XaCrBl7COWgs81b8KLYtdO0XaRMjP5JbJs80iC103U16Mr7GU05znwtx3CvvMnJMR1ywArpKJj4AdVd9HaLv0U65k59BBY706XjRtU8bx9q-fnLlozVb63XJ43QDKm3FbJUmrSwcB9TvwJpyP64/s1600/ios-jail.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+        "link": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Apple",
+      "iOS",
+      "Binance"
+    ],
+    "action_everyone": "Most people don't need to panic, but you should be cautious about which apps you download onto your iPhone. Avoid downloading unverified applications until Apple officially issues a fix for this issue.",
+    "action_it": "Monitor device endpoints for unusual file access behaviors and restrict the installation of untrusted or sideloaded applications on iOS devices until Apple releases a patch."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights",
+    "link": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+    "published": "Tue, 10 Nov 2026 21:03:59 +0530",
+    "published_ts": 1794324839,
+    "summary": "Fireworks AI revealed that a security incident first reported last month exposed customer billing data, secrets, datasets, and incomplete AI models for some accounts. The attackers gained access by first breaching a third-party cloud provider.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-mBJN_E4CjW3MXyjYYdeCGcyR052aVnG3uUWjaEfafvPAdatcJhn9LbtngqXBb5JsVwJVoorc8i41nTbYR9UcwVrwWNzU-WAfVk2yL32hYW1elVMJtwauW53nhRG37EwbovnFCW8InensI8tKoR9pqcWnZx54t6xOU_HsjjR9KWTLwVr_MBcknFeGShZU/s1600/fire.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Fireworks AI discloses new breach after cloud provider hack",
+        "link": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Fireworks AI"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use Fireworks AI, check for any direct communications from the company regarding your account or billing data.",
+    "action_it": "Review access logs and account activity for any signs of unauthorized access, and secure any secrets or credentials that may have been exposed."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Turla hackers use new Cereal malware to spy on govt Exchange servers",
+    "link": "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/",
+    "published": "Tue, 10 Nov 2026 05:04:32 -0500",
+    "published_ts": 1794305072,
+    "summary": "A Russian government-backed hacking group is using a new tool called Cereal to steal emails from government Microsoft Exchange servers. This matters because it is a targeted espionage campaign aimed at government agencies.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5658vTd_mkm0NXhB4ueRe7z7purQPsvIa5Ik8qqEMo0dN5DU5bTpprIJeXFEj7XKLIOP3ykE4ZlNnixosysJ8YmGXzuRqEA1YoDvaQUFUgdXGfX2gj4f3hgUzop1wizxyv9olPYRDIb6CBW09bFVYAVqvpJk1zRqp3N5QCDBdfXTeoJuGCRkgy227_TgN/s1600/russian-emails.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
+        "link": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html"
+      }
+    ],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Microsoft Exchange"
+    ],
+    "action_everyone": "Most people don't need to do anything. This attack specifically targets government Microsoft Exchange servers.",
+    "action_it": "Review Microsoft Exchange server logs for unauthorized access and monitor for indicators related to the Cereal malware toolkit described in the ESET report."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
+    "link": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+    "published": "Tue, 10 Nov 2026 14:38:20 +0530",
+    "published_ts": 1794301700,
+    "summary": "France stated that an Iranian military cyber unit carried out a sabotage attack on refrigeration controllers at around 700 retail sites last October. The attack altered defrost settings to cause high temperatures, resulting in food spoilage and at least 15 fires.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQkt0P-pw4g1CSZvboG35E5WMLU_vea9rR2DLZ4X0lK5NyipbooRyXkRXcRb7X-ddRbVCygF1OkhW6a3j_8sCsBA_GhHAtOF8dISlx4Q2H74fnLJTm5ZOoEBlsbES0hPZutw60wjcAcMZEZcmx4NCLAM-pqVJCfw9yLhoQV2U_QFRX5h1k0zKPzgioICw/s1600/iran-france.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Refrigeration controllers at French retail sites"
+    ],
+    "action_everyone": "Most people don't need to do anything. This incident targeted specific commercial refrigeration systems in France.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
+    "link": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+    "published": "Mon, 09 Nov 2026 18:52:12 -0500",
+    "published_ts": 1794268332,
+    "summary": "Vanderbilt University is dealing with a cyberattack where digital extortionists claim to have locked its databases and stolen sensitive data. This matters because it exposes private information belonging to students, employees, and researchers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Vanderbilt University"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a student, employee, or researcher at Vanderbilt, watch for official updates from the university regarding your personal data.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
+    "link": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+    "published": "Tue, 10 Nov 2026 21:28:44 +0530",
+    "published_ts": 1794326324,
+    "summary": "A hacking group known as Blind Eagle is using fake court notices in Spanish and Portuguese to trick people into downloading malicious software. This allows attackers to remotely control infected computers across Latin America.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs4UHnKTj_NJCPa7Jqdntj8tEvZ2PgaY7s9kKK8_X2bxehTUcJeZPFfguJzvW_D0H9XD_q-qLZV2Qq6hqRYDQRYMXpyAzw-6T2yDjFjIY7zhGRLPDPjOalASUgX_Z-M2cEsNqiuys_4QjQ8vY_xl0fnWi2Y_9tT9aAH0WQOAB3D6uDf8yZY8VuphL4TRFG/s1600/court-phish.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
+    "link": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
+    "published": "Tue, 10 Nov 2026 15:46:51 +0530",
+    "published_ts": 1794305811,
+    "summary": "Apple released software updates to fix security flaws in iMessage that could allow unauthorized people to access group chat messages. These updates protect user conversations from being read by outsiders or newly added members who shouldn't see past messages.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUM6RGvSNUqube0TIXYpzHhs7uSvT0k28f2Q8s-GVOexnCI4T5mzFMUs3Lz4_aS6gNuS71DSTvtfOO-tfVFXvVu82pBmj5gO5_jO5g1ndVQQX8xjBY8A_IDAVNkO7oE1s5FRyEsxXQ_HEM_5_KI4g9VWN8BLgCmQTS1DaFt6lRlfgEJMsxyC5bxQW1qhM/s1600/apple-patch.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Apple",
+      "iMessage",
+      "iPhone",
+      "iPad"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Ransomware recovery is now a client retention metric",
+    "link": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
+    "published": "Tue, 10 Nov 2026 10:01:11 -0500",
+    "published_ts": 1794322871,
+    "summary": "Recovering from a ransomware attack does not guarantee that businesses will keep their IT service providers, as delays and poor communication often ruin trust. Service providers are now looking at better, more integrated recovery tools to improve their response times and keep clients happy.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Kaseya"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Beyond the Alert: The Case for Rich Network Data",
+    "link": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
+    "published": "Tue, 10 Nov 2026 17:08:13 +0530",
+    "published_ts": 1794310693,
+    "summary": "An opinion piece argues that security defenses will eventually fail and advocates for using detailed network data to find and stop intruders after they get in. It is an industry commentary on cybersecurity strategy.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2keP-LKMaj66fcb6TF9mNwdN01ndHv16r6WcnXbXwTwCNvUJXDxuyG_WacuYRt2DNFA7Fy_Hb4cyDvXeRsWrUWrql4RyMK4dD9s2adlVOnPWyR04wDmPu5jUlZL3-kGiDgPY2NU8yptKV1o21Wsuyu6IOSxico18zjLqDNLoA1bkl_DheKZevChrO6ZE/s1600/Corelights.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
+    "link": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+    "published": "Tue, 10 Nov 2026 13:46:14 +0530",
+    "published_ts": 1794298574,
+    "summary": "Anthropic announced the release of its new Claude Fable 5.2 and Claude Mythos 5.2 artificial intelligence models, which showed strong performance in coding and reasoning tests. The new models are designed to help with complex software and engineering tasks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgogipF_6VgFSzsnZ_UFUM5FfzGyk1MOv5SRi3PSivRHjxs6IsO0fmOdDjQsDJHiKcnxJ8T89NMMYiqo_NEEtv0EoQsafjOFuZ-Te6famJBJKegqDnf1b63Hdzkls7IO1JOtSNjb5Hatb4Ny8Zu46mggCXYKvHf3Ne9Qc4ZRfLBmLnZ7omPEHAjDfJRQEKu/s1600/fable.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Anthropic"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
