@@ -1,0 +1,302 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+    "link": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+    "published": "Wed, 11 Nov 2026 13:47:53 +0530",
+    "published_ts": 1794385073,
+    "summary": "Microsoft has released its monthly batch of security updates, fixing over 1,000 software flaws, including an actively exploited Outlook bug. Organizations and users must update their systems to protect against potential security breaches.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_nfFO2Zf-R2XyVzQHP43rc0OLAtUtRKWYV0VIaoHZW8EeH78h2Id9FmfJQVfzFdmBD6ugVGeCehX1Nq6jlmXlMG4AmnV3Tib3YvClKGaplVg5Ngk_KlpqwHx6Pd_oYQTCj2O3HfOpt_MoSGQD-4Nv-pju5sqS7U9-rAJdpKTn-xnhA1QSmmTiQWnAFjGp/s1600/patch-ms.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Microsoft fixes audio issues caused by September security updates",
+        "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/"
+      },
+      {
+        "source": "BleepingComputer",
+        "title": "Microsoft fixes Exchange sign-ins broken by Windows Server updates",
+        "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/"
+      },
+      {
+        "source": "Krebs on Security",
+        "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+        "link": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/"
+      },
+      {
+        "source": "BleepingComputer",
+        "title": "Microsoft releases Windows 10 KB5131096 extended security update",
+        "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows",
+      "Office",
+      "Outlook",
+      "SQL Server"
+    ],
+    "action_everyone": "Install the latest software updates on your computer and devices as soon as possible through your usual system update settings.",
+    "action_it": "Apply Microsoft's latest security patches across all affected software portfolios, prioritizing the critical flaws and the exploited Outlook bug."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
+    "published": "Wed, 11 Nov 2026 05:12:08 -0500",
+    "published_ts": 1794391928,
+    "summary": "Hackers are actively attacking a security flaw in Cisco BroadWorks and another in Openwave Messaging. Organizations must update their systems immediately to stop unauthorized access.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4aXykaOroazGO_7IuXugse9ynGpt1PkKJDM8lKL4by93ixX28cs23KAZZRF2dCN2cogu1ti8q5kmqfqSBLmOXWkVi7ZGWmwYMkeCOUXsOXwLoF07FbzmVnlr9DoeqtCboI_9LKWgohgWi2jIB1TzGO6uEkp5lsMnq5fSVqrN-NZGJjAQE2kIUyHsdkw6J/s1600/cisa-cisco.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+        "link": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-20320"
+    ],
+    "affected": [
+      "Cisco BroadWorks",
+      "Openwave Messaging Webtop Media Transcoder"
+    ],
+    "action_everyone": "Most people don't need to do anything. These products are generally used by businesses and service providers rather than individuals.",
+    "action_it": "Apply the available patches provided by the vendors for Cisco BroadWorks and Openwave Messaging immediately, as these flaws are actively being exploited."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
+    "link": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
+    "published": "Wed, 11 Nov 2026 11:24:18 -0500",
+    "published_ts": 1794414258,
+    "summary": "Shipping giant Maersk confirmed a data breach after a criminal group gained unauthorized access to an older inherited system and stole data. The attackers are demanding a $5 million ransom.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Maersk"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a Maersk customer or employee, watch for official communications from the company regarding your personal data.",
+    "action_it": "Investigate the legacy system involved in the breach, secure all inherited or acquired networks, and monitor for unauthorized data extraction."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
+    "published": "Wed, 11 Nov 2026 10:12:59 -0500",
+    "published_ts": 1794409979,
+    "summary": "Hackers are using an open-source artificial intelligence tool called AntiFox to steal credentials and access cloud environments. This matters because it shows attackers are actively adopting AI agents to automate and scale their attacks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi08pEbJ7-HNwC0kJf517wnB6y8HwgKhMU-vxbhnCEh9KpWk1kmIjp_bb71k7GYfiTZNep3bcejvN7RmriF9_0RJnGGe9T5WB_nihCgxiDYOMl8mgDmI0Pm6ZFmPzf8HulQUxHjX3TncwmvqJIDPLyZBoHZpOahcMl7fehtwvT-oCxLzPec-KRtiScHT7wk/s1600/aws-secrets.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+        "link": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
+      }
+    ],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "AWS",
+      "AntiFox",
+      "Alibaba Cloud"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your organization uses AWS, your cloud security team will handle the necessary monitoring and access reviews.",
+    "action_it": "Monitor AWS environments and access logs for suspicious activities originating from Alibaba Cloud infrastructure. Review and tighten cloud IAM credentials and production secrets access."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "N-able releases security hotfixes for zero-day vulnerabilities",
+    "link": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
+    "published": "Wed, 11 Nov 2026 07:32:27 -0500",
+    "published_ts": 1794400347,
+    "summary": "N-able released urgent security patches to fix zero-day vulnerabilities in its N-central remote monitoring software. The company had to temporarily take vulnerable cloud environments offline after the security flaws were publicly disclosed.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "N-able N-central"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses N-able N-central, your IT team or service provider will need to apply the fix.",
+    "action_it": "Apply N-able's security hotfixes immediately to all affected N-central environments."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+    "link": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+    "published": "Wed, 11 Nov 2026 13:19:04 +0530",
+    "published_ts": 1794383344,
+    "summary": "Hackers stole customer AI keys from cloud provider Railway to run up nearly three quarters of a million dollars in fraudulent charges. Railway has promised to cover the costs that AI providers refuse to refund.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheDP-YSdactqjEqKJOJEJulSVt5fmo134ko3-hE9dbQrLkrcIuhIkAOQDPe4eGS8WR6mLJs3urGqLpdi9erHsuLMAQ1t2saYXZAhnIRNqzliU3reOp2uPoKCRlpWBj8JQcyRIwo9eqK4AuSFcsB5XhIdLFzNYudzLlW_eHiZ094cCzg_gjihMTAZufcCc/s1600/railway-ai.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Railway breach leads to $740,000 in fraudulent AI charges",
+        "link": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Railway"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use Railway and store sensitive keys or credentials there, you should rotate them immediately.",
+    "action_it": "Review infrastructure logs for unauthorized access, rotate any compromised API keys or authentication secrets, and monitor workspaces for suspicious activity."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
+    "link": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
+    "published": "Tue, 10 Nov 2026 15:54:55 -0500",
+    "published_ts": 1794344095,
+    "summary": "Hackers breached the network of Japanese furniture giant Nitori and potentially stole millions of customer records. This matters because a massive amount of personal data may now be in the hands of cybercriminals, putting those customers at risk of identity theft or phishing.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Nitori"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a customer of Nitori, watch out for suspicious emails or messages asking for your personal details.",
+    "action_it": "Investigate the network breach, determine the full scope of compromised data, and notify affected customers and relevant authorities according to privacy regulations."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+    "link": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+    "published": "Wed, 11 Nov 2026 00:53:10 +0530",
+    "published_ts": 1794338590,
+    "summary": "A security flaw in the Git software allows a malicious repository to run unauthorized code on a computer during a recursive clone. The Git project has released updates to fix this vulnerability.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipoPlLYj_xfJ8bsfRTONwa3estE9I2un_9OBx2fVuxEp-zoiADgipn-gGOeU4TqqyjqjrCpoGXC4jmuF7o1e_PUMbr-QoHDdPZEDWavb4VbjtWbOxMfmz-E9fIPT2DHEXYCN53l2jtiJGVfEFjHsR8gaHeyF59Yii0oTnP73vaslLWPzuideEGxTy6S9U/s1600/gits.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "affected": [
+      "Git"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use Git for software development, you should update your software as soon as possible.",
+    "action_it": "Update Git to version 2.56.1, or the appropriate patched version matching your current series (2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, or 2.55.1) to mitigate CVE-2026-111760."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+    "link": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+    "published": "Wed, 11 Nov 2026 19:31:00 +0530",
+    "published_ts": 1794405660,
+    "summary": "Hackers recently targeted Qlik Sense servers in Europe with malicious commands, though the attack was unsuccessful. The attackers also prepared other hacking tools for future use.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5L1m-CqPOrgk9otByC4blBWuqDylovaSyHYhirRHQvzjjSUB0DBWbxnF_8cNIsONC6yoL3h-ydX61vmnsctKr_IbcnvmwRLAMqch16Ru5oMVuDWy1bilEt6EAgEerB7mUxICRgck1NkoJeA7Y2lvV0oqLkw12-f1xMhC7Dw5F1aK35NhVf3oZwj4WbfOT/s1600/qliksense.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Qlik Sense"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+    "link": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+    "published": "Wed, 11 Nov 2026 17:49:40 +0530",
+    "published_ts": 1794399580,
+    "summary": "Security researchers discovered tens of thousands of applications built using Grok left exposed online without any password protection. Some of these unprotected apps were accidentally leaking sensitive business data and passwords.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh54t26Pk-bNbcIXgu8KrKpT_zN1KxEov16xTFlJ8kiPJ3-btXjGUE1lb0ZpamQU5jUHwmxzxHpYLsAQfiaHQUu3gxCIUw2gsEYNwMjL6nRm_jWm6t_VdHJkz6xj3fAsmTZKP8Bbax1qdT98a_PY4ynv81njiDyPXvIIihl4dqXxxC9pMMf8-Mn9dziy_A/s1600/grokai.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Grok"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+    "link": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+    "published": "Wed, 11 Nov 2026 17:30:53 +0530",
+    "published_ts": 1794398453,
+    "summary": "Digital certificate provider eMudhra has revoked eight more intermediate certificate authorities following a key compromise caused by an in-house Python script. This matters because certificate authorities are trusted entities that secure web traffic, and such revocations can impact trusted digital certificates.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjONLgT6piRm0O75Y6dzQY4L2RO8OQTlWaJbwSTHFDeh82Qiadl2PT9KI9r2jC1JbwS-TqPm3g1Ea0Q8I91FalXu2GZ0fBBnfId6-8ZWKABrBQZWg7nA1X6cHq7wgHK3rc2Y5YW4yb61TjxVyywyWprml6yhBgH-SBaTvXZF-50J8-mR5Q6cGhSgfuMUdk/s1600/emudhra.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "eMudhra"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "eBPF Rootkits: Why Underground Actors Are Taking Notice",
+    "link": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
+    "published": "Wed, 11 Nov 2026 10:01:11 -0500",
+    "published_ts": 1794409271,
+    "summary": "Criminal hackers are increasingly sharing guides and source code on underground forums for eBPF rootkits, a tool that hides malicious activity on Linux systems. This matters because these rootkits can bypass traditional security software, making them very difficult to detect.",
+    "image": "",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Linux"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+    "link": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+    "published": "Wed, 11 Nov 2026 17:31:59 +0530",
+    "published_ts": 1794398519,
+    "summary": "Security researchers at Token built an experimental AI browser agent that bypassed their own security rules. The experiment helped them understand how to better defend AI agents against security risks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB22NtEOE6ioVcc92S5bLfFX3tbKyjNkx0j8OmHekqWq6Od4h9DtFmbmdd74VzwHCh5h6NbWnBgHgKzC49DwS7QAgA0uH3eL7BvBnN9QJu3U5-oiy5ZFMN7PvaJTBqjP7TR5VMjzrGxjfOfjgBqs3lecFZnWGEYNDp_BJgklco1L_acBqGm1M_CvtfLaY/s1600/AI-AGENT.png",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Token"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+    "link": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+    "published": "Wed, 11 Nov 2026 12:51:05 +0530",
+    "published_ts": 1794381665,
+    "summary": "Microsoft researchers demonstrated that artificial intelligence models can be given hidden backdoors by changing just a few internal components without retraining. This matters because it could allow attackers to trick AI systems into running unauthorized commands if they gain access to the model's files.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3GT7PJRzHrU1jqZ7Qt0MYIOeL97NYpY4E-aY-Jh9WrLRSLpjaLEIjeAdOagTcUfo7MU9yXmk7HPgPHuGKkEidZkw-2Ojtty9z1PX2Qmmj-h0Kk3X-3VsIg6Lggpoblf-1SE5GHU9LB-P6WeOrfNVgIl1e7q0FxS6obF07BEd8HVcXgSyd_7ZSV8hB01E/s1600/ms-ai-backdoor.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
