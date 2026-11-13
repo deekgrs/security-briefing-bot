@@ -1,0 +1,300 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+    "link": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+    "published": "Fri, 13 Nov 2026 11:21:43 -0500",
+    "published_ts": 1794586903,
+    "summary": "Hackers are breaking into unpatched Check Point security gateways to install malicious software and wipe data on virtualization servers. This active attack threatens organizations, particularly in Israel, by using software flaws to gain unauthorized access.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3B9ZQG1BXlSPUWzwVJ5qgwh899Ngm9u2GAbWiX5HDqhhT6q6gsmva9-TR2upR0fepas2i0k53VUxh1CH21LeUUv1Ipczl9huExytcqNdlqIoHP64CRYJuGyHe-OgLoov-JR6GziUT4JDJ92Ne83CshfWn9pr9Bt2HPKkv4phQJ2esJHcV6eZqzRretVu/s1600/php.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
+        "link": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html"
+      }
+    ],
+    "category": "Breach",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Check Point Security Gateways",
+      "Gaia OS",
+      "VMware ESXi"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Check Point Security Gateways, your IT security team should be handling this issue.",
+    "action_it": "Apply the latest vendor patches and security updates for Check Point Security Gateways and Gaia OS. Review system and gateway logs immediately for signs of unauthorized access or the TSGA backdoor."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Check Point warns of zero-day flaw exploited for root access",
+    "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+    "published": "Fri, 13 Nov 2026 05:44:22 -0500",
+    "published_ts": 1794566662,
+    "summary": "Hackers are actively exploiting a severe security flaw in Check Point devices to take full control of them. This allows attackers to maintain unauthorized access to the affected systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Check Point Software"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Check Point products, your IT team should apply the emergency hotfixes immediately.",
+    "action_it": "Apply Check Point's emergency hotfixes immediately to address the actively exploited flaw and prevent unauthorized root access."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
+    "link": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+    "published": "Thu, 12 Nov 2026 14:51:16 -0500",
+    "published_ts": 1794513076,
+    "summary": "Hackers are actively exploiting a newly disclosed zero-day vulnerability in N-able N-central servers to install cryptocurrency miners. This matters because even servers with the latest security updates are being compromised.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA4jxlXpPBPhD5o3IHy80Fn7fSHUtcqH3iXQlU-jDUL5C3zJcf1_Zb-GAYxuW6P6q647p9JAT_opImlj-v-USDNhZ_z83mYC3ISKtN72pe_3XLwf5EyMRuK4OdXCFnYxGMhOAvN_i4UFqk5vJLriRnkbRRwILuT5JUpExx9Tm74sXSCQ0g7jjsOzWV1cqk/s1600/nable-hacks.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+        "link": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "N-able N-central"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses N-able N-central, your IT team should already be on it.",
+    "action_it": "Restrict affected N-central features and integrations as recommended by N-able while waiting for a complete patch."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+    "link": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+    "published": "Fri, 13 Nov 2026 19:24:20 +0530",
+    "published_ts": 1794578060,
+    "summary": "Hardware wallet maker Trezor confirmed that three Trezor Safe 5 wallets purchased from a reseller named CryptoBilis were modified with hidden circuit boards designed to steal recovery phrases. This matters because the stolen phrases would allow attackers to access and steal the cryptocurrency stored on those devices.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivDE4uIn_bV4GUrsw0LjzqBnnNaQM_0lzJhrSy89nrShmwNlFcsVucCFpzzZ2LMkkSMF-XMb8rp0e7_Maemyj5sypkVIf4s2Wx5pbJXkOwf0vMkG9ThBQAHhvJ_mKWHq78f_iJYhAM2l1Hp_Zk3VtB_bVvYFmZTX4WakIpC_Zib0rlFnDG-H674JSP5Mg/s1600/implant.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Trezor",
+      "CryptoBilis"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you bought a Trezor Safe 5 wallet from CryptoBilis, do not use it and contact Trezor or the vendor immediately.",
+    "action_it": "Inspect physical hardware devices sourced from third-party resellers for unauthorized modifications or extra circuit boards if supply chain integrity is in question."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+    "link": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+    "published": "Fri, 13 Nov 2026 16:40:40 +0530",
+    "published_ts": 1794568240,
+    "summary": "A state-sponsored hacking group named SilentAir compromised equipment inside Asian mobile operators to intercept phone calls and text messages. This matters because the attackers targeted specific individuals, mainly in Taiwan, to steal sensitive text message security codes and spy on users.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjskRPNlV_kYE1N2eF2J_J0fBvF_nQxnvtaS78Grj04KqkEauvr-R5jO-ynD9nm51SgF2XtCCAsWUbJrHU0wGRnXC9yHmblhNCF8Jt9NdVahMju3voR2z9xb2uqoSi7Nc085UqDBelqg4XDRdjJ2lsF7EeN28rjq7oBc_NpBUWRqLWXiOh9FBRIH28teHM/s1600/telecom-hack.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Asian mobile operators",
+      "Taiwanese telecom users"
+    ],
+    "action_everyone": "Most people do not need to do anything, as this appears to be a targeted espionage campaign against specific individuals in Asia rather than a broad attack on everyday consumers.",
+    "action_it": "Telecom and security teams operating in the region should monitor network infrastructure and telecommunications equipment for unauthorized access or suspicious call and text interception activity."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+    "published": "Thu, 12 Nov 2026 17:53:10 -0500",
+    "published_ts": 1794523990,
+    "summary": "A new malware toolkit called SCKit is being used to target IT service providers through ScreenConnect. It can spread automatically from infected devices to technicians' computers to compromise more networks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "ScreenConnect"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses ScreenConnect or managed IT services, your IT team will handle any necessary security checks.",
+    "action_it": "Review ScreenConnect access logs for suspicious activity and ensure all systems are monitored for signs of unauthorized access."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+    "published": "Thu, 12 Nov 2026 17:25:30 -0500",
+    "published_ts": 1794522330,
+    "summary": "Hackers took over thousands of GitHub accounts to plant data-stealing software in code repositories. This matters because it threatens to expose sensitive cloud security keys and credentials.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "GitHub"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use GitHub, ensure your account has two-factor authentication enabled and check your repositories for unauthorized changes.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Massive Microsoft 365 outage disrupts Outlook, Teams, Copilot worldwide",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
+    "published": "Thu, 12 Nov 2026 15:15:16 -0500",
+    "published_ts": 1794514516,
+    "summary": "A widespread outage has disrupted Microsoft 365 services like Outlook, Teams, and Copilot for users around the globe. This matters because it prevents millions of people and businesses from communicating and working effectively.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Microsoft 365",
+      "Outlook",
+      "Microsoft Teams",
+      "Copilot"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft says November security updates cause printing issues",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
+    "published": "Fri, 13 Nov 2026 07:27:40 -0500",
+    "published_ts": 1794572860,
+    "summary": "Microsoft's November security updates are causing printing problems for documents with complex formatting and errors in activating Windows. This matters because it disrupts everyday computer use and office work.",
+    "image": "",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Microsoft confirms Windows activation failures after November updates",
+        "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+    "link": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+    "published": "Fri, 13 Nov 2026 20:57:05 +0530",
+    "published_ts": 1794583625,
+    "summary": "Researchers discovered two new attacks named Mior and Skyfall that let malicious cloud hosts steal secrets from AMD SEV-SNP virtual machines. These attacks undermine security guarantees by allowing unauthorized access to protected server data and memory.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi28SrA-dW0l0kreAg1vMHHOgBRMM7lzxv5qg2FT2HzRxReJ96pxZP4Fjpm15fYWDDgWpbBI8iC119aE37t_kmQ4guoA70NUlJsdiA4hFvTg8fflx9fsKqUsGuoB-S9VS5pPd38EBVYRGmvKIT5EylE3IwEK8bBCp5CkLrdTwhbyUA2xWN_0iOynP33yE8/s1600/amd-flaws.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "AMD SEV-SNP"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "How one AI agent exposed five critical enterprise security gaps",
+    "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+    "published": "Fri, 13 Nov 2026 10:01:11 -0500",
+    "published_ts": 1794582071,
+    "summary": "Researchers demonstrated that an automated invoice-processing AI agent could be manipulated into changing vendor bank details via a malicious email. This highlights the risk of artificial intelligence tools being tricked into malicious actions without triggering standard security alerts.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Token Security"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+    "link": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+    "published": "Fri, 13 Nov 2026 19:58:58 +0530",
+    "published_ts": 1794580138,
+    "summary": "The FBI revealed that North Korean hackers stole over $400 million in cryptocurrency using deepfake video calls. The scams relied on tricking victims through fake video identities over an 18-month period.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDmjJA-t4vvigohRIfUR6JExYEPR0Dohh29eooVagQOvRyRDgdisxAy3wSWni5iFHjf2Dk8X2BavSeGO8hJ-wCTbDuffsdtamOuqj1PVTb75EWNF5vNe3tCsS6pyS_pSzNhEELOVU0DxHdmGx4Kt8KNqwz8YheAM9kEoVmpnHeVV1qsofLCBYDEt0E2IqX/s1600/flash.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+    "link": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+    "published": "Fri, 13 Nov 2026 17:22:31 +0530",
+    "published_ts": 1794570751,
+    "summary": "Security experts are discussing the challenges of stopping artificial intelligence agents when they are tricked into misbehaving by hidden instructions. This highlights the risk of giving AI tools too much access to sensitive company data.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXkpxeEuWVGmGvK8wGnGdzjVbMHRyNOYd3GFjgzJZZN7TL2yyLt5Jof4gsujMYS9WfZnxUjFFs3mxFaejShy46vuXK38l_5R3RvospJ6J8IunrLPSDnI0sJgGtvNiNkc89XMR_KDDHWEOxAk800C2fKhwiOLMy433M3ASErPk_jMwoexS_5-1kpdJ8emE/s1600/Keeper.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+    "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+    "published": "Fri, 13 Nov 2026 16:25:03 +0530",
+    "published_ts": 1794567303,
+    "summary": "An international police operation took down servers used by criminals to run three harmful software tools and stole millions of logins. This law enforcement action disrupts major cybercrime operations that steal passwords and launch ransomware.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsu6ZFyYFr1dxp2XHIaG_pyTwkoH58ICgyXLuTthkuYSJVcqAwX_O_bEJYfheyxpYmI7nnok1xrj97q7s-9l8JHFt1ogBAOJAEUqM8_vf6H3a8eYPKzB34d6XrvnkRu8zGaoKMgSJqWsE6u2zYXLdJKTtcDvk3beN6_o40ygJ4MVSMomS3Q1aEFV_jSq8/s1600/gootloader.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Gootloader",
+      "CastleRAT",
+      "StealC"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Police arrest 354 suspects in dark web cybercrime crackdown",
+    "link": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
+    "published": "Fri, 13 Nov 2026 03:34:20 -0500",
+    "published_ts": 1794558860,
+    "summary": "Police around the world arrested 354 suspects in a major crackdown on illegal dark web marketplaces. This operation disrupts the trade of illicit goods and services online, showing law enforcement's growing reach into hidden websites.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Archetyp",
+      "Nemesis",
+      "Tor2Door",
+      "Bohemia",
+      "Kingdom"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
