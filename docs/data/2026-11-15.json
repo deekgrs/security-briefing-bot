@@ -1,0 +1,295 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+    "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+    "published": "Sun, 15 Nov 2026 13:52:04 +0530",
+    "published_ts": 1794730924,
+    "summary": "Hackers stole an access key from AI provider Fireworks AI and used it to slip a malicious extension into Cursor's software marketplace. This matters because the compromised extension could allow attackers to access users' data.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg16ACawbG7rP_kT-8Boo4xdTje3BeTWyFSnNXwHhr5cvy2-1X3Ljhrc1IuZlseWd55tN8E1yjQ9ldhTnjWTU-GJBpX_Zen36YiLQGsRSRAoteqHyxx7mn_w0QgLfMKDLItA4p_jpHajucbglLnCR_zWBY_t82YvFkLa9dQFBfjP1BrTlrNdYufsGMSZiGn/s1600/cursor.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Cursor confirms security breach led to malicious Claude Code extension",
+        "link": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Cursor",
+      "Fireworks AI",
+      "Anthropic"
+    ],
+    "action_everyone": "Most people don't need to do anything, but if you used the Claude Code extension on Cursor, check your systems and remove the extension immediately.",
+    "action_it": "Review extension marketplaces and logs for signs of compromise, revoke any exposed API keys related to Fireworks AI, and ensure all third-party extensions are audited."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+    "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+    "published": "Sat, 14 Nov 2026 18:08:35 +0530",
+    "published_ts": 1794659915,
+    "summary": "Hackers are actively exploiting a high-severity security flaw in UnrealIRCd, a chat server program. This allows attackers to run unauthorized commands on the server.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuvSsWcsJ9736KXp_0s-6__-CiI5PD71VReembVHAB4cfnv3Qti8td9WR54UnRH96bz30dvbTQxwG3WbxDkWRq_eFJPYLgxbAzRD5k3MJSISbW2VDI-Fr7nlX4j8NyJkXqLHylMZMXpynEHVV8ovZ2YPC-WGCFCcrOZOeGc5Wsy-jRjjbcyYTzojI9Nudw/s1600/cisaa.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-114713"
+    ],
+    "affected": [
+      "UnrealIRCd"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your organization uses UnrealIRCd, your IT team needs to address this immediately.",
+    "action_it": "Apply the latest security updates provided by UnrealIRCd for CVE-2026-114713 and review server logs for any signs of unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+    "link": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+    "published": "Fri, 13 Nov 2026 19:24:20 +0530",
+    "published_ts": 1794578060,
+    "summary": "Attackers modified three physical cryptocurrency wallets sold by a reseller to secretly steal and transmit recovery phrases. This allows criminals to access and steal the cryptocurrency stored on those devices.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivDE4uIn_bV4GUrsw0LjzqBnnNaQM_0lzJhrSy89nrShmwNlFcsVucCFpzzZ2LMkkSMF-XMb8rp0e7_Maemyj5sypkVIf4s2Wx5pbJXkOwf0vMkG9ThBQAHhvJ_mKWHq78f_iJYhAM2l1Hp_Zk3VtB_bVvYFmZTX4WakIpC_Zib0rlFnDG-H674JSP5Mg/s1600/implant.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
+        "link": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Trezor",
+      "CryptoBilis"
+    ],
+    "action_everyone": "Most people do not need to do anything. If you bought a Trezor Safe 5 wallet from CryptoBilis, check it for unauthorized hardware modifications or contact Trezor support.",
+    "action_it": "Inspect physical hardware wallets obtained from third-party resellers for unauthorized implants or extra circuit boards before deployment."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "German military drone operations disrupted by cyberattack",
+    "link": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+    "published": "Fri, 13 Nov 2026 12:31:56 -0500",
+    "published_ts": 1794591116,
+    "summary": "German defense technology firm Quantum Systems suffered a cyberattack by hostile actors in late October. The incident disrupted military drone operations, highlighting risks to critical defense supply chains.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Quantum Systems"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this incident affects a defense contractor rather than consumer products.",
+    "action_it": "Review security logs for signs of unauthorized access, monitor for abnormal activity related to defense supply chain networks, and follow guidance from Quantum Systems as more details emerge."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+    "link": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+    "published": "Fri, 13 Nov 2026 22:23:08 +0530",
+    "published_ts": 1794588788,
+    "summary": "PostgreSQL released updates fixing 52 security flaws, including a 22-year-old bug that lets certain database users run unauthorized code on the server. Full protection requires both installing the update and rebuilding any C-language extensions.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj8XOS7IKEt2ZhrwwdlDSpQ5hAyI46wHZpPkTQ3_hA6yUtMQpzaM50fm2v9x0O7NCt5z9vdrTsYM3iPOmu9fmmMTQDViu-rQjCfSxfCQhwZQazr4ZYayvEn5MQfUdTBVODtAay6RIaTqJGUj-HVzbtMqNPdNFiQHExhO9sitJX0GrvTx_EhWmslA-87ds/s1600/postgresql.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-6460"
+    ],
+    "affected": [
+      "PostgreSQL"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your organization uses PostgreSQL, your IT or database team will need to apply the latest updates.",
+    "action_it": "Apply the latest PostgreSQL updates released yesterday and rebuild any C-language extensions installed on the server to ensure full protection against CVE-2026-6460."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+    "link": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+    "published": "Fri, 13 Nov 2026 11:21:43 -0500",
+    "published_ts": 1794586903,
+    "summary": "Hackers are breaking into Check Point security gateways to install dangerous software that destroys data on VMware virtual servers. This poses a serious risk because compromised systems can lose all stored information.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Check Point Security Gateway",
+      "VMware ESXi"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these systems, your IT and security teams will need to handle the response.",
+    "action_it": "Review Check Point gateway and VMware ESXi logs immediately for signs of unauthorized access, and ensure all security gateways and virtual hosts are fully updated and properly secured against known vulnerabilities."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+    "link": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+    "published": "Fri, 13 Nov 2026 16:40:40 +0530",
+    "published_ts": 1794568240,
+    "summary": "A state-sponsored spying group called SilentAir hacked equipment inside Asian mobile phone companies to intercept calls and text messages, primarily targeting users in Taiwan. This allows attackers to steal two-factor authentication security codes and secretly spy on individuals.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjskRPNlV_kYE1N2eF2J_J0fBvF_nQxnvtaS78Grj04KqkEauvr-R5jO-ynD9nm51SgF2XtCCAsWUbJrHU0wGRnXC9yHmblhNCF8Jt9NdVahMju3voR2z9xb2uqoSi7Nc085UqDBelqg4XDRdjJ2lsF7EeN28rjq7oBc_NpBUWRqLWXiOh9FBRIH28teHM/s1600/telecom-hack.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Asian mobile operators"
+    ],
+    "action_everyone": "Most people do not need to do anything, as this attack targets specific individuals in Asia using compromised telecom equipment. If you are concerned about text-based security codes, consider switching to app-based authenticators where possible.",
+    "action_it": "Telecom and security teams in the region should monitor mobile network infrastructure and roaming interfaces for unauthorized access or anomalous interception activities."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "TSMC employee data breach linked to cloud provider",
+    "link": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+    "published": "Sun, 15 Nov 2026 10:23:48 -0500",
+    "published_ts": 1794756228,
+    "summary": "TSMC confirmed that personal employee data was leaked online after a threat actor put stolen information up for auction. The breach was linked to a third-party cloud provider.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "TSMC"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft says November security updates cause printing issues",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
+    "published": "Fri, 13 Nov 2026 07:27:40 -0500",
+    "published_ts": 1794572860,
+    "summary": "Microsoft warned that recent security updates may cause printing problems for documents with complex formatting. This matters because it can disrupt everyday office work and document printing for affected users.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+    "link": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+    "published": "Sun, 15 Nov 2026 16:57:31 +0530",
+    "published_ts": 1794742051,
+    "summary": "Italy's privacy watchdog fined Meta 805 million euros for automatically accessing Android users' photo galleries and metadata without clear permission. This matters because it highlights major regulatory penalties for companies that collect personal data without explicit consent.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdTCjpbsG3Dp62JM1KZqfSvZpuBnxwaCxXsplW3dAt2b4Ym0KAWPfxkHf4DT-02VK3jJESLmgasdE6D36qGegWu7dk9YSLN4DZxRVsgrM9lIEXXHUvQ0VzaZ1_gFqpjtA4cP3rlt82g5WnK2sXNZHJd5F_rEk4VSTGnMKOuXziSM1R85Vqhway3lajwTA/s1600/facebook-fine.jpg",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Meta",
+      "Facebook"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "US disrupts North Korean campaign behind $400 million crypto theft",
+    "link": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+    "published": "Sat, 14 Nov 2026 10:15:49 -0500",
+    "published_ts": 1794669349,
+    "summary": "The U.S. government has disrupted a North Korean social engineering campaign using deepfake video calls to steal over $400 million in cryptocurrency. This action highlights ongoing cyber threats from state-sponsored hackers targeting digital currency.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDmjJA-t4vvigohRIfUR6JExYEPR0Dohh29eooVagQOvRyRDgdisxAy3wSWni5iFHjf2Dk8X2BavSeGO8hJ-wCTbDuffsdtamOuqj1PVTb75EWNF5vNe3tCsS6pyS_pSzNhEELOVU0DxHdmGx4Kt8KNqwz8YheAM9kEoVmpnHeVV1qsofLCBYDEt0E2IqX/s1600/flash.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+        "link": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+      }
+    ],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+    "link": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+    "published": "Fri, 13 Nov 2026 20:57:05 +0530",
+    "published_ts": 1794583625,
+    "summary": "Researchers discovered two new attacks named Mior and Skyfall that allow malicious cloud providers to steal or modify data inside secure AMD virtual machines. This matters because these virtual machines are specifically designed to keep the underlying cloud host from being able to read or tamper with the data inside them.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi28SrA-dW0l0kreAg1vMHHOgBRMM7lzxv5qg2FT2HzRxReJ96pxZP4Fjpm15fYWDDgWpbBI8iC119aE37t_kmQ4guoA70NUlJsdiA4hFvTg8fflx9fsKqUsGuoB-S9VS5pPd38EBVYRGmvKIT5EylE3IwEK8bBCp5CkLrdTwhbyUA2xWN_0iOynP33yE8/s1600/amd-flaws.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "AMD SEV-SNP"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "How one AI agent exposed five critical enterprise security gaps",
+    "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+    "published": "Fri, 13 Nov 2026 10:01:11 -0500",
+    "published_ts": 1794582071,
+    "summary": "Researchers demonstrated that an AI assistant handling invoices could be tricked by a malicious email into changing bank details. This matters because AI tools can be manipulated without triggering standard security alarms, putting business finances at risk.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+    "link": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+    "published": "Fri, 13 Nov 2026 17:22:31 +0530",
+    "published_ts": 1794570751,
+    "summary": "Security experts are discussing the challenges of stopping an artificial intelligence agent if it is tricked into misusing its access to export sensitive data. This highlights new security risks that organizations face as they adopt AI tools with connected business privileges.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXkpxeEuWVGmGvK8wGnGdzjVbMHRyNOYd3GFjgzJZZN7TL2yyLt5Jof4gsujMYS9WfZnxUjFFs3mxFaejShy46vuXK38l_5R3RvospJ6J8IunrLPSDnI0sJgGtvNiNkc89XMR_KDDHWEOxAk800C2fKhwiOLMy433M3ASErPk_jMwoexS_5-1kpdJ8emE/s1600/Keeper.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+    "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+    "published": "Fri, 13 Nov 2026 16:25:03 +0530",
+    "published_ts": 1794567303,
+    "summary": "An international police operation took down servers used by criminals to run three harmful software tools and stole millions of logins. This law enforcement action disrupts major cybercrime networks that steal passwords and launch ransomware attacks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsu6ZFyYFr1dxp2XHIaG_pyTwkoH58ICgyXLuTthkuYSJVcqAwX_O_bEJYfheyxpYmI7nnok1xrj97q7s-9l8JHFt1ogBAOJAEUqM8_vf6H3a8eYPKzB34d6XrvnkRu8zGaoKMgSJqWsE6u2zYXLdJKTtcDvk3beN6_o40ygJ4MVSMomS3Q1aEFV_jSq8/s1600/gootloader.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Gootloader",
+      "CastleRAT",
+      "StealC"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
