@@ -1,0 +1,297 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "Fandango says hackers stole payment card details from checkout pages",
+    "link": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+    "published": "Mon, 16 Nov 2026 10:44:21 -0500",
+    "published_ts": 1794843861,
+    "summary": "Ticket seller Fandango Media suffered a data breach where hackers stole payment card details from its checkout pages. This matters because affected customers risk unauthorized charges on their stolen credit or debit cards.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Fandango Media"
+    ],
+    "action_everyone": "If you recently bought tickets on Fandango, check your bank and credit card statements for any strange charges. Cancel any compromised cards immediately and notify your bank.",
+    "action_it": "Review payment processing and checkout systems for unauthorized code or tampering, and notify affected customers in accordance with breach notification requirements."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+    "link": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+    "published": "Mon, 16 Nov 2026 19:30:00 +0530",
+    "published_ts": 1794837600,
+    "summary": "Google and the FBI report that hackers are using automated artificial intelligence systems to quickly build and launch cyberattacks from software patches. This is a significant threat because it allows criminals to speed up how fast they break into computer systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpEBmKLWFpEn8sSoJLtj1ZR7FPMd8GxxKN2v4IzyBkydma_g4gXzaWEEkK5CTPwidrBPw6QPdoByiEC14ufVP2pvezWKtH_dmqHttARDKzDOopkw0vzUdTYZubCh9Qy76nlmVSbhtTSvDOuT1c70E4TVPw8T4hUhMdR-saHjQPW1S9IZNmg2_RfsMsmJLb/s1600/google.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Google warns that fully-automated AI attacks are coming soon",
+        "link": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/"
+      },
+      {
+        "source": "BleepingComputer",
+        "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+        "link": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/"
+      }
+    ],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "ConnectWise",
+      "Microsoft 365"
+    ],
+    "action_everyone": "Most people don't need to do anything right now. If your workplace uses ConnectWise or Microsoft 365, your IT team should monitor systems for unusual activity.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+    "link": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+    "published": "Mon, 16 Nov 2026 18:57:20 +0530",
+    "published_ts": 1794835640,
+    "summary": "A weekly security roundup highlights multiple zero-day vulnerabilities affecting popular software and devices like Windows and Chrome. These flaws demonstrate how attackers continuously find new ways to bypass security protections.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMhM3PBYlJasSU7OztYuQsJDnDRFYwqV1-X9Nt1mTlAhFe0YQXSr0XrdCfo47u2DGAE8qSNw32LuPlMxoeTOBjakeXiHpHjFSXw7rsy8FdCldY2E6MuX9uKGM2McoGsaXUGDY2MYBsRAGXUDMGqzkT4wWlEezGDQho_f7d6MYNG2HAeW9FKeldRJrh0kj3/s1600/recaps.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Windows",
+      "Chrome",
+      "N-able"
+    ],
+    "action_everyone": "Install the latest software updates for your web browser and operating system as soon as they become available.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+    "link": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+    "published": "Mon, 16 Nov 2026 18:04:21 +0530",
+    "published_ts": 1794832461,
+    "summary": "Researchers discovered six unpatched security flaws in Danfoss refrigeration controllers that allow attackers to take them over remotely without logging in. Government agencies in several countries have issued warnings to operators as no fix is currently available.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_1GngZ38pRRizZTrhUgdWx49U1Dk8N_Y1Wkfll2kXIjAeYMmX2R69d6OBvA9k-zb6rnYbNOZyouN9yj59QIlT8XxiTzmmhLTmwmEdU2bqiGc_XoSMlvKKN1qZtH3o73YN1miGEhR4vkDniji2WkWOHjSPPIn69ysWKPkFzr504FsViG2NQYxPDkD7sgw/s1600/flaws.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Danfoss"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these Danfoss refrigeration controllers, your facilities or IT team should be aware of the warnings.",
+    "action_it": "No patch is currently available from the vendor, even in the newest firmware version 5.4.0. Operators should follow guidance from national cybersecurity agencies and isolate vulnerable controllers from the internet to prevent remote access."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
+    "link": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
+    "published": "Mon, 16 Nov 2026 04:30:04 -0500",
+    "published_ts": 1794821404,
+    "summary": "An 11-year-old flaw in Linux systems, named NoisyTCP, lets attackers easily crash common web and login servers using default settings. Because it has existed for over a decade, it affects nearly all Linux distributions.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Linux",
+      "Nginx",
+      "Apache",
+      "SSH servers"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace runs Linux servers, your IT team should monitor for updates.",
+    "action_it": "Apply security updates or recommended mitigations from your Linux distributor as soon as they become available."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+    "published": "Mon, 16 Nov 2026 11:43:24 -0500",
+    "published_ts": 1794847404,
+    "summary": "A software bug introduced by Microsoft in July caused a massive global outage last week for Microsoft 365 services. The failure locked up a vast majority of the company's networking gateway servers, temporarily disrupting access for users worldwide.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Microsoft 365"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+    "link": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+    "published": "Mon, 16 Nov 2026 18:03:18 +0530",
+    "published_ts": 1794832398,
+    "summary": "The old Retadup computer worm has resurfaced to spread a malicious program called CoffeeLoader. This threat installs dangerous files on infected machines to download further harmful software.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxRuwbdQU-KyBsSrFlIZp4oczr_tJu53WrfB3nM6QYrO7kFgGAZO1NMSi7mziUOUaTrzq5C4KzCJqvYOf0Ry19ypJac-9mBYzYiqiTNl462i1uYo7DF9aAHxiVU_IOaByH3NtNlrF0hUhZtpItADKJauPVzWrz8r6YOQEHQrt_YiAmPba4CIOsSjZA2Wy_/s1600/hacker-code.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Retadup",
+      "CoffeeLoader"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Australian retail giant Coles investigates cybersecurity incident",
+    "link": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
+    "published": "Mon, 16 Nov 2026 06:18:09 -0500",
+    "published_ts": 1794827889,
+    "summary": "Australian retail giant Coles Group is investigating a cybersecurity incident. The company stated that its physical stores have not been impacted.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Coles Group Limited"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+    "link": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+    "published": "Mon, 16 Nov 2026 15:02:57 +0530",
+    "published_ts": 1794821577,
+    "summary": "A newly discovered cryptocurrency mining toolkit for Linux called SANSAR hides its resource usage by tampering with NVIDIA graphics card readings. This allows attackers to secretly steal computing power for financial gain without alerting system administrators.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmpR04waLSDZNCb2048kfy5iSlIXa_Ek3PI5qLRaBksxvyI9k_8Z6bwl6Og4Mc-AGqmHcpL7YlYVd48895FJtKlOoaqgi658-H3FZTxdjf_w32w5eJYzm_BUdXlH7M7Vb40uPUI73CDbXtQCdZAEkFruSBXvc0_B84hCQ-em0ZQk2uTIIHxRdGCxQ6bx1C/s1600/nv.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Linux",
+      "NVIDIA"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+    "link": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+    "published": "Mon, 16 Nov 2026 13:04:21 +0530",
+    "published_ts": 1794814461,
+    "summary": "Hackers used automated artificial intelligence programs to hunt for weak spots in internet-connected AI applications and steal stored API keys. This matters because the stolen keys were then used to power further attacks and run AI models without authorization.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigoyCtEKcD7TM_5vDkKiZYFdk_l4-js7HNuvMXzZbVqUbEgq1nnD2vEZgZ0kL9CdmOkITC0Rbd-ebTkSX-R4NPKwWZXzUD6zS0g9nEfnlXw3njm3oW2Se97qbT7lIfZEL56X3IIaZAildTni9-zQJu5sa4Lhvi_mVlbTeZFyFtezOMHJ_bDhJWfG7KQ8eh/s1600/amazon.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "LiteLLM",
+      "One API",
+      "Dify"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+    "link": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+    "published": "Mon, 16 Nov 2026 12:23:34 +0530",
+    "published_ts": 1794812014,
+    "summary": "A threat group called BO Team used an older security flaw to break into a Russian software developer's network and compromised its code-signing server. This matters because a compromised code-signing server allows attackers to secretly add malicious code to legitimate software updates.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAvzoKykaMIpa6xx92YudipfUoEQnSkrE6p2CiWEVra5izr5GfuNQGOnfRuF0XV99v1IPRFe2Q6BF27UEq3BnWFS5onw97dt3hvszilQDANdtRdYi0_hTDOrKQvuwGn1mY_m-QTabV3jwWCNwXs_OizK2GLF3Eks5HJj5I7kbmA2IztruSBVjq5WOcxEM-/s1600/log4shell.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "VMware vCenter"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+    "published": "Mon, 16 Nov 2026 03:26:52 -0500",
+    "published_ts": 1794817612,
+    "summary": "Microsoft released emergency updates to fix problems that stopped Windows from activating properly after recent security patches. This matters because the glitch affected system licensing and stability for users.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
+    "link": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+    "published": "Mon, 16 Nov 2026 10:01:11 -0500",
+    "published_ts": 1794841271,
+    "summary": "Law enforcement agencies must follow the FBI's updated security rules for passwords and multi-factor authentication. Organizations can use practical steps and tools to block weak passwords and meet compliance goals.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Law enforcement agencies",
+      "Specops Software"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
+    "published": "Mon, 16 Nov 2026 07:53:18 -0500",
+    "published_ts": 1794833598,
+    "summary": "Microsoft is reminding users that Windows Server 2016 will stop receiving security updates in 60 days. This matters because running software past its end date leaves systems vulnerable to unpatched security flaws.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows Server 2016"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
+    "published": "Mon, 16 Nov 2026 06:00:00 -0500",
+    "published_ts": 1794826800,
+    "summary": "Anthropic has released new versions of its Claude AI models with improved coding and cybersecurity capabilities. These updates affect how the AI handles security tasks and finds software flaws.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Anthropic"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
