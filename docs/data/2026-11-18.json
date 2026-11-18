@@ -1,0 +1,300 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+    "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+    "published": "Wed, 18 Nov 2026 17:25:49 +0530",
+    "published_ts": 1795002949,
+    "summary": "A critical vulnerability called Java4Shell allows attackers to run unauthorized code remotely on major enterprise applications running on certain Java versions and computer chips. Organizations are urged to apply patches immediately to prevent potential system takeovers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis8B-Vf6puS0vOs9mEVup755KXy8y59KD72B5VQb8SyhO1JDHkYcvg42Y1rh1xg3seyml7j2vZn5Dq1OEnFYVzD_97osoZXWkxVVOBxM48InZPbaVgV7Lo64odzPVKNPEtPeLlEAm2AFfShOFVGtypVUJAJdt07qqik_Yde9X6BxLECPH7Gekbkzl2GBDK/s1600/java4shell-flaw.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+        "link": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html"
+      },
+      {
+        "source": "BleepingComputer",
+        "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
+        "link": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-114938"
+    ],
+    "affected": [
+      "Oracle Java",
+      "OpenJDK",
+      "Jira",
+      "Jenkins",
+      "Keycloak"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses applications like Jira or Jenkins, your IT team should already be on it.",
+    "action_it": "Immediately patch Oracle Java to address CVE-2026-114938 following guidance from CISA and Oracle."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
+    "published": "Wed, 18 Nov 2026 05:35:05 -0500",
+    "published_ts": 1794998105,
+    "summary": "Apache has warned that a critical security flaw in its Roller software is being actively exploited by attackers to run harmful code on vulnerable servers. Administrators must update their software immediately to protect their systems.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Apache Roller"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Apache Roller, your IT team should apply the security updates immediately.",
+    "action_it": "Apply the security updates released by Apache to address the Roller vulnerability and review server logs for any signs of compromise."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+    "link": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+    "published": "Wed, 18 Nov 2026 13:54:31 +0530",
+    "published_ts": 1794990271,
+    "summary": "Hackers are actively exploiting a critical security flaw in Perforce Puppet enterprise management servers. This allows attackers to run unauthorized commands on systems used to manage IT infrastructure.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoFKMFLPbzyM7RGi89XdpVFUfFqLH2C0QnAIyZfTSZIkvQNT8jhFEdMdW3D1qPXE0MjtV-q8fM1Alicz0wEuNJ6fnIjOs3BY8D7ABBRWNqPg6NGz9FjhbSQhapwUDZPDyg3kJEy9CZeUwbcmZ3N5nCU8bH6bkCo4BgLfhlE3R3AdDi9CvLVgjqlMW42Pm2/s1600/puppet.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-115731"
+    ],
+    "affected": [
+      "Perforce Puppet"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Perforce Puppet, your IT team will need to handle this update.",
+    "action_it": "Review CISA's guidance for CVE-2026-115731 and apply the necessary patches or mitigations provided by the vendor immediately to prevent active exploitation."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+    "link": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+    "published": "Wed, 18 Nov 2026 12:15:26 +0530",
+    "published_ts": 1794984326,
+    "summary": "Hackers uploaded malicious versions of an official Microsoft software package to steal cloud credentials from developers' systems. Anyone who installed the affected versions may have had their sensitive information compromised.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_LozO7RAz13Jr3eqWHIjlAF6M0Cs-mJXX2mKUqU0TxVS02piD1na92TAZjICmeySD4z0zS-Y_BFvceERBdk-UZvV1DUh1LGN6wK-T-yt_TROJ5fcuvROu807jqESQo93CFP3faBbReKMZQxvgYOAGl_vS2VzfO67O24NdAgh6d9jMO2mTSy2jaNJMPD9T/s1600/ms-python.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+        "link": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/"
+      }
+    ],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "agent-framework"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a developer who downloaded versions 1.26.1 or 1.26.2 of the agent-framework package on or after November 17, 2026, assume your cloud credentials have been compromised and immediately rotate all affected keys and secrets.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
+    "link": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+    "published": "Wed, 18 Nov 2026 11:28:04 +0530",
+    "published_ts": 1794981484,
+    "summary": "A Russia-linked hacking group used stolen data from a Google Workspace account to break into a second U.S. organization. This matters because it shows how attackers can turn a single cloud breach into a springboard for further attacks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLbxlzqi-uBPlDXGecxrfXQ8kZLpAKsDO5c7KmTTyYyNQQE6bdI0TqT7Rk_JrKRie2pMB_xrLRKy1Cksp1GYHfUGHXz7UGg5nWOAQmPmiRKoUJkMCHrMvW7A72W9x7_I7KESMQmJLQVrJth_Ozj7i1nF7IPB4W_WV-NQyy0afEMgGVbGdaSNfIjolqtC4-/s1600/cloud.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Google Workspace"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Google Workspace, your IT team should already be monitoring for unauthorized access.",
+    "action_it": "Review Google Workspace logs for suspicious activity and unauthorized access stemming from previous compromises, and ensure multi-factor authentication is strictly enforced."
+  },
+  {
+    "source": "Krebs on Security",
+    "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+    "link": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+    "published": "Wed, 18 Nov 2026 02:52:04 +0000",
+    "published_ts": 1794970324,
+    "summary": "Hackers used a website personalization tool called Optimizely to secretly load data-stealing malware onto nearly 180 popular websites, including major news and business pages. This matters because it shows how easily third-party services can be hijacked to spread malicious software to everyday visitors.",
+    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/11/zoom-reporturi.png",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Optimizely",
+      "BBC",
+      "CNN",
+      "Equifax",
+      "Ledger"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you visited any of the affected websites recently, make sure your security software is up to date and be cautious about unexpected account activity.",
+    "action_it": "Review third-party script integrations and enforce strict Content Security Policy (CSP) headers to control and restrict external content sources."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
+    "link": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+    "published": "Tue, 17 Nov 2026 16:27:17 -0500",
+    "published_ts": 1794950837,
+    "summary": "Attackers are automatically stealing secret passwords and access keys left inside public Docker Hub software containers within seconds of publication. This means developers must be extremely careful not to accidentally publish sensitive data.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Docker Hub"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a software developer who uses Docker, ensure you never include passwords or secret keys inside your container images.",
+    "action_it": "Review public Docker Hub images for accidentally exposed credentials and rotate any compromised cloud keys immediately. Implement automated scanning tools to catch secrets before code is published."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+    "link": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+    "published": "Wed, 18 Nov 2026 19:41:28 +0530",
+    "published_ts": 1795011088,
+    "summary": "A suspected Chinese hacking group has updated its EggStreme malware to hide from security software while targeting government agencies in the Philippines. This matters because the new version changes its code frequently to bypass detection and maintain unauthorized access.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYLKVaRRp02L2STeR4kakGeA1NJokTtxw2aLU4wBLS34vltviR8gV4eUjk0QJ9jDVbiS_2hSeDQCwIR_JoCzPzUt-FSNUNpaKNtHpKiMugkRAMwOIbl4FbcL5iE7KCe1hebNbJRTxqO5xQkEFBuDI6F8FnsnYfreljrQlHHXuKBEN0suJZeuIf8heda5wY/s1600/chinese.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "EggStreme malware"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+    "link": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+    "published": "Wed, 18 Nov 2026 17:58:30 +0530",
+    "published_ts": 1795004910,
+    "summary": "Researchers discovered a hardware flaw allowing attackers to bypass lockout limits and guess Windows Hello and BitLocker PINs on certain computers. This matters because it makes short PINs vulnerable to being cracked within days instead of years.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpsv4GxAUbzCsIV1umrxZs6VxfD1eFwAeCgRHQQG_dNbP1fLiYe48hM-Wbd_8w5IxlacAwoidLqyQgBmG7YD7qKo0_XcqW2GhggfXshuK1uXz8BOma2H0Jjs8fabCO4IxHBfRopEUFDd0xHRRv43gMeog852Usv40sfcTwnO_9coyxtIMmteJxeJI_oPA/s1600/bitlocker.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "AMD-based PCs",
+      "Intel PCs",
+      "Windows Hello",
+      "BitLocker"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
+    "link": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+    "published": "Wed, 18 Nov 2026 10:00:10 -0500",
+    "published_ts": 1795014010,
+    "summary": "Cybercriminals are using deepfakes and fake IT support requests to trick employees into giving them access to company systems. Organizations need stronger identity verification methods to stop these social engineering attacks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Specops Software"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+    "link": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+    "published": "Wed, 18 Nov 2026 17:45:00 +0530",
+    "published_ts": 1795004100,
+    "summary": "New industry research shows attackers frequently exploit software flaws before patches are available. Organizations need to carefully evaluate artificial intelligence penetration testing vendors to ensure thorough coverage of logged-in areas and production safety.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdb3EyKCLHzaa6p3bzrF2EkkcJJQgshTsoaU6kzga1C8NGRBE1rDwlsHwhVKehkmGsOYpf0Dq-VCQpmFDPYLglxQIQjEiv3NrkFDRPTc3wUObe1Kc0km71lwUEXLTtWJGBQ3nO6wFbRqKoOJLcBv2lwpD-ZAYc1caohfkIFkCVlLQdS-YuwmbecgBf-sQ/s1600/reflectiz.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+    "link": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
+    "published": "Wed, 18 Nov 2026 06:50:25 -0500",
+    "published_ts": 1795002625,
+    "summary": "Dizigom, one of Turkey's largest illegal streaming sites with 21 million monthly visits, has shut down following a settlement with the Alliance for Creativity and Entertainment. This action removes a major source of online piracy.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Dizigom"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+    "link": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+    "published": "Wed, 18 Nov 2026 16:33:57 +0530",
+    "published_ts": 1794999837,
+    "summary": "Artificial intelligence is speeding up both software development and cyberattacks, reducing the time it takes attackers to exploit flaws to a single day. To keep pace, security teams are turning to automated artificial intelligence penetration testing to run security checks more frequently.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj276QET-ma2-edrAgsOdbZltmoW58d_kJT8C-g8DXQfDQAzPlmCcQYv-tWcX-DXcSipQpu_oFY_pPunvn-eXoog3H0BYPLkb4uY3B4Ax9T7LmtVBgVDwZZInLbj5QgnjVMI5d1za8bgR1a2TvGaJzZUK2UuSAEk3gSY-erKiddYAYTkNE9kxEp0zcx5x8/s1600/intruder.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft announces Windows Server 2028 with hardened security",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
+    "published": "Wed, 18 Nov 2026 04:24:31 -0500",
+    "published_ts": 1794993871,
+    "summary": "Microsoft announced Windows Server 2028 at the Ignite 2026 conference, featuring new built-in security improvements. This gives organizations a preview of the next generation of server protection.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows Server 2028"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "British Scattered Spider hacker sentenced to 6 years in prison",
+    "link": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
+    "published": "Wed, 18 Nov 2026 03:24:18 -0500",
+    "published_ts": 1794990258,
+    "summary": "A leader of the Scattered Spider cybercrime group was sentenced to six years in prison for stealing millions in cryptocurrency and hacking multiple companies. This sentencing highlights law enforcement's ongoing efforts to prosecute members of major hacking collectives.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
