@@ -1,0 +1,308 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "PHP security updates fix 18 flaws, including critical RCE bugs",
+    "link": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
+    "published": "Thu, 19 Nov 2026 11:28:23 -0500",
+    "published_ts": 1795105703,
+    "summary": "The PHP development team released security updates to fix 18 vulnerabilities, including critical bugs that could let attackers run malicious code remotely. Administrators running PHP need to apply these updates to protect their servers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD2D26Hu7r43uUrdDxmsmmbBe2oMxd-L3_DIVLqAPyDrOnSmdvXfkIq1_lNmWqr49gbrIZ0NeTmA2OYgyWgdUjRf_RTRfflyXn3Vgujkb9tiByOPfej1OqEszpQf2FeozeSqmK5L7aSj28GLwzKmzehIp9zJyeJqgRvbVOW91_pVEMhs3KY9_oXjwf5BE/s1600/php-flawss.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+        "link": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-115560"
+    ],
+    "affected": [
+      "PHP"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you manage a website or server using PHP, you should ensure it gets updated.",
+    "action_it": "Apply the latest security updates provided by the PHP development team for all supported PHP versions."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+    "link": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+    "published": "Thu, 19 Nov 2026 20:41:06 +0530",
+    "published_ts": 1795101066,
+    "summary": "A critical security flaw in VMware vCenter allows network attackers to bypass authentication and gain unauthorized access. Because vCenter is used to manage virtual machines centrally, organizations must update their systems immediately.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5IDT81eb7KUE0LzwGJAzuAETft3pD5sOz2dJxnQin_-zR_hH8tDKFTsLNBNoe35KM4DhFJjP7K-0YwaMoVwz7xUhTiP2vKeNqmN3kenPgwflENu35qx-QlFj-rDFdyXx1HMz6ykegw6nlnPDXppYbotjoRj-ammlyUZ-Cr0JYLS5iyZXkJXkaIO5UAc/s1600/vmware.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "VMware",
+      "Broadcom",
+      "vCenter",
+      "ESX"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses VMware vCenter, your IT team should apply the security updates released by Broadcom as soon as possible.",
+    "action_it": "Apply the fixed versions released by Broadcom for all supported branches of vCenter immediately to address the authentication bypass flaw."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers",
+    "link": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
+    "published": "Thu, 19 Nov 2026 09:57:24 -0500",
+    "published_ts": 1795100244,
+    "summary": "Two critical security flaws in NGINX allow attackers to run malicious code remotely on web servers. If combined with a Linux kernel bug, these flaws can give attackers complete control over the server.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7_qqPophooIauX16fMWm3KB24tzQ3Fd7rCuseCXfMkDPPGpIgmHqWvZjn_jffDqHwNWKu8Zf57QeKb4qsRFgdgisSAn0sMj59CscimR16RLXI1kspH0w7VYQgrsM_hPcePQOFL8QUyDC2p9W7AV0UjH3sW7oOvdWPWAZW6DITDvqIHaC_696e5kHTieY/s1600/nginx-rce.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+        "link": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-123007"
+    ],
+    "affected": [
+      "NGINX"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace runs NGINX servers, your IT team will need to apply the available updates.",
+    "action_it": "Upgrade NGINX to fixed versions 1.31.9 or 1.30.7 immediately to address the vulnerabilities."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
+    "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
+    "published": "Thu, 19 Nov 2026 08:08:08 -0500",
+    "published_ts": 1795093688,
+    "summary": "Drupal released patches for a critical security flaw that could allow unauthenticated attackers to take over vulnerable websites. Because exploitation may happen quickly, site administrators need to update their systems immediately.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4kxIzi1B-GPdS7pbaOI823BHxteL-8FbODKnAoDkr8tGhhjGYuRU9KIEAvOQ6kBZFQPCly3BIhQo6vkjxJy13zL7CxlRXsez_G_otFVaja2H5ObmzNMMilbewaweqqO5Paa0H49yaZdWB09xAIqeo7YLG0uyd05qjdbh2aLIRZd73_jwVGH26YexA3l8/s1600/drupal-flaws.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+        "link": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Drupal"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a website powered by Drupal, your web team or hosting provider needs to apply the update right away.",
+    "action_it": "Apply the latest fixed releases for all supported Drupal branches provided by the Drupal Security Team immediately."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Everything Is a Web Application, Including Your Firewall",
+    "link": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+    "published": "Thu, 19 Nov 2026 17:22:23 +0530",
+    "published_ts": 1795089143,
+    "summary": "Hackers are actively exploiting two unauthenticated remote code execution vulnerabilities in Palo Alto Networks PAN-OS management interfaces exposed to the internet. This matters because it allows attackers to take control of firewalls if their management interfaces are accessible online.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiC0roCfV92el2-gLSGwmumyjXgCjHookzwGjft2a6UWPZA1QvyrazDNLTvlZrF1F5iagg74JxnPEXbnK60OEeJuFNo2Fc2xcNSnJCeNw9BLu_y-lsRhrpO6s1End2gdDDlRU_r4wysTiiJS4ZKPDTmWK152psFdhxRizlSJZFCjnYr6nnamRsUciEJui4/s1600/php-app.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "affected": [
+      "Palo Alto Networks",
+      "PAN-OS"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Palo Alto Networks firewalls, your IT team should handle the security updates.",
+    "action_it": "Ensure PAN-OS management interfaces are not exposed directly to the internet and apply available security updates or mitigations from Palo Alto Networks immediately."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+    "link": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+    "published": "Thu, 19 Nov 2026 13:30:00 +0530",
+    "published_ts": 1795075200,
+    "summary": "U.S. cyber authorities added four actively exploited software flaws to an official warning list. These flaws are being used by hackers for attacks like ransomware and cryptomining.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJc2bWATWnk5-O72K0n3cYlHuhhox3nVPELPst8c1bui3mTiwBZFUjAUSem14OyqLB6CTECCs9fc-iyng9KmY3jelZ2cqrHg4FKvP2qOZui8piIbYTZy9WdZD0NqiY4fXcLud5GYzmNEXR6DRNuQpjkFzfPvW4fIcDtwaFg4SM9xW-eG09WxFuEcmuKx7U/s1600/cisa.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Synology DiskStation Manager",
+      "BerriAI LiteLLM",
+      "Apache Axis",
+      "Vanderbilt University Research Electronic Data Capture (REDC"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use any of these specific software products or platforms at work, check with your IT team to ensure they are protected.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+    "link": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+    "published": "Thu, 19 Nov 2026 10:03:46 +0530",
+    "published_ts": 1795062826,
+    "summary": "The maintainers of the PHP programming language announced upcoming security updates to fix critical flaws in all supported versions. The patches are scheduled to be released on November 19, 2026.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj86YA0ZvPrdlouN6GvSZ5P_I5HCaYLm2PBs_JA74wUDgHl8anwcqEN5_Z0kTlAggf0906enJmrtUnN_6jn9kqD8KguG8nOeh1yGS6AAPo1-JHORLQ5nZcpmS5Ss7liuqghFsq8Bb4ooabK29UcCbZlwWGM6HtyRPs4Ty5zv5d4FC5So6tVFUOaEhUylIFU/s1600/php-flaws.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "PHP"
+    ],
+    "action_everyone": "Most everyday people do not need to do anything. If you are a web developer or run a website using PHP, you should prepare to update your software once the official fixes are released on November 19.",
+    "action_it": "IT and security teams should monitor for the official PHP security release on November 19, 2026, and prepare to update all supported PHP versions across their environments once the patches become available."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+    "link": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+    "published": "Thu, 19 Nov 2026 15:01:26 +0530",
+    "published_ts": 1795080686,
+    "summary": "Unknown hackers broke into a cloud server run by software company N-able, knocking out email security management tools in three regions. The company says it has taken steps to secure the system and is investigating the breach.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjPpZ9yL9D7JBQvp4_ZmnP8S_U6HKdq3rSM_FVv_uDgT9Iz8D56tO6GNDNE4rs29pejUiKQlxi1HpZ38KYbaSB01PmgPItVL8N-Y9G9vcuJlnadltKvmGhvUKYntAEIVCXFixjdBMyu6S9-zEUlIgGf7E5euvodJbn9LIYWTkRpxwH0g7nz2xp2v5PGMdq/s1600/n-able-hacked.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "N-able",
+      "Mail Assure",
+      "Spam Experts Hosted Cloud"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses N-able's Mail Assure or Spam Experts services, your IT team will handle any necessary security steps.",
+    "action_it": "Review access logs for signs of unauthorized activity and monitor N-able's communications for further updates and hardening guidance while the investigation continues."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+    "link": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+    "published": "Thu, 19 Nov 2026 14:12:11 +0530",
+    "published_ts": 1795077731,
+    "summary": "The maintainers of the Ruby programming language released updates to fix seven security flaws that could let attackers run harmful code. Five of these flaws already have working examples showing how they can be exploited.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7rmcgZ7yffFsn_7SX4iQcfMhw1dgsxPFXXh6TUunbQ9VaxZh8O5-AFT2V3q0PE7Wx0rW9nLKuB73eluixYuM9N38Dvq_Gjs1nNOXVk3e71jjfhHoP7W97eeuc5AivI3CQNxIrwSaPR9IGV0f2NZ7900Ihtkdgiw1ZivTvgVrXWH2CrX2X5MZGjos6-bs/s1600/ruby.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Ruby"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a software developer who uses Ruby, you should update your systems to the latest fixed version provided by the project.",
+    "action_it": "Apply the latest security updates released by the Ruby project to address the seven memory-safety flaws."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "NVIDIA investigating Gentlemen ransomware breach claims",
+    "link": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+    "published": "Thu, 19 Nov 2026 04:23:21 -0500",
+    "published_ts": 1795080201,
+    "summary": "NVIDIA is investigating claims of a security breach after a ransomware group listed the company on a leak site. It matters because ransomware groups typically try to steal sensitive data to extort companies.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "NVIDIA"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+    "link": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+    "published": "Thu, 19 Nov 2026 13:44:00 +0530",
+    "published_ts": 1795076040,
+    "summary": "A researcher demonstrated that low-privilege database accounts can run malicious code on database servers using memory-corruption bugs hidden behind normal SQL queries. This matters because it shows attackers with minimal access could potentially take complete control of database servers running PostgreSQL, MySQL, ClickHouse, and Oracle.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDE1pOkFxdtUcDqLptfhjaBnnEyzz2JfxUJICSOrW3vpcNlygN1XleKCdkv9CA3Zp901yQ884tOkPX9TmSYx5tpevenJw1CmW4oktkn2creXnB5-dvbiJB3crcILx4Kb8b6eVhiKjh-RRZTGnvWskqROJOjF3yaWFVK17fmh-tdT7WMas7MbdK-JsCBmw/s1600/database-rce.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "PostgreSQL",
+      "MySQL",
+      "ClickHouse",
+      "Oracle"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft confirms app installation, launch issues after hotpatch",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
+    "published": "Thu, 19 Nov 2026 05:35:05 -0500",
+    "published_ts": 1795084505,
+    "summary": "Microsoft confirmed that a recent Windows 11 update causes problems when installing and launching certain apps. A workaround is currently available while a permanent fix is prepared.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows 11"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Five warning signs of ransomware breach before encryption or data theft",
+    "link": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
+    "published": "Thu, 19 Nov 2026 10:00:10 -0500",
+    "published_ts": 1795100410,
+    "summary": "Security researchers have highlighted five early warning signs of a ransomware attack, including stolen login details and attempts to turn off security tools. Spotting these signs early can help defenders stop hackers before they lock up or steal important data.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Acronis"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
+    "published": "Thu, 19 Nov 2026 06:46:00 -0500",
+    "published_ts": 1795088760,
+    "summary": "Microsoft is testing a new security feature for the Edge browser called Lockdown Mode that turns off certain graphics features. This is designed to reduce the ways hackers can break into the browser.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft Edge"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+    "link": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+    "published": "Wed, 18 Nov 2026 18:08:33 -0500",
+    "published_ts": 1795043313,
+    "summary": "Ukrainian authorities and the FBI arrested four suspected members of an international ransomware gang. The group is linked to over $40.5 million in ransom payments extorted from at least 28 companies.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
