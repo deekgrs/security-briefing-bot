@@ -1,0 +1,300 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+    "link": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+    "published": "Sat, 21 Nov 2026 16:35:53 +0530",
+    "published_ts": 1795259153,
+    "summary": "A critical software bug in GnuPG's programming library could allow attackers to steal data from affected apps using specially crafted encryption keys. The GnuPG project has released an updated version to fix the issue.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTmX4ayWzvM0EzPttZ610B2837FppeU5AEmQmztLH2lai78EDQtjrp4wVI_bubSe2c2NGBE5sqBT9Py1mKkHQKN2faBkOzU70d7FntrpYD7Et2eeBxLNy2gzByAo1i8Aaw_VMBZD62RnBMY2md3iNfegK9M_NR5qTRDBw8s0uwKy1w7JoTV0zkDS_17Lse/s1600/pgp.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-129975"
+    ],
+    "affected": [
+      "GPGME",
+      "GnuPG"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a software developer using GPGME, you should update your library.",
+    "action_it": "Upgrade GPGME to version 2.3.0 or later to fix the memory bug."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+    "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+    "published": "Sat, 21 Nov 2026 14:19:13 +0530",
+    "published_ts": 1795250953,
+    "summary": "U.S. cybersecurity authorities added four actively exploited software flaws to an official catalog of dangerous bugs. These flaws affect widely used enterprise products and are being used in espionage attacks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFnWnBDigw8RogBTSInXktn1vUISbzwjHm5GuAFBNX0_ClLBk83WOa2BYiHUbgtva76TY8Oz2kJvEZtvEjqZlFFCuvQ-u-l-4l5dzo2MXw7zHLEuklv_Gn1mB-f5TL9GP_3n1NxQkzkZ-fAX7UpcqfZqUefQiRQZm21sq6IZOzmyuQ1hYs4AFHWQAj83WX/s1600/vmware-cisco.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-129448"
+    ],
+    "affected": [
+      "Apache Roller",
+      "Cisco Expressway",
+      "SAP NetWeaver",
+      "Broadcom VMware vCenter"
+    ],
+    "action_everyone": "Most people don't need to do anything. These products are generally used by organizations and businesses rather than individual home users.",
+    "action_it": "Review the CISA Known Exploited Vulnerabilities catalog for the newly added flaws affecting Apache Roller, Cisco Expressway, SAP NetWeaver, and VMware vCenter, and apply the necessary patches immediately."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+    "link": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+    "published": "Sat, 21 Nov 2026 09:26:04 -0500",
+    "published_ts": 1795271164,
+    "summary": "The FBI's nationwide police database was reportedly breached, marking the second time the agency's systems have been compromised in two months. This matters because it exposes a crucial information-sharing network used by law enforcement agencies across the country.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "FBI",
+      "National Crime Information Center (NCIC)"
+    ],
+    "action_everyone": "Most people don't need to do anything. This incident involves a specialized law enforcement database rather than consumer technology.",
+    "action_it": "Review access logs for the National Crime Information Center and monitor internal systems for any signs of unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+    "link": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "published": "Sat, 21 Nov 2026 16:33:17 +0530",
+    "published_ts": 1795258997,
+    "summary": "Suspected China-linked hackers used an artificial intelligence tool to find a previously unknown security flaw in medical-imaging software and took over a university server. This matters because it shows attackers are successfully using automated AI to discover and exploit software weaknesses faster.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEIG6Wgi3wGQXrsdGKEf4ORPFjHVGpRkoSUPraOJfKhGmB0vYFojLq2mCuOP3a71_XpNZusvn45ZDa1J3a7eQ0WE3XJY0FGunHVWB1yHBluJT5vSDCmzkhaFGiHjeKbnoah6noyZ3mNInS-mjJK1Gfcf7jT3A60ZYR_eknSgt_sEa6MNGM-DA5-aLXMbZ5/s1600/medical-ai.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+        "link": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/"
+      }
+    ],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "MONAI Label"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your organization uses MONAI Label for medical imaging, your IT or security team should be notified.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "N-able says recent security breach led to major service outage",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
+    "published": "Fri, 20 Nov 2026 08:18:36 -0500",
+    "published_ts": 1795180716,
+    "summary": "Hackers breached a server belonging to software company N-able, causing a major worldwide outage for its email security services. This disruption affects users relying on Mail Assure and SpamExperts Hosted Cloud for their email protection.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "N-able",
+      "Mail Assure",
+      "SpamExperts Hosted Cloud"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace relies on these N-able email services, your IT team will handle any necessary service adjustments.",
+    "action_it": "Monitor N-able's official status communications for recovery updates and check your mail flow to ensure services are operating normally once restored."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+    "link": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+    "published": "Fri, 20 Nov 2026 17:50:00 +0530",
+    "published_ts": 1795177200,
+    "summary": "A security flaw in Linux allows virtual machines on certain cloud servers to read memory belonging to the host or other customers. This matters because it could allow attackers to steal sensitive data running on the same shared computer.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg-jisyf4SWwWYA_RUtOoVqBviv2uNAUl6vEeGjsuBA0aOhfLYw7yHitbRBxAoWcf5ZP0UcGovNmyk-u-320fLFYIyUz7jtR77GiveyLdqsZWJ0DohwBfEFyN0KlNAIpIcpS9B6jHEZJybmTu7nuKM-PhSNPco-Z1QmacaSfwWyOWLXzT2WqaEdbZ810M/s1600/vms.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-99312"
+    ],
+    "affected": [
+      "Linux KVM",
+      "DigitalOcean",
+      "AMD"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you use cloud servers, your cloud provider is responsible for applying these updates.",
+    "action_it": "Apply the fixed kernels provided by your Linux distribution for hosts with AMD processors and nested virtualization enabled."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+    "link": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+    "published": "Sat, 21 Nov 2026 10:17:27 -0500",
+    "published_ts": 1795274247,
+    "summary": "The BADBOX malware, which infects cheap generic Android TV boxes, has returned to run large-scale ad-fraud operations. This is a threat to internet advertising systems and could mean infected devices are being controlled by criminals.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Android TV boxes"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+    "link": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+    "published": "Fri, 20 Nov 2026 13:51:43 -0500",
+    "published_ts": 1795200703,
+    "summary": "Bell Canada confirmed that an AI-driven hacker breached its systems and stole data belonging to enterprise business customers. The incident exposed information from a system used to order and set up telecommunications lines.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Bell Canada"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+    "link": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+    "published": "Fri, 20 Nov 2026 22:28:16 +0530",
+    "published_ts": 1795193896,
+    "summary": "Researchers discovered a new Android malware framework called Bazuka that uses fake screens to steal login details and control devices. It integrates artificial intelligence tools to help attackers manage victims on a large scale.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMs4vBdivbF3Y-4yd3PWqjSTuG2PPDvCemM211pzVl2Jhkus9d14_2MzRgdrlNhRxaHa_2rlIN34kUGHAlV_Y2dMnfmYGlUEzUcab0c_s3N8Zoe8P3rcJ-RJmo2luVci9bVqmwtFhpL4rfR2Uo-ZwvqfqFMwRb_3WwoOvFIaunPd7WMOJ4yW9rjbHEKDwf/s1600/android-malware.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Android"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+    "link": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+    "published": "Fri, 20 Nov 2026 10:58:06 -0500",
+    "published_ts": 1795190286,
+    "summary": "J.P. Morgan Chase suffered a data breach after an outside service provider was hacked, exposing customer personal and marketing information. This matters because sensitive details from major financial services customers have been compromised through a third-party vendor.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "J.P. Morgan Chase",
+      "Visa",
+      "Mastercard"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+    "link": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+    "published": "Fri, 20 Nov 2026 23:27:20 +0530",
+    "published_ts": 1795197440,
+    "summary": "WhatsApp fixed three security flaws, including an Android bug that may have been used in scams. Most users just need to ensure their app is updated.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUSbYUJJkBlZsaH90SXIaxYAv5iJN7ZEus7Q24A_Z9fDNNlnOjFnNZ3SnA6er-iuMgQnE6k73nwVwAEPPk1AjRT12N9o8cJft3_dPqMZKeJbpq6QIcGbN1z1UbE_Q3fXTyp1c0XmqynQu2lJPeIYoraqXFcgM-wQH4b1rIBrOKF221CIKLldJIZVJ4g7cr/s1600/whatsapp.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [
+      "CVE-2026-23871"
+    ],
+    "affected": [
+      "WhatsApp for Android",
+      "WhatsApp Business for Android"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+    "link": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+    "published": "Sat, 21 Nov 2026 17:23:07 +0530",
+    "published_ts": 1795261987,
+    "summary": "Researchers demonstrated that a malicious webpage could steal private conversations and connected account credentials from Meta Muse without asking the user. This is a laboratory demonstration and has not been used in real attacks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYiVrbfn3FWfI_uNyjj8q9SZ38d2mHKu2ehdtYYKPwyg-05yKJBYUAPEaVxJq5KDGwU11X2tmEKNUKPIHQY9s67e1K9w_8NRdEOxVCDJqqMbQ6F27kfOj3GKjcQ3-0WHFNg7uYT6QeIU90qX1YW_Zvyn7WhZwpV41i5Pj6watQsF7Ti8NN1GIQLxw-jPc/s1600/muse-ai.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Meta Muse"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+    "link": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+    "published": "Sat, 21 Nov 2026 14:19:20 +0530",
+    "published_ts": 1795250960,
+    "summary": "Signal is blocking screenshots by default on Android and iOS to prevent AI assistants from reading private chats. However, the company admits the protection is not completely foolproof.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1cVX1DZUDMTkSc3kGcO8KsGd-MIBr6py39SuaRxG1wCxVVfKIQhiQaywRpjn95FQV4tMy0dWyNc49745cwqBBLpGzVK_eut-DGLBaidiiYCdIH65bXGtopuPJ7dofJzAJVJ6cWrKp2JJb5gNrODQuWtK7vZZp824ecrz4_DHWWJIaC5wS6aYfsMsKshg4/s1600/signal.jpg",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Signal",
+      "Android",
+      "iOS"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "Krebs on Security",
+    "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+    "link": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+    "published": "Sat, 21 Nov 2026 00:36:39 +0000",
+    "published_ts": 1795221399,
+    "summary": "The technical chief of a data recovery firm was charged with wire fraud after an FBI sting revealed the company just paid hackers for decryption keys and lied to victims. This matters because it exposes dishonest companies that profit off people trapped by digital extortion.",
+    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/11/ransomwarehelp.png",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "RansomwareHelp"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Still tracking company passwords in spreadsheets? You’re flying blind.",
+    "link": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+    "published": "Fri, 20 Nov 2026 10:00:10 -0500",
+    "published_ts": 1795186810,
+    "summary": "Tracking company passwords in spreadsheets leaves organizations vulnerable to weak or stolen credentials. Centralized password management helps IT teams track and secure company login information.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "NordPass"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
