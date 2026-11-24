@@ -1,0 +1,294 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+    "link": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+    "published": "Tue, 24 Nov 2026 18:58:26 +0530",
+    "published_ts": 1795526906,
+    "summary": "Broadcom released patches for 23 security flaws in VMware products, including a critical vulnerability that allows attackers to bypass login requirements. This matters because it gives unauthorized users full control over vulnerable systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0zpQTclLnhVQHphFdBZZ_hrxhsZvA5G50sGBz5qq1iOg2B1YLu8rE5e_HM1GZOE24SNpwexwst80NTKP7_Wwexq7EzIl-I7ykIXCtTGQjeZhBGVVuAgzxac5JwaquTQuMNRstBFo8JzMDyqgsNbM_KtxGF3wHPBIM9GfaclNu0OTPlpF5YhNvqoKKytAY/s1600/vmware-exploit.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-123903"
+    ],
+    "affected": [
+      "VMware ESX",
+      "vCenter",
+      "Workstation",
+      "Fusion",
+      "Avi Load Balancer"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these VMware products, your IT team should apply the latest security patches.",
+    "action_it": "Apply Broadcom's patches for the 23 addressed vulnerabilities, including CVE-2026-123903."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Radware discloses breach exposing customer cloud access keys",
+    "link": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+    "published": "Tue, 24 Nov 2026 12:49:05 -0500",
+    "published_ts": 1795542545,
+    "summary": "Cybersecurity company Radware suffered a data breach after an exposed management tool leaked customer cloud access keys. This matters because the exposed keys could allow unauthorized access to affected customers' cloud environments.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Radware"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your organization is a Radware customer, check with your IT department to see if your cloud access keys need to be rotated.",
+    "action_it": "Review cloud environments for unauthorized access, rotate any potentially exposed cloud access keys, and secure internal APIs to prevent unauthorized exposure."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers compromise Check Point Servers in 22 organizations",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+    "published": "Tue, 24 Nov 2026 11:15:23 -0500",
+    "published_ts": 1795536923,
+    "summary": "Hackers have broken into security management servers belonging to 22 different organizations. This matters because it gives attackers access to the systems that control network defenses.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Check Point"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Check Point security systems, your IT team will handle the necessary fixes.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+    "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+    "published": "Tue, 24 Nov 2026 18:12:09 +0530",
+    "published_ts": 1795524129,
+    "summary": "Hackers have found a way to bypass SHA pinning, a key defense method used in GitHub Actions to secure software code. This matters because it allows attackers to disguise malicious code as official tools, potentially undermining supply chain security.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYUhfLA6wixTr6AiVmOSa8uxO2mHxPqG7rHalDaUtYlOaTwUSIzi3JAP78cfEUhwwaoijNe8vJ0ZFiBqDmfrG9LVOzItxMxCYcTCbEc4f7W8iWgKSvzR6DrT0XtK_cM4eTKQ2Edvz-QG5P8iXF_GV_-k6CXMN_-D_QAJags-LpeuXmJ5C6DDz7mDRSBMY/s1600/git-actions.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "GitHub",
+      "GitHub Actions"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses GitHub Actions or software development pipelines, your IT and development teams should review their security practices based on the latest research.",
+    "action_it": "Review GitHub Actions workflows for potential bypass methods and monitor for unexpected changes or untrusted code masquerading as official checkout tools."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+    "link": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+    "published": "Tue, 24 Nov 2026 17:32:00 +0530",
+    "published_ts": 1795521720,
+    "summary": "A Google researcher discovered a flaw where changing a single piece of data in .NET program files bypasses Windows and VirtualBox security protections. This matters because it could allow attackers to run untrusted code on a system where it should normally be blocked.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiOJqhOn7t8wd3NeMCWVCg9xmusuRJmZuaePaCbKTif2XsPpPhu0fR1NwQncA4y-wAMmLOzylBZ3ebd9f4G8F6K54sUdnZ2cTn6yPq1RgAKrh4lSX3y1Ll8LIywXkDyVXItUuUGS4sy0BVUMhwXPvOZGdxhvwnd55_OvjOVnh2CfnAeURMVcmafuFgJlQ/s1600/windows.net.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [
+      "CVE-2026-87268"
+    ],
+    "affected": [
+      "Microsoft Windows",
+      "Oracle VirtualBox"
+    ],
+    "action_everyone": "Most people don't need to do anything right now. Keep your Windows operating system and Oracle VirtualBox updated as normal when patches become available.",
+    "action_it": "Monitor vendor advisories from Microsoft and Oracle for updates regarding CVE-2026-87268 and apply patches as soon as they are released."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+    "link": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+    "published": "Tue, 24 Nov 2026 16:14:49 +0530",
+    "published_ts": 1795517089,
+    "summary": "An unknown attacker actively hunted for security keys and secrets in Microsoft's Azure API Management service, affecting multiple companies in Norway. Microsoft has since fixed the flaw.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSM2FAnf9UEb3Do4v-r8AEBpoI8byXOrHgng-eRjEyudSf0hiKMpymmDiK_NLTxYuzXdtrWvMrBzY9qmLqDo31r3JOpVefOQxLE77gdkoOAYMkCK__-Bc-AJoWg-8nEOEVjcY6SswkzLbCfYl6kK9clg6xXw3xginWqIwnMxBUaS6wgPKVVwXZNhZA5G85/s1600/azure-ms.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Azure API Management"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Microsoft's Azure cloud services, your IT team should review their systems.",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+    "link": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+    "published": "Tue, 24 Nov 2026 13:59:52 -0500",
+    "published_ts": 1795546792,
+    "summary": "Turnitin disclosed a cyberattack involving unauthorized activity on some of its customer-facing systems. This matters because Turnitin is widely used by schools to check student work for plagiarism.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Turnitin"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+    "link": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+    "published": "Tue, 24 Nov 2026 22:24:07 +0530",
+    "published_ts": 1795539247,
+    "summary": "An Iran-backed hacking group called Volant Manticore is spying on telecommunications companies, airlines, and critical infrastructure in Cyprus using a new backdoor tool. This matters because it shows attackers are finding new ways to hide their commands using decentralized file-sharing networks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqukTcR2pkDWiTqMzORa4j7zZRB0MDUGfBly50X7gPwPHqSeBmfReQWpMR9IdPOP_NbeuQSBdYPknSgxvutDll4VAZNSoGqcwmXzhZNEez-UoE-MwTnM9i9XxjoLYRdhY0iY6tD9BK9IDB0o8RUU7sNsOex5tVNtoNwRHCCAxM9ri66c4G2wPa9AqW9saA/s1600/iran-hackers.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Cyprus telecommunications companies",
+      "airlines",
+      "critical infrastructure"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "European Commission confirms data theft in EU Academy breach",
+    "link": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
+    "published": "Tue, 24 Nov 2026 11:22:44 -0500",
+    "published_ts": 1795537364,
+    "summary": "Attackers broke into the European Union's online learning platform and stole users' personal information. This matters because anyone who used the site may have had their private details exposed.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "European Commission",
+      "EU Academy"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "McDonald's Japan data breach exposes customer location information",
+    "link": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+    "published": "Tue, 24 Nov 2026 09:09:37 -0500",
+    "published_ts": 1795529377,
+    "summary": "Attackers accessed a database belonging to McDonald's Japan that contained location information for smartphone app users. This matters because customer data was exposed, potentially risking their privacy.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "McDonald's Japan"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+    "link": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+    "published": "Tue, 24 Nov 2026 18:58:21 +0530",
+    "published_ts": 1795526901,
+    "summary": "Security researchers have linked a voice phishing group associated with the ShinyHunters extortion crew to a new data leak site called INCEPTION. This group uses phone scams to trick people into giving away their login credentials.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjete6dy8Fmd7sbjqKI5GKSySXkcnz4NF__irfVMBHzgRIDUnpGHtvRIbCywZYYsoKsnMdPhvanoXcnXbYvZpMjL2lL6d_F9a4ErEaI5rH_boPedH_ru2Ush9wonb8tYhGNVM6M_01DTue1THY7uGMbuKBJKNgMbrACkxHCGJiJylHWoxkkpCXNr2Z_CIdf/s1600/leaks.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+        "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/"
+      }
+    ],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Okta"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Police disrupt 57 illegal streaming services with 7.3 million visits",
+    "link": "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/",
+    "published": "Tue, 24 Nov 2026 10:10:10 -0500",
+    "published_ts": 1795533010,
+    "summary": "Police across 11 countries have shut down 57 illegal streaming services that attracted millions of visitors annually. This action disrupts major illicit media networks and highlights ongoing international law enforcement efforts against digital piracy.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+    "link": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+    "published": "Tue, 24 Nov 2026 10:01:11 -0500",
+    "published_ts": 1795532471,
+    "summary": "RapidFort discusses how artificial intelligence is increasing software complexity and overwhelming security teams with unimportant alerts. The article highlights that using automated tools and container protection can help organizations focus on real risks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
+    "link": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/",
+    "published": "Tue, 24 Nov 2026 08:34:23 -0500",
+    "published_ts": 1795527263,
+    "summary": "OpenAI and Cisco have released an open-source tool called Shirudo that uses artificial intelligence to protect unpatched Linux systems from attacks. This helps defenders by blocking exploits temporarily while they prepare official software updates.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBknwzOcmsT5P3Gnyn8-WGRNbttWLAtmWlHkVuS900lrH1Q7Wj_kBCJiASbBvhNUKWEsO8Xt5VKKokGA-M17y8Pj4EtH6564yafSWGebOVgMuTwxUUB5fV4oProNTbg8MeEhcaiy95WbMi6og3q0uSM4SxLCyzVwV3FbCfiSXrVoJtQUrYpJfyeW1AUFm/s1600/openai-linux.jpg",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+        "link": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
+      }
+    ],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Linux"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+    "link": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+    "published": "Tue, 24 Nov 2026 17:31:54 +0530",
+    "published_ts": 1795521714,
+    "summary": "A cybersecurity research report suggests that security operations centers can save hundreds of analyst hours by speeding up threat analysis. This matters because reducing manual work helps cut costs and lowers security risks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifgNbpx-KISiy12Rp8KNb5ElWQADJtyC7fLFuLFCc7WzbOjCP5CmU2dPyuwhq5kRSQP5lOuwwFhvZovILCzeMgaSes8APbVabNVpJB71EC56WrojqqLU-tjIr2MFDPK8fMHnu-dx35G-p6btlQb1xU16c8IPrY4cs0k8t1pufSHgp74Y5HtqiAVk4A1QI/s1600/2027.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "ANY.RUN"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
