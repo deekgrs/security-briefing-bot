@@ -1,0 +1,291 @@
+[
+  {
+    "source": "BleepingComputer",
+    "title": "CISA warns of critical unpatched flaw in Danfoss refrigeration controllers",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
+    "published": "Wed, 25 Nov 2026 11:13:40 -0500",
+    "published_ts": 1795623220,
+    "summary": "U.S. cyber authorities warn of a critical, unfixed security flaw in Danfoss commercial refrigeration controllers. Attackers could exploit this to compromise refrigeration, heating, and lighting systems used by food retailers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Danfoss"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you work with these systems at a food retailer, check with your workplace IT or facilities team.",
+    "action_it": "Review CISA's warning regarding Danfoss AK-SM 8xxA Series controllers. Since no patch is available yet, apply recommended network segmentation and access controls to limit exposure."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+    "link": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+    "published": "Wed, 25 Nov 2026 18:18:54 +0530",
+    "published_ts": 1795610934,
+    "summary": "Hackers are actively exploiting two newly discovered security flaws in GeoServer software. This allows attackers to potentially access sensitive files and take control of affected systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi8jBS9UW1bUouUo2cLun5A5rtqPOFJoVQctV4ZsoX9uuMottAxM0HLjLZrvTVGU1GtrewszjOwVMBkvHgyFIBsOndc049nwMidNiVnnoKCOePOhy-XDsjiVjxFvubbxn-Z6ca8VJAxxgLmyQ9KGYBRMWV5GP2et02dmXzcG3jKJw1p_njPdaPuJAaxAz1/s1600/geoserver.png",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-120705",
+      "CVE-2026-129243"
+    ],
+    "affected": [
+      "GeoServer"
+    ],
+    "action_everyone": "Most people don't need to do anything, as this software is typically used by organizations and businesses rather than individuals. If your workplace uses GeoServer, your IT team should already be working on applying the available fixes.",
+    "action_it": "Apply the latest security patches provided by GeoServer for CVE-2026-120705 and CVE-2026-129243 immediately, and review system logs for any signs of unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+    "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+    "published": "Wed, 25 Nov 2026 16:53:26 +0530",
+    "published_ts": 1795605806,
+    "summary": "A critical security flaw in the Drupal website software is being actively exploited by hackers to take over unpatched sites. Site administrators must update their systems immediately to prevent remote takeover.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbChdPRqvJHt9cIG4Z1W9o12tl4thtxIDNNcntDjmIytSIC1PWvOytT0JjY0OJtnba6UVJcEmqNxgOMuWxX2pvNJzjQ70-CIeruqZEDdgaDG66Lv2T6lLMv8cEhrXRie1gcaLz6OoNw6f2822s2yz8jl958kok6WpHmZ7p_n3TRWTdEWSpr1le5T28kFQO/s1600/drupal.gif",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+        "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-132165"
+    ],
+    "affected": [
+      "Drupal",
+      "Drupal core"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a website powered by Drupal, your web team or administrator needs to apply the available security fixes right away.",
+    "action_it": "Apply the security fixes provided by Drupal for CVE-2026-132165 immediately, as the flaw is currently facing active exploitation in the wild."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "InfraTrust warns of exploited supply chain flaws in network appliances",
+    "link": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+    "published": "Wed, 25 Nov 2026 10:00:00 -0500",
+    "published_ts": 1795618800,
+    "summary": "A security report reveals that most recently exploited software flaws are found in third-party components bundled into network appliances rather than the vendors' own code. This matters because it highlights a major blind spot in supply chain security where hidden vulnerabilities put organizations at risk.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "InfraTrust",
+      "Eclypsium"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses network security appliances, your IT team should monitor for these supply chain risks.",
+    "action_it": "Review third-party software and components bundled into network appliances and apply available vendor patches to address underlying supply chain vulnerabilities."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
+    "link": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+    "published": "Wed, 25 Nov 2026 14:36:59 +0530",
+    "published_ts": 1795597619,
+    "summary": "Hackers exploited a critical flaw in Hex.pm, a package registry for software developers, to run unauthorized commands on six production servers. The registry team quickly caught the attack and patched all affected servers within 15 minutes.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBxy4VIOekOumZfm8RElWJl6ZTKoIJ1QLc3U7ynLQ8p9PCqm_kYX1T-akwbZwbthTYcNwfVW-aWbRB4wIkvbUeM_gvQmnw8EH-hpY0542jCwFUAaI2mNEXGE3dct9K4JKFURV1smdERZlx4tV1zCy3AbS_NwF4o926_KSW-OKMPfDXT2gWbbZ4lKjFm6Y/s1600/hex-hack.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Hex.pm"
+    ],
+    "action_everyone": "Most people don't need to do anything. This incident affected a specialized server registry used by software developers, not everyday consumer apps.",
+    "action_it": "Review server logs for signs of unauthorized access related to the incident and ensure all Hex.pm infrastructure is running the latest patched builds."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft confirms authentication issues after November updates",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+    "published": "Wed, 25 Nov 2026 04:02:57 -0500",
+    "published_ts": 1795597377,
+    "summary": "Microsoft confirmed that recent November security updates are causing login and authentication problems for some users. This matters because it disrupts normal access to systems while fixing a serious security flaw.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Microsoft"
+    ],
+    "action_everyone": "Most people don't need to do anything right now. If you experience login problems after a system update, contact your IT department for assistance.",
+    "action_it": "Monitor systems for authentication failures after installing the November security updates and consult Microsoft's guidance for workaround steps if issues occur."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers reportedly breached CIA intelligence analysis system",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
+    "published": "Wed, 25 Nov 2026 02:45:03 -0500",
+    "published_ts": 1795592703,
+    "summary": "Unknown hackers have reportedly broken into an open-source intelligence analysis system used by the CIA. The incident raises serious concerns about the security of sensitive government intelligence platforms.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "CIA"
+    ],
+    "action_everyone": "Most people don't need to do anything. This incident involves a government intelligence system and does not affect personal accounts or devices.",
+    "action_it": "No specific technical mitigation steps are provided in the article as the investigation is ongoing."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
+    "link": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
+    "published": "Wed, 25 Nov 2026 12:20:19 +0530",
+    "published_ts": 1795589419,
+    "summary": "Hackers have compromised security management servers at 22 organizations worldwide using automated artificial intelligence tools. This matters because it shows attackers are successfully using AI to orchestrate targeted intrusions against critical industries like finance and energy.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzxhgIKTt8K5ep8a4qHW9dDpkSYcBC5D1CWgkvvh9Ee5DRlNRSg-2UcZZVNoXrHXVTeIcdzj47FFcSz6gAssLknSDf6f0JDyQCoH51D4GYLSju_wh4smA6-2yE3Z7I30SPeuY8LOKA__Y9xPiU66t1aPsHTzuRnX0QUq2iadcKXFfv7ZhAhcXti_BDnrmu/s1600/code.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Check Point Security Management servers"
+    ],
+    "action_everyone": "Most people do not need to do anything. If your workplace uses these Check Point servers, your IT team should investigate immediately.",
+    "action_it": "Review Check Point Security Management servers for signs of unauthorized access and monitor logs for anomalous activity linked to this campaign."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+    "link": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
+    "published": "Wed, 25 Nov 2026 12:07:06 +0530",
+    "published_ts": 1795588626,
+    "summary": "Hackers are using phone calls to trick employees into giving up their login details, allowing them to steal company data and demand ransom. This matters because it affects major industries like healthcare, finance, and legal services across multiple countries.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoCQn2zL8-RpfdhDeb1Zmyn46vLk1s9lerpXtGlcMkN5IGF9nlhEejtwoOXwhznjS7JVrix_FeG_G6yJ6Jb8mI31CU4Mi2dndKvLp-4nG4wWsqMaBpI60HFIk5d8_5uIxj6XEjSt4sixJYkJN8Xeqs4OrgSzOPK48esNtXbQ_FgtVe67B_WZkfpuUSEiD7/s1600/vishing.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "New Inception extortion gang launches large-scale vishing campaign",
+        "link": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/"
+      }
+    ],
+    "category": "Threat Actor",
+    "severity": "High",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "Most people don't need to do anything, but you should always be suspicious of unexpected phone calls asking for your work passwords or login codes. If your workplace uses single sign-on systems, follow your company's security rules.",
+    "action_it": "Monitor user authentication logs for suspicious activity and review single sign-on configurations to protect against credential theft from voice phishing attacks."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
+    "link": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
+    "published": "Wed, 25 Nov 2026 18:00:08 +0530",
+    "published_ts": 1795609808,
+    "summary": "The U.S. Treasury's Financial Crimes Enforcement Network suffered a cyber intrusion with unauthorized access to some systems. As a precaution, the bureau has taken certain systems offline.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJn89Gr-RFxS6UFEzrbUZ5Ys11fK1OwvmMYUPl29eJudnlmmp7Q34p8O0DqV8SvGu4whZke8tiysvZNQWeE4Tm3zRhJSpojYAagBXGUEVM5w6lAw2Z5C-lfRaC2IwOYrnwQSWxwso31woM4CSoluNEjA3N0gFe0RQpsV0r3MCobiKFArLMa1or-QTIBcQ/s1600/fincern.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "FinCEN",
+      "U.S. Treasury Department"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+    "link": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+    "published": "Wed, 25 Nov 2026 11:51:12 +0530",
+    "published_ts": 1795587672,
+    "summary": "WordPress removed six plugins from a developer called WP Connect after someone hijacked the account and added malicious backdoor code. The plugins were blocked before they could actually be sent out to users.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNbawIx8zYCfd7sCTbVfIzPFBtykkY65lf8EOswU62pIdZKTrx9ReB3mGnqYqujmW5eGzN_w8pEijAZMTpmOZ3fGB5zFyFaPo4ZhRQ8V0BkAmDCH3WoVqJ3kAfjDcw3_wRjhwphfyJxjF3_rDYiudb-cxt0pY3t8s-IRjNP1aEYHqtO5L1eZMkgBX6y2xD/s1600/wp.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "WP Connect"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
+    "published": "Wed, 25 Nov 2026 06:16:32 -0500",
+    "published_ts": 1795605392,
+    "summary": "Microsoft fixed a software bug that was preventing some users from opening their Office apps. The issue has now been resolved by the company.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Low",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Microsoft 365"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "More Pentests Without More Pentesters: Where AI Safely Helps",
+    "link": "https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/",
+    "published": "Wed, 25 Nov 2026 10:00:10 -0500",
+    "published_ts": 1795618810,
+    "summary": "Security companies are exploring ways to use artificial intelligence to handle paperwork and reporting for security tests. This helps security experts save time so they can focus more on finding system weaknesses.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "PentestPad"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+    "link": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+    "published": "Wed, 25 Nov 2026 17:21:48 +0530",
+    "published_ts": 1795607508,
+    "summary": "A new report shows that most leaked digital keys and passwords from 2022 were still working four years later. This matters because companies delay changing them out of fear that doing so will break their systems.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil06YVYkZZwt0a8nA97RyMZvYZEQIoZ7r9_YHMtjx5eWc7RNAB4ol6OWb7NIsJOpC0v4w11xynwGgR1SsTnArvWAF7yJseVMbQfoawpTPEKYDdmH6O5UrbIZgJ2Fz9MGBFC6kF95oLeubdwlrdVKaVTPz4kjrOCH0X1neixvpNSYHhotL5WuzdYM12tUo/s1600/GitGuardian.gif",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "GitGuardian"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
+    "link": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
+    "published": "Wed, 25 Nov 2026 16:13:07 +0530",
+    "published_ts": 1795603387,
+    "summary": "A former OpenAI employee accused of hiding a recording device in the company's offices was granted $1 million bail by a federal judge. Abdulrahman Alfozan was arrested in October 2026 in connection with the incident.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDaKaEIQ9XIhyphenhyphen7wjO1dtGE_h6MwLEEd4or1U6Ud39Ce7BbZfU817kR-mLr4bT5n_dMzAujT3VzKACvto1wsiHVfLjOLyGFnYPsf4PH_DHuog0NWylpF1RXoFIYhb84sb8T7RHCx4qnBCCJnNDKTkjoMQ-KPDaKgHaLW7fII7cOhPzc9XKC0OGGOjjE-ygf/s1600/openai.jpg",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
