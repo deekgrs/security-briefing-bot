@@ -1,0 +1,303 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+    "link": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+    "published": "Thu, 26 Nov 2026 12:32:34 +0530",
+    "published_ts": 1795676554,
+    "summary": "Hackers are actively exploiting critical security flaws in Drupal that could allow them to take over websites. Website administrators must update their systems immediately to protect against these attacks.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy2EcytpsKiKLhUfvQEADKBG6Ht2NprR2VIhIXPJcNQMIGqKT20l0afBPUVhehKFhRzpkHvl3Qu_qaPjFL3L4UsLYH3L4C1DM63zqskhJV1UAjaPqONaEbNkBFsxVDX2jpPZrMym52WvBx2pHktUiRfdXOcp_23xjTdUOxxjxJtI906XLMmw258Bjah1J2/s1600/drupal-rce.png",
+    "also_covered": [
+      {
+        "source": "The Hacker News",
+        "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+        "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-136716",
+      "CVE-2026-132165"
+    ],
+    "affected": [
+      "Drupal",
+      "Drupal core"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a website using Drupal, you need to check the official Drupal security advisory and apply the updates right away.",
+    "action_it": "Apply the official security updates provided by Drupal to address CVE-2026-136716 and CVE-2026-132165 (Fail2Install), and review system logs for any signs of unauthorized access."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+    "link": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+    "published": "Thu, 26 Nov 2026 12:14:46 +0530",
+    "published_ts": 1795675486,
+    "summary": "U.S. cybersecurity officials added 10 actively exploited security flaws to a federal warning list, including vulnerabilities in Mitel, Juniper, Vates, and Danfoss products. This matters because hackers are actively using these weaknesses to target organizations.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht82Zul6A6D_rTYZuOr0QQWkA4p8kQXRI-4qAYhdGBdTR0ZNzlHkHCiz3eSv5wm9Gq1rADX0CIEBUu08HBUbWd4fVKtL6f7UrWcaa_nVetYt0DyPj2-f_yM80HEIUbuy57mpftPYHHp1FKCNXvkDnFtsj-V5PWGUvWiNL38OKY3EIKUwKHuoKsIc4oSXeC/s1600/mitel.jpg",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-133275"
+    ],
+    "affected": [
+      "Mitel",
+      "Juniper",
+      "Vates",
+      "Danfoss"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses these products, your IT team should check the federal warning list and apply the necessary updates.",
+    "action_it": "Review CISA's Known Exploited Vulnerabilities catalog to identify the newly added flaws affecting Mitel, Juniper, Vates, and Danfoss products, and apply the corresponding vendor patches immediately."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+    "published": "Wed, 25 Nov 2026 17:05:09 -0500",
+    "published_ts": 1795644309,
+    "summary": "Hackers are actively exploiting two security flaws chained together to attack Palo Alto Networks devices that have management interfaces connected to the internet. This allows attackers to compromise these security devices, which are widely used by organizations.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Palo Alto Networks",
+      "PAN-OS"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Palo Alto Networks equipment, your IT team should handle the security updates.",
+    "action_it": "Ensure that management interfaces are not exposed directly to the internet, and apply the necessary security updates or mitigations provided by Palo Alto Networks immediately."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "CISA warns of critical unpatched flaw in Danfoss refrigeration controllers",
+    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
+    "published": "Wed, 25 Nov 2026 11:13:40 -0500",
+    "published_ts": 1795623220,
+    "summary": "U.S. cyber officials warn of a critical, unpatched security flaw in Danfoss refrigeration and HVAC controllers used by food retailers. Attackers could exploit this flaw to take control of these systems, potentially disrupting retail operations.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Danfoss"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you work for a food retailer or business using Danfoss AK-SM 8xxA Series controllers, your IT or facilities team needs to be aware of this warning.",
+    "action_it": "Since no patch is currently available, administrators should restrict network access to the Danfoss AK-SM 8xxA Series controllers and ensure they are not directly exposed to the internet."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+    "link": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+    "published": "Thu, 26 Nov 2026 12:15:27 -0500",
+    "published_ts": 1795713327,
+    "summary": "Attackers are running a phishing campaign using fake paid interview invites to steal company login details. This matters because the stolen credentials could allow hackers to break into corporate networks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Google",
+      "Nvidia",
+      "Accenture",
+      "SpaceX",
+      "Okta"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you receive unsolicited invitations for paid expert interviews or webinars, be very cautious before clicking links or entering your login details.",
+    "action_it": "Monitor authentication logs for suspicious access related to corporate Google and Okta accounts, and remind staff to verify all interview and webinar invitations."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+    "link": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+    "published": "Thu, 26 Nov 2026 20:43:41 +0530",
+    "published_ts": 1795706021,
+    "summary": "Hackers linked to North Korea have infected over 7,600 GitHub code repositories with malicious Python code. This campaign uses hidden loaders to compromise software projects and spread further malware.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgquhPuqGJrSE3xNpn5ZUELVAv-Y7qXqkHgpw7nbVqCay4gyraYO5NNE12rAGzuqk_zhreNwcyzjZf3vZZB5C4teohyuppUP-JlP41PQiLu-hGEFCsqMZO0T6MoaVk-uY818yaTaiJaX-d2O0h0RER22knXbUQc7qnwIcVbleLQrEspMQ8btNa4Q9mFrmue/s1600/gitcat.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "GitHub"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you are a software developer using GitHub, check your repositories for unauthorized or suspicious changes in utility packages or conftest.py files.",
+    "action_it": "Scan code repositories for unexpected files, specifically looking for malicious Python loaders hidden in utils packages or conftest.py. Audit dependencies and review access logs for signs of unauthorized modifications."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
+    "link": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
+    "published": "Thu, 26 Nov 2026 06:50:17 -0500",
+    "published_ts": 1795693817,
+    "summary": "A new version of the SYS01 malware spreads through Facebook and Instagram ads, forcing web browsers to install a spying extension. It matters because this malicious extension steals sensitive information, including emails from Gmail and Outlook accounts.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Meta",
+      "Gmail",
+      "Outlook"
+    ],
+    "action_everyone": "Be cautious when clicking on ads on social media platforms like Meta (Facebook and Instagram), especially if they promote popular software or free tools. If you suspect your browser has been hijacked by an unwanted extension, check your browser settings and remove any extensions you do not recognize.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+    "link": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+    "published": "Thu, 26 Nov 2026 16:27:25 +0530",
+    "published_ts": 1795690645,
+    "summary": "Password management company 1Password suffered a data breach after a hacked employee account allowed attackers to access backend systems and steal customer information. The company stated that customer password vaults remain secure and were not accessed.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbu9vulg5_P2PLmwCbF5nNRu8UujJDFNLLCGackgRWjz4lmkQcAom8TerCouyPh1pF8sgBAiJTwO7qAQN3kLVd-_0e7czxqhyphenhyphenUQuSG6WyCJvoNsI92X7tl1ukE6h8QDLmQBUBJaKBCyTYXjaGMUeaczy-sTIjMvDHdQjphWmWyCsUyIG4Y7WD4J2FoQfgY/s1600/1password.jpg",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "1Password customer data stolen after employee GitHub account breach",
+        "link": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"
+      }
+    ],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "1Password"
+    ],
+    "action_everyone": "Most people don't need to do anything, as your password vaults were not accessed. However, it is always a good time to ensure your master password is strong and two-factor authentication is turned on.",
+    "action_it": "Review employee GitHub access controls, monitor backend systems for unauthorized activity, and follow 1Password's official security advisories for further guidance."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+    "link": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+    "published": "Thu, 26 Nov 2026 10:23:28 -0500",
+    "published_ts": 1795706608,
+    "summary": "A malicious Chrome browser extension called Remus is stealing Gmail messages by disguising itself as a Google Sheets tool. It matters because attackers are using this information-stealing software to secretly access and harvest personal emails.",
+    "image": "",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Google Chrome",
+      "Gmail"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+    "link": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+    "published": "Thu, 26 Nov 2026 09:18:52 +0530",
+    "published_ts": 1795664932,
+    "summary": "Thirteen malicious packages for a developer tool called NuGet were found hiding malware inside fake job tests for Windows developers. This matters because it targets people looking for work, tricking them into installing harmful software on their computers.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt0w3YJQrn6VoUVUTTj46NLfeL_JJE-sDoxKsuBe-_OxBtQ3iX8AZTZ1CEn39-N5TGKYd-0ZKdOT43UwAWUbpIXlFdDwhyphenhyphenEKpkQVVJYJVodQRHyz0pJeKEvJIJgUpAEQqXizajmrriq9Mj1aqioeK1Zug__X26Ra4HwzFg8ImTajGc6b7Ck9LW2OCIpPoa/s1600/dotnet.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "NuGet",
+      "Windows .NET"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "InfraTrust warns of exploited supply chain flaws in network appliances",
+    "link": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+    "published": "Wed, 25 Nov 2026 10:00:00 -0500",
+    "published_ts": 1795618800,
+    "summary": "A security report reveals that most recently exploited software flaws are hidden inside third-party components bundled into network appliances rather than the vendor's own code. This matters because it shows attackers are targeting supply chain components to compromise enterprise hardware.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "InfraTrust",
+      "Eclypsium"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
+    "link": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/",
+    "published": "Thu, 26 Nov 2026 12:58:42 -0500",
+    "published_ts": 1795715922,
+    "summary": "NordVPN has launched its early Black Friday and Cyber Monday promotion for 2026, offering discounted subscription plans. This is a commercial marketing advertisement with no security impact.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "NordVPN"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+    "link": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+    "published": "Thu, 26 Nov 2026 16:27:55 +0530",
+    "published_ts": 1795690675,
+    "summary": "Security researchers analyzed how certain phishing kits successfully bypass standard email and web security controls to reach users. Understanding these techniques helps security teams better prepare for and block advanced phishing attempts.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOYXUiExbrrmBGGBgTjOFcDJSrLYJuITQwZY-l1mOzzkes21-mR0My9ikeCM7cI6VDXuBIE9BZPnKazemiuZf7A4w_xeeMy_IUUlNVTKX3PmW-Xt7FA9UI8JoICZDPW4ZWSspztPv_Mo4Zf7G_fXEw_phMe4uc89O38ugIlQJJKmc6VD7QN3NzU0n0SQU/s1600/push-most.jpg",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Push Security"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+    "link": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+    "published": "Wed, 25 Nov 2026 14:39:31 -0500",
+    "published_ts": 1795635571,
+    "summary": "Cybersecurity agencies in Switzerland and Italy warn that automated cyberattacks driven by artificial intelligence are targeting vital services like power and water. This matters because AI tools can launch attacks faster and at a much larger scale than human hackers.",
+    "image": "",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "critical infrastructure sector"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "More Pentests Without More Pentesters: Where AI Safely Helps",
+    "link": "https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/",
+    "published": "Wed, 25 Nov 2026 10:00:10 -0500",
+    "published_ts": 1795618810,
+    "summary": "Security companies are exploring ways to use artificial intelligence to handle paperwork and reporting for penetration tests. This could help security teams work more efficiently while keeping client data secure.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "PentestPad"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
