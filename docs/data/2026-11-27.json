@@ -1,0 +1,283 @@
+[
+  {
+    "source": "The Hacker News",
+    "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+    "link": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+    "published": "Fri, 27 Nov 2026 11:18:20 +0530",
+    "published_ts": 1795758500,
+    "summary": "A newly disclosed zero-day vulnerability in the Cacti network monitoring tool allows unauthenticated attackers to execute commands on vulnerable servers using just four web requests. Because there is currently no patch available, servers running Cacti are at immediate risk of takeover.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy4kFFGLYGbyvO7M_M1gKBjBUm5TF_eT6dIHtCmXKz_cGyC6orRw9XupBLbcQlJTQEEqjZ3q73Cv_Sn9ncPKxOJYU8Poi8Q54-bWKIro4Sp4JYi9hjUjYy71OR1LOV6B5nX8dHK0jYSRJ1p4O1pdMWomZGhCiTKE7MkvrC-gfeINrM-GOab64Bw_MzxA6Z/s1600/cacti.png",
+    "also_covered": [
+      {
+        "source": "BleepingComputer",
+        "title": "Unpatched Cacti zero-day with public PoC gives remote code execution",
+        "link": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/"
+      }
+    ],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Cacti"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Cacti, your IT team should be aware of this unpatched flaw.",
+    "action_it": "No patch is currently available for this zero-day vulnerability. Restrict access to the Cacti interface by placing it behind a VPN or firewall, and monitor server logs for unauthorized activity until a fix is released."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Drupal warns of new site takeover flaw exploited in attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+    "published": "Fri, 27 Nov 2026 05:10:15 -0500",
+    "published_ts": 1795774215,
+    "summary": "Attackers are actively exploiting a critical vulnerability in the Drupal web content management system that allows them to take over unpatched websites. Site administrators must apply the security update immediately to prevent breaches.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [],
+    "affected": [
+      "Drupal"
+    ],
+    "action_everyone": "Most people don't need to do anything. If you run a website powered by Drupal, you need to contact your web developer or IT team right away to ensure your site is updated.",
+    "action_it": "Apply the security update provided by the Drupal security team immediately and review site logs for any signs of unauthorized access or compromise."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+    "link": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+    "published": "Fri, 27 Nov 2026 03:06:58 -0500",
+    "published_ts": 1795766818,
+    "summary": "A 12-year-old security flaw in the Linux operating system could allow attackers to gain the highest level of system access. This vulnerability affects the way Linux handles network file sharing.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "cves": [
+      "CVE-2026-99362"
+    ],
+    "affected": [
+      "Linux kernel"
+    ],
+    "action_everyone": "Most people don't need to do anything. If your workplace uses Linux servers, your IT team should monitor for official updates and apply them once available.",
+    "action_it": "Apply the official security updates for the Linux kernel as soon as they are released by your vendor or distributor to protect against potential remote exploitation."
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+    "link": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+    "published": "Fri, 27 Nov 2026 10:09:40 -0500",
+    "published_ts": 1795792180,
+    "summary": "Hackers have reportedly breached the US Air Force's Cloud One computing platform. This is part of a recent wave of cyberattacks targeting US government agencies.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "US Air Force"
+    ],
+    "action_everyone": "Most people don't need to do anything. This incident affects a specific US government cloud platform rather than consumer devices.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+    "link": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+    "published": "Fri, 27 Nov 2026 17:19:34 +0530",
+    "published_ts": 1795780174,
+    "summary": "Attackers are tricking people into downloading a fake sniping tool app from the official Microsoft Store to install remote-control spyware. This matters because it shows criminals are abusing trusted platforms to bypass standard security warnings.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpD815FTK1v-12AKbFYOz3fplAY5EWVRrb1mh5LOUSmUmG7u7mdgGnppCpL9-ZaG-3CyWm_2KP4icW3UY1Q3AYG6lEe03ezqY9Jx49mW9SC4D0JqiUhT-Rmet7lin7u1bHdyppzeay-bTKDty53IDUI_P9md3iUp5xaY-ko1U2uBRTkNdPhAVTYuW9hDmO/s1600/ms-store.png",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Microsoft Store",
+      "Snipping-Tool.exe"
+    ],
+    "action_everyone": "Be careful when downloading new apps, even from official stores like Microsoft's. If you didn't specifically need this tool, you don't need to do anything.",
+    "action_it": "Monitor endpoint telemetry for unauthorized applications originating from the Microsoft Store and investigate traffic to suspicious domains like snipp.codes-team[.]com."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+    "link": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+    "published": "Fri, 27 Nov 2026 14:59:30 +0530",
+    "published_ts": 1795771770,
+    "summary": "Hackers compromised the official SoftwareOK website to distribute fake installation files for the Q-Dir and DesktopOK tools. This matters because downloading or updating these programs currently infects computers with malicious remote access software.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSXVfewkMqSKHEHRrAVXFHFOsMisOpBVnJ_sWbNNQQXuSWTHU5Y8AZW18gdQq7eI5N4l1dXoeBXVuqGGNClEK0U55LHgLYUxmopN9JHaMrYtrt4QrtWmk3uIvX8FzE2jL7Rf-oOG2fiDzj4g99wYn1Ih9uAOmyD0DtWN7ZqkG5UTd3xRYSRnIurQuT437O/s1600/trojan.jpg",
+    "also_covered": [],
+    "category": "Malware",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Q-Dir",
+      "DesktopOK",
+      "SoftwareOK"
+    ],
+    "action_everyone": "Most people don't need to do anything, but if you use Q-Dir or DesktopOK, do not download or update them from the official website right now. If you recently downloaded or updated these programs, check your device for unauthorized remote access software.",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+    "link": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "published": "Fri, 27 Nov 2026 11:34:20 +0530",
+    "published_ts": 1795759460,
+    "summary": "Hackers used artificial intelligence to break into critical computer systems in Switzerland for the first time. Two vital infrastructure operators were successfully breached, though no major disruptions occurred.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjviiPK0v6Kpjxjo_jDNE9vaZ8-JKiq6Oct4uU6qPDfTXq66QnxuV2iExRo2Rx2FyHhyphenhyphenDquMIoxmlfo5GwxfKoEXRG8Pj38FDOzEKitDdhXBNOGN7b6sddsMozMuhI44c-3mimoE4OxU-Xg7h8IzhDiyrXmP6qBO-wW6xmitkIEv_EkU-FJUJBTNtQ8uY/s1600/swiss.jpg",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "High",
+    "cves": [],
+    "affected": [
+      "Swiss critical infrastructure operators"
+    ],
+    "action_everyone": "Most people do not need to do anything. If you work for a critical infrastructure operator in Switzerland, follow your organization's internal security and incident response procedures.",
+    "action_it": "Monitor networks closely for automated, AI-driven intrusion attempts and review access controls, as specific patching information and indicators of compromise are not yet available."
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
+    "link": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+    "published": "Fri, 27 Nov 2026 22:06:11 +0530",
+    "published_ts": 1795797371,
+    "summary": "Hackers backed by Vietnam have targeted military and government organizations in Southeast Asia to spy on South China Sea defense plans. This campaign, discovered by researchers, highlights ongoing digital espionage in the region.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj19T-kU1dmVfKt2PtUQ2I25MGovj8kmv6lMkk6inlif4yLeezJS4kVRTvsARL5UkpTT66jYru6k2b5bmWfjjlkmG4JznSKmkmd4ldXcyxTw3xsU5nP6_jxfWMw9thW37m5usfr-eWAZBHq6bPuS613CIx9XgWxPcSVFcZVgz_9tWd5Nu8YWAxexuqcVPrN/s1600/data.jpg",
+    "also_covered": [],
+    "category": "Threat Actor",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Southeast Asian military organizations",
+      "Southeast Asian government organizations",
+      "Southeast Asian legislative organizations"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "SAP confirms security incident after suspicious GitHub activity",
+    "link": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+    "published": "Fri, 27 Nov 2026 04:56:36 -0500",
+    "published_ts": 1795773396,
+    "summary": "SAP detected suspicious activity within its IT environment involving GitHub and took urgent action to protect customers. The company has confirmed an incident occurred, though the full impact is still being investigated.",
+    "image": "",
+    "also_covered": [],
+    "category": "Breach",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "SAP"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+    "published": "Fri, 27 Nov 2026 04:08:16 -0500",
+    "published_ts": 1795770496,
+    "summary": "Microsoft released an emergency update to fix a bug causing Windows Server 2025 to crash after installing a previous security patch. This matters because the crashing issue could disrupt important server operations for businesses using the software.",
+    "image": "",
+    "also_covered": [],
+    "category": "Vulnerability",
+    "severity": "Medium",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows Server 2025"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+    "link": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+    "published": "Fri, 27 Nov 2026 10:00:10 -0500",
+    "published_ts": 1795791610,
+    "summary": "Forgotten virtual machines and poor access controls can create security blind spots in IT networks. Centralized management and automation help organizations reduce these risks.",
+    "image": "",
+    "also_covered": [],
+    "category": "Research",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+    "link": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+    "published": "Fri, 27 Nov 2026 09:22:06 -0500",
+    "published_ts": 1795789326,
+    "summary": "Malwarebytes is offering a 50% discount on its security subscriptions, including antivirus and VPN services, for Black Friday and Cyber Monday. This is a promotional advertisement and poses no security threat.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Malwarebytes"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft removes WSUS server role in Windows Server 2028",
+    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+    "published": "Fri, 27 Nov 2026 06:18:36 -0500",
+    "published_ts": 1795778316,
+    "summary": "Microsoft announced it will remove the WSUS server update tool from Windows Server 2028. Organizations will need to transition to modern cloud-based update management tools.",
+    "image": "",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "Microsoft",
+      "Windows Server 2028"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "The Hacker News",
+    "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+    "link": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+    "published": "Fri, 27 Nov 2026 16:02:18 +0530",
+    "published_ts": 1795775538,
+    "summary": "This opinion piece discusses how traditional security metrics are often designed for presentations rather than reflecting the real-time threat landscape. It highlights the need for organizations to keep their security assessments current as attackers adopt faster tools.",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivjmF6SycZfBA1Red5jxgerBNr4pe7i8jIwZyZkF20Kxvw__-2oD3cO1hKSCGGQRqncukvouxIx-6KBQdRf5jz9eXb80yFmNyTo2sOsmW2TEXS4irdH7uPvWfZh66zxIa9h0RixfLZtaKO3rSo_riHT9hfbyBGC1m_Y0_FWRu_M0EADEFFZmXFB_NG72Q/s1600/anecdotes.jpg",
+    "also_covered": [],
+    "category": "Policy",
+    "severity": "Info",
+    "cves": [],
+    "affected": [],
+    "action_everyone": "",
+    "action_it": ""
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
+    "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+    "published": "Thu, 26 Nov 2026 16:06:22 -0500",
+    "published_ts": 1795727182,
+    "summary": "OpenAI fixed a bug that incorrectly discounted the usage of its AI model, meaning users will now hit their usage limits 40% faster. This change affects how quickly customers consume their allowed message quotas.",
+    "image": "",
+    "also_covered": [],
+    "category": "Other",
+    "severity": "Info",
+    "cves": [],
+    "affected": [
+      "OpenAI"
+    ],
+    "action_everyone": "",
+    "action_it": ""
+  }
+]
